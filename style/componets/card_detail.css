@@ -1,0 +1,207 @@
+.header__botton{
+    gap: 20px;
+}
+.header__menu-button{
+    padding: 0.6em 1.2em;
+}
+.button__indent {
+    height: 36px;
+    width: 120px;
+    padding: 0.6em 2.5em;
+}
+
+.main {
+    margin-top: 25px;
+    display: flex;
+    gap: 60px;
+}
+
+.main__left {
+    width: 50%;
+}
+
+.main__right {
+    position: relative;
+}
+
+.main__weight__list {
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.main__weight__link {
+    display: block;
+    outline: 1px solid var(--light-gold);
+    border-radius: 5px;
+    padding: 5px 8px;
+}
+
+.main__right__weight,
+.main__right__weighttext,
+.main__right__price {
+    margin-bottom: 20px;
+}
+
+.main__right__weighttext {
+    margin-bottom: 20px;
+}
+
+.main__weight__link {
+    cursor: pointer;
+}
+
+.main__righ__button,
+.main__righ__buttontwo {
+    width: 176px;
+    margin-left: 0;
+    padding: 0.8em 1.2em;
+    font-family: 'MullerRegular';
+}
+
+.main__weight__link:not(:first-child) {
+    margin-left: 20px;
+}
+
+.main__weight__link {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 18px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.main__weight__link.tabs-nav__btn--active {
+    color: var(--gold-color);
+    outline: 2px solid var(--gold-color);
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.main__weight__link:hover {
+    outline: 2px solid var(--gold-color);
+    color: var(--gold-color);
+    border-radius: 5px;
+}
+
+.main__weight__link:focus {
+    outline: 2px solid var(--brown-cold);
+    color: var(--brown-cold);
+    border-radius: 5px;
+}
+
+.main__weight__container {
+    color: var(--black);
+    font-size: 20px;
+    /*размер шрифта*/
+    font-family: 'MullerBold';
+    margin-bottom: 25px;
+}
+
+.main__right__article {
+    color: var(--brown-cold);
+}
+
+.main__right__discription {
+    margin-bottom: 20px;
+}
+
+.tabs-item {
+    display: none;
+}
+
+.tabs-item--active {
+    display: block;
+}
+
+.main__list__category {
+    color: var(--brown-cold);
+    font-size: 16px;
+    font-family: 'MullerRegular';
+    margin-bottom: 20px;
+}
+
+.main__list__name {
+    color: var(--light-black);
+    font-family: 'MullerRegular';
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.main__list__compound {
+    color: var(--grey-color);
+    font-size: 16px;
+    /*размер шрифта*/
+    font-family: 'MullerRegular';
+    margin-bottom: 20px;
+}
+
+.main__list__text {
+    color: var(--black);
+    font-family: 'MullerMedium';
+    font-size: 16px;
+    /*размер шрифта*/
+    line-height: 33px;
+}
+
+.main__button {
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.card__item__two{
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+/* swiper */
+.swiper-container {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.gallery-top {
+    height: 80%;
+    width: 100%;
+}
+
+.gallery-thumbs {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+.gallery-thumbs .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.gallery-thumbs .swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+.section_swiper {
+    height: 800px;
+}
+
+.swiper-container.gallery-thumbs {
+    background: black;
+    padding: 10px 5px;
+}
+
+.swiper-wrapper {
+    margin-top: 0;
+}

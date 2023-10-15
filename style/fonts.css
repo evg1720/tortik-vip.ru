@@ -1,0 +1,62 @@
+/*------------Шрифты-------------*/
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-ExtraBold.woff");
+  font-display: swap;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-SemiBold.woff");
+  font-display: swap;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Bold.woff");
+  font-display: swap;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Regular.woff");
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Medium.woff");
+  font-display: swap;
+  font-weight: 500;
+}
+
+
+
+@font-face {
+  font-family: 'MullerBold';
+  src: url("../fonts/MullerBold.woff");
+  font-weight: normal;
+  font-weight: 700;
+
+}
+
+@font-face {
+  font-family: 'MullerMedium';
+  src: url("../fonts/MullerMedium.woff");
+  font-style: normal;
+  font-weight: normal;
+  font-weight: 400; /*толщина шрифта*/
+}
+
+@font-face {
+  font-family: 'MullerRegular';
+  src: url("../fonts/MullerRegular.woff");
+  font-style: normal;
+  font-weight: normal;
+  font-weight: 400; 
+
+}

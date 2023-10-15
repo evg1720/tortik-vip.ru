@@ -1,0 +1,57 @@
+
+
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- пропорция-->
+  <link rel="stylesheet" href="/static/style/accordion.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+  <link rel="stylesheet" href="/static/style/style.css">
+  <title>Админка | Товары</title>
+</head>
+
+<body>
+  
+    <h1>продукты</h1>
+    <a href="/site-admin/">Адмика</a>
+    <a href="/site-admin/product_create/">create product</a>
+    <table border=1>
+        <thead>
+          <tr>
+            <td>name</td>
+            <td>ingredients</td>
+            <td>price</td>
+            <td>category</td>
+          </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td>Тортик </td>
+                <td>яблоки</td>
+                <td>2.00</td>
+                <td>мороженное</td>
+                <td><a href="/detail/1/">Просмотр</a></td>
+                <td><a href="/site-admin/product_update/1/">Изменить</a></td>
+                <td><a href="/site-admin/product_remove/1/">удалить</a></td>
+            </tr>
+            
+            <tr>
+                <td>Lorem</td>
+                <td>Чудо</td>
+                <td>2.00</td>
+                <td>мороженное</td>
+                <td><a href="/detail/2/">Просмотр</a></td>
+                <td><a href="/site-admin/product_update/2/">Изменить</a></td>
+                <td><a href="/site-admin/product_remove/2/">удалить</a></td>
+            </tr>
+            
+        </tbody>
+      </table>
+</body>
+
+</html>

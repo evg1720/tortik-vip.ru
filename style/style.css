@@ -1,0 +1,41 @@
+@import "normalize.css";
+@import "fonts.css";
+@import "main.css";
+@import "varialdes.css";
+
+/*-----------Components------------*/
+
+@import "componets/header.css";
+@import "componets/hero.css";
+@import "componets/about.css";
+@import "componets/list.css";
+@import "componets/questions.css";
+@import "componets/contacts.css";
+@import "componets/footer.css";
+@import "componets/slide__carts.css";
+
+/*-----------Media------------*/
+
+@import 'media/1400.css';
+@import 'media/1024.css';
+@import 'media/768.css';
+@import 'media/684.css';
+@import 'media/460.css';
+@import 'media/320.css';
+
+/*-----------Admin------------*/
+
+@import "/style/admin.css";
+
+/*-----------------------------------*/
+
+a {
+    text-decoration: none;
+}
+.hero__form {
+    color: antiquewhite;
+}
+body {
+    background-color: #ebebeb;
+}
+

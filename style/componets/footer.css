@@ -1,0 +1,157 @@
+footer {
+  width: 100%;
+  background: black;
+  color: gray;
+  padding: 25px 0 ;
+  margin-top: var(--section-gap);
+}
+
+.footer__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__info {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer__text {
+  max-width: 363px;
+  padding: 75px 0;
+}
+
+.footer__form {
+  max-width: 400px;
+}
+
+.footer__form input {
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  height: 60px;
+  width: 570px;
+}
+
+.footer__form textarea {
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  height: 90px;
+}
+
+.footer__form input,
+.footer__form textarea {
+  outline: 0;
+  border: none;
+  background: #fff;
+  color: #c5cfca;
+  border-radius: 16px;
+  padding: 14px 24px;
+
+}
+
+.footer__form input:focus,
+.footer__form textarea:focus {
+  outline: 0;
+}
+
+.footer__form form,
+.footer__form input,
+.footer__form textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer__title,
+.footer__form input {
+  margin-bottom: 25px;
+}
+
+.footer__form textarea {
+  margin-bottom: 29px;
+  resize: none;
+  /*без расширения*/
+}
+
+.footer__link {
+  color: var(--gray);
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 36px;
+  text-decoration: none;
+  margin-top: 50px;
+  padding: 2px 5px;
+}
+
+.footer__link:hover {
+  color: gold;
+}
+
+.footer__link:focus {
+  outline: 1px solid gold;
+  color: gray;
+}
+
+.--smail-one {
+  margin-right: 25px;
+}
+
+.footer__text {
+  color: var(--gray);
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  text-decoration: none;
+}
+
+.footer__smail {
+  display: flex;
+  margin-top: 20px;
+}
+
+.ok {
+  cursor: pointer;
+}
+
+.vk {
+  cursor: pointer;
+  margin-left: 25px;
+}
+
+.smail:hover svg path {
+  fill: gold;
+  transition-property: color, background-color;
+  transition-duration: 0.2s, 0.3s;
+}
+
+.footer-button {
+  width: 160px;
+  margin-left: 125px;
+  padding: 0.6em 1.2em;
+}
+
+.smail:focus {
+  outline: 1px solid gold;
+}
+
+.footer__logomini {
+  display: none;
+}
+.footer__indent{
+  margin-top: 20px;
+}
+.footer__logo{
+  margin-top: 20px;
+}

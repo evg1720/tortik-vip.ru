@@ -1,0 +1,156 @@
+.header {
+  padding: 1px 0;
+  background-color: var(--white);
+  border-radius: 0px 0px 32px 32px;
+  box-shadow: 0 0 10px var(--black);
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.header__burger__btn {
+  display: none;
+}
+
+.header__menu {
+  display: flex;
+}
+
+.header__logo {
+  display: block;
+  margin-right: 40px;
+}
+
+.header__logo__img {
+  height: 95px;
+}
+
+.header__menu__list {
+  display: flex;
+  margin-right: 70px;
+  margin-top: 0px;
+  flex-wrap: wrap;
+  gap: 10px 70px;
+}
+
+/* .header__item:not(:first-child){
+  margin-left: 85px;
+  } -- переход на gap*/
+.header__mobaile__menu {
+  display: none;
+  margin-right: auto;
+}
+
+.header__item__link {
+  color: var(--black);
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  text-decoration: none;
+}
+
+.header__item__link:hover {
+  border-bottom: 2px solid #FF9900;
+}
+
+.header__item__link:focus {
+  border-bottom: none;
+  outline: 2px solid var(--orange);
+  outline-offset: 5px;
+}
+
+.header__item__link:active {
+  border-bottom: 1px solid var(--orange-active);
+}
+
+.header__menu-button {
+  margin-bottom: 13px;
+  cursor: pointer;
+  margin: 0;
+
+}
+.header__bottoms{
+  display: flex;
+  gap: 20px;
+}
+.button__indent {
+display: flex;
+height: auto;
+width: auto;
+}
+.button__indent__a{
+  padding: 10px 35px;
+}
+
+.header__recycle__svg {
+  max-width: 30px;
+  max-height: 30px;
+  cursor: pointer;
+}
+
+.header__recycle {
+  margin-bottom: 5px;
+}
+
+.search {
+  position: absolute;
+  display: none;
+  align-items: center;
+  right: 6px;
+  width: 539px;
+  background-color: var(--white);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
+  padding: 18px 18px 18px 32px;
+  border-radius: 24px;
+}
+
+.search__form__faсe {
+  display: flex;
+}
+
+.search__form__close {
+  margin-left: 22px;
+  cursor: pointer;
+}
+
+.search__form__send {
+  margin-left: 14px;
+  cursor: pointer;
+}
+
+.search__input {
+  width: 100%;
+  padding: 8px 14px;
+  border: none;
+  border-radius: none;
+  border-bottom: 1px solid var(--gray);
+}
+
+.search__for__input:focus {
+  outline: none;
+  border-color: var(--black);
+}
+
+.container-ten {
+  display: flex;
+}
+
+.contact__one {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact .bottom {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.contact .top p {
+  text-align: right;
+}

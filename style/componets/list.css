@@ -1,0 +1,428 @@
+.list__cakes {
+  display: grid;
+  font-size: 20px;
+  grid-template-columns: repeat(4, 300px);
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.test>li:nth-child(n) {
+  display: block;
+  width: 275px;
+  background-color: white;
+  margin-top: 30px;
+  border-radius: 25px;
+}
+
+.test>img:nth-child(n) {
+  display: inline-block;
+  width: 67px;
+  height: 66px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  margin-top: 40px;
+  margin-left: 45px;
+}
+
+.test>p:nth-child(n) {
+  display: inline-block;
+  position: relative;
+  font-family: 'MullerMedium';
+  font-weight: 400;
+  /*толщина шрифта*/
+  font-size: 20px;
+  /*размер шрифта*/
+  font-style: normal;
+  font-weight: normal;
+  line-height: 32px;
+}
+
+.test,
+.test-one {
+  /*второй ряд иконок*/
+  display: flex;
+  gap: 50px;
+}
+
+.test-one>li:nth-child(n) {
+  display: block;
+  width: 275px;
+  background-color: white;
+  margin-top: 30px;
+  border-radius: 25px;
+}
+
+.test-one>img:nth-child(n) {
+  display: inline-block;
+  width: 67px;
+  height: 66px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  margin-top: 40px;
+  margin-left: 45px;
+}
+
+.test-one>p:nth-child(n) {
+  display: inline-block;
+  ;
+  position: relative;
+  padding-right: 42px;
+  padding-left: 25px;
+  padding-top: 5px;
+  font-family: 'MullerMedium';
+  font-weight: 400;
+  /*толщина шрифта*/
+  font-size: 16px;
+  /*размер шрифта*/
+  font-style: normal;
+  font-weight: normal;
+  line-height: 32px;
+  left: 20px;
+}
+
+.list__img {
+  width: 100%;
+  height: 250px;
+  border-radius: 25px 25px 0 0;
+  cursor: pointer;
+}
+
+.list__img__one {
+  width: 100%;
+  height: 100%;
+  right: 10%;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.style-one {
+  display: flex;
+  font-family: 'MullerBold';
+  margin-left: 40px;
+  margin-top: 5px;
+}
+
+.style-two {
+  color: var(--grey-color);
+  font-weight: 200;
+  /*толщина шрифта*/
+  font-size: 18px;
+  /*размер шрифта*/
+  font-family: 'MullerRegular';
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 3px;
+}
+
+.style-three {
+  margin-left: 5px;
+  color: var();
+  font-weight: 700;
+  /*толщина шрифта*/
+  font-size: 20px;
+  /*размер шрифта*/
+  font-family: 'MullerBold';
+  font-weight: normal;
+}
+
+.style-four {
+  margin-left: 5px;
+  color: var();
+  font-weight: 700;
+  /*толщина шрифта*/
+  font-size: 18px;
+  /*размер шрифта*/
+  font-family: 'MullerMedium';
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 3px;
+}
+
+.list__button {
+  display: flex;
+  gap: 25px;
+}
+
+.list__cakes>li {
+  flex-direction: column;
+  background-color: white;
+  border-radius: 25px;
+  gap: 1px;
+}
+
+.list__more:not(.onclick) ul,
+.list__more:not(.onclick) p,
+.list__more:not(.onclick) a,
+.list__more:not(.onclick) img {
+  display: none !important;
+}
+
+.list__cakes li.onclick img {
+  height: 250px;
+  border-radius: 25px 25px 0 0;
+  cursor: pointer;
+}
+
+.list__cakes li.onclick>div {
+  display: none;
+}
+
+.list__more:not(.onclick) {
+  background: url("../../img/logo__three.svg") no-repeat;
+  /* background-size: contain; */
+  background-size: cover;
+  background-position: center;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  background-color: var(--white);
+  transition: 0.3s;
+}
+
+.list__close {
+  position: relative;
+  background: url("../../img/logo__three.svg") no-repeat;
+  /* background-size: contain; */
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: 0.3s;
+
+}
+
+.list__close:hover {
+  /* background: url("../../img/footer-logo.png") no-repeat; */
+  background-color: var(--gold-x);
+}
+
+.list__more:not(.onclick):hover,
+.list__close:hover {
+  transform: translate3d(5px, 5px, 5px);
+  box-shadow: -5px -5px 15px var(--gray-gray);
+}
+
+.list__close p {
+  position: absolute;
+  left: 25px;
+  top: 390px;
+  font-family: 'MullerRegular';
+  font-weight: 500;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.list__more>div,
+.list__close p {
+  position: absolute;
+  bottom: 25px;
+  left: 14px;
+  color: #8f5151;
+  font-family: 'MullerRegular';
+  font-weight: 500;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.list__more:not(.onclick):hover {
+  background-color: var(--gold-x);
+}
+
+/* второй блок */
+
+.list__cakes__two {
+  display: grid;
+  grid-template-columns: repeat(4, 275px);
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.list__cakes__two li {
+  flex-direction: column;
+  background-color: white;
+  border-radius: 25px;
+  gap: 10px;
+}
+
+.list__cakes__two li.onclick img {
+  height: 250px;
+  border-radius: 25px 25px 0 0;
+  cursor: pointer;
+}
+
+.list__cakes__two li.onclick>div {
+  display: none;
+}
+
+.list__Card__name {
+  color: var(--light-black);
+  font-family: 'MullerRegular';
+  font-size: 18px;
+  text-align: center;
+}
+
+.list__compound {
+  color: var(--grey-color);
+  font-size: 16px;
+  font-family: 'MullerRegular';
+}
+
+.style-four {
+  font-family: 'MullerMedium';
+}
+
+/*-----------------------*/
+.tabs-item {
+  display: none;
+}
+
+.tabs-item--active {
+  display: block;
+}
+
+/*------------------------*/
+
+.main__weight__link.tabs-nav__btn--active {
+  color: var(--gold-color);
+  outline: 2px solid var(--gold-color);
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.list__weight__link {
+  cursor: pointer;
+}
+
+.list__righ__button,
+.list__righ__buttontwo {
+  margin-left: 0;
+  padding: 0.8em 1.2em;
+  text-align: center;
+  font-family: 'MullerRegular';
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.list__weight__link:not(:first-child) {
+  margin-left: 20px;
+}
+
+.list__weight__link {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--black);
+  cursor: pointer;
+  padding: 2px 3px;
+}
+
+.list__weight__link.tabs-nav__btn--active {
+  color: var(--gold-color);
+  outline: 2px solid var(--gold-color);
+  font-weight: 500;
+  border-radius: 3px;
+}
+
+.list__weight__link:hover {
+  outline: 2px solid var(--gold-color);
+  color: var(--gold-color);
+  border-radius: 3px;
+}
+
+.list__weight__link:focus {
+  outline: 2px solid var(--brown-cold);
+  color: var(--brown-cold);
+  border-radius: 3px;
+}
+
+.list__weight__container {
+  color: var(--black);
+  font-size: 20px;
+  /*размер шрифта*/
+  font-family: 'MullerBold';
+}
+
+.list__right__weight,
+.list__shift {
+  padding-left: 20px;
+}
+
+.list__more__details {
+  display: inline-block;
+  font-family: 'MullerRegular';
+  font-size: 16px;
+  color: var(--green);
+  padding-right: 5px;
+}
+
+
+.list__more__details:hover+.svg-one,
+.svg-one:hover
+  {
+  transform: translateX(10px);
+  transition: transform .5s ease-in-out;
+  
+}
+.list__more__details:hover+.svg-one path{
+  stroke: var(--white-green);
+}
+
+.list__more__details:hover {
+  color: var(--white-green);
+  transition-property: color, background-color;
+  transition-duration: 0.2s, 0.3s;
+}
+
+.list__more__details:focus::after {
+  opacity: 1;
+}
+
+.list__more__details:active {
+  color: var(--brown-cold);
+}
+.list__more__details:active+.svg-one path{
+  stroke: var(--brown-cold);
+}
+
+/* .list__more__details::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+} */
+
+.list__right__articletext {
+  font-family: 'MullerMedium';
+  font-size: 14px;
+  margin-bottom: 2px;
+  color: var(--brown-cold);
+}
+
+.svg-one {
+  transition: transform .5s ease-in-out;
+}
+.svg-one {
+  stroke: red;
+}
+
+
+.product {
+  cursor: pointer;
+}
+
+.product__image {
+  margin-bottom: 15px;
+}
+
+.list__card__more {
+  margin-bottom: 10px;
+}
+
+.card__item {
+  margin-bottom: 10px;
+}

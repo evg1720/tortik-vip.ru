@@ -1,0 +1,240 @@
+@media (max-width: 320px) {
+
+    /*header*/
+    .header {
+        padding: 14px 0;
+        border-radius: 0px 0px 16px 16px;
+    }
+
+    .header__logo {
+        margin-left: 53px;
+    }
+
+    .header__burger__btn span {
+        left: 0;
+        top: 19px;
+    }
+
+
+    .header__menu-button {
+        margin-top: 4px;
+    }
+
+    .header__menu__list {
+        flex-direction: column;
+        max-height: 100vh;
+        width: 320px;
+        left: -320px;
+        display: flex;
+        justify-content: space-between;
+        top: 0;
+        padding-bottom: 10px;
+    }
+
+    .header__item:nth-child(1) {
+        padding: 70px 20px 0 15px;
+    }
+
+    .header__item:not(:first-child) {
+        padding: 0 15px;
+    }
+
+    .header__item__link {
+        padding: 0;
+    }
+
+    .hero__container__swiper {
+        height: 308px;
+        width: auto;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+        bottom: 12px;
+    }
+
+    .hero__title {
+        text-align: center;
+        font-size: 20px;
+        line-height: 24.38px;
+        font-weight: 800;
+        margin-bottom: 8px;
+    }
+
+    .hero__description {
+        text-align: center;
+        font-size: 12px;
+        line-height: 14.63px;
+        font-weight: 700;
+        margin-bottom: 32px;
+    }
+
+    .hero__container {
+        border-radius: 16px;
+        height: 319px;
+    }
+
+    .hero__content {
+        padding: 60px 22px;
+    }
+
+    .swiper__img {
+        border-radius: 16px;
+    }
+
+    .how-work__fon {
+        max-width: 290px;
+        margin: 31px 16px 38px 0px;
+        content: url("../../../amg/how-work320.png");
+        background-repeat: no-repeat;
+    }
+
+    .tabs-nav__btn--active {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .how-work__steps-item {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .how-work__steps-item:not(:first-child) {
+        margin-left: 44px;
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 16px;
+    }
+
+    .how-work__png {
+        height: 160px;
+        border-radius: 16px;
+    }
+
+    .how-work__picture {
+        margin-bottom: 11px;
+    }
+
+    .how-work-title title {
+        margin-top: 20px;
+    }
+
+    .about__left {
+        max-width: 290px;
+        min-height: 200px;
+        background-image: url("../../../amg/about320.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        margin-right: 0;
+        border-radius: 16px;
+    }
+
+    .about__left__info {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: 50px;
+        background: var(--dark-opacity);
+        border-radius: inherit;
+        color: var(--white);
+        align-items: center;
+        padding-bottom: 54px;
+    }
+
+    .about__zero__info-description {
+        font-family: 'Montserrat';
+        max-width: 290px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 28px;
+        margin-bottom: 12px;
+    }
+    .list__item .item__question{
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+    .item__top {
+        justify-content: space-between;
+        padding: 30.3px 0 !important;
+    }
+    /* footer */
+    footer {
+        padding-top: 6px;
+    }
+
+    .footer__title {
+        margin-bottom: 19px;
+    }
+
+    .footer__form {
+        margin-bottom: 15px;
+    }
+
+    .footer__form form,
+    .footer__form input,
+    .footer__form textarea {
+        max-width: 290px;
+
+    }
+
+    .footer__form input,
+    .footer__form textarea {
+        padding: 14px 19px;
+    }
+
+    .footer-button {
+        max-width: 180px;
+        max-height: 39px;
+        font-family: 'Montserrat';
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 14.63px;
+        margin-left: 55px;
+        bottom: 12px;
+        padding: 14px 28px;
+        margin-bottom: 5px;
+    }
+
+    .footer__menu,
+    .footer__form {
+        flex-basis: 100%;
+    }
+
+    .footer__line {
+        display: block;
+        outline: 1px solid var(--dark);
+    }
+
+    .footer__logo {
+        display: none;
+    }
+
+    .footer__logomini {
+        display: block;
+        padding: 1px 5px 15px 81px;
+    }
+
+    .footer__smail {
+        margin-left: 98px;
+    }
+
+    .smail__zero {
+        width: 40px;
+        height: 40px;
+    }
+
+    .vk {
+        margin-left: 15px;
+        width: 40px;
+        height: 40px;
+    }
+}
