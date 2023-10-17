@@ -12,9 +12,9 @@
   height: 100px;
 }
 
-/* .header__burger__btn {
+.header__burger__btn {
   display: none;
-} */
+}
 
 .header__menu {
   display: flex;
