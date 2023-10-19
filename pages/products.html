@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- пропорция-->
-    <link rel="stylesheet" href="../pages/categories.css">
+    <link rel="stylesheet" href="../pages/products.css">
     <link rel="stylesheet" href="../style/normalize.css">
     <link rel="stylesheet" href="../style/varialdes.css">
     <title>Главня страница aдминки</title>
@@ -59,60 +59,84 @@
         </div>
     </header>
 
-    <section class="categories">
+    <section class="products">
         <div class="container">
-            <h1 class="categories__info">Категории список</h1>
-            <ul class="categories__link">
-                <li class="categories__link__a"><a class="categories__link__itemone"
+            <h1 class="products__info">Продукты список</h1>
+            <ul class="products__link">
+                <li class="products__link__a"><a class="products__link__itemone"
                         href="/site-admin/products/">Назад</a>
                 </li>
-                <li class="categories__link__a"><a class="categories__link__item"
-                        href="/site-admin/categories/">Добавить
-                        категорию</a></li>
+                <li class="products__link__a"><a class="products__link__item"
+                        href="/site-admin/products/">Добавить
+                        продукт</a></li>
             </ul>
             <div class="table-responsive">
-                <table class="categories__table">
-                    <thead class="categories__table__header">
+                <table class="products__table">
+                    <thead class="products__table__header">
                         <tr>
-                            <td class="categories__header__bold">№</td>
-                            <td class="categories__header__bold">Категории</td>
-                            <td class="categories__header__bold">-----</td>
-                            <td class="categories__header__bold">-----</td>
+                            <td class="products__header__bold">№</td>
+                            <td class="products__header__bold">Изделие</td>
+                            <td class="products__header__bold">Ингредиенты</td>
+                            <td class="products__header__bold">Цена (кг/руб)</td>
+                            <td class="products__header__bold">Категория</td>
+                            <td class="products__header__bold">-----</td>
+                            <td class="products__header__bold">-----</td>
+                            <td class="products__header__bold">-----</td>
 
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="categories__table__body">
-                            <td class="categories__header__regular">1</td>
-                            <td class="categories__header__regular">Торты </td>
-                            <td class="categories__header__regular"><a class="categories_a"
+                        <tr class="products__table__body">
+                            <td class="products__header__regular">1</td>
+                            <td class="products__header__regular">Наролеон </td>
+                            <td class="products__header__regular">Сгущенка, какао </td>
+                            <td class="products__header__regular">1200</td>
+                            <td class="products__header__regular">Торты </td>
+                            <td class="products__header__regular"><a class="products_a"
+                                href="/detail/2/">Просмотреть</a></td>
+                            <td class="products__header__regular"><a class="products_a"
                                     href="/site-admin/product_update/1/">Изменить</a></td>
-                            <td class="categories__header__regular"><a class="categories_a"
+                            <td class="products__header__regular"><a class="products_a"
                                     href="/site-admin/product_remove/1/">удалить</a></td>
                         </tr>
-                        <tr>
-                            <td class="categories__header__regular">2</td>
-                            <td class="categories__header__regular">Пироженное</td>
-                            <td class="categories__header__regular"><a class="categories_a"
-                                    href="/site-admin/product_update/2/">Изменить</a></td>
-                            <td class="categories__header__regular"><a class="categories_a"
-                                    href="/site-admin/product_remove/2/">удалить</a></td>
+                        <tr class="products__table__body">
+                            <td class="products__header__regular">2</td>
+                            <td class="products__header__regular">Радость </td>
+                            <td class="products__header__regular">Сгущенка, какао </td>
+                            <td class="products__header__regular">2000</td>
+                            <td class="products__header__regular">Чизкейки </td>
+                            <td class="products__header__regular"><a class="products_a"
+                                href="/detail/2/">Просмотреть</a></td>
+                            <td class="products__header__regular"><a class="products_a"
+                                    href="/site-admin/product_update/1/">Изменить</a></td>
+                            <td class="products__header__regular"><a class="products_a"
+                                    href="/site-admin/product_remove/1/">удалить</a></td>
                         </tr>
-                        <tr>
-                            <td class="categories__header__regular">3</td>
-                            <td class="categories__header__regular">Чизкейки</td>
-                            <td class="categories__header__regular"><a class="categories_a"
-                                    href="/site-admin/product_update/2/">Изменить</a></td>
-                            <td class="categories__header__regular"><a class="categories_a"
-                                    href="/site-admin/product_remove/2/">удалить</a></td>
+                        <tr class="products__table__body">
+                            <td class="products__header__regular">3</td>
+                            <td class="products__header__regular">Медовый </td>
+                            <td class="products__header__regular">Сгущенка, кокос </td>
+                            <td class="products__header__regular">1800</td>
+                            <td class="products__header__regular">Торты </td>
+                            <td class="products__header__regular"><a class="products_a"
+                                href="/detail/2/">Просмотреть</a></td>
+                            <td class="products__header__regular"><a class="products_a"
+                                    href="/site-admin/product_update/1/">Изменить</a></td>
+                            <td class="products__header__regular"><a class="products_a"
+                                    href="/site-admin/product_remove/1/">удалить</a></td>
                         </tr>
-                        <tr>
-                            <td class="categories__header__regular">4</td>
-                            <td class="categories__header__regular">Мороженное</td>
-                            <td class="categories__header__regular"><a class="categories_a"
-                                    href="/site-admin/product_update/2/">Изменить</a></td>
-                            <td class="categories__header__regular"><a class="categories_a"
-                                    href="/site-admin/product_remove/2/">удалить</a></td>
+                        <tr class="products__table__body">
+                            <td class="products__header__regular">4</td>
+                            <td class="products__header__regular">Черепашка </td>
+                            <td class="products__header__regular">шоколад, какао </td>
+                            <td class="products__header__regular">400</td>
+                            <td class="products__header__regular">Пироженное </td>
+                            <td class="products__header__regular"><a class="products_a"
+                                href="/detail/2/">Просмотреть</a></td>
+                            <td class="products__header__regular"><a class="products_a"
+                                    href="/site-admin/product_update/1/">Изменить</a></td>
+                            <td class="products__header__regular"><a class="products_a"
+                                    href="/site-admin/product_remove/1/">удалить</a></td>
                         </tr>
                     </tbody>
                 </table>

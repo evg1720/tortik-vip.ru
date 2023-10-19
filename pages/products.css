@@ -301,11 +301,11 @@ body {
   margin-bottom: 3rem;
 }
 
-.categories {
+.products {
   flex-grow: 1;
 }
 
-.categories__table {
+.products__table {
   margin: auto;
   /*----Центрирование по центру---*/
   width: 50%;
@@ -316,23 +316,23 @@ body {
   margin-bottom: 30px;
 }
 
-.categories__table td,
+.products__table td,
 .products__table tr {
   text-align: center;
   padding: 10px;
 }
 
-.categories__table__header {
+.products__table__header {
   border-radius: 10px;
   box-shadow: 0 4px 16px var(--brown-cold);
 }
 
-.categories__header__regular {
+.products__header__regular {
   font-family: 'MullerRegular';
   font-size: 16px;
 }
 
-.categories__header__bold {
+.products__header__bold {
   font-family: 'MullerBold';
   font-size: 18px;
   font-weight: 700;
@@ -356,29 +356,29 @@ tbody tr:hover {
   box-shadow: 0 4px 16px var(--dark-brown);
 }
 
-.categories_a {
+.products_a {
   color: var(--gray-gray);
 }
 
-.categories_a:hover {
+.products_a:hover {
   color: var(--dark-green);
 }
-.categories_a:focus {
+.products_a:focus {
   transition: background 0.3s ease, color 0.2s linear;
 }
 
-.categories_a:active {
+.products_a:active {
   color: var(--dark-brown);
 }
 
-.categories__info {
+.products__info {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 15vh;
 }
 
-.categories__link {
+.products__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -386,7 +386,7 @@ tbody tr:hover {
   gap: 50px;
 }
 
-.categories__link__item {
+.products__link__item {
   display: block;
   outline: 2px solid var(--green);
   border-radius: 5px;
@@ -400,22 +400,22 @@ tbody tr:hover {
   cursor: pointer;
 }
 
-.categories__link__item:hover {
+.products__link__item:hover {
   background-color: var(--green);
   color: var(--white);
   transition-duration: 0.2s, 0.3s;
 }
 
-.categories__link__item:focus {
+.products__link__item:focus {
   transition: background 0.3s ease, color 0.2s linear;
 }
 
-.categories__link__item:active {
+.products__link__item:active {
   background-color: var(--dark-green);
   color: var(--white);
 }
 
-.categories__link__itemone {
+.products__link__itemone {
   display: block;
   background-color: var(--white-green);
   border-radius: 5px;
@@ -429,17 +429,17 @@ tbody tr:hover {
   cursor: pointer;
 }
 
-.categories__link__itemone:hover {
+.products__link__itemone:hover {
   background-color: var(--green);
   color: var(--white);
   transition-duration: 0.2s, 0.3s;
 }
 
-.categories__link__itemone:focus {
+.products__link__itemone:focus {
   transition: background 0.3s ease, color 0.2s linear;
 }
 
-.categories__link__itemone:active {
+.products__link__itemone:active {
   background-color: var(--dark-green);
   color: var(--white);
 }
