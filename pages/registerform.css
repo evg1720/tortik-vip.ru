@@ -22,7 +22,7 @@ body {
 
 .form__group {
   position: relative;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .form__label {
@@ -80,7 +80,7 @@ body {
 }
 
 .form__title__gender {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .form__gender input:nth-child(2) {
@@ -91,7 +91,7 @@ body {
 
 .radio {
   position: relative;
-  margin-bottom: 1rem;
+  margin-bottom: 30px;
 }
 
 .radio__input {
@@ -148,7 +148,7 @@ body {
 }
 .form__style__gender{
 justify-content: flex-start;
-gap: 30px;
+gap: 50px;
 }
 
 /*-------------Checkbox-----------------*/
@@ -212,4 +212,24 @@ gap: 30px;
   outline: 1px solid gray;
   outline-offset: 3px;
 } */
-/*---------------------------------------------------*/
+
+/*----------------------Captcha--------------------------*/
+#image {
+ 
+  font-weight: 400;
+  user-select: none;
+  text-decoration:line-through;
+  font-style: italic;
+  font-size: x-large;
+  }
+
+  input {
+  border:1px black solid;
+  }
+  .inline {
+  display:inline-block;
+  }
+  #btn {
+  color: aqua;
+  background-color: brown;
+  }
