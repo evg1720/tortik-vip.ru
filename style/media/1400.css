@@ -1,0 +1,41 @@
+@media (max-width: 1400px) {
+    .header__logo {
+        margin-right: calc( (100vw - 1025px)/(1920 - 1025) * (40 - 10) + 10px);
+    }
+
+    /* ---header--- */
+
+    .header__menu__list {
+        gap: 10px calc( (100vw - 1025px)/(1400 - 1025) * (70 - 10) + 10px); 
+        margin-right: calc( (100vw - 1025px)/(1400 - 1025) * (70 - 0) + 0px);
+    }
+
+    /* ---hero--- */
+
+    .hero__title{
+        font-size: calc( (100vw - 320px)/(1400 - 320) * (70 - 20) + 20px);
+        line-height: calc( (100vw - 320px)/(1400 - 320) * (85 - 20) + 20px);
+        margin-left: calc( (100vw - 768px)/(1920 - 768) * (100 - 50) + 50px);
+    }
+    .hero__description{
+        font-size: calc( (100vw - 320px)/(1400 - 320) * (24 - 12) + 12px);
+        margin-top: calc( (100vw - 768px)/(1400 - 768) * (280 - 160) + 160px);
+        margin-left: calc( (100vw - 768px)/(1400 - 7680) * (100 - 50) + 50px);
+    }
+    .list__weight__link:not(:first-child) {
+        margin-left: calc( (100vw - 768px)/(1400 - 768) * (20 - 3) + 3px);
+    }
+    .list__cakes {
+        grid-template-columns: repeat(4, calc( (100vw - 1024px)/(1400 - 1024) * (300 - 240) + 240px));
+        gap: calc((100vw - 1024px)/(1400 - 1024) * (15 - 5) + 5px);
+    }
+    .list__button {
+        gap: calc((100vw - 1024px)/(1400 - 1024) * (25 - 5) + 5px);;
+    }
+    .list__item .item__question{
+        font-size: calc((100vw - 1024px)/(1400 - 1024) * (32 - 18) + 18px);
+    }
+    .list__item__text{
+        font-size: calc((100vw - 1024px)/(1400 - 1024) * (16 - 14) + 14px);
+    }
+}

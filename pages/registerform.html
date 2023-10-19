@@ -5,14 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- пропорция-->
-    <link rel="stylesheet" href="/static/style/accordion.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../pages/captcha_generation.css">
     <link rel="stylesheet" href="../pages/registerform.css">
-    <link rel="stylesheet" href="/style/varialdes.css">
-    <link rel="stylesheet" href="/style/main.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    <script src="/pages/captcha.js"></script>
+    <link rel="stylesheet" href="../style/varialdes.css">
+    <link rel="stylesheet" href="../style/main.css">
+    <script defer src="../pages/captcha.js"></script>
     <title>Регистрация</title>
 </head>
 
@@ -76,18 +73,16 @@
                 <label class="form__label" for="">Подтверждение пароля:</label>
             </div>
         </div>
-        <div class="form__style__captcha flex" onload="genrate()">
+        <div class="form__style__captcha flex" >
             <div class="form__group flex inline" id="user-input">
                 <input class="form__input" placeholder="" type="text" id="submit">
                 <label class="form__label" for="">Введите код</label>
             </div>
             <div class="inline" onclick="genrate()">
-                <i class="fas fa-sync"></i>
+                <img class="update__icon" src="/img/update.svg" alt="">
             </div>
             <div class="form__group flex inline" id="image" selectable="False"></div>
-                <input class="form__input" placeholder="" type=""><p id="key"></p>
-                <label class="form__label" for="">Капча</label>
-          
+           <p id="key"></p>  
         </div>
         <div class="form__checkbox">
             <label class="checkbox" for="checkbox">

@@ -12,10 +12,6 @@
   height: 100px;
 }
 
-.header__burger__btn {
-  display: none;
-}
-
 .header__menu {
   display: flex;
 }
@@ -47,9 +43,8 @@
 
 .header__item__link {
   color: var(--black);
-  font-family: 'Montserrat';
+  font-family: 'MullerRegular';
   font-size: 18px;
-  font-weight: 600;
   line-height: 22px;
   text-decoration: none;
 }
@@ -153,4 +148,7 @@ width: auto;
 
 .contact .top p {
   text-align: right;
+}
+.display{
+  display: none;
 }

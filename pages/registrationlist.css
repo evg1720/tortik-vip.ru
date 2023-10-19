@@ -113,7 +113,7 @@ body {
   padding: 1px 0;
   background-color: var(--white);
   border-radius: 0px 0px 32px 32px;
-  box-shadow: 0 0 10px var(--brown-cold);
+  box-shadow: 0 0 10px var(--black);
 }
 
 .header__container {
@@ -351,7 +351,11 @@ tbody td {
   outline: 1px solid var(--gray);
 }
 
-tbody tr:hover {
+
+tr:nth-child(even):hover, 
+tr:nth-child(odd):hover {
+  position: relative;
+  z-index: 1;
   background-color: var(--green-y);
   box-shadow: 0 4px 16px var(--dark-brown);
 }

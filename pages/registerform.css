@@ -146,9 +146,10 @@ body {
 .radio__input:checked+.radio__label:after {
   opacity: 1;
 }
-.form__style__gender{
-justify-content: flex-start;
-gap: 50px;
+
+.form__style__gender {
+  justify-content: flex-start;
+  gap: 50px;
 }
 
 /*-------------Checkbox-----------------*/
@@ -215,21 +216,22 @@ gap: 50px;
 
 /*----------------------Captcha--------------------------*/
 #image {
- 
+
   font-weight: 400;
   user-select: none;
-  text-decoration:line-through;
+  text-decoration: line-through;
   font-style: italic;
   font-size: x-large;
-  }
+}
 
-  input {
-  border:1px black solid;
-  }
-  .inline {
-  display:inline-block;
-  }
-  #btn {
-  color: aqua;
-  background-color: brown;
-  }
+input {
+  border: 1px black solid;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.update__icon {
+  width: 30px;
+}

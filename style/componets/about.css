@@ -2,3 +2,9 @@
 .about-description{
    margin-top: 20px; 
 }
+.about-description{
+   font-family: 'MullerRegular';
+   font-size: 18px;
+   max-width: 80%;
+   line-height: 32px;
+}

@@ -55,8 +55,8 @@ padding: 0 21px;
     margin-left: 100px;
     color: var(--white);
     max-width: 895px;
-    font-family: 'Muller';
-    font-size: 60px;
+    font-family: 'MullerBold';
+    font-size: 70px;
     font-weight: 800;
     line-height: 85px;
     margin-bottom: 24px;
@@ -66,7 +66,7 @@ padding: 0 21px;
     margin-top: 280px;
     margin-left: 100px;
     color: var(--white);
-    font-family: 'Muller';
+    font-family: 'MullerBold';
     max-width: 790px;
     font-size: 24px;
     font-weight: 700;
@@ -76,11 +76,7 @@ padding: 0 21px;
 .swiper-wrapper{
    margin-top: 50px;
 }
-.about-description{
-    font-family: 'Muller';
-    font-size: 18px;
-    max-width: 1235px;
-}
+
 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     background-color: var(--gray);

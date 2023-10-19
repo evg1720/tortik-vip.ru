@@ -259,7 +259,7 @@
 
 .list__Card__name {
   color: var(--light-black);
-  font-family: 'MullerRegular';
+  font-family: 'MullerMedium';
   font-size: 18px;
   text-align: center;
 }

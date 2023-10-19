@@ -114,10 +114,9 @@ border-bottom-color: var(--orenge-hover);
   background-color: var(--white);
 }
 .list__item .item__question {
-  font-family: 'Montserrat';
+  font-family: 'MullerBold';
   font-size: 24px;
-  font-weight: 700;
-  line-height: 111px;
+  line-height: 80px;
   margin: 0;
   padding: 0;
   transition: color .3s ease-in-out;

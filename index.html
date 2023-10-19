@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- пропорция-->
   <link rel="stylesheet" href="style/accordion.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+  <link rel="icon" href="../img/logo__img.png">
   <script defer src="script/swiper-main.js"></script>
   <link rel="stylesheet" href="style/style.css">
   <title>Document</title>
@@ -17,7 +18,7 @@
     <div class="container">
       <div class="header__container">
        <button class="header__burger__btn" id="burger">
-          <span>текст</span><span></span><span></span>
+          <span></span><span></span><span></span>
         </button>
         <a href="#">
           <picture class="header__logo">
@@ -39,13 +40,14 @@
             <li class="header__item"><a href="#" class="header__item__link">
                 Контакты
               </a></li>
+              <li class="header__item display"><a class="header__item__link" href="">Вход и регистрация</a></li>
           </ul>
         </nav>
         <button class="header__recycle"><a href="#"><img class="header__recycle__svg" src="img/recycle.svg"
               alt=""></a></button>
         <div class="contact__one">
          
-          <div class="header__bottoms">
+          <div class="header__bottoms display__two">
             <a class="button__indent__a button button__indent" id="open__search__form" href="#">Вход</a>
             <a class="button__indent__a button button__indent" id="open__search__formtwo" href="#">Регистрация</a>
           </div>
@@ -270,161 +272,421 @@
             </div>
           </div>
         </li>
-        <li class="test">
-          <picture>
-            <!-- <source srcset="amg/hero1024-3.png" media="(max-width: 1024px)">
-            <source srcset="amg/hero768-3.png" media="(max-width: 768px)">
-            <source srcset="amg/hero320-3.png" media="(max-width: 320px)"> -->
-            <img class="list__img" src="img/tort/tort12.png" alt="">
-          </picture>
-          <ul class="style-one">
-            <li class="style-three"> 1 698 р</li>
-            <li class="style-four">/ 10 штук</li>
-          </ul>
-          <p class="section-seven-description2">Пироженное чудо</p>
-          <p class="section-six-description3">Крем, какао</p>
-          <a href="" class="list__button button">В корзину</a>
-          <ul class="star">
-            <li class="star1"></li>
-            <li class="star2"></li>
-            <li class="star3"></li>
-            <li class="star4"></li>
-            <li class="star5"></li>
-          </ul>
+        <li class="product card">
+          <a href="/pages/card__one.html">
+            <div href="#" class="product__image">
+              <div class="product__switch image-switch">
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="img/tort/test__slide/slide2.png" alt="Макбук"></div>
+                </div>
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="img/tort/test__slide/slide1.png" alt="Макбук"></div>
+                </div>
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="img/tort/test__slide/slide3.png" alt="Макбук"></div>
+                </div>
+              </div>
+              <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+            </div>
+            <div class="list__shift">
+              <h3 class="list__Card__name card__item">Вкусный тортик</h3>
+            </div>
+          </a>
+          <div class="list__right__weight">
+            <p class="list__compound card__item">крем | какао</p>
+            <p class="list__right__weighttext card__item">Вес товара, г</p>
+            <ul class="list__weight__list flex card__item">
+              <li class="list__weight__link tabs-nav__btn--active" data-path="ten" tabindex="0">400</li>
+              <li class="list__weight__link" data-path="six" tabindex="0">600</li>
+              <li class="list__weight__link" data-path="seven" tabindex="0">800</li>
+              <li class="list__weight__link" data-path="eight" tabindex="0">1000</li>
+              <li class="list__weight__link" data-path="nine" tabindex="0">2000</li>
+            </ul>
+            <div class="flex card__item">
+              <div class="list__weight__container tabs-item tabs-item--active" data-target="ten"><div class="card__item">599 руб.</div>
+                <div class="list__right__article">
+                  <p class="list__right__articletext">Артикул: 1953</p>
+                </div>
+              </div>
+              <div class="list__weight__container tabs-item" data-target="six"><div class="card__item">799 руб.</div>
+                <div class="list__right__article">
+                  <p class="list__right__articletext">Артикул: 1954</p>
+                </div>
+              </div>
+              <div class="list__weight__container tabs-item" data-target="seven"><div class="card__item">1199 руб.</div>
+                <div class="list__right__article">
+                  <p class="list__right__articletext">Артикул: 1955</p>
+                </div>
+              </div>
+              <div class="list__weight__container tabs-item" data-target="eight"><div class="card__item">1599 руб.</div>
+                <div class="list__right__article">
+                  <p class="list__right__articletext">Артикул: 1956</p>
+                </div>
+              </div><div class="list__weight__container tabs-item" data-target="nine"><div class="card__item">2890 руб.</div>
+                <div class="list__right__article">
+                  <p class="list__right__articletext">Артикул: 1957</p>
+                </div>
+              </div>
+            </div>
+            <div class="list__card__more flex aic card__item">
+            <a class="list__more__details" href="/pages/card__one.html">Подробнее</a>
+            <svg width="11" class="svg-one" height="18" viewBox="0 0 11 18" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.49998 1.00002L9.27815 8.7782L1.49998 16.5564" stroke="#028e15" stroke-width="2" />
+            </svg>
+          </div>
+            <div class="list__button flex">
+              <a class="list__righ__button button" href="#">В корзину</a>
+              <a class="list__righ__buttontwo buttontwo" href="">Купить</a>
+            </div>
+          </div>
         </li>
-        <li class="test">
-          <picture>
-            <source srcset="amg/hero1024-3.png" media="(max-width: 1024px)">
-            <source srcset="amg/hero768-3.png" media="(max-width: 768px)">
-            <source srcset="amg/hero320-3.png" media="(max-width: 320px)">
-            <img class="list__img" src="img/tort/tort13.jpg" alt="">
-          </picture>
-          <ul class="style-one">
-            <li class="style-three"> 1 698 р</li>
-            <li class="style-four">/ 10 штук</li>
-          </ul>
-          <p class="section-seven-description2">Пироженное чудо</p>
-          <p class="section-six-description3">Крем, какао</p>
-          <a href="" class="list__button button">В корзину</a>
-          <ul class="star">
-            <li class="star1"></li>
-            <li class="star2"></li>
-            <li class="star3"></li>
-            <li class="star4"></li>
-            <li class="star5"></li>
-          </ul>
+        <li class="product card">
+          <a href="/pages/card__one.html">
+            <div href="#" class="product__image">
+              <div class="product__switch image-switch">
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="img/tort/test__slide/slide2.png" alt="Макбук"></div>
+                </div>
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="img/tort/test__slide/slide1.png" alt="Макбук"></div>
+                </div>
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="img/tort/test__slide/slide3.png" alt="Макбук"></div>
+                </div>
+              </div>
+              <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+            </div>
+            <div class="list__shift">
+              <h3 class="list__Card__name card__item">Вкусный тортик</h3>
+            </div>
+          </a>
+          <div class="list__right__weight">
+            <p class="list__compound card__item">крем | какао</p>
+            <p class="list__right__weighttext card__item">Вес товара, г</p>
+            <ul class="list__weight__list flex card__item">
+              <li class="list__weight__link tabs-nav__btn--active" data-path="ten" tabindex="0">400</li>
+              <li class="list__weight__link" data-path="six" tabindex="0">600</li>
+              <li class="list__weight__link" data-path="seven" tabindex="0">800</li>
+              <li class="list__weight__link" data-path="eight" tabindex="0">1000</li>
+              <li class="list__weight__link" data-path="nine" tabindex="0">2000</li>
+            </ul>
+            <div class="flex card__item">
+              <div class="list__weight__container tabs-item tabs-item--active" data-target="ten"><div class="card__item">599 руб.</div>
+                <div class="list__right__article">
+                  <p class="list__right__articletext">Артикул: 1953</p>
+                </div>
+              </div>
+              <div class="list__weight__container tabs-item" data-target="six"><div class="card__item">799 руб.</div>
+                <div class="list__right__article">
+                  <p class="list__right__articletext">Артикул: 1954</p>
+                </div>
+              </div>
+              <div class="list__weight__container tabs-item" data-target="seven"><div class="card__item">1199 руб.</div>
+                <div class="list__right__article">
+                  <p class="list__right__articletext">Артикул: 1955</p>
+                </div>
+              </div>
+              <div class="list__weight__container tabs-item" data-target="eight"><div class="card__item">1599 руб.</div>
+                <div class="list__right__article">
+                  <p class="list__right__articletext">Артикул: 1956</p>
+                </div>
+              </div><div class="list__weight__container tabs-item" data-target="nine"><div class="card__item">2890 руб.</div>
+                <div class="list__right__article">
+                  <p class="list__right__articletext">Артикул: 1957</p>
+                </div>
+              </div>
+            </div>
+            <div class="list__card__more flex aic card__item">
+            <a class="list__more__details" href="/pages/card__one.html">Подробнее</a>
+            <svg width="11" class="svg-one" height="18" viewBox="0 0 11 18" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.49998 1.00002L9.27815 8.7782L1.49998 16.5564" stroke="#028e15" stroke-width="2" />
+            </svg>
+          </div>
+            <div class="list__button flex">
+              <a class="list__righ__button button" href="#">В корзину</a>
+              <a class="list__righ__buttontwo buttontwo" href="">Купить</a>
+            </div>
+          </div>
         </li>
-        <li class="test">
-          <picture>
-            <source srcset="amg/hero1024-3.png" media="(max-width: 1024px)">
-            <source srcset="amg/hero768-3.png" media="(max-width: 768px)">
-            <source srcset="amg/hero320-3.png" media="(max-width: 320px)">
-            <img class="list__img" src="img/tort/торт14.jpg" alt="">
-          </picture>
-          <ul class="style-one">
-            <li class="style-three"> 1 698 р</li>
-            <li class="style-four">/ 10 штук</li>
-          </ul>
-          <p class="section-seven-description2">Пироженное чудо</p>
-          <p class="section-six-description3">Крем, какао</p>
-          <a href="" class="list__button button">В корзину</a>
-          <ul class="star">
-            <li class="star1"></li>
-            <li class="star2"></li>
-            <li class="star3"></li>
-            <li class="star4"></li>
-            <li class="star5"></li>
-          </ul>
+        <li class="product card">
+          <a href="/pages/card__one.html">
+            <div href="#" class="product__image">
+              <div class="product__switch image-switch">
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="img/tort/test__slide/slide2.png" alt="Макбук"></div>
+                </div>
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="img/tort/test__slide/slide1.png" alt="Макбук"></div>
+                </div>
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="img/tort/test__slide/slide3.png" alt="Макбук"></div>
+                </div>
+              </div>
+              <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+            </div>
+            <div class="list__shift">
+              <h3 class="list__Card__name card__item">Вкусный тортик</h3>
+            </div>
+          </a>
+          <div class="list__right__weight">
+            <p class="list__compound card__item">крем | какао</p>
+            <p class="list__right__weighttext card__item">Вес товара, г</p>
+            <ul class="list__weight__list flex card__item">
+              <li class="list__weight__link tabs-nav__btn--active" data-path="ten" tabindex="0">400</li>
+              <li class="list__weight__link" data-path="six" tabindex="0">600</li>
+              <li class="list__weight__link" data-path="seven" tabindex="0">800</li>
+              <li class="list__weight__link" data-path="eight" tabindex="0">1000</li>
+              <li class="list__weight__link" data-path="nine" tabindex="0">2000</li>
+            </ul>
+            <div class="flex card__item">
+              <div class="list__weight__container tabs-item tabs-item--active" data-target="ten"><div class="card__item">599 руб.</div>
+                <div class="list__right__article">
+                  <p class="list__right__articletext">Артикул: 1953</p>
+                </div>
+              </div>
+              <div class="list__weight__container tabs-item" data-target="six"><div class="card__item">799 руб.</div>
+                <div class="list__right__article">
+                  <p class="list__right__articletext">Артикул: 1954</p>
+                </div>
+              </div>
+              <div class="list__weight__container tabs-item" data-target="seven"><div class="card__item">1199 руб.</div>
+                <div class="list__right__article">
+                  <p class="list__right__articletext">Артикул: 1955</p>
+                </div>
+              </div>
+              <div class="list__weight__container tabs-item" data-target="eight"><div class="card__item">1599 руб.</div>
+                <div class="list__right__article">
+                  <p class="list__right__articletext">Артикул: 1956</p>
+                </div>
+              </div><div class="list__weight__container tabs-item" data-target="nine"><div class="card__item">2890 руб.</div>
+                <div class="list__right__article">
+                  <p class="list__right__articletext">Артикул: 1957</p>
+                </div>
+              </div>
+            </div>
+            <div class="list__card__more flex aic card__item">
+            <a class="list__more__details" href="/pages/card__one.html">Подробнее</a>
+            <svg width="11" class="svg-one" height="18" viewBox="0 0 11 18" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.49998 1.00002L9.27815 8.7782L1.49998 16.5564" stroke="#028e15" stroke-width="2" />
+            </svg>
+          </div>
+            <div class="list__button flex">
+              <a class="list__righ__button button" href="#">В корзину</a>
+              <a class="list__righ__buttontwo buttontwo" href="">Купить</a>
+            </div>
+          </div>
         </li>
-        <li class="test">
-          <picture>
-            <source srcset="amg/hero1024-3.png" media="(max-width: 1024px)">
-            <source srcset="amg/hero768-3.png" media="(max-width: 768px)">
-            <source srcset="amg/hero320-3.png" media="(max-width: 320px)">
-            <img class="list__img" src="img/tort/tort15.JPG" alt="">
-          </picture>
-          <ul class="style-one">
-            <li class="style-three"> 1 698 р</li>
-            <li class="style-four">/ 10 штук</li>
-          </ul>
-          <p class="section-seven-description2">Пироженное чудо</p>
-          <p class="section-six-description3">Крем, какао</p>
-          <a href="" class="list__button button">В корзину</a>
-          <ul class="star">
-            <li class="star1"></li>
-            <li class="star2"></li>
-            <li class="star3"></li>
-            <li class="star4"></li>
-            <li class="star5"></li>
-          </ul>
+        <li class="product card">
+          <a href="/pages/card__one.html">
+            <div href="#" class="product__image">
+              <div class="product__switch image-switch">
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="img/tort/test__slide/slide2.png" alt="Макбук"></div>
+                </div>
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="img/tort/test__slide/slide1.png" alt="Макбук"></div>
+                </div>
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="img/tort/test__slide/slide3.png" alt="Макбук"></div>
+                </div>
+              </div>
+              <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+            </div>
+            <div class="list__shift">
+              <h3 class="list__Card__name card__item">Вкусный тортик</h3>
+            </div>
+          </a>
+          <div class="list__right__weight">
+            <p class="list__compound card__item">крем | какао</p>
+            <p class="list__right__weighttext card__item">Вес товара, г</p>
+            <ul class="list__weight__list flex card__item">
+              <li class="list__weight__link tabs-nav__btn--active" data-path="ten" tabindex="0">400</li>
+              <li class="list__weight__link" data-path="six" tabindex="0">600</li>
+              <li class="list__weight__link" data-path="seven" tabindex="0">800</li>
+              <li class="list__weight__link" data-path="eight" tabindex="0">1000</li>
+              <li class="list__weight__link" data-path="nine" tabindex="0">2000</li>
+            </ul>
+            <div class="flex card__item">
+              <div class="list__weight__container tabs-item tabs-item--active" data-target="ten"><div class="card__item">599 руб.</div>
+                <div class="list__right__article">
+                  <p class="list__right__articletext">Артикул: 1953</p>
+                </div>
+              </div>
+              <div class="list__weight__container tabs-item" data-target="six"><div class="card__item">799 руб.</div>
+                <div class="list__right__article">
+                  <p class="list__right__articletext">Артикул: 1954</p>
+                </div>
+              </div>
+              <div class="list__weight__container tabs-item" data-target="seven"><div class="card__item">1199 руб.</div>
+                <div class="list__right__article">
+                  <p class="list__right__articletext">Артикул: 1955</p>
+                </div>
+              </div>
+              <div class="list__weight__container tabs-item" data-target="eight"><div class="card__item">1599 руб.</div>
+                <div class="list__right__article">
+                  <p class="list__right__articletext">Артикул: 1956</p>
+                </div>
+              </div><div class="list__weight__container tabs-item" data-target="nine"><div class="card__item">2890 руб.</div>
+                <div class="list__right__article">
+                  <p class="list__right__articletext">Артикул: 1957</p>
+                </div>
+              </div>
+            </div>
+            <div class="list__card__more flex aic card__item">
+            <a class="list__more__details" href="/pages/card__one.html">Подробнее</a>
+            <svg width="11" class="svg-one" height="18" viewBox="0 0 11 18" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.49998 1.00002L9.27815 8.7782L1.49998 16.5564" stroke="#028e15" stroke-width="2" />
+            </svg>
+          </div>
+            <div class="list__button flex">
+              <a class="list__righ__button button" href="#">В корзину</a>
+              <a class="list__righ__buttontwo buttontwo" href="">Купить</a>
+            </div>
+          </div>
         </li>
-        <li class="test">
-          <picture>
-            <source srcset="amg/hero1024-3.png" media="(max-width: 1024px)">
-            <source srcset="amg/hero768-3.png" media="(max-width: 768px)">
-            <source srcset="amg/hero320-3.png" media="(max-width: 320px)">
-            <img class="list__img" src="img/tort/tort16.JPG" alt="">
-          </picture>
-          <ul class="style-one">
-            <li class="style-three"> 1 698 р</li>
-            <li class="style-four">/ 10 штук</li>
-          </ul>
-          <p class="section-seven-description2">Пироженное чудо</p>
-          <p class="section-six-description3">Крем, какао</p>
-          <a href="" class="list__button button">В корзину</a>
-          <ul class="star">
-            <li class="star1"></li>
-            <li class="star2"></li>
-            <li class="star3"></li>
-            <li class="star4"></li>
-            <li class="star5"></li>
-          </ul>
+        <li class="product card">
+          <a href="/pages/card__one.html">
+            <div href="#" class="product__image">
+              <div class="product__switch image-switch">
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="img/tort/test__slide/slide2.png" alt="Макбук"></div>
+                </div>
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="img/tort/test__slide/slide1.png" alt="Макбук"></div>
+                </div>
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="img/tort/test__slide/slide3.png" alt="Макбук"></div>
+                </div>
+              </div>
+              <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+            </div>
+            <div class="list__shift">
+              <h3 class="list__Card__name card__item">Вкусный тортик</h3>
+            </div>
+          </a>
+          <div class="list__right__weight">
+            <p class="list__compound card__item">крем | какао</p>
+            <p class="list__right__weighttext card__item">Вес товара, г</p>
+            <ul class="list__weight__list flex card__item">
+              <li class="list__weight__link tabs-nav__btn--active" data-path="ten" tabindex="0">400</li>
+              <li class="list__weight__link" data-path="six" tabindex="0">600</li>
+              <li class="list__weight__link" data-path="seven" tabindex="0">800</li>
+              <li class="list__weight__link" data-path="eight" tabindex="0">1000</li>
+              <li class="list__weight__link" data-path="nine" tabindex="0">2000</li>
+            </ul>
+            <div class="flex card__item">
+              <div class="list__weight__container tabs-item tabs-item--active" data-target="ten"><div class="card__item">599 руб.</div>
+                <div class="list__right__article">
+                  <p class="list__right__articletext">Артикул: 1953</p>
+                </div>
+              </div>
+              <div class="list__weight__container tabs-item" data-target="six"><div class="card__item">799 руб.</div>
+                <div class="list__right__article">
+                  <p class="list__right__articletext">Артикул: 1954</p>
+                </div>
+              </div>
+              <div class="list__weight__container tabs-item" data-target="seven"><div class="card__item">1199 руб.</div>
+                <div class="list__right__article">
+                  <p class="list__right__articletext">Артикул: 1955</p>
+                </div>
+              </div>
+              <div class="list__weight__container tabs-item" data-target="eight"><div class="card__item">1599 руб.</div>
+                <div class="list__right__article">
+                  <p class="list__right__articletext">Артикул: 1956</p>
+                </div>
+              </div><div class="list__weight__container tabs-item" data-target="nine"><div class="card__item">2890 руб.</div>
+                <div class="list__right__article">
+                  <p class="list__right__articletext">Артикул: 1957</p>
+                </div>
+              </div>
+            </div>
+            <div class="list__card__more flex aic card__item">
+            <a class="list__more__details" href="/pages/card__one.html">Подробнее</a>
+            <svg width="11" class="svg-one" height="18" viewBox="0 0 11 18" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.49998 1.00002L9.27815 8.7782L1.49998 16.5564" stroke="#028e15" stroke-width="2" />
+            </svg>
+          </div>
+            <div class="list__button flex">
+              <a class="list__righ__button button" href="#">В корзину</a>
+              <a class="list__righ__buttontwo buttontwo" href="">Купить</a>
+            </div>
+          </div>
         </li>
-        <li class="test">
-          <picture>
-            <source srcset="amg/hero1024-3.png" media="(max-width: 1024px)">
-            <source srcset="amg/hero768-3.png" media="(max-width: 768px)">
-            <source srcset="amg/hero320-3.png" media="(max-width: 320px)">
-            <img class="list__img" src="img/tort/tort17.JPG" alt="">
-          </picture>
-          <ul class="style-one">
-            <li class="style-three"> 1 698 р</li>
-            <li class="style-four">/ 10 штук</li>
-          </ul>
-          <p class="section-seven-description2">Пироженное чудо</p>
-          <p class="section-six-description3">Крем, какао</p>
-          <a href="" class="list__button button">В корзину</a>
-          <ul class="star">
-            <li class="star1"></li>
-            <li class="star2"></li>
-            <li class="star3"></li>
-            <li class="star4"></li>
-            <li class="star5"></li>
-          </ul>
+        <li class="product card">
+          <a href="/pages/card__one.html">
+            <div href="#" class="product__image">
+              <div class="product__switch image-switch">
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="img/tort/test__slide/slide2.png" alt="Макбук"></div>
+                </div>
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="img/tort/test__slide/slide1.png" alt="Макбук"></div>
+                </div>
+                <div class="image-switch__item">
+                  <div class="image-switch__img"><img src="img/tort/test__slide/slide3.png" alt="Макбук"></div>
+                </div>
+              </div>
+              <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+            </div>
+            <div class="list__shift">
+              <h3 class="list__Card__name card__item">Вкусный тортик</h3>
+            </div>
+          </a>
+          <div class="list__right__weight">
+            <p class="list__compound card__item">крем | какао</p>
+            <p class="list__right__weighttext card__item">Вес товара, г</p>
+            <ul class="list__weight__list flex card__item">
+              <li class="list__weight__link tabs-nav__btn--active" data-path="ten" tabindex="0">400</li>
+              <li class="list__weight__link" data-path="six" tabindex="0">600</li>
+              <li class="list__weight__link" data-path="seven" tabindex="0">800</li>
+              <li class="list__weight__link" data-path="eight" tabindex="0">1000</li>
+              <li class="list__weight__link" data-path="nine" tabindex="0">2000</li>
+            </ul>
+            <div class="flex card__item">
+              <div class="list__weight__container tabs-item tabs-item--active" data-target="ten"><div class="card__item">599 руб.</div>
+                <div class="list__right__article">
+                  <p class="list__right__articletext">Артикул: 1953</p>
+                </div>
+              </div>
+              <div class="list__weight__container tabs-item" data-target="six"><div class="card__item">799 руб.</div>
+                <div class="list__right__article">
+                  <p class="list__right__articletext">Артикул: 1954</p>
+                </div>
+              </div>
+              <div class="list__weight__container tabs-item" data-target="seven"><div class="card__item">1199 руб.</div>
+                <div class="list__right__article">
+                  <p class="list__right__articletext">Артикул: 1955</p>
+                </div>
+              </div>
+              <div class="list__weight__container tabs-item" data-target="eight"><div class="card__item">1599 руб.</div>
+                <div class="list__right__article">
+                  <p class="list__right__articletext">Артикул: 1956</p>
+                </div>
+              </div><div class="list__weight__container tabs-item" data-target="nine"><div class="card__item">2890 руб.</div>
+                <div class="list__right__article">
+                  <p class="list__right__articletext">Артикул: 1957</p>
+                </div>
+              </div>
+            </div>
+            <div class="list__card__more flex aic card__item">
+            <a class="list__more__details" href="/pages/card__one.html">Подробнее</a>
+            <svg width="11" class="svg-one" height="18" viewBox="0 0 11 18" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.49998 1.00002L9.27815 8.7782L1.49998 16.5564" stroke="#028e15" stroke-width="2" />
+            </svg>
+          </div>
+            <div class="list__button flex">
+              <a class="list__righ__button button" href="#">В корзину</a>
+              <a class="list__righ__buttontwo buttontwo" href="">Купить</a>
+            </div>
+          </div>
         </li>
-        <li class="test">
-          <picture>
-            <source srcset="amg/hero1024-3.png" media="(max-width: 1024px)">
-            <source srcset="amg/hero768-3.png" media="(max-width: 768px)">
-            <source srcset="amg/hero320-3.png" media="(max-width: 320px)">
-            <img class="list__img__one" src="img/tort/tort18.JPG" alt="">
-          </picture>
-          <div class="options">Посмотреть все варианты</div>
-          <ul class="style-one">
-            <li class="style-three"> 1 698 р</li>
-            <li class="style-four">/ 10 штук</li>
-          </ul>
-          <p class="section-seven-description2">Пироженное чудо</p>
-          <p class="section-six-description3">Крем, какао</p>
-          <a href="" class="list__button button">В корзину</a>
-          <ul class="star">
-            <li class="star1"></li>
-            <li class="star2"></li>
-            <li class="star3"></li>
-            <li class="star4"></li>
-            <li class="star5"></li>
-          </ul>
-        </li>
+
         <li class="test none">
           <picture>
             <source srcset="amg/hero1024-3.png" media="(max-width: 1024px)">
@@ -646,322 +908,6 @@
           </ul>
         </li>
       </ul>
-
-    </div>
-
-    <div class="container">
-      <h2 class="second__level__heading">Пироженное</h2>
-      <ul class="list__cakes__two">
-        <li class="test">
-          <picture>
-            <source srcset="amg/hero1024-3.png" media="(max-width: 1024px)">
-            <source srcset="amg/hero768-3.png" media="(max-width: 768px)">
-            <source srcset="amg/hero320-3.png" media="(max-width: 320px)">
-            <img class="list__img" src="img/cake/cake1.jpg" alt="">
-          </picture>
-          <ul class="style-one">
-            <li class="style-three"> 1 698 р</li>
-            <li class="style-four">/ 10 штук</li>
-          </ul>
-          <p class="section-seven-description2">Пироженное чудо</p>
-          <p class="section-six-description3">Крем, какао</p>
-          <a href="" class="list__button button">В корзину</a>
-          <ul class="star">
-            <li class="star1"></li>
-            <li class="star2"></li>
-            <li class="star3"></li>
-            <li class="star4"></li>
-            <li class="star5"></li>
-          </ul>
-        </li>
-        <li class="test">
-          <picture>
-            <source srcset="amg/hero1024-3.png" media="(max-width: 1024px)">
-            <source srcset="amg/hero768-3.png" media="(max-width: 768px)">
-            <source srcset="amg/hero320-3.png" media="(max-width: 320px)">
-            <img class="list__img" src="img/cake/cake2.jpg" alt="">
-          </picture>
-          <ul class="style-one">
-            <li class="style-three"> 1 698 р</li>
-            <li class="style-four">/ 10 штук</li>
-          </ul>
-          <p class="section-seven-description2">Пироженное чудо</p>
-          <p class="section-six-description3">Крем, какао</p>
-          <a href="" class="list__button button">В корзину</a>
-          <ul class="star">
-            <li class="star1"></li>
-            <li class="star2"></li>
-            <li class="star3"></li>
-            <li class="star4"></li>
-            <li class="star5"></li>
-          </ul>
-        </li>
-        <li class="test">
-          <picture>
-            <source srcset="amg/hero1024-3.png" media="(max-width: 1024px)">
-            <source srcset="amg/hero768-3.png" media="(max-width: 768px)">
-            <source srcset="amg/hero320-3.png" media="(max-width: 320px)">
-            <img class="list__img" src="img/cake/cake3.jpg" alt="">
-          </picture>
-          <ul class="style-one">
-            <li class="style-three"> 1 698 р</li>
-            <li class="style-four">/ 10 штук</li>
-          </ul>
-          <p class="section-seven-description2">Пироженное чудо</p>
-          <p class="section-six-description3">Крем, какао</p>
-          <a href="" class="list__button button">В корзину</a>
-          <ul class="star">
-            <li class="star1"></li>
-            <li class="star2"></li>
-            <li class="star3"></li>
-            <li class="star4"></li>
-            <li class="star5"></li>
-          </ul>
-        </li>
-        <li class="test">
-          <picture>
-            <source srcset="amg/hero1024-3.png" media="(max-width: 1024px)">
-            <source srcset="amg/hero768-3.png" media="(max-width: 768px)">
-            <source srcset="amg/hero320-3.png" media="(max-width: 320px)">
-            <img class="list__img" src="img/cake/cake4.jpg" alt="">
-          </picture>
-          <ul class="style-one">
-            <li class="style-three"> 1 698 р</li>
-            <li class="style-four">/ 10 штук</li>
-          </ul>
-          <p class="section-seven-description2">Пироженное чудо</p>
-          <p class="section-six-description3">Крем, какао</p>
-          <a href="" class="list__button button">В корзину</a>
-          <ul class="star">
-            <li class="star1"></li>
-            <li class="star2"></li>
-            <li class="star3"></li>
-            <li class="star4"></li>
-            <li class="star5"></li>
-          </ul>
-        </li>
-        <li class="test">
-          <picture>
-            <source srcset="amg/hero1024-3.png" media="(max-width: 1024px)">
-            <source srcset="amg/hero768-3.png" media="(max-width: 768px)">
-            <source srcset="amg/hero320-3.png" media="(max-width: 320px)">
-            <img class="list__img" src="img/cake/cake5.jpg" alt="">
-          </picture>
-          <ul class="style-one">
-            <li class="style-three"> 1 698 р</li>
-            <li class="style-four">/ 10 штук</li>
-          </ul>
-          <p class="section-seven-description2">Пироженное чудо</p>
-          <p class="section-six-description3">Крем, какао</p>
-          <a href="" class="list__button button">В корзину</a>
-          <ul class="star">
-            <li class="star1"></li>
-            <li class="star2"></li>
-            <li class="star3"></li>
-            <li class="star4"></li>
-            <li class="star5"></li>
-          </ul>
-        </li>
-        <li class="test">
-          <picture>
-            <source srcset="amg/hero1024-3.png" media="(max-width: 1024px)">
-            <source srcset="amg/hero768-3.png" media="(max-width: 768px)">
-            <source srcset="amg/hero320-3.png" media="(max-width: 320px)">
-            <img class="list__img" src="img/cake/cake6.jpg" alt="">
-          </picture>
-          <ul class="style-one">
-            <li class="style-three"> 1 698 р</li>
-            <li class="style-four">/ 10 штук</li>
-          </ul>
-          <p class="section-seven-description2">Пироженное чудо</p>
-          <p class="section-six-description3">Крем, какао</p>
-          <a href="" class="list__button button">В корзину</a>
-          <ul class="star">
-            <li class="star1"></li>
-            <li class="star2"></li>
-            <li class="star3"></li>
-            <li class="star4"></li>
-            <li class="star5"></li>
-          </ul>
-        </li>
-        <li class="test">
-          <picture>
-            <source srcset="amg/hero1024-3.png" media="(max-width: 1024px)">
-            <source srcset="amg/hero768-3.png" media="(max-width: 768px)">
-            <source srcset="amg/hero320-3.png" media="(max-width: 320px)">
-            <img class="list__img" src="img/cake/cake7.jpg" alt="">
-          </picture>
-          <ul class="style-one">
-            <li class="style-three"> 449 р</li>
-            <li class="style-four">/ 5 штук</li>
-          </ul>
-          <p class="section-seven-description2">Пироженное Макаронс</p>
-          <p class="section-six-description3">Крем, какао</p>
-          <a href="" class="list__button button">В корзину</a>
-          <ul class="star">
-            <li class="star1"></li>
-            <li class="star2"></li>
-            <li class="star3"></li>
-            <li class="star4"></li>
-            <li class="star5"></li>
-          </ul>
-        </li>
-        <li class="test">
-          <picture>
-            <source srcset="amg/hero1024-3.png" media="(max-width: 1024px)">
-            <source srcset="amg/hero768-3.png" media="(max-width: 768px)">
-            <source srcset="amg/hero320-3.png" media="(max-width: 320px)">
-            <img class="list__img__one" src="img/cake/cake9.jpg" alt="">
-          </picture>
-          <div class="">Посмотреть все варианты</div>
-          <ul class="style-one">
-            <li class="style-three"> 1 698 р</li>
-            <li class="style-four">/ 10 штук</li>
-          </ul>
-          <p class="section-seven-description2">Пироженное чудо</p>
-          <p class="section-six-description3">Крем, какао</p>
-          <a href="" class="list__button button">В корзину</a>
-          <ul class="star">
-            <li class="star1"></li>
-            <li class="star2"></li>
-            <li class="star3"></li>
-            <li class="star4"></li>
-            <li class="star5"></li>
-          </ul>
-        </li>
-        <li class="test none ">
-          <picture>
-            <source srcset="amg/hero1024-3.png" media="(max-width: 1024px)">
-            <source srcset="amg/hero768-3.png" media="(max-width: 768px)">
-            <source srcset="amg/hero320-3.png" media="(max-width: 320px)">
-            <img class="list__img" src="img/cake/cake10.jpg" alt="">
-          </picture>
-          <ul class="style-one">
-            <li class="style-three"> 1 698 р</li>
-            <li class="style-four">/ 10 штук</li>
-          </ul>
-          <p class="section-seven-description2">Пироженное чудо</p>
-          <p class="section-six-description3">Крем, какао</p>
-          <a href="" class="list__button button">В корзину</a>
-          <ul class="star">
-            <li class="star1"></li>
-            <li class="star2"></li>
-            <li class="star3"></li>
-            <li class="star4"></li>
-            <li class="star5"></li>
-          </ul>
-        </li>
-        <li class="test none">
-          <picture>
-            <source srcset="amg/hero1024-3.png" media="(max-width: 1024px)">
-            <source srcset="amg/hero768-3.png" media="(max-width: 768px)">
-            <source srcset="amg/hero320-3.png" media="(max-width: 320px)">
-            <img class="list__img" src="img/cake/cake11.jpg" alt="">
-          </picture>
-          <ul class="style-one">
-            <li class="style-three"> 1 698 р</li>
-            <li class="style-four">/ 10 штук</li>
-          </ul>
-          <p class="section-seven-description2">Пироженное чудо</p>
-          <p class="section-six-description3">Крем, какао</p>
-          <a href="" class="list__button button">В корзину</a>
-          <ul class="star">
-            <li class="star1"></li>
-            <li class="star2"></li>
-            <li class="star3"></li>
-            <li class="star4"></li>
-            <li class="star5"></li>
-          </ul>
-        </li>
-        <li class="test none">
-          <picture>
-            <source srcset="amg/hero1024-3.png" media="(max-width: 1024px)">
-            <source srcset="amg/hero768-3.png" media="(max-width: 768px)">
-            <source srcset="amg/hero320-3.png" media="(max-width: 320px)">
-            <img class="list__img" src="img/cake/cake12.jpg" alt="">
-          </picture>
-          <ul class="style-one">
-            <li class="style-three"> 1 698 р</li>
-            <li class="style-four">/ 10 штук</li>
-          </ul>
-          <p class="section-seven-description2">Пироженное чудо</p>
-          <p class="section-six-description3">Крем, какао</p>
-          <a href="" class="list__button button">В корзину</a>
-          <ul class="star">
-            <li class="star1"></li>
-            <li class="star2"></li>
-            <li class="star3"></li>
-            <li class="star4"></li>
-            <li class="star5"></li>
-          </ul>
-        </li>
-        <li class="test none">
-          <picture>
-            <source srcset="amg/hero1024-3.png" media="(max-width: 1024px)">
-            <source srcset="amg/hero768-3.png" media="(max-width: 768px)">
-            <source srcset="amg/hero320-3.png" media="(max-width: 320px)">
-            <img class="list__img" src="img/cake/cake13.jpg" alt="">
-          </picture>
-          <ul class="style-one">
-            <li class="style-three"> 1 698 р</li>
-            <li class="style-four">/ 10 штук</li>
-          </ul>
-          <p class="section-seven-description2">Пироженное чудо</p>
-          <p class="section-six-description3">Крем, какао</p>
-          <a href="" class="list__button button">В корзину</a>
-          <ul class="star">
-            <li class="star1"></li>
-            <li class="star2"></li>
-            <li class="star3"></li>
-            <li class="star4"></li>
-            <li class="star5"></li>
-          </ul>
-        </li>
-        <li class="test none">
-          <picture>
-            <source srcset="amg/hero1024-3.png" media="(max-width: 1024px)">
-            <source srcset="amg/hero768-3.png" media="(max-width: 768px)">
-            <source srcset="amg/hero320-3.png" media="(max-width: 320px)">
-            <img class="list__img" src="img/cake/cake14.jpg" alt="">
-          </picture>
-          <ul class="style-one">
-            <li class="style-three"> 1 698 р</li>
-            <li class="style-four">/ 10 штук</li>
-          </ul>
-          <p class="section-seven-description2">Пироженное чудо</p>
-          <p class="section-six-description3">Крем, какао</p>
-          <a href="" class="list__button button">В корзину</a>
-          <ul class="star">
-            <li class="star1"></li>
-            <li class="star2"></li>
-            <li class="star3"></li>
-            <li class="star4"></li>
-            <li class="star5"></li>
-          </ul>
-        </li>
-        <li class="test none">
-          <picture>
-            <source srcset="amg/hero1024-3.png" media="(max-width: 1024px)">
-            <source srcset="amg/hero768-3.png" media="(max-width: 768px)">
-            <source srcset="amg/hero320-3.png" media="(max-width: 320px)">
-            <img class="list__img" src="img/cake/cake15.jpg" alt="">
-          </picture>
-          <ul class="style-one">
-            <li class="style-three"> 1 698 р</li>
-            <li class="style-four">/ 10 штук</li>
-          </ul>
-          <p class="section-seven-description2">Пироженное чудо</p>
-          <p class="section-six-description3">Крем, какао</p>
-          <a href="" class="list__button button">В корзину</a>
-          <ul class="star">
-            <li class="star1"></li>
-            <li class="star2"></li>
-            <li class="star3"></li>
-            <li class="star4"></li>
-            <li class="star5"></li>
-          </ul>
-        </li>
-      </ul>
     </div>
   </section>
   <section class="contacts">
@@ -978,7 +924,7 @@
             <strong class="contact__bold">Телефоны</strong>
             <a href="" class="contact__tell">+7 (902) 769-51-55</a>
           </li>
-          <a href="" class="contact__tell__two">+7 (987) 605-45-55</a>
+          <a href="" class="contact__tell__two">+7 (902) 178-06-82</a>
           <li class="contacts__line"></li>
           <li class="no__flex">
             <strong class="contact__bold contact__email">E-mail</strong>
@@ -1114,7 +1060,7 @@
       </div>
 
       <div class="footer__form">
-        <h2 class="footer__title title">Оставить заявку</h2>
+        <h2 class="footer__title title">Служба потдержки</h2>
         <form action="https://jsonplaceholder.typicode.com/posts">
           <input type="text" placeholder="Фамилия, имя и отчество*">
           <input type="text" placeholder="E-mail*">
@@ -1123,7 +1069,7 @@
           <div class="footer__line"></div>
         </form>
       </div>
-      <p class="footer__text">Каждый наш торт - это произведение искусства, созданное специально для вас. Закажите
+      <p class="footer__text display__three">Каждый наш торт - это произведение искусства, созданное специально для вас. Закажите
         уникальный десерт прямо сейчас на сайте tortik-vip.ru и удивите своих близких неповторимым вкусом и изысканным
         оформлением торта. Вкусите настоящую натуральность в каждой крошке нашего торта и погрузитесь в мир сладостей
         вместе с нами!</p>
