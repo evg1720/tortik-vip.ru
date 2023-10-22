@@ -1,3 +1,5 @@
+/* --- header --- */
+
 .header {
   padding: 1px 0;
   background-color: var(--white);
@@ -152,3 +154,4 @@ width: auto;
 .display{
   display: none;
 }
+

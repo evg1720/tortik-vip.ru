@@ -13,29 +13,58 @@
     /* ---hero--- */
 
     .hero__title{
-        font-size: calc( (100vw - 320px)/(1400 - 320) * (70 - 20) + 20px);
+        font-size: calc( (100vw - 320px)/(1400 - 320) * (70 - 16) + 16px);
         line-height: calc( (100vw - 320px)/(1400 - 320) * (85 - 20) + 20px);
-        margin-left: calc( (100vw - 768px)/(1920 - 768) * (100 - 50) + 50px);
+        margin-left: calc( (100vw - 320px)/(1400 - 320) * (100 - 50) + 50px);
+        margin-top: calc( (100vw - 320px)/(1400 - 320) * (50 - 30) + 30px);
     }
+
     .hero__description{
-        font-size: calc( (100vw - 320px)/(1400 - 320) * (24 - 12) + 12px);
-        margin-top: calc( (100vw - 768px)/(1400 - 768) * (280 - 160) + 160px);
-        margin-left: calc( (100vw - 768px)/(1400 - 7680) * (100 - 50) + 50px);
+        font-size: calc( (100vw - 320px)/(1400 - 320) * (24 - 14) + 14px);
+        margin-top: calc( (100vw - 768px)/(1400 - 768) * (280 - 165) + 165px);
+        margin-left: calc( (100vw - 320px)/(1400 - 320) * (100 - 50) + 50px);
     }
     .list__weight__link:not(:first-child) {
         margin-left: calc( (100vw - 768px)/(1400 - 768) * (20 - 3) + 3px);
     }
+    .list__weight__link{
+        font-size: calc( (100vw - 1024px)/(1400 - 1024) * (14 - 13) + 13px);
+    }
     .list__cakes {
-        grid-template-columns: repeat(4, calc( (100vw - 1024px)/(1400 - 1024) * (300 - 240) + 240px));
-        gap: calc((100vw - 1024px)/(1400 - 1024) * (15 - 5) + 5px);
+        grid-template-columns: repeat(4, calc( (100vw - 1024px)/(1400 - 1024) * (300 - 235) + 235px));
     }
     .list__button {
-        gap: calc((100vw - 1024px)/(1400 - 1024) * (25 - 5) + 5px);;
+        gap: calc((100vw - 769px)/(1400 - 769) * (25 - 10) + 10px);
     }
     .list__item .item__question{
-        font-size: calc((100vw - 1024px)/(1400 - 1024) * (32 - 18) + 18px);
+        font-size: calc((100vw - 320px)/(1400 - 320) * (24 - 16) + 16px);
+        line-height: calc((100vw - 320px)/(1400 - 320) * (80 - 25) + 25px);
     }
     .list__item__text{
-        font-size: calc((100vw - 1024px)/(1400 - 1024) * (16 - 14) + 14px);
+        font-size: calc((100vw - 320px)/(1400 - 320) * (16 - 14) + 14px);
+    }
+    .list__righ__button, .list__righ__buttontwo {
+        padding: 0.8em calc((100vw - 1024px)/(1400 - 1024) * (1.2 - 0.8) + 0.8em);
+    }
+    .second__level__heading{
+        margin-top: 40px;
+    }
+    .footer__text{
+        font-size: calc((100vw - 320px)/(1400 - 320) * (16 - 14) + 14px); 
+    }
+    /* .footer__form {
+        max-width: calc((100vw - 1025px)/(1400 - 1025) * (400 - 300) + 300px);
+    } */
+    .footer__title {
+        font-size: calc((100vw - 320px)/(1400 - 320) * (40 - 16) + 16px);
+    }
+    .footer__link{
+        font-size: calc((100vw - 320px)/(1400 - 320) * (18 - 14) + 14px);
+    }
+    footer .container{
+        gap: calc((100vw - 1025px)/(1400 - 1025) * (40 - 20) + 20px);
+    }
+    .footer__form input{
+        font-size: calc((100vw - 1025px)/(1400 - 1025) * (16 - 14) + 14px); 
     }
 }

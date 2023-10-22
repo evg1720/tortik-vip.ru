@@ -106,4 +106,16 @@
   .display__three{
     display: none;
   }
+  footer{
+    margin-top: 50px;
+  }
+  footer .container{
+    justify-content: center;
+  }
+  .footer__smail {
+    margin-top: calc((100vw - 320px)/(1024 - 320) * (20 - 0) + 0px);
+}
+.footer__indent{
+  margin-top: 5px;
+}
 }

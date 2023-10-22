@@ -235,3 +235,7 @@ input {
 .update__icon {
   width: 30px;
 }
+
+.form__style__captcha{
+  gap: 20px;
+}
