@@ -57,6 +57,11 @@ body {
   cursor: pointer;
   text-decoration: none;
 }
+.form__button-disabled {
+  background-color: var(--gray-gray);
+  pointer-events: none;
+}
+
 
 .form__input:focus~.form__label,
 .form__input:not(:placeholder-shown)~.form__label {
