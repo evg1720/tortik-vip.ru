@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="../pages/registerform.css">
     <link rel="stylesheet" href="../style/varialdes.css">
     <link rel="stylesheet" href="../style/main.css">
-    <script defer src="../pages/captcha.js"></script>
     <title>Регистрация</title>
 </head>
 
@@ -31,7 +30,7 @@
             </div>
         </div>
         <div class="form__group flex">
-            <input class="form__input" placeholder=" " type="text">
+            <input class="form__input" placeholder=" " type="text" id="username_input">
             <label class="form__label" for="">Имя пользователя</label>
         </div>
         <div class="form__group">
@@ -78,7 +77,7 @@
                 <input class="form__input" placeholder="" type="text" id="submit">
                 <label class="form__label" for="">Введите код</label>
             </div>
-            <div class="inline" onclick="genrate()">
+            <div class="inline" >
                 <img class="update__icon" src="/img/update.svg" alt="">
             </div>
             <div class="form__group flex inline" id="image" selectable="False"></div>
@@ -92,8 +91,9 @@
                 </span>
             </label>
         </div>
-        <a class="form__button button" id="btn" onclick="printmsg()">Зарегистрироваться</a>
+        <a class="form__button button" id="btn" onclick="printmsg()" href="https://ya.ru/">Зарегистрироваться</a>
     </form>
+    <script src="registerForm.js"></script>
 </body>
 
 </html>
