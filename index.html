@@ -10,10 +10,26 @@
   <link rel="icon" href="../img/logo__img.png">
   <script defer src="script/swiper-main.js"></script>
   <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="pages/login.css">
   <title>Document</title>
 </head>
 
 <body>
+  <section class="login none">
+    <form class="login__form" action="/user/login/" method="post">
+      <p class="login__form__close">x</p>
+      <h1 class="login__form__title">Вход</h1>
+      <div class="login__form__group flex">
+          <input class="login__form__input formInput" id="login__tel" placeholder=" " type="login" required>
+          <label class="login__form__label" for="login__tel">Телефон</label>
+      </div>
+      <div class="login__form__group flex">
+          <input class="login__form__input formInput" placeholder=" " type="password" required id="password">
+          <label class="login__form__label" for="password">Пароль</label>
+      </div>
+      <a href="#" class="login__form__button button" id="login__btn">Войти</a>
+  </form>
+  </section>
   <header class="header">
     <div class="container">
       <div class="header__container">
@@ -48,8 +64,8 @@
         <div class="contact__one">
 
           <div class="header__bottoms display__two">
-            <a class="button__indent__a button button__indent" id="open__search__form" href="#">Вход</a>
-            <a class="button__indent__a button button__indent" id="open__search__formtwo" href="#">Регистрация</a>
+            <a class="button__indent__a button button__indent" id="login" href="#">Вход</a>
+            <a class="button__indent__a button button__indent" id="registration" href="#">Регистрация</a>
           </div>
         </div>
       </div>
@@ -1133,6 +1149,7 @@
     <script src="script/burger.js"></script>
     <script type="module" defer src="script/product.js"></script>
     <script type="module" defer src="script/script.js"></script>
+    <script type="module" defer src="/pages/login.js"></script>
 </body>
 
 </html>

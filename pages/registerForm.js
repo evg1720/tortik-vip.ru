@@ -1,5 +1,5 @@
 class RegisterForm {
-    forbiddenWords = ["bad"]
+    forbiddenWords = ["архипиздрит", "басран", "бздение",]
     constructor(form) {
         this.isValidState = false;
 
@@ -45,7 +45,7 @@ class RegisterForm {
     }
 
     isValid() {
-        let inputValueList = this.split(this.userName.value, [" ", "-", "_"]);
+        let inputValueList = this.split(this.userName.value, [" ", "-", "_", "/", "#"]);
         let forbiddenWordsList = this.forbiddenWords.filter(x => inputValueList.includes(x));
         if (!this.consentProcessingOfPersonalData.checked || 
             forbiddenWordsList.length > 0 ||
