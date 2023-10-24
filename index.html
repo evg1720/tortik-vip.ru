@@ -11,6 +11,8 @@
   <script defer src="script/swiper-main.js"></script>
   <link rel="stylesheet" href="style/style.css">
   <link rel="stylesheet" href="pages/login.css">
+  <link rel="stylesheet" href="pages/registerform.css">
+  <link rel="stylesheet" href="../pages/captcha_generation.css">
   <title>Document</title>
 </head>
 
@@ -30,6 +32,88 @@
       <a href="#" class="login__form__button button" id="login__btn">Войти</a>
   </form>
   </section>
+  <section class="register none">
+    <form class="register__form" action="/user/login/" method="post">
+      <h1 class="register__form__title">Регистрация</h1>
+      <div class="register__form__style flex">
+          <div class="register__form__group flex">
+              <input class="register__form__input" placeholder=" " type="text">
+              <label class="register__form__label" for="">Имя</label>
+          </div>
+          <div class="register__form__group flex">
+              <input class="register__form__input" placeholder=" " type="text">
+              <label class="register__form__label" for="">Фамилия</label>
+          </div>
+          <div class="register__form__group flex">
+              <input class="register__form__input" placeholder=" " type="text">
+              <label class="register__form__label" for="">Отчество</label>
+          </div>
+      </div>
+      <div class="register__form__group flex">
+          <input class="register__form__input" placeholder=" " type="text" id="username_input">
+          <label class="register__form__label" for="">Имя пользователя</label>
+      </div>
+      <div class="register__form__group">
+          <input class="register__form__input" placeholder=" " type="date" name="trip-start">
+          <label class="register__form__label" for="">Дата рождения</label>
+      </div>
+      <h4 class="register__form__title__gender">Пол</h4>
+      <div class="register__form__style register__form__style__gender flex ">
+          <div class="radio">
+              <input class="radio__input" name="male" type="radio" id="radio_1">
+              <label class="radio__label" for="radio_1">Мужской</label>
+          </div>
+          <div class="radio">
+              <input class="radio__input" name="male" type="radio" id="radio_2" checked>
+              <label class="radio__label" for="radio_2">Женский</label>
+          </div>
+      </div>
+      <div class="register__form__style flex">
+          <div class="register__form__group flex">
+              <input class="register__form__input" placeholder="" type="tel">
+              <label class="register__form__label" for="">Телефон</label>
+          </div>
+          <div class="register__form__group flex">
+              <input class="register__form__input" placeholder=" " type="email">
+              <label class="register__form__label" for="">E-mail:</label>
+          </div>
+      </div>
+      <div class="register__form__group flex">
+          <input class="register__form__input" placeholder=" " type="text">
+          <label class="register__form__label" for="">Город</label>
+      </div>
+      <div class="register__form__style flex">
+          <div class="register__form__group flex">
+              <input class="register__form__input" placeholder=" " type="password">
+              <label class="register__form__label" for="">Пароль:</label>
+          </div>
+          <div class="register__form__group flex">
+              <input class="register__form__input" placeholder=" " type="password">
+              <label class="register__form__label" for="">Подтверждение пароля:</label>
+          </div>
+      </div>
+      <div class="register__form__style__captcha flex" >
+          <div class="register__form__group flex inline" id="user-input">
+              <input class="register__form__input" placeholder="" type="text" id="submit">
+              <label class="register__form__label" for="">Введите код</label>
+          </div>
+          <div class="inline" >
+              <img class="update__icon" src="/img/update.svg" alt="">
+          </div>
+          <div class="register__form__group flex inline" id="image" selectable="False"></div>
+         <p id="key"></p>  
+      </div>
+      <div class="register__form__checkbox">
+          <label class="checkbox" for="checkbox">
+              <input class="checkbox__inp" type="checkbox" id="checkbox" checked>
+              <span class="checkbox__inner">
+                  Я согласен на обработку персональных данных
+              </span>
+          </label>
+      </div>
+      <a class="register__form__button button" id="btn" onclick="printmsg()" href="https://ya.ru/">Зарегистрироваться</a>
+  </form>
+  </section>
   <header class="header">
     <div class="container">
       <div class="header__container">
@@ -47,13 +131,13 @@
               <a href="../pages/about__max.html" class="header__item__link">О нас
               </a>
             </li>
-            <li class="header__item"><a href="../pages/projects__max.html" class="header__item__link">
-                Проекты
+            <li class="header__item"><a href="../pages/exclusive.html" class="header__item__link">
+                Эксклюзив
               </a></li>
-            <li class="header__item"><a href="../pages/reviews.html" class="header__item__link">
-                Отзывы
+            <li class="header__item"><a href="../pages/partners.html" class="header__item__link">
+                Партнеры
               </a></li>
-            <li class="header__item"><a href="#" class="header__item__link">
+            <li class="header__item"><a href="../pages/contacts__map.html" class="header__item__link">
                 Контакты
               </a></li>
             <li class="header__item display"><a class="header__item__link" href="">Вход и регистрация</a></li>
@@ -62,7 +146,6 @@
         <button class="header__recycle"><a href="#"><img class="header__recycle__svg" src="img/recycle.svg"
               alt=""></a></button>
         <div class="contact__one">
-
           <div class="header__bottoms display__two">
             <a class="button__indent__a button button__indent" id="login" href="#">Вход</a>
             <a class="button__indent__a button button__indent" id="registration" href="#">Регистрация</a>
@@ -1092,9 +1175,9 @@
         <div class="footer__indent">
           <nav class="footer__list">
             <ul class="footer__info">
-              <li class="footer__item"><a href="#" class="footer__link">О нас</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Проекты</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Отзывы</a></li>
+              <li class="footer__item"><a href="../pages/about__max.html" class="footer__link">О нас</a></li>
+              <li class="footer__item"><a href="../pages/exclusive.html" class="footer__link">Эксклюзив</a></li>
+              <li class="footer__item"><a href="../pages/partners.html" class="footer__link">Партнёры</a></li>
             </ul>
             <ul>
               <li class="footer__item"><a href="#" class="footer__link">Договор оферты</a></li>
@@ -1150,6 +1233,7 @@
     <script type="module" defer src="script/product.js"></script>
     <script type="module" defer src="script/script.js"></script>
     <script type="module" defer src="/pages/login.js"></script>
+    <script type="module" defer src="/script/registerForm.js"></script>
 </body>
 
 </html>

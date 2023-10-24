@@ -5,7 +5,7 @@
     background-color: var(--white);
     border-radius: 0px 0px 32px 32px;
     box-shadow: 0 0 10px var(--black);
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 
 .header__container {
@@ -161,8 +161,57 @@
 }
 
 /* --- about__max --- */
+.mb-20 {
+    margin-bottom: 20px;
+}
+.contacts__map__container{
+    align-items: center;
+    gap: 50px;
+}
 
-
+.contacts__map__name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contacts__map__left{
+    width: 50%;
+}
+.contacts__map__img{
+    width: 100%;
+}
+.contact__map__bold {
+    position: relative;
+    color: var(--black-color);
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'MullerBold';
+    font-weight: normal;
+  }
+  .contact__map__info {
+    position: relative;
+    padding-right: 42px;
+    font-family: 'MullerMedium';
+    font-weight: 400;
+    /*толщина шрифта*/
+    font-size: 16px;
+    /*размер шрифта*/
+    font-style: normal;
+    font-weight: normal;
+    line-height: 32px;
+  }
+  .contact__map__tell {
+  position: relative;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--gold-color);
+  font-family: 'MullerMedium';
+}
+.gap__tel{
+gap: 50px;
+}
 /* --- footer --- */
 
 footer {
