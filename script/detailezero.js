@@ -3,7 +3,7 @@
 let tabsBtn = document.querySelectorAll('.list__weight__link');
 let tabsItem = document.querySelectorAll('.list__weight__container');
 
-console.log(tabsBtn, tabsItem);
+
 
 tabsBtn.forEach(function (element) {
   element.addEventListener('click', function (e) {

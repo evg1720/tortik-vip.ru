@@ -32,7 +32,7 @@ class MoreList {
 
     create_close(list, clouse_item) {
         let div = document.createElement("li")
-        div.className = "test list__close"
+        div.className = "list__close"
         div.innerHTML = clouse_item
         document.querySelector(list).append(div)
         this.list = document.querySelectorAll(`${list} > li`)
