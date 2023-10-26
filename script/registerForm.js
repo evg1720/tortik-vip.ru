@@ -76,10 +76,8 @@ class RegisterForm {
     }
 }
 
+let form = document.querySelector(".form")
 
-window.onload = function() {
-    let form = document.querySelector(".register__form")
-    console.log(form);
-    
-    let a = new RegisterForm(form); 
-}
+console.log(form);
+
+let a = new RegisterForm(form); 

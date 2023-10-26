@@ -1,11 +1,22 @@
-body {
+/* body {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+} */
+.register {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background: rgba(0, 0, 0, .8);
 }
 
-.form {
+.register__form {
+  margin: auto;
   width: 500px;
   padding: 20px;
   border-radius: 10px;
@@ -13,28 +24,30 @@ body {
   letter-spacing: 1px;
   font-family: 'MullerRegular';
   font-size: 16px;
+  background: var(--white);
 }
 
-.form__title {
+.register__form__title {
   text-align: center;
   padding: 0 0 20px 0;
 }
 
-.form__group {
+.register__form__group {
   position: relative;
   margin-bottom: 30px;
 }
 
-.form__label {
+.register__form__label {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
+  pointer-events: none;
   color: var(--dark-brown);
   transition: 0.3s;
+
 }
 
-.form__input {
+.register__form__input {
   font-family: 'MullerBold';
   font-size: 18px;
   font-weight: 800;
@@ -47,35 +60,36 @@ body {
   transition: 0.3s;
 }
 
-.form__input:focus {
+.register__form__input:focus {
   border-bottom: 1px solid var(--brown-cold);
 }
 
-.form__button {
+.register__form__button {
   display: block;
   padding: 0.8em 1.2em;
   cursor: pointer;
   text-decoration: none;
 }
-.form__button-disabled {
+
+.register__form__button-disabled {
   background-color: var(--gray-gray);
   pointer-events: none;
 }
 
 
-.form__input:focus~.form__label,
-.form__input:not(:placeholder-shown)~.form__label {
+.register__form__input:focus~.register__form__label,
+.register__form__input:not(:placeholder-shown)~.register__form__label {
   top: -18px;
   font-size: 12px;
   color: var(--gray-gray);
 }
 
-.form__style {
+.register__form__style {
   justify-content: space-between;
   gap: 30px;
 }
 
-.form__gender {
+.register__form__gender {
   -webkit-appearance: none;
   appearance: none;
   position: absolute;
@@ -84,11 +98,11 @@ body {
   margin-bottom: 20px;
 }
 
-.form__title__gender {
+.register__form__title__gender {
   margin-bottom: 20px;
 }
 
-.form__gender input:nth-child(2) {
+.register__form__gender input:nth-child(2) {
   margin-left: 40px;
 }
 
@@ -152,7 +166,7 @@ body {
   opacity: 1;
 }
 
-.form__style__gender {
+.register__form__style__gender {
   justify-content: flex-start;
   gap: 50px;
 }
@@ -239,4 +253,8 @@ input {
 
 .update__icon {
   width: 30px;
+}
+
+.register__form__style__captcha {
+  gap: 20px;
 }

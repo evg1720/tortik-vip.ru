@@ -13,6 +13,7 @@
 @import "componets/contacts.css";
 @import "componets/footer.css";
 @import "componets/slide__carts.css";
+@import "style/captcha_generation.css";
 
 /*-----------Media------------*/
 
@@ -20,9 +21,8 @@
 @import 'media/1024.css';
 @import 'media/1023.css';
 @import 'media/768.css';
-@import 'media/684.css';
-@import 'media/460.css';
-@import 'media/320.css';
+@import 'media/576.css';
+
 
 /*-----------Admin------------*/
 
@@ -40,3 +40,6 @@ body {
     background-color: #ebebeb;
 }
 
+/* *{
+    outline: 1px solid red;
+} */

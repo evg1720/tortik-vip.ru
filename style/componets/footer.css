@@ -2,7 +2,7 @@ footer {
   width: 100%;
   background: black;
   color: gray;
-  padding: 25px 0 ;
+  padding: 25px 0;
   margin-top: var(--section-gap);
 }
 
@@ -137,8 +137,7 @@ footer .container {
 }
 
 .footer-button {
-  width: 160px;
-  margin-left: 125px;
+  width: inherit;
   padding: 0.6em 1.2em;
 }
 
@@ -149,9 +148,11 @@ footer .container {
 .footer__logomini {
   display: none;
 }
-.footer__indent{
+
+.footer__indent {
   margin-top: 20px;
 }
-.footer__logo{
+
+.footer__logo {
   margin-top: 20px;
 }

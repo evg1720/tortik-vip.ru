@@ -102,7 +102,7 @@ p {
 }
 
 .second__level__heading {
-    margin-top: 70px;
+    /* margin-top: 70px; */
     margin-bottom: 20px;
 }
 
@@ -111,4 +111,9 @@ p {
 }
 .flex.aic{
     align-items: center;
+}
+.form__label-top {
+    top: -18px !important;
+    font-size: 12px;
+    color: var(--gray) !important;
 }

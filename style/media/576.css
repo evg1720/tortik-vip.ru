@@ -1,0 +1,99 @@
+@media (max-width: 576px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .swiper__img {
+        border-radius: 16px;
+        height: 200px;
+    }
+
+    .header__logo__img {
+        height: 50px;
+    }
+
+    .hero__description {
+        line-height: calc((100vw - 320px)/(576 - 320) * (29 - 15) + 15px);
+    }
+
+    .list__cakes {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .list__right__weight {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list__righ__button,
+    .list__righ__buttontwo {
+        padding: 0.8em 1.2em;
+    }
+
+    .list__weight__link:not(:first-child) {
+        margin-left: 20px;
+    }
+
+    .list__right__weight,
+    .list__shift {
+        padding-left: 0px;
+    }
+
+    .list__button {
+        gap: 15px;
+    }
+
+    .list__weight__link {
+        font-size: 16px;
+    }
+
+    .contact {
+        min-width: 100%;
+    }
+
+    .contact__picture {
+        display: none;
+    }
+
+    .contact__address {
+        margin-bottom: 20px;
+    }
+
+    .contacts__line {
+        margin-bottom: 30px;
+    }
+
+    footer .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__form {
+        max-width: fit-content;
+    }
+
+    .footer__menu {
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__smail {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .footer__logo {
+        margin-top: 0;
+        justify-content: center;
+    }
+
+    .footer__title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
