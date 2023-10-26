@@ -87,3 +87,6 @@ padding: 0 21px;
 .swiper-button-next {
     color: var(--gray) !important;
 }
+.swiper-scrollbar{
+    display: none;
+}

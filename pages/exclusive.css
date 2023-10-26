@@ -195,8 +195,7 @@ body {
   font-size: 20px;
   grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
-  gap: 15px;
-  margin-top: 30px;
+  gap: 30px;
 }
 
 .test>li:nth-child(n) {

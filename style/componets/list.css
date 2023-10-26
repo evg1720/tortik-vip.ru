@@ -1,9 +1,9 @@
 .list__cakes {
   display: grid;
   font-size: 20px;
-  grid-template-columns: repeat(4, 300px);
+  grid-template-columns: repeat(4, 1fr);
   justify-content: space-between;
-  gap: 15px;
+  gap: 30px;
   margin-top: 30px;
 }
 
@@ -347,7 +347,7 @@
 
 .list__right__weight,
 .list__shift {
-  padding-left: 20px;
+  padding: 0 20px;
 }
 
 .list__more__details {
@@ -425,4 +425,51 @@
 
 .card__item {
   margin-bottom: 10px;
+}
+.list__star{
+  width: 18px;
+}
+.list__star:hover{
+  background-color: red;
+  transition: .3s;
+}
+.list__star__number{
+  color: var(--black-color);
+  font-weight: 700;
+  font-size: 16px;
+  font-family: 'MullerBold';
+  font-weight: normal;
+}
+.list__reviews{
+  justify-content: space-between;
+}
+
+.list__link__item:not(:first-child) {
+  margin-left: 5px;
+}
+.list__link__rating{
+  display: inline-block;
+  color: var(--black-color);
+  font-weight: 700;
+  font-size: 16px;
+  font-family: 'MullerBold';
+  font-weight: normal;
+  margin-top: 2px;
+}
+.list__link__reviews{
+  font-family: 'MullerRegular';
+  font-size: 16px;
+  color: var(--light-gold);
+}
+.list__link__reviews:hover{
+  color: var(--brown-cold);
+  transition: 0.3s;
+}
+.list__link__reviews:active {
+  border-bottom: 2px solid var(--black);
+  color: var(--black);
+}
+.mt-2{
+  margin-top: 2px;
+  
 }

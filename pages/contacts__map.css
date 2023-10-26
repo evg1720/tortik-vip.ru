@@ -179,6 +179,7 @@
 }
 .contacts__map__img{
     width: 100%;
+    border-radius: 16px;
 }
 .contact__map__bold {
     position: relative;

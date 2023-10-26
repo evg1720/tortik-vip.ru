@@ -94,27 +94,32 @@
           <li class="main__weight__link" data-path="four" tabindex="0">1000</li>
           <li class="main__weight__link" data-path="five" tabindex="0">2000</li>
         </ul>
-        <div class="main__weight__container tabs-item tabs-item--active" data-target="one"><div class="card__item__two">599 руб.</div>
+        <div class="main__weight__container tabs-item tabs-item--active" data-target="one">
+          <div class="card__item__two">599 руб.</div>
           <div class="main__right__article">
             <p class="main__right__articletext">Артикул: 1953</p>
           </div>
         </div>
-        <div class="main__weight__container tabs-item" data-target="two"><div class="card__item__two">799 руб.</div>
+        <div class="main__weight__container tabs-item" data-target="two">
+          <div class="card__item__two">799 руб.</div>
           <div class="main__right__article">
             <p class="main__right__articletext">Артикул: 1954</p>
           </div>
         </div>
-        <div class="main__weight__container tabs-item" data-target="three"><div class="card__item__two">1199 руб.</div>
+        <div class="main__weight__container tabs-item" data-target="three">
+          <div class="card__item__two">1199 руб.</div>
           <div class="main__right__article">
             <p class="main__right__articletext">Артикул: 1955</p>
           </div>
         </div>
-        <div class="main__weight__container tabs-item" data-target="four"><div class="card__item__two">1599 руб.</div>
+        <div class="main__weight__container tabs-item" data-target="four">
+          <div class="card__item__two">1599 руб.</div>
           <div class="main__right__article">
             <p class="main__right__articletext">Артикул: 1956</p>
           </div>
         </div>
-        <div class="main__weight__container tabs-item" data-target="five"><div class="card__item__two">2890 руб.</div>
+        <div class="main__weight__container tabs-item" data-target="five">
+          <div class="card__item__two">2890 руб.</div>
           <div class="main__right__article">
             <p class="main__right__articletext">Артикул: 1957</p>
           </div>
@@ -130,12 +135,34 @@
           заманивший меня города знаках дорогу. Далеко-далеко за словесными горами в стране гласных и согласных, живут
           рыбные тексты. Алфавит за выйти, вопрос путь текста ему города, взобравшись решила ты свое подзаголовок
           рекламных маленький лучше залетают над наш составитель.
-          Дал встретил вершину несколько своего вдали буквоград гор если от всех наш, деревни имени коварных речью
-          реторический рекламных строчка текстами на берегу. Океана переулка скатился гор, свой коварных всемогущая его
-          всеми там.</p>
+        </p>
       </div>
     </section>
   </main>
+  <section class="reviews">
+ <div class="container">
+    <div class="reviews__swiper__line"></div>
+    <div class="reviews__name">
+      <h2 id="reviews__test">Оставьте отзыв по этому заказу</h2>
+      <h3>Пожалуйста, оцените этот заказ</h3>
+    </div>
+    <div class="reviews__rating" data-total-value="0">
+      <div class="reviews__rating__item" data-item-value="5">★</div>
+      <div class="reviews__rating__item" data-item-value="4">★</div>
+      <div class="reviews__rating__item" data-item-value="3">★</div>
+      <div class="reviews__rating__item" data-item-value="2">★</div>
+      <div class="reviews__rating__item" data-item-value="1">★</div>
+    </div>
+    <form action="https://jsonplaceholder.typicode.com/posts">
+      <textarea class="reviews__textarea" placeholder="Сообщение"></textarea>
+      <div class="raviews__file">
+      <input class="inputfile" type="file" name="file" id="file" data-multiple-caption="{count} файлов выбрано" multiple>
+      <label for="file"><span>Добавить фото</span></label>
+    </div>
+      <a class="footer-button button">Оставить отзыв</a>
+    </form>
+  </div>
+  </section>
   <footer>
     <div class="container footer">
       <div class="footer__menu">
@@ -212,6 +239,8 @@
     });
   </script>
   <script src="/script/detaile.js"></script>
+  <script src="/script/star.js"></script>
+  <script src="/script/file__add.js"></script>
 </body>
 
 </html>
