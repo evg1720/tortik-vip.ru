@@ -154,7 +154,8 @@
 .list__more:not(.onclick) ul,
 .list__more:not(.onclick) p,
 .list__more:not(.onclick) a,
-.list__more:not(.onclick) img {
+.list__more:not(.onclick) img,
+.list__more:not(.onclick) .list__right__weight {
   display: none !important;
 }
 
@@ -164,9 +165,7 @@
   cursor: pointer;
 }
 
-.list__cakes li.onclick>div {
-  display: none;
-}
+
 
 .list__more:not(.onclick) {
   background: url("../../img/logo__three.svg") no-repeat;
@@ -213,11 +212,13 @@
   font-weight: normal;
 }
 
-.list__more>div,
+
 .list__close p {
   position: absolute;
-  bottom: 25px;
+  height: fit-content;
+  top: auto;
   left: 14px;
+  bottom: 25px;
   color: #8f5151;
   font-family: 'MullerRegular';
   font-weight: 500;
