@@ -15,7 +15,7 @@ class RegisterForm {
 
         this.consentProcessingOfPersonalData = this.form.querySelector(".checkbox__inp")
 
-        this.submitBtn = this.form.querySelector(".form__button")
+        this.submitBtn = this.form.querySelector(".register__form__button")
 
         this.generateCaptcha()
         let self = this;
@@ -76,7 +76,7 @@ class RegisterForm {
     }
 }
 
-let form = document.querySelector(".form")
+let form = document.querySelector(".register__form")
 
 console.log(form);
 

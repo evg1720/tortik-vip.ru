@@ -26,7 +26,32 @@
 .header__logo__img {
   height: 95px;
 }
+.contact__one {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.header__name {
+  text-align: center;
+}
+.header__name__p{
+  font-family: 'MullerRegular';
+  font-size: 16px;
+}
 
+.header__recycle:hover svg path{
+  fill: var(--gold-color);
+  transition: .3s;
+}
+.header__recycle:focus {
+  border-bottom: none;
+  outline: 2px solid var(--orange);
+  outline-offset: 5px;
+}
+
+.header__recycle:active {
+  border-bottom: 1px solid var(--orange-active);
+}
 .header__menu__list {
   display: flex;
   margin-right: 70px;
@@ -71,16 +96,20 @@
   margin: 0;
 
 }
-.header__bottoms{
+
+.header__bottoms {
   display: flex;
+  margin-bottom: 5px;
   gap: 20px;
 }
+
 .button__indent {
-display: flex;
-height: auto;
-width: auto;
+  display: flex;
+  height: auto;
+  width: auto;
 }
-.button__indent__a{
+
+.button__indent__a {
   padding: 10px 35px;
 }
 
@@ -151,7 +180,7 @@ width: auto;
 .contact .top p {
   text-align: right;
 }
-.display{
+
+.display {
   display: none;
 }
-

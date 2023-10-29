@@ -4,6 +4,13 @@
   align-items: center;
   min-height: 100vh;
 } */
+.register__form__close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+}
+
 .register {
   position: fixed;
   top: 0;
@@ -16,6 +23,7 @@
 }
 
 .register__form {
+  position: relative;
   margin: auto;
   width: 500px;
   padding: 20px;
@@ -71,7 +79,7 @@
   text-decoration: none;
 }
 
-.register__form__button-disabled {
+.form__button-disabled {
   background-color: var(--gray-gray);
   pointer-events: none;
 }
@@ -232,6 +240,26 @@
   outline: 1px solid gray;
   outline-offset: 3px;
 } */
+.register__form__close {
+  width: 30px;
+}
+.register__form__close:hover svg path{
+  fill: var(--dark-green);
+  transition: .3s;
+}
+.register__form__close:focus {
+  border-bottom: none;
+  outline: 2px solid var(--gray);
+}
+
+.register__form__close:active svg path{
+  fill: var(--white-green);
+  outline: 2px solid var(--white-green);
+}
+.login__form__title {
+  text-align: center;
+  padding: 0 0 11px 0;
+}
 
 /*----------------------Captcha--------------------------*/
 #image {

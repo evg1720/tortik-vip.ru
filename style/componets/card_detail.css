@@ -209,6 +209,8 @@
     margin-bottom: 20px;
     width: 50%;
     height: 200px;
+    resize: none;
+    padding: 10px;
 }
 
 .reviews__swiper__line {
@@ -256,8 +258,6 @@
 }
 .inputfile + label {
     font-family: 'MullerMedium';
-    margin: 10px auto;
-    font-size: 1.25em;
     color: var(--white);
     background-color: green;
     display: inline-block;
@@ -269,4 +269,8 @@
 .inputfile + label:hover{
     background-color: blueviolet;
     transition: .3s;
+}
+.reviews__item{
+    align-items: center;
+    gap: 30px;
 }

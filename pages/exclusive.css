@@ -191,11 +191,7 @@ body {
 }
 
 .list__cakes {
-  display: grid;
-  font-size: 20px;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: space-between;
-  gap: 30px;
+  grid-template-columns: repeat(2, 1fr) !important;
 }
 
 .test>li:nth-child(n) {

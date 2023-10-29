@@ -88,11 +88,30 @@
     font-size: 16px;
     background: var(--white);
 }
+
 .login__form__close {
     position: absolute;
     right: 15px;
     top: 15px;
     cursor: pointer;
+    width: 30px;
+}
+
+.login__form__close:hover svg path {
+    fill: var(--dark-green);
+    transition: .3s;
+}
+
+.login__form__close:focus svg path {
+    outline: 2px solid var(--brown-cold);
+    outline-offset: 5px;
+}
+
+.login__form__close:active svg path {
+    fill: var(--white-green);
+}
+.login__form__close:active svg{
+    outline: 2px solid var(--white-green);
 }
 .login__form__title {
     text-align: center;

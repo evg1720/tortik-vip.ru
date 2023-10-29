@@ -45,3 +45,14 @@ document.querySelector("#login").addEventListener("click", (e) => {
 document.querySelector(".login__form__close").addEventListener("click", () => {
     document.querySelector(".login").classList.add("none")
 })
+
+document.querySelector("#registration").addEventListener("click", (e) => {
+    e.preventDefault();
+    document.querySelector(".register").classList.remove("none")
+})
+
+
+
+document.querySelector(".register__form__close").addEventListener("click", () => {
+    document.querySelector(".register").classList.add("none")
+})
