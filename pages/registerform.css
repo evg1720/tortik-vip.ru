@@ -80,8 +80,10 @@
 }
 
 .form__button-disabled {
-  background-color: var(--gray-gray);
+  color: var(--dark);
+  background-color: var(--gray);
   pointer-events: none;
+  font-size: 700;
 }
 
 
@@ -248,13 +250,15 @@
   transition: .3s;
 }
 .register__form__close:focus {
-  border-bottom: none;
-  outline: 2px solid var(--gray);
+  outline: 2px solid var(--dark-green);
+  outline-offset: 5px;
 }
 
 .register__form__close:active svg path{
-  fill: var(--white-green);
-  outline: 2px solid var(--white-green);
+  fill: var(--dark-green);
+}
+.register__form__close:active svg {
+  outline: 2px solid var(--dark-green);
 }
 .login__form__title {
   text-align: center;
@@ -281,8 +285,16 @@ input {
 
 .update__icon {
   width: 30px;
+  cursor: pointer;
 }
 
 .register__form__style__captcha {
   gap: 20px;
+}
+.checkbox__agreement{
+  color: var(--white-green);
+}
+.checkbox__agreement:hover{
+  color: var(--light-gold);
+  transition: .3s;
 }

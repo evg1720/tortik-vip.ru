@@ -4,12 +4,6 @@
   align-items: center;
   min-height: 100vh;
 } */
-.mypage__form__close {
-    position: absolute;
-    right: 15px;
-    top: 15px;
-    cursor: pointer;
-}
 
 .mypage {
     position: fixed;
@@ -43,6 +37,10 @@
 .mypage__form__group {
     position: relative;
     margin-bottom: 30px;
+}
+
+.mypage__form__grouptwo {
+    position: relative;
 }
 
 .mypage__form__label {
@@ -170,7 +168,11 @@
 }
 
 .mypage__form__style {
-    gap: 30px;
+    gap: 20px;
+}
+.mypage__form__styletwo {
+    display: inline-grid;
+    gap: 18px;
 }
 
 .mypage__form__style__gender {
@@ -184,6 +186,7 @@
     display: block;
     /* object-fit: cover; */
 }
+
 
 /*-------------Checkbox-----------------*/
 
@@ -247,6 +250,10 @@
   outline-offset: 3px;
 } */
 .mypage__form__close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
     width: 30px;
 }
 
@@ -255,17 +262,19 @@
     transition: .3s;
 }
 
-.mypage__form__close:focus {
-    border-bottom: none;
-    outline: 2px solid var(--gray);
+.mypage__form__close:focus svg path {
+    outline: 2px solid var(--dark-green);
+    outline-offset: 5px;
 }
 
 .mypage__form__close:active svg path {
-    fill: var(--white-green);
-    outline: 2px solid var(--white-green);
+    fill: var(--dark-green);
+}
+.mypage__form__close:active svg{
+    outline: 2px solid var(--dark-green)
 }
 
-.login__form__title {
+.mypage__form__title {
     text-align: center;
     padding: 0 0 11px 0;
 }
@@ -283,7 +292,8 @@
 
 .mypage__link {
     gap: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 28px;
+    align-items: center;
 }
 
 .mypage__photo__link {

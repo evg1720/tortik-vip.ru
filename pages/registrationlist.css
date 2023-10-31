@@ -352,8 +352,8 @@ tbody td {
 }
 
 
-tr:nth-child(even):hover, 
-tr:nth-child(odd):hover {
+tbody tr:nth-child(even):hover, 
+tbody tr:nth-child(odd):hover {
   position: relative;
   z-index: 1;
   background-color: var(--green-y);
