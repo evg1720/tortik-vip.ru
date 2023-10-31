@@ -37,6 +37,7 @@
 	align-items: center;
 	justify-content: center;
 	opacity: 0;
+	transition: .3s;
 }
 
 .image-switch__img img {
@@ -69,7 +70,7 @@
 
 .image-pagination__item {
 	display: block;
-	width: 74px;
+	width: 100px;
 	height: 4px;
 	margin: 0 3px;
 	background-color: #c4c4c4;

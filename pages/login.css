@@ -103,15 +103,15 @@
 }
 
 .login__form__close:focus svg path {
-    outline: 2px solid var(--brown-cold);
+    outline: 2px solid var(--dark-green);
     outline-offset: 5px;
 }
 
 .login__form__close:active svg path {
-    fill: var(--white-green);
+    fill: var(--dark-green);
 }
 .login__form__close:active svg{
-    outline: 2px solid var(--white-green);
+    outline: 2px solid var(--dark-green)
 }
 .login__form__title {
     text-align: center;

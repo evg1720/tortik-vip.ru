@@ -3,15 +3,12 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- пропорция-->
+  <link rel="icon" href="/img/logo__img.png">
+  <link rel="stylesheet" href="/pages/rest/personalization.css">
+  <link rel="stylesheet" href="/style/style.css">
   <title>Document</title>
-  <link rel="icon" href="../img/logo__img.png">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
-  <link rel="stylesheet" href="../style/style.css">
-
-  <script src="../script/swiper.js"></script>
-  <link rel="stylesheet" href="/style/swiper.css">
-  <link rel="stylesheet" href="/style/componets/card_detail.css">
 </head>
 
 <body>
@@ -21,26 +18,27 @@
         <button class="header__burger__btn" id="burger">
           <span></span><span></span><span></span>
         </button>
-        <picture class="header__logo">
-          <source srcset="amg/Logo320.svg" media="(max-width: 320px)">
-          <source srcset="amg/Logo1024.svg" media="(max-width: 1024px)">
-          <a href="../index.html"><img class="header__logo__img" src="/img/header-logonew.png" alt="#"></a>
-        </picture>
+        <a href="#">
+          <picture class="header__logo">
+            <a href="/index.html"><img class="header__logo__img" src="/img/header-logonew.png" alt="#"></a>
+          </picture>
+        </a>
         <nav class="header__menu">
           <ul class="header__menu__list">
             <li class="header__item">
-              <a href="../pages/about__max.html" class="header__item__link">О нас
+              <a href="/pages/about__max.html" class="header__item__link">О нас
               </a>
             </li>
-            <li class="header__item"><a href="../pages/exclusive.html" class="header__item__link">
+            <li class="header__item"><a href="/pages/exclusive.html" class="header__item__link">
                 Эксклюзив
               </a></li>
-            <li class="header__item"><a href="../pages/partners.html" class="header__item__link">
+            <li class="header__item"><a href="/pages/partners.html" class="header__item__link">
                 Партнеры
               </a></li>
-            <li class="header__item"><a href="../pages/contacts__map.html" class="header__item__link">
+            <li class="header__item"><a href="/pages/contacts__map.html" class="header__item__link">
                 Контакты
               </a></li>
+            <li class="header__item display"><a class="header__item__link" href="">Вход и регистрация</a></li>
           </ul>
         </nav>
         <a class="header__recycle" href="#">
@@ -71,128 +69,27 @@
 
           </svg></a>
         <div class="contact__one">
-          <div class="top">
-            <div>
-            </div>
-          </div>
-          <div class="header__botton flex">
-            <button class="header__menu-button button button__indent" id="open__search__form">Вход</button>
-            <button class="header__menu-button button" id="open__search__form">Регистрация</button>
+
+          <div class="header__bottoms display__two">
+            <a class="button__indent__a button button__indent" id="open__search__form" href="#">Вход</a>
+            <a class="button__indent__a button button__indent" id="open__search__formtwo" href="#">Регистрация</a>
           </div>
         </div>
       </div>
     </div>
   </header>
-  <main class="main container">
-    <section class="main__left section_swiper">
-      <div class="swiper-container gallery-top">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide" style="background-image:url(/img/cake/cake1.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(/img/cake/cake2.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(/img/cake/cake3.jpg)"></div>
-        </div>
-        <!-- Add Arrows -->
-        <div class="swiper-button-next swiper-button-white"></div>
-        <div class="swiper-button-prev swiper-button-white"></div>
-      </div>
-      <div class="swiper-container gallery-thumbs">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide" style="background-image:url(/img/cake/cake1.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(/img/cake/cake2.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(/img/cake/cake3.jpg)"></div>
-        </div>
-      </div>
-    </section>
-    <section class="main__right">
-      <div class="main__list__category">
-        <p class="main__right__categorytext">--- Торты ---</p>
-      </div>
-      <h2 class="main__list__name">Вкусный тортик</h2>
-      <div class="main__right__ingredient">
-        <p class="main__list__compound">вишня | какао</p>
-      </div>
-      <div class="main__right__weight">
-        <p class="main__right__weighttext">Вес товара, г</p>
-        <ul class="main__weight__list flex">
-          <li class="main__weight__link tabs-nav__btn--active" data-path="one" tabindex="0">400</li>
-          <li class="main__weight__link" data-path="two" tabindex="0">600</li>
-          <li class="main__weight__link" data-path="three" tabindex="0">800</li>
-          <li class="main__weight__link" data-path="four" tabindex="0">1000</li>
-          <li class="main__weight__link" data-path="five" tabindex="0">2000</li>
-        </ul>
-        <div class="main__weight__container tabs-item tabs-item--active" data-target="one">
-          <div class="card__item__two">599 руб.</div>
-          <div class="main__right__article">
-            <p class="main__right__articletext">Артикул: 1953</p>
-          </div>
-        </div>
-        <div class="main__weight__container tabs-item" data-target="two">
-          <div class="card__item__two">799 руб.</div>
-          <div class="main__right__article">
-            <p class="main__right__articletext">Артикул: 1954</p>
-          </div>
-        </div>
-        <div class="main__weight__container tabs-item" data-target="three">
-          <div class="card__item__two">1199 руб.</div>
-          <div class="main__right__article">
-            <p class="main__right__articletext">Артикул: 1955</p>
-          </div>
-        </div>
-        <div class="main__weight__container tabs-item" data-target="four">
-          <div class="card__item__two">1599 руб.</div>
-          <div class="main__right__article">
-            <p class="main__right__articletext">Артикул: 1956</p>
-          </div>
-        </div>
-        <div class="main__weight__container tabs-item" data-target="five">
-          <div class="card__item__two">2890 руб.</div>
-          <div class="main__right__article">
-            <p class="main__right__articletext">Артикул: 1957</p>
-          </div>
-        </div>
-        <div class="main__button flex">
-          <a class="main__righ__button button" href="#">В корзину</a>
-          <a class="main__righ__buttontwo buttontwo" href="">Купить</a>
-        </div>
-      </div>
-      <div class="main__right__discription">
-        <p class="main__list__text">Далеко-далеко за словесными горами в стране гласных и согласных живут
-          рыбные тексты. Вдали по всей запятых пор, домах живет щеке образ буквенных все деревни они маленький он злых
-          заманивший меня города знаках дорогу. Далеко-далеко за словесными горами в стране гласных и согласных, живут
-          рыбные тексты. Алфавит за выйти, вопрос путь текста ему города, взобравшись решила ты свое подзаголовок
-          рекламных маленький лучше залетают над наш составитель.
-        </p>
-      </div>
-    </section>
-  </main>
-  <section class="reviews">
-    <div class="container">
-      <div class="reviews__swiper__line"></div>
-      <div class="reviews__name">
-        <h2 id="reviews__test">Оставьте отзыв по этому заказу</h2>
-        <h3>Пожалуйста, оцените этот заказ</h3>
-      </div>
-      <div class="reviews__rating" data-total-value="0">
-        <div class="reviews__rating__item" data-item-value="5">★</div>
-        <div class="reviews__rating__item" data-item-value="4">★</div>
-        <div class="reviews__rating__item" data-item-value="3">★</div>
-        <div class="reviews__rating__item" data-item-value="2">★</div>
-        <div class="reviews__rating__item" data-item-value="1">★</div>
-      </div>
-      <form action="https://jsonplaceholder.typicode.com/posts">
-        <textarea class="reviews__textarea" placeholder="Сообщение"></textarea>
-        <div class="reviews__item flex">
-          <div class="raviews__file">
-            <input class="inputfile" type="file" name="file" id="file" data-multiple-caption="{count} файлов выбрано"
-              multiple>
-            <label for="file"><span>Добавить фото</span></label>
-          </div>
-      
-        <div>
-          <a class="footer-button button">Оставить отзыв</a>
-        </div>
-      </div>
-      </form>
+  <section class="about__max">
+    <div class="about__max__container container">
+      <h1 class="about__max__heading md-20">Соглашение на обработку персональных данных</h1>
+      <p class="about__max__description paragraph md-20">Настоящим в соответствии с Федеральным законом № 152-ФЗ «О персональных данных» от 27.07.2006 года Вы подтверждаете свое согласие на обработку компанией Тортик-vip персональных данных: сбор, систематизацию, накопление, хранение, уточнение (обновление, изменение), использование, передачу исключительно в целях продажи программного обеспечения на Ваше имя, как это описано ниже, блокирование, обезличивание, уничтожение. </p>
+      <p class="about__max__description paragraph md-20">Компания Тортик-vip гарантирует конфиденциальность получаемой информации. Обработка персональных данных осуществляется в целях эффективного исполнения заказов, договоров и иных обязательств, принятых компанией Тортик-vip в качестве обязательных к исполнению. </p>
+      <p class="about__max__description paragraph md-20">В случае необходимости предоставления Ваших персональных данных правообладателю, дистрибьютору или реселлеру программного обеспечения в целях регистрации программного обеспечения на ваше имя, вы даёте согласие на передачу ваших персональных данных. Компания Тортик-vip гарантирует, что правообладатель, дистрибьютор или реселлер программного обеспечения осуществляет защиту персональных данных на условиях, аналогичных изложенным в Политике конфиденциальности персональных данных. </p>
+      <p class="about__max__description paragraph md-20">Настоящее согласие распространяется на следующие Ваши персональные данные: фамилия, имя и отчество, адрес электронной почты, почтовый адрес доставки заказов, контактный телефон, платёжные реквизиты.</p>
+      <p class="about__max__description paragraph md-20">Срок действия согласия является неограниченным. Вы можете в любой момент отозвать настоящее согласие, направив письменное уведомления на адрес: evdok68cv@mail.ru с пометкой «Отзыв согласия на обработку персональных данных».</p>
+      <p class="about__max__description paragraph md-20">Обращаем ваше внимание, что отзыв согласия на обработку персональных данных влечёт за собой удаление Вашей учётной записи с Интернет-сайта (https://tortik-vip.ru), а также уничтожение записей, содержащих ваши персональные данные, в системах обработки персональных данных компании Тортик-vip, что может сделать невозможным пользование интернет-сервисами компании Тортик-vip.</p>
+      <p class="about__max__description paragraph md-20">Гарантирую, что представленная мной информация является полной, точной и достоверной, а также что при представлении информации не нарушаются действующее законодательство Российской Федерации, законные права и интересы третьих лиц. Вся представленная информация заполнена мною в отношении себя лично.</p>
+      <p class="about__max__description paragraph md-20">Настоящее согласие действует в течение всего периода хранения персональных данных, если иное не предусмотрено законодательством Российской Федерации.</p>
+      <p class="about__max__description paragraph md-20">Настоящее согласие действует в течение всего периода хранения персональных данных, если иное не предусмотрено законодательством Российской Федерации.</p>
     </div>
   </section>
   <footer>
@@ -202,9 +99,9 @@
         <div class="footer__indent">
           <nav class="footer__list">
             <ul class="footer__info">
-              <li class="footer__item"><a href="../pages/about__max.html" class="footer__link">О нас</a></li>
-              <li class="footer__item"><a href="../pages/exclusive.html" class="footer__link">Эксклюзив</a></li>
-              <li class="footer__item"><a href="../pages/partners.html" class="footer__link">Партнеры</a></li>
+              <li class="footer__item"><a href="/pages/about__max.html" class="footer__link">О нас</a></li>
+              <li class="footer__item"><a href="/pages/exclusive.html" class="footer__link">Эксклюзив</a></li>
+              <li class="footer__item"><a href="/pages/partners.html" class="footer__link">Партнеры</a></li>
             </ul>
             <ul>
               <li class="footer__item"><a href="/pages/rest/offer.html" class="footer__link">Договор оферты</a></li>
@@ -235,7 +132,7 @@
       </div>
 
       <div class="footer__form">
-        <h2 class="footer__title title">Оставить заявку</h2>
+        <h2 class="footer__title title">Служба потдержки</h2>
         <form action="https://jsonplaceholder.typicode.com/posts">
           <input type="text" placeholder="Фамилия, имя и отчество*">
           <input type="text" placeholder="E-mail*">
@@ -244,35 +141,14 @@
           <div class="footer__line"></div>
         </form>
       </div>
-      <p class="footer__text">Каждый наш торт - это произведение искусства, созданное специально для вас. Закажите
+      <p class="footer__text display__three">Каждый наш торт - это произведение искусства, созданное специально для вас.
+        Закажите
         уникальный десерт прямо сейчас на сайте tortik-vip.ru и удивите своих близких неповторимым вкусом и изысканным
         оформлением торта. Вкусите настоящую натуральность в каждой крошке нашего торта и погрузитесь в мир сладостей
         вместе с нами!</p>
     </div>
   </footer>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script>
-    var galleryThumbs = new Swiper('.gallery-thumbs', {
-      spaceBetween: 10,
-      slidesPerView: 4,
-      freeMode: true,
-      watchSlidesVisibility: true,
-      watchSlidesProgress: true,
-    });
-    var galleryTop = new Swiper('.gallery-top', {
-      spaceBetween: 10,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      thumbs: {
-        swiper: galleryThumbs
-      }
-    });
-  </script>
-  <script src="/script/detaile.js"></script>
-  <script src="/script/star.js"></script>
-  <script src="/script/file__add.js"></script>
+  <script src="script/burger.js"></script>
 </body>
 
 </html>
