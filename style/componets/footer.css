@@ -85,10 +85,9 @@ footer .container {
 
 .footer__link {
   color: var(--gray);
-  font-family: 'Montserrat';
+  font-family: 'MullerMedium';
   font-size: 18px;
-  font-weight: 600;
-  line-height: 36px;
+  line-height: 34px;
   text-decoration: none;
   margin-top: 50px;
   padding: 2px 5px;

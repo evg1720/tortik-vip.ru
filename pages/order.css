@@ -341,7 +341,7 @@ tr:nth-child(odd):hover {
   transition: .3s;
 }
 .order__right{
-  max-height: 500px;
+  max-height: 450px;
   overflow-y: scroll;
   padding: 15px;
 }
@@ -428,7 +428,88 @@ tr:nth-child(odd):hover {
 .order__form__close:active svg {
   outline: 2px solid var(--dark-green);
 }
+/*-------------Checkbox-----------------*/
 
+.checkbox {
+  display: inline-block;
+}
+
+.checkbox__inp {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  appearance: none;
+}
+
+.checkbox__inner {
+  display: inline-block;
+  position: relative;
+  font-style: 36px;
+  padding-left: 37px;
+  margin-bottom: 25px;
+
+}
+
+.checkbox__inner::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 28px;
+  height: 14px;
+  border-radius: 9px;
+  background-color: var(--brown-cold);
+  transition: background-color .3s;
+}
+
+.checkbox__inner::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 7px;
+  background-color: var(--white);
+  left: 1px;
+  top: 3px;
+  transition: background-color .3s, left .3s;
+}
+
+.checkbox__inp:checked+.checkbox__inner::before {
+  background-color: var(--white-green);
+}
+
+.checkbox__inp:checked+.checkbox__inner::after {
+  background-color: var(--white);
+  left: 16px;
+}
+
+/* .checkbox__inp:checked+.checkbox__inner:before {
+    outline: 1px solid gray;
+    outline-offset: 3px;
+  } */
+.ordertwo__form__close {
+  width: 30px;
+}
+
+.ordertwo__form__close:hover svg path {
+  fill: var(--dark-green);
+  transition: .3s;
+}
+
+.ordertwo__form__close:focus {
+  outline: 2px solid var(--dark-green);
+  outline-offset: 5px;
+}
+
+.ordertwo__form__close:active svg path {
+  fill: var(--dark-green);
+}
+
+.ordertwo__form__close:active svg {
+  outline: 2px solid var(--dark-green);
+}
 .login__form__title {
   text-align: center;
   padding: 0 0 11px 0;

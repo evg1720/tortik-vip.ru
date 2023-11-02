@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- пропорция-->
+  <link rel="icon" href="/img/logo__img.png">
   <link rel="stylesheet" href="../pages/admin.css">
   <link rel="stylesheet" href="../style/normalize.css">
   <link rel="stylesheet" href="../style/varialdes.css">
@@ -12,47 +13,40 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header mb-100">
     <div class="container">
       <div class="header__container">
         <button class="header__burger__btn" id="burger">
           <span></span><span></span><span></span>
         </button>
-        <picture class="header__logo">
-          <source srcset="amg/Logo320.svg" media="(max-width: 320px)">
-          <source srcset="amg/Logo1024.svg" media="(max-width: 1024px)">
-          <img class="header__logo__img" src="/img/header-logonew.png" alt="#">
-        </picture>
+        <a href="../index.html">
+          <picture class="header__logo">
+            <img class="header__logo__img" src="/img/header-logonew.png" alt="#">
+          </picture>
+        </a>
         <nav class="header__menu">
           <ul class="header__menu__list">
             <li class="header__item">
-              <a href="#" class="header__item__link">О нас
+              <a href="../pages/about__max.html" class="header__item__link">О нас
               </a>
             </li>
-            <li class="header__item"><a href="#" class="header__item__link">
-                Проекты
+            <li class="header__item"><a href="../pages/exclusive.html" class="header__item__link">
+                Эксклюзив
               </a></li>
-            <li class="header__item"><a href="#" class="header__item__link">
-                Отзывы
+            <li class="header__item"><a href="../pages/partners.html" class="header__item__link">
+                Партнеры
               </a></li>
-            <li class="header__item"><a href="#" class="header__item__link">
+            <li class="header__item"><a href="../pages/contacts__map.html" class="header__item__link">
                 Контакты
               </a></li>
+            <li class="header__item display"><a class="header__item__link" href="">Вход и регистрация</a></li>
           </ul>
         </nav>
-        <button class="header__recycle">
-          <a href="/basketapp/">
-            <img class="header__recycle__svg" src="/img/recycle.svg" alt="">
-          </a>
-          <p id="basket_num"></p>
-        </button>
         <div class="contact__one">
-          <div class="header__bottoms">
-            <a class=" button button__indent__a" id="open__search__form" href="/user/logout/">Выход</a>
-            <a class="button__two button__indent__a" id="open__search__form" href="/site-admin/">Админка</a>
-          </div>
-          <div class="header__name">
-            <p class="header__name__p">Юхнов Евгений</p>
+          <div class="header__bottoms display__two">
+            <a class=" button button__indent__a" id="registrationlist__exit" href="/user/logout/">Выход</a>
+            <a class="button__two button__indent__a" id="registrationlist__admin" href="/site-admin/">Админка</a>
+            <!-- <a class="button__indent__a button button__indent" id="registration" href="#">Личный кабинет</a> -->
           </div>
         </div>
       </div>
@@ -61,14 +55,19 @@
 
   <section class="admin">
     <div class="container">
-      <ul class="admin__link">
-        <li class="admin__link__a"><a class="admin__link__item" href="/site-admin/products/">Продукты</a></li>
-        <li class="admin__link__a"><a class="admin__link__item" href="/site-admin/categories/">Категории</a></li>
-        <li class="admin__link__a"><a class="admin__link__item" href="/site-admin/reports">Заявки</a></li>
-      </ul>
-
-
-
+      <div class="admin__container">
+        <h1 class="admin__info mb-30">ADMIN</h1>
+        <ul class="admin__link mb-30">
+          <li class="admin__link__a"><a class="admin__link__item" href="/pages/categories.html">Категории</a></li>
+          <li class="admin__link__a"><a class="admin__link__item" href="/pages/products.html">Продукты</a></li>
+          <li class="admin__link__a"><a class="admin__link__item" href="/pages/orderlist.html">Заказы</a></li>
+        </ul>
+        <ul class="admin__link mb-30">
+          <li class="admin__link__a"><a class="admin__link__item" href="/pages/registrationlist.html">Пользователи</a></li>
+          <li class="admin__link__a"><a class="admin__link__item" href="/pages/support.html">Потдержка</a></li>
+          <li class="admin__link__a"><a class="admin__link__item" href="/pages/promo.html">Промокоды</a></li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -77,13 +76,13 @@
       <div class="footer__menu">
         <nav class="footer__list">
           <ul class="footer__info">
-            <li class="footer__item"> <img class="footer__logo" src="/img/footer-logonew.png" alt=""></li>
-            <li class="footer__item"><a href="#" class="footer__link">О нас</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">Проекты</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">Отзывы</a></li>
+            <li class="footer__item"><a href="/index.html"><img class="footer__logo" src="/img/footer-logonew.png" alt=""></a></li>
+            <li class="footer__item"><a href="../pages/about__max.html" class="footer__link">О нас</a></li>
+            <li class="footer__item"><a href="../pages/exclusive.html" class="footer__link">Эксклюзив</a></li>
+            <li class="footer__item"><a href="../pages/partners.html" class="footer__link">Партнёры</a></li>
             <li class="footer__item"><a href="#" class="footer__link">Мои рецепты</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">Будующие проеты</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">Эксклюзив</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Бизнес план</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Реализация</a></li>
             <li><a href="#" class="ok smail"><svg class="smail__zero" width="60" height="60" viewBox="0 0 60 60"
                   fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path

@@ -14,7 +14,7 @@
 <body>
     <section class="mypage">
         <form class="mypage__form" action="/user/login/" method="post">
-            <div class="mypage__form__close"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+           <a href="/index.html"><div class="mypage__form__close"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="style=stroke">
                         <g id="close">
                             <path id="vector (Stroke)" fill-rule="evenodd" clip-rule="evenodd"
@@ -25,12 +25,13 @@
                                 fill="#000000" />
                         </g>
                     </g>
-                </svg></div>
+                </svg></div></a>
             <h1 class="mypage__form__title">Моя страница</h1>
             <div class="flex mypage__link">
                 <div class="mypage__photo__left">
                     <div class="mypage__photo">
-<label for="mypage__photoi" class="mypage__photo__link" href=""><img src="/img/user.png" class="mypage__photo__img" alt=""></label>
+                        <label for="mypage__photoi" class="mypage__photo__link" href=""><img src="/img/user.svg"
+                                class="mypage__photo__img" alt=""></label>
                     </div>
                     <input type="file" class="none" id="mypage__photoi" accept=".jpg,.jpeg,.svg,.png">
                     <!-- <label for="mypage__photoi" class="button">Изменить фото</label> -->
@@ -101,8 +102,7 @@
           </div> -->
             <a class="mypage__form__button button" id="btn" onclick="printmsg()" href="https://ya.ru/">Сохранить</a>
         </form>
-        <img src="" alt="" class="testt">
-        <script type="module" src="mypageForm.js"></script>
+        <!-- <script type="module" src="mypageForm.js"></script> -->
     </section>
     <script src="my__page.js"></script>
 </body>

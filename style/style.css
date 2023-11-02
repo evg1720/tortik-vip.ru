@@ -43,3 +43,6 @@ body {
 /* *{
     outline: 1px solid red;
 } */
+.mb-30 {
+    margin-bottom: 30px;
+  }

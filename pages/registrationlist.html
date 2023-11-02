@@ -13,47 +13,39 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header mb-20">
         <div class="container">
             <div class="header__container">
                 <button class="header__burger__btn" id="burger">
                     <span></span><span></span><span></span>
                 </button>
-                <picture class="header__logo">
-                    <source srcset="amg/Logo320.svg" media="(max-width: 320px)">
-                    <source srcset="amg/Logo1024.svg" media="(max-width: 1024px)">
-                    <img class="header__logo__img" src="/img/header-logonew.png" alt="#">
-                </picture>
-                <nav class="header__menu">
+                <a href="../index.html">
+                    <picture class="header__logo">
+                      <img class="header__logo__img" src="/img/header-logonew.png" alt="#">
+                    </picture>
+                  </a>
+                  <nav class="header__menu">
                     <ul class="header__menu__list">
-                        <li class="header__item">
-                            <a href="#" class="header__item__link">О нас
-                            </a>
-                        </li>
-                        <li class="header__item"><a href="#" class="header__item__link">
-                                Проекты
-                            </a></li>
-                        <li class="header__item"><a href="#" class="header__item__link">
-                                Отзывы
-                            </a></li>
-                        <li class="header__item"><a href="../pages/contacts__map.html" class="header__item__link">
-                                Контакты
-                            </a></li>
+                      <li class="header__item">
+                        <a href="../pages/about__max.html" class="header__item__link">О нас
+                        </a>
+                      </li>
+                      <li class="header__item"><a href="../pages/exclusive.html" class="header__item__link">
+                          Эксклюзив
+                        </a></li>
+                      <li class="header__item"><a href="../pages/partners.html" class="header__item__link">
+                          Партнеры
+                        </a></li>
+                      <li class="header__item"><a href="../pages/contacts__map.html" class="header__item__link">
+                          Контакты
+                        </a></li>
+                      <li class="header__item display"><a class="header__item__link" href="">Вход и регистрация</a></li>
                     </ul>
-                </nav>
-                <button class="header__recycle">
-                    <a href="/basketapp/">
-                        <img class="header__recycle__svg" src="/img/recycle.svg" alt="">
-                    </a>
-                    <p id="basket_num"></p>
-                </button>
+                  </nav>
                 <div class="contact__one">
                     <div class="header__bottoms">
                         <a class=" button button__indent__a" id="registrationlist__exit" href="/user/logout/">Выход</a>
                         <a class="button__two button__indent__a" id="registrationlist__admin" href="/site-admin/">Админка</a>
-                    </div>
-                    <div class="header__name">
-                        <a class="header__name__p" id="registrationlist__name">Юхнов Евгений</a>
                     </div>
                 </div>
             </div>
@@ -62,16 +54,16 @@
 
     <section class="registrationlist">
         <div class="container">
-            <h1 class="registrationlist__info">Регистрация список</h1>
-            <ul class="registrationlist__link">
+            <h1 class="registrationlist__info mb-20">Пользователи</h1>
+            <ul class="registrationlist__link mb-20">
                 <li class="registrationlist__link__a"><a class="registrationlist__link__itemone"
-                        href="/site-admin/products/">Назад</a>
+                        href="/pages/admin.html">Назад</a>
                 </li>
                 <li class="registrationlist__link__a"><a class="registrationlist__link__item"
                         href="/site-admin/categories/">Добавить
                         категорию</a></li>
             </ul>
-            <div class="table-responsive">
+            <div class="table-responsive mb-20">
                 <table class="registrationlist__table">
                     <thead class="registrationlist__table__header">
                         <tr>
@@ -85,7 +77,6 @@
                             <td class="registrationlist__header__bold">Email@</td>
                             <td class="registrationlist__header__bold">Телефон</td>
                             <td class="registrationlist__header__bold">Город</td>
-                            <td class="registrationlist__header__bold">Пароль</td>
                             <td class="registrationlist__header__bold">-----</td>
                             <td class="registrationlist__header__bold">-----</td>
                             <td class="registrationlist__header__bold">-----</td>
@@ -103,7 +94,7 @@
                             <td class="registrationlist__header__regular">evg1720@yandex.ru</td>
                             <td class="registrationlist__header__regular">89876054555</td>
                             <td class="registrationlist__header__regular">Уфа</td>
-                            <td class="registrationlist__header__regular">Пароль</td>
+        
                             <td class="registrationlist__header__regular"><a class="registrationlist_a"
                                     href="/detail/1/">Просмотреть</a></td>
                             <td class="registrationlist__header__regular"><a class="registrationlist_a"
@@ -122,7 +113,7 @@
                             <td class="registrationlist__header__regular">evg1721@yandex.ru</td>
                             <td class="registrationlist__header__regular">89874587581</td>
                             <td class="registrationlist__header__regular">Уфа</td>
-                            <td class="registrationlist__header__regular">Пароль</td>
+                  
                             <td class="registrationlist__header__regular"><a class="registrationlist_a"
                                     href="/detail/2/">Просмотреть</a></td>
                             <td class="registrationlist__header__regular"><a class="registrationlist_a"
@@ -141,7 +132,7 @@
                             <td class="registrationlist__header__regular">evg1721@yandex.ru</td>
                             <td class="registrationlist__header__regular">89874587581</td>
                             <td class="registrationlist__header__regular">Уфа</td>
-                            <td class="registrationlist__header__regular">Пароль</td>
+       
                             <td class="registrationlist__header__regular"><a class="registrationlist_a"
                                     href="/detail/2/">Просмотреть</a></td>
                             <td class="registrationlist__header__regular"><a class="registrationlist_a"
@@ -160,7 +151,7 @@
                             <td class="registrationlist__header__regular">evg1721@yandex.ru</td>
                             <td class="registrationlist__header__regular">89874587581</td>
                             <td class="registrationlist__header__regular">Уфа</td>
-                            <td class="registrationlist__header__regular">Пароль</td>
+
                             <td class="registrationlist__header__regular"><a class="registrationlist_a"
                                     href="/detail/2/">Просмотреть</a></td>
                             <td class="registrationlist__header__regular"><a class="registrationlist_a"
@@ -169,7 +160,7 @@
                                     href="/site-admin/product_remove/2/">удалить</a></td>
                         </tr>
                         <tr>
-                            <td class="registrationlist__header__regular">3</td>
+                            <td class="registrationlist__header__regular">4</td>
                             <td class="registrationlist__header__regular">Евдокимова</td>
                             <td class="registrationlist__header__regular">Света</td>
                             <td class="registrationlist__header__regular">Николаевна</td>
@@ -179,7 +170,7 @@
                             <td class="registrationlist__header__regular">evg1721@yandex.ru</td>
                             <td class="registrationlist__header__regular">89874587581</td>
                             <td class="registrationlist__header__regular">Уфа</td>
-                            <td class="registrationlist__header__regular">Пароль</td>
+          
                             <td class="registrationlist__header__regular"><a class="registrationlist_a"
                                     href="/detail/2/">Просмотреть</a></td>
                             <td class="registrationlist__header__regular"><a class="registrationlist_a"
@@ -188,7 +179,7 @@
                                     href="/site-admin/product_remove/2/">удалить</a></td>
                         </tr>
                         <tr>
-                            <td class="registrationlist__header__regular">3</td>
+                            <td class="registrationlist__header__regular">5</td>
                             <td class="registrationlist__header__regular">Евдокимова</td>
                             <td class="registrationlist__header__regular">Света</td>
                             <td class="registrationlist__header__regular">Николаевна</td>
@@ -198,7 +189,102 @@
                             <td class="registrationlist__header__regular">evg1721@yandex.ru</td>
                             <td class="registrationlist__header__regular">89874587581</td>
                             <td class="registrationlist__header__regular">Уфа</td>
-                            <td class="registrationlist__header__regular">Пароль</td>
+
+                            <td class="registrationlist__header__regular"><a class="registrationlist_a"
+                                    href="/detail/2/">Просмотреть</a></td>
+                            <td class="registrationlist__header__regular"><a class="registrationlist_a"
+                                    href="/site-admin/product_update/2/">Изменить</a></td>
+                            <td class="registrationlist__header__regular"><a class="registrationlist_a"
+                                    href="/site-admin/product_remove/2/">удалить</a></td>
+                        </tr>
+                        <tr>
+                            <td class="registrationlist__header__regular">6</td>
+                            <td class="registrationlist__header__regular">Евдокимова</td>
+                            <td class="registrationlist__header__regular">Света</td>
+                            <td class="registrationlist__header__regular">Николаевна</td>
+                            <td class="registrationlist__header__regular">Evdok</td>
+                            <td class="registrationlist__header__regular">07.07.1978</td>
+                            <td class="registrationlist__header__regular">Женский</td>
+                            <td class="registrationlist__header__regular">evg1721@yandex.ru</td>
+                            <td class="registrationlist__header__regular">89874587581</td>
+                            <td class="registrationlist__header__regular">Уфа</td>
+
+                            <td class="registrationlist__header__regular"><a class="registrationlist_a"
+                                    href="/detail/2/">Просмотреть</a></td>
+                            <td class="registrationlist__header__regular"><a class="registrationlist_a"
+                                    href="/site-admin/product_update/2/">Изменить</a></td>
+                            <td class="registrationlist__header__regular"><a class="registrationlist_a"
+                                    href="/site-admin/product_remove/2/">удалить</a></td>
+                        </tr>
+                        <tr>
+                            <td class="registrationlist__header__regular">7</td>
+                            <td class="registrationlist__header__regular">Евдокимова</td>
+                            <td class="registrationlist__header__regular">Света</td>
+                            <td class="registrationlist__header__regular">Николаевна</td>
+                            <td class="registrationlist__header__regular">Evdok</td>
+                            <td class="registrationlist__header__regular">07.07.1978</td>
+                            <td class="registrationlist__header__regular">Женский</td>
+                            <td class="registrationlist__header__regular">evg1721@yandex.ru</td>
+                            <td class="registrationlist__header__regular">89874587581</td>
+                            <td class="registrationlist__header__regular">Уфа</td>
+      
+                            <td class="registrationlist__header__regular"><a class="registrationlist_a"
+                                    href="/detail/2/">Просмотреть</a></td>
+                            <td class="registrationlist__header__regular"><a class="registrationlist_a"
+                                    href="/site-admin/product_update/2/">Изменить</a></td>
+                            <td class="registrationlist__header__regular"><a class="registrationlist_a"
+                                    href="/site-admin/product_remove/2/">удалить</a></td>
+                        </tr>
+                        <tr>
+                            <td class="registrationlist__header__regular">8</td>
+                            <td class="registrationlist__header__regular">Евдокимова</td>
+                            <td class="registrationlist__header__regular">Света</td>
+                            <td class="registrationlist__header__regular">Николаевна</td>
+                            <td class="registrationlist__header__regular">Evdok</td>
+                            <td class="registrationlist__header__regular">07.07.1978</td>
+                            <td class="registrationlist__header__regular">Женский</td>
+                            <td class="registrationlist__header__regular">evg1721@yandex.ru</td>
+                            <td class="registrationlist__header__regular">89874587581</td>
+                            <td class="registrationlist__header__regular">Уфа</td>
+         
+                            <td class="registrationlist__header__regular"><a class="registrationlist_a"
+                                    href="/detail/2/">Просмотреть</a></td>
+                            <td class="registrationlist__header__regular"><a class="registrationlist_a"
+                                    href="/site-admin/product_update/2/">Изменить</a></td>
+                            <td class="registrationlist__header__regular"><a class="registrationlist_a"
+                                    href="/site-admin/product_remove/2/">удалить</a></td>
+                        </tr>
+                        <tr>
+                            <td class="registrationlist__header__regular">9</td>
+                            <td class="registrationlist__header__regular">Евдокимова</td>
+                            <td class="registrationlist__header__regular">Света</td>
+                            <td class="registrationlist__header__regular">Николаевна</td>
+                            <td class="registrationlist__header__regular">Evdok</td>
+                            <td class="registrationlist__header__regular">07.07.1978</td>
+                            <td class="registrationlist__header__regular">Женский</td>
+                            <td class="registrationlist__header__regular">evg1721@yandex.ru</td>
+                            <td class="registrationlist__header__regular">89874587581</td>
+                            <td class="registrationlist__header__regular">Уфа</td>
+     
+                            <td class="registrationlist__header__regular"><a class="registrationlist_a"
+                                    href="/detail/2/">Просмотреть</a></td>
+                            <td class="registrationlist__header__regular"><a class="registrationlist_a"
+                                    href="/site-admin/product_update/2/">Изменить</a></td>
+                            <td class="registrationlist__header__regular"><a class="registrationlist_a"
+                                    href="/site-admin/product_remove/2/">удалить</a></td>
+                        </tr>
+                        <tr>
+                            <td class="registrationlist__header__regular">10</td>
+                            <td class="registrationlist__header__regular">Евдокимова</td>
+                            <td class="registrationlist__header__regular">Света</td>
+                            <td class="registrationlist__header__regular">Николаевна</td>
+                            <td class="registrationlist__header__regular">Evdok</td>
+                            <td class="registrationlist__header__regular">07.07.1978</td>
+                            <td class="registrationlist__header__regular">Женский</td>
+                            <td class="registrationlist__header__regular">evg1721@yandex.ru</td>
+                            <td class="registrationlist__header__regular">89874587581</td>
+                            <td class="registrationlist__header__regular">Уфа</td>
+              
                             <td class="registrationlist__header__regular"><a class="registrationlist_a"
                                     href="/detail/2/">Просмотреть</a></td>
                             <td class="registrationlist__header__regular"><a class="registrationlist_a"
@@ -216,13 +302,13 @@
             <div class="footer__menu">
                 <nav class="footer__list">
                     <ul class="footer__info">
-                        <li class="footer__item"> <img class="footer__logo" src="/img/footer-logonew.png" alt=""></li>
-                        <li class="footer__item"><a href="#" class="footer__link">О нас</a></li>
-                        <li class="footer__item"><a href="#" class="footer__link">Проекты</a></li>
-                        <li class="footer__item"><a href="#" class="footer__link">Отзывы</a></li>
+                        <li class="footer__item"><a href="/index.html"><img class="footer__logo" src="/img/footer-logonew.png" alt=""></a></li>
+                        <li class="footer__item"><a href="../pages/about__max.html" class="footer__link">О нас</a></li>
+                        <li class="footer__item"><a href="../pages/exclusive.html" class="footer__link">Эксклюзив</a></li>
+                        <li class="footer__item"><a href="../pages/partners.html" class="footer__link">Партнёры</a></li>
                         <li class="footer__item"><a href="#" class="footer__link">Мои рецепты</a></li>
-                        <li class="footer__item"><a href="#" class="footer__link">Будующие проеты</a></li>
-                        <li class="footer__item"><a href="#" class="footer__link">Эксклюзив</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Бизнес план</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Реализация</a></li>
                         <li><a href="#" class="ok smail"><svg class="smail__zero" width="60" height="60"
                                     viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path

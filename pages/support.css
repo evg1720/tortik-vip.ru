@@ -302,37 +302,37 @@ body {
   margin-bottom: 3rem;
 }
 
-.registrationlist {
+.support {
   flex-grow: 1;
 }
 
-.registrationlist__table {
+.support__table {
   margin: auto;
   /*----Центрирование по центру---*/
-  width: 70%;
+  width: 100%;
   border-radius: 10px;
   box-shadow: 0 4px 16px var(--brown-cold);
   border-collapse: collapse;
   /*--Убрать сетку--*/
 }
 
-.registrationlist__table td,
+.support__table td,
 .products__table tr {
   text-align: center;
-  padding: 5px 10px;
+  padding: 10px;
 }
 
-.registrationlist__table__header {
+.support__table__header {
   border-radius: 10px;
   box-shadow: 0 4px 16px var(--brown-cold);
 }
 
-.registrationlist__header__regular {
+.support__header__regular {
   font-family: 'MullerRegular';
-  font-size: 16px;
+  font-size: 14px;
 }
 
-.registrationlist__header__bold {
+.support__header__bold {
   font-family: 'MullerBold';
   font-size: 14px;
   font-weight: 700;
@@ -360,35 +360,35 @@ tbody tr:nth-child(odd):hover {
   box-shadow: 0 4px 16px var(--dark-brown);
 }
 
-.registrationlist_a {
+.support_a {
   color: var(--gray-gray);
 }
 
-.registrationlist_a:hover {
+.support_a:hover {
   color: var(--dark-green);
 }
-.registrationlist_a:focus {
+.support_a:focus {
   transition: background 0.3s ease, color 0.2s linear;
 }
 
-.registrationlist_a:active {
+.support_a:active {
   color: var(--dark-brown);
 }
 
-.registrationlist__info {
+.support__info {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.registrationlist__link {
+.support__link {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 50px;
 }
 
-.registrationlist__link__item {
+.support__link__item {
   display: block;
   outline: 2px solid var(--green);
   border-radius: 5px;
@@ -402,22 +402,22 @@ tbody tr:nth-child(odd):hover {
   cursor: pointer;
 }
 
-.registrationlist__link__item:hover {
+.support__link__item:hover {
   background-color: var(--green);
   color: var(--white);
   transition-duration: 0.2s, 0.3s;
 }
 
-.registrationlist__link__item:focus {
+.support__link__item:focus {
   transition: background 0.3s ease, color 0.2s linear;
 }
 
-.registrationlist__link__item:active {
+.support__link__item:active {
   background-color: var(--dark-green);
   color: var(--white);
 }
 
-.registrationlist__link__itemone {
+.support__link__itemone {
   display: block;
   background-color: var(--white-green);
   border-radius: 5px;
@@ -431,17 +431,17 @@ tbody tr:nth-child(odd):hover {
   cursor: pointer;
 }
 
-.registrationlist__link__itemone:hover {
+.support__link__itemone:hover {
   background-color: var(--green);
   color: var(--white);
   transition-duration: 0.2s, 0.3s;
 }
 
-.registrationlist__link__itemone:focus {
+.support__link__itemone:focus {
   transition: background 0.3s ease, color 0.2s linear;
 }
 
-.registrationlist__link__itemone:active {
+.support__link__itemone:active {
   background-color: var(--dark-green);
   color: var(--white);
 }
@@ -453,7 +453,7 @@ tbody tr:nth-child(odd):hover {
   } */
 /* катигории-кнопки */
 
-.registrationlist__table__change {
+.support__table__change {
   outline: none;
   border: 1px;
   border-color: var(--white-green);
@@ -473,16 +473,16 @@ tbody tr:nth-child(odd):hover {
   padding: 3px 10px;
 }
 
-.registrationlist__table__change:hover {
+.support__table__change:hover {
   background-color: var(--green);
   color: var(--white);
 }
 
-.registrationlist__table__change:focus {
+.support__table__change:focus {
   transition: background 0.3s ease, color 0.2s linear;
 }
 
-.registrationlist__table__change:active {
+.support__table__change:active {
   background-color: var(--dark-green);
   color: var(--white);
 }
@@ -578,7 +578,7 @@ footer {
 }
 
 .footer__logo {
-  width: 200px;
+  width: 100px;
 }
 @media (max-width: 1024px) {
   /*----------------header---------------*/

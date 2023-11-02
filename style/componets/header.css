@@ -179,3 +179,36 @@
 .display {
   display: none;
 }
+.dropbutton{
+  padding: 10px 35px;
+}
+.header__other{
+  position: relative;
+  display: inline-block;
+}
+.drop-down{
+  position: absolute;
+  background-color: var(--white);
+  min-width: 100px;
+  display: none;
+  align-items: center;
+}
+.drop-down a{
+  position: relative;
+  display: block;
+  text-decoration: none;
+  color: var(--black);
+  padding: 10px 15px;
+  z-index: 4;
+}
+.drop-down a:hover{
+  background-color: var(--gold-color);
+  color: var(--white);
+  transition: all .3s;
+  border-radius: 10px;
+}
+.header__other:hover .drop-down{
+  display: block;
+  z-index: 2;
+  border-radius: 10px;
+}

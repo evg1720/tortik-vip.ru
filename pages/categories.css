@@ -158,9 +158,8 @@ body {
 
 .header__item__link {
   color: var(--black);
-  font-family: 'Montserrat';
+  font-family: 'MullerRegular';
   font-size: 18px;
-  font-weight: 600;
   line-height: 22px;
   text-decoration: none;
 }
@@ -252,7 +251,6 @@ body {
 .contact__one {
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
 }
 
 .contact .bottom {
@@ -296,6 +294,9 @@ body {
 } */
 
 /*-------------------------Registrationlist--------------------------*/
+.display {
+  display: none;
+}
 .mtb-3 {
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -313,7 +314,6 @@ body {
   box-shadow: 0 4px 16px var(--brown-cold);
   border-collapse: collapse;
   /*--Убрать сетку--*/
-  margin-bottom: 30px;
 }
 
 .categories__table td,
@@ -334,7 +334,7 @@ body {
 
 .categories__header__bold {
   font-family: 'MullerBold';
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 700;
 }
 
@@ -375,14 +375,12 @@ tbody tr:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 15vh;
 }
 
 .categories__link {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 15vh;
   gap: 50px;
 }
 
@@ -503,10 +501,9 @@ footer {
 
 .footer__link {
   color: var(--gray);
-  font-family: 'Montserrat';
+  font-family: 'MullerMedium';
   font-size: 18px;
-  font-weight: 600;
-  line-height: 36px;
+  line-height: 34px;
   text-decoration: none;
   margin-top: 50px;
   padding: 2px 5px;
@@ -573,5 +570,5 @@ footer {
 }
 
 .footer__logo {
-  width: 200px;
+  width: 100px;
 }
