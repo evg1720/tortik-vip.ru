@@ -257,6 +257,7 @@ body {
 /*-------------------------admin--------------------------*/
 .admin {
   flex-grow: 1;
+  display: flex;
 }
 
 .admin__info {
