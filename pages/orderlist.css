@@ -276,11 +276,6 @@ body {
 
 /*-------------------------Registrationlist--------------------------*/
 
-.mtb-3 {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-}
-
 .orderlist {
     flex-grow: 1;
 }
@@ -465,7 +460,7 @@ tbody tr:nth-child(odd):hover {
 }
 
 .table-responsive{
-    max-height: 350px;
+    max-height: 50vh;
     overflow-y: scroll;
     padding: 15px;
   }
