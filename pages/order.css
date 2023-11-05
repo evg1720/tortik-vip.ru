@@ -165,13 +165,13 @@
 }
 
 .order__table__header {
-  position: sticky;
-  top: -15px;
+  /* position: sticky;
+  top: -15px; */
   border-radius: 10px;
   box-shadow: 0 4px 16px var(--brown-cold);
   z-index: 2;
 }
-.order__table__header td {
+/* .order__table__header td {
   background: var(--white);
 }
 .order__table__header td:nth-child(1) {
@@ -179,7 +179,7 @@
 }
 .order__table__header td:nth-last-child(1) {
   border-top-right-radius:10px;
-}
+} */
 
 .order__header__regular {
   font-family: 'MullerRegular';
