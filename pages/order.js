@@ -27,3 +27,17 @@ document.querySelector("#checkbox").addEventListener("input", () => {
         })
     }
 })
+
+
+function approvalFun() {
+    let btn = document.querySelector(".order__form__button")
+    if (approval.checked) {
+        btn.classList.remove("form__button-disabled")
+    } else {
+        btn.classList.add("form__button-disabled")
+    }
+}
+let approval = document.querySelector("#checkboxtwo")
+approvalFun()
+
+approval.addEventListener("input", approvalFun)
