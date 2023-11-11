@@ -1,0 +1,188 @@
+/* body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+} */
+.addcategories__form__close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+}
+
+.addcategories {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background: rgba(0, 0, 0, .8);
+}
+
+.addcategories__form {
+    position: relative;
+    margin: auto;
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px var(--brown-cold);
+    letter-spacing: 1px;
+    font-family: 'MullerRegular';
+    font-size: 16px;
+    background: var(--white);
+}
+
+.addcategories__form__title {
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+
+.addcategories__form__group {
+    display: block;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.addcategories__form__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    color: var(--dark-brown);
+    transition: 0.3s;
+
+}
+
+.addcategories__form__input {
+    font-family: 'MullerBold';
+    font-size: 18px;
+    font-weight: 800;
+    width: 100%;
+    padding: 0 0 10px 0;
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: transparent;
+    outline: none;
+    transition: 0.3s;
+}
+
+.addcategories__form__input:focus {
+    border-bottom: 1px solid var(--brown-cold);
+}
+
+.addcategories__form__button {
+    display: block;
+    padding: 0.8em 1.2em;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.form__button-disabled {
+    color: var(--dark);
+    background-color: var(--gray);
+    pointer-events: none;
+    font-size: 700;
+}
+
+
+.addcategories__form__input:focus~.addcategories__form__label,
+.addcategories__form__input:not(:placeholder-shown)~.addcategories__form__label {
+    top: -18px;
+    font-size: 12px;
+    color: var(--gray-gray);
+}
+
+.addcategories__form__style {
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.addcategories__form__gender {
+    -webkit-appearance: none;
+    appearance: none;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.addcategories__form__title__gender {
+    margin-bottom: 20px;
+}
+
+.addcategories__form__gender input:nth-child(2) {
+    margin-left: 40px;
+}
+
+.addcategories__text__one {
+    font-family: 'MullerRegular';
+    font-size: 16px;
+    color: var(--dak);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.addcategories__text__two {
+    font-family: 'MullerRegular';
+    font-size: 16px;
+    color: var(--dark);
+    font-weight: 700;
+}
+
+/* --- file --- */
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile+label {
+    font-family: 'MullerMedium';
+    color: var(--white);
+    background-color: green;
+    display: inline-block;
+    cursor: pointer;
+    padding: 1.2em;
+    border-radius: 10px;
+}
+
+.inputfile:focus+label,
+.inputfile+label:hover {
+    background-color: blueviolet;
+    transition: .3s;
+}
+
+.reviews__item {
+    align-items: center;
+    gap: 30px;
+}
+.addcategories__file{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*---------btns----------*/
+.addcategories__btns {
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.addcategories__button {
+    display: contents;
+}
+.addcategories-button__add {
+    display: block;
+    width: 100%;
+    padding: 1.2em;
+}
+.raviews__file{
+    display: grid;
+    width: 50%;
+}

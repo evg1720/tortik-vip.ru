@@ -1,0 +1,128 @@
+.order__table {
+    margin: auto;
+    /*----Центрирование по центру---*/
+    border-radius: 10px;
+    box-shadow: 0 4px 16px var(--brown-cold);
+    border-collapse: collapse;
+    /*--Убрать сетку--*/
+    margin-bottom: 10px;
+  }
+  
+  .order__table td,
+  .products__table tr {
+    text-align: center;
+    padding: 5px;
+  }
+  
+  .order__table__header {
+    /* position: sticky;
+    top: -15px; */
+    border-radius: 10px;
+    box-shadow: 0 4px 16px var(--brown-cold);
+    z-index: 2;
+  }
+  /* .order__table__header td {
+    background: var(--white);
+  }
+  .order__table__header td:nth-child(1) {
+    border-top-left-radius: 10px;
+  }
+  .order__table__header td:nth-last-child(1) {
+    border-top-right-radius:10px;
+  } */
+  
+  .order__header__regular {
+    font-family: 'MullerRegular';
+    font-size: 16px;
+  }
+  
+  .order__header__bold {
+    font-family: 'MullerRegular';
+    font-size: 14px;
+    font-weight: 700;
+  }
+  
+  tr:nth-child(even) {
+    background: var(--gold-x);
+  }
+  
+  tbody tr {
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  tbody td {
+    outline: 1px solid var(--gray);
+  }
+  
+  
+  tr:nth-child(even):hover,
+  tr:nth-child(odd):hover {
+    position: relative;
+    z-index: 1;
+    background-color: var(--green-y);
+    box-shadow: 0 4px 16px var(--dark-brown);
+    border-radius: 7px;
+  }
+  .order__img {
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+  }
+  
+  .order__parent {
+    gap: 15px;
+  }
+  
+  .order__home {
+    gap: 10px;
+  }
+  
+  .order__left {
+    width: 35%;
+  }
+  
+  .order__promo {
+    gap: 20px;
+  }
+  .order__form__delivery{
+    gap: 15px;
+  }
+  .order__right{
+    max-height: 450px;
+    overflow-y: scroll;
+    padding: 15px;
+  }
+  .order__right::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+  }
+  .order__right::-webkit-scrollbar-thumb {
+    background: var(--gray);
+  }
+  .order__right::-webkit-scrollbar-track { /* фон */
+    background: var(--black);
+  }
+  .order_a {
+    color: var(--gray-gray);
+  }
+  
+  .order_a:hover {
+    color: var(--dark-green);
+  }
+  
+  .order_a:focus {
+    transition: background 0.3s ease, color 0.2s linear;
+  }
+  
+  .order_a:active {
+    color: var(--dark-brown);
+  }
+  .order__agreement{
+    color: var(--white-green);
+    text-decoration: none;
+  }
+  .order__agreement:hover{
+    color: var(--light-gold);
+    transition: .3s;
+  }

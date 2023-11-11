@@ -36,23 +36,23 @@ function start() {
 
 document.querySelector("#login").addEventListener("click", (e) => {
     e.preventDefault();
-    document.querySelector(".login").classList.remove("none")
+    document.querySelector(".popapwrapper").classList.remove("none")
     start()
 })
 
 
 
 document.querySelector(".login__form__close").addEventListener("click", () => {
-    document.querySelector(".login").classList.add("none")
+    document.querySelector(".popapwrapper").classList.add("none")
 })
 
 document.querySelector("#registration").addEventListener("click", (e) => {
     e.preventDefault();
-    document.querySelector(".register").classList.remove("none")
+    document.querySelector("#register").classList.remove("none")
 })
 
 
 
 document.querySelector(".register__form__close").addEventListener("click", () => {
-    document.querySelector(".register").classList.add("none")
+    document.querySelector("#register").classList.add("none")
 })

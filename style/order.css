@@ -137,6 +137,9 @@
 .order__promo {
   gap: 20px;
 }
+.order__form__delivery{
+  gap: 15px;
+}
 
 /*--------------------------------------*/
 .mtb-3 {

@@ -1,0 +1,46 @@
+
+
+/**/
+
+.login__form {
+    width: 300px;
+}
+
+.login__form__title {
+    text-align: center;
+    padding: 0 0 11px 0;
+}
+
+.login__form__group {
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.login__form__label {
+    position: absolute;
+    top: 0;
+    z-index: 20;
+    color: var(--gray);
+    transition: 0.3s;
+}
+
+.login__form__input {
+    width: 100%;
+    padding: 0 0 10px 0;
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: transparent;
+    outline: none;
+    transition: 0.3s;
+}
+
+.login__form__input:focus {
+    border-bottom: 1px solid var(--brown-cold);
+}
+
+.login__form__button {
+    padding: 0.8em 1.2em;
+    cursor: pointer;
+    text-decoration: none;
+
+}

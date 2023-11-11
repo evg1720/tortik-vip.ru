@@ -10,9 +10,9 @@
   <link rel="icon" href="../img/logo__img.png">
   <script defer src="script/swiper-main.js"></script>
   <link rel="stylesheet" href="style/style.css">
-  <link rel="stylesheet" href="pages/login.css">
-  <link rel="stylesheet" href="pages/registerform.css">
-  <link rel="stylesheet" href="../pages/captcha_generation.css">
+  <link rel="stylesheet" href="style/login.css">
+  <link rel="stylesheet" href="style/registerform.css">
+  <link rel="stylesheet" href="../style/captcha_generation.css">
   <title>Document</title>
 </head>
 
@@ -20,9 +20,9 @@
 
   <!-- ***** login ***** -->
 
-  <section class="login none">
-    <form class="login__form" action="/user/login/" method="post">
-      <div class="login__form__close"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <section class="popapwrapper none">
+    <form class="popapwrapper__popap login__form" action="/user/login/" method="post">
+      <div class="popapwrapper__clouse"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g id="style=stroke">
             <g id="close">
               <path id="vector (Stroke)" fill-rule="evenodd" clip-rule="evenodd"
@@ -49,9 +49,9 @@
 
   <!-- ***** registration ***** -->
 
-  <section class="register none">
-    <form class="register__form" action="/user/login/" method="post">
-      <div class="register__form__close"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <section class="popapwrapper none" id="register">
+    <form class="popapwrapper__popap register__form" action="/user/login/" method="post">
+      <div class="popapwrapper__clouse"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g id="style=stroke">
             <g id="close">
               <path id="vector (Stroke)" fill-rule="evenodd" clip-rule="evenodd"
@@ -1302,11 +1302,11 @@
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="/script/tabs.js"></script>
-  <script src="style/accordion.min.js"></script>
+  <script src="/script/accordion.min.js"></script>
   <script src="script/burger.js"></script>
   <script type="module" src="script/product.js"></script>
   <script type="module" src="script/script.js"></script>
-  <script type="module" src="/pages/login.js"></script>
+  <script type="module" src="/script/login.js"></script>
   <script type="module" src="/script/registerForm.js"></script>
 
 </body>

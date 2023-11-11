@@ -45,7 +45,7 @@ header {
 
 .button:hover {
     background-color: var(--gold-color);
-    color: var(--white); 
+    color: var(--white);
 }
 
 .button:focus {
@@ -56,7 +56,8 @@ header {
     background-color: var(--brown-cold);
     color: var(--white);
 }
-.buttontwo{
+
+.buttontwo {
     background-color: var(--grey-color);
     color: var(--white);
     transition-property: color, background-color;
@@ -64,10 +65,12 @@ header {
     transition-duration: 0.2s, 0.3s;
     text-align: center;
 }
+
 .buttontwo:hover {
     background-color: var(--dark-light);
     color: var(--white);
 }
+
 .buttontwo:focus {
     transition: background 0.3s ease, color 0.2s linear;
 }
@@ -109,11 +112,61 @@ p {
 .flex {
     display: flex;
 }
-.flex.aic{
+
+.flex.aic {
     align-items: center;
 }
+
 .form__label-top {
     top: -18px !important;
     font-size: 12px;
     color: var(--gray) !important;
+}
+
+/*------------popap-----------*/
+.popapwrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background: rgba(0, 0, 0, .8);
+}
+
+.popapwrapper__popap {
+    position: relative;
+    margin: auto;
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px var(--brown-cold);
+    letter-spacing: 1px;
+    font-family: 'MullerBold';
+    font-size: 16px;
+    background: var(--white);
+}
+
+.popapwrapper__clouse {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+    width: 30px;
+}
+.popapwrapper__clouse:hover svg path {
+    fill: var(--dark-green);
+    transition: .3s;
+}
+
+.popapwrapper__clouse:focus svg path {
+    outline: 2px solid var(--dark-green);
+    outline-offset: 5px;
+}
+
+.popapwrapper__clouse:active svg path {
+    fill: var(--dark-green);
+}
+.popapwrapper__clouse:active svg{
+    outline: 2px solid var(--dark-green)
 }

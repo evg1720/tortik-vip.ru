@@ -1,0 +1,230 @@
+/*----form-----*/
+.form {
+    position: relative;
+    max-width: 768px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px var(--brown-cold);
+    letter-spacing: 1px;
+    font-family: 'MullerRegular';
+    font-size: 16px;
+    background: var(--white);
+}
+
+.form__title {
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+
+.form__group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.form__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    color: var(--dark-brown);
+    transition: 0.3s;
+
+}
+
+.form__input {
+    font-family: 'MullerBold';
+    font-size: 18px;
+    font-weight: 800;
+    width: 100%;
+    padding: 0 0 10px 0;
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: transparent;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form__input:focus {
+    border-bottom: 1px solid var(--brown-cold);
+}
+
+.form__button {
+    display: block;
+    padding: 0.8em 1.2em;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.form__button-disabled {
+    color: var(--dark);
+    background-color: var(--gray);
+    pointer-events: none;
+    font-size: 700;
+}
+
+
+.form__input:focus~.form__label,
+.form__input:not(:placeholder-shown)~.form__label {
+    top: -18px;
+    font-size: 12px;
+    color: var(--gray-gray);
+}
+
+/*--------------------------------------*/
+
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+    gap: 50px;
+}
+
+.link__item {
+    display: block;
+    outline: 2px solid var(--green);
+    border-radius: 5px;
+    padding: 10px 30px;
+
+    font-family: 'MullerBold';
+    font-size: 18px;
+    color: var(--black);
+
+    transition-duration: 0.2s, 0.3s;
+    cursor: pointer;
+}
+
+.link__item:hover {
+    background-color: var(--green);
+    color: var(--white);
+    transition-duration: 0.2s, 0.3s;
+}
+
+.link__item:focus {
+    transition: background 0.3s ease, color 0.2s linear;
+}
+
+.link__item:active {
+    background-color: var(--dark-green);
+    color: var(--white);
+}
+
+.link__itemone {
+    display: block;
+    background-color: var(--white-green);
+    border-radius: 5px;
+    padding: 10px 30px;
+
+    font-family: 'MullerBold';
+    font-size: 18px;
+    color: var(--black);
+
+    transition-duration: 0.2s, 0.3s;
+    cursor: pointer;
+}
+
+.link__itemone:hover {
+    background-color: var(--green);
+    color: var(--white);
+    transition-duration: 0.2s, 0.3s;
+}
+
+.link__itemone:focus {
+    transition: background 0.3s ease, color 0.2s linear;
+}
+
+.link__itemone:active {
+    background-color: var(--dark-green);
+    color: var(--white);
+}
+
+/*-------------Checkbox-----------------*/
+
+.checkbox {
+    display: inline-block;
+}
+
+.checkbox__inp {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    appearance: none;
+}
+
+.checkbox__inner {
+    display: inline-block;
+    position: relative;
+    font-style: 36px;
+    padding-left: 37px;
+    margin-bottom: 25px;
+
+}
+
+.checkbox__inner::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 28px;
+    height: 14px;
+    border-radius: 9px;
+    background-color: var(--brown-cold);
+    transition: background-color .3s;
+}
+
+.checkbox__inner::after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 7px;
+    background-color: var(--white);
+    left: 1px;
+    top: 3px;
+    transition: background-color .3s, left .3s;
+}
+
+.checkbox__inp:checked+.checkbox__inner::before {
+    background-color: var(--white-green);
+}
+
+.checkbox__inp:checked+.checkbox__inner::after {
+    background-color: var(--white);
+    left: 16px;
+}
+/*---clouse----*/
+
+.form__close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+    width: 30px;
+}
+
+.form__close:hover svg path {
+    fill: var(--dark-green);
+    transition: .3s;
+}
+
+.form__close:focus svg path {
+    outline: 2px solid var(--dark-green);
+    outline-offset: 5px;
+}
+
+.form__close:active svg path {
+    fill: var(--dark-green);
+}
+.form__close:active svg{
+    outline: 2px solid var(--dark-green)
+}
