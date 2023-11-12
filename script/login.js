@@ -17,42 +17,42 @@ function noDigits(event) {
 
 // --- Появление попапа (модальное окно)
 
-let inputs;
+// let inputs;
 
-function start() {
-    inputs = document.querySelectorAll(".formInput")
-    inputs.forEach(input => {
-        changeLabel(input)
-        input.addEventListener("focus", (e) =>  {
-            changeLabel(e.target)
-        })
-        input.addEventListener("blur", (e) => {
-            changeLabel(e.target)
-        })
-    })
-}
-
-
-
-document.querySelector("#login").addEventListener("click", (e) => {
-    e.preventDefault();
-    document.querySelector(".popapwrapper").classList.remove("none")
-    start()
-})
+// function start() {
+//     inputs = document.querySelectorAll(".formInput")
+//     inputs.forEach(input => {
+//         changeLabel(input)
+//         input.addEventListener("focus", (e) =>  {
+//             changeLabel(e.target)
+//         })
+//         input.addEventListener("blur", (e) => {
+//             changeLabel(e.target)
+//         })
+//     })
+// }
 
 
 
-document.querySelector(".login__form__close").addEventListener("click", () => {
-    document.querySelector(".popapwrapper").classList.add("none")
-})
-
-document.querySelector("#registration").addEventListener("click", (e) => {
-    e.preventDefault();
-    document.querySelector("#register").classList.remove("none")
-})
+// document.querySelector("#login").addEventListener("click", (e) => {
+//     e.preventDefault();
+//     document.querySelector(".popapwrapper").classList.remove("none")
+//     start()
+// })
 
 
 
-document.querySelector(".register__form__close").addEventListener("click", () => {
-    document.querySelector("#register").classList.add("none")
-})
+// document.querySelector(".login__form__close").addEventListener("click", () => {
+//     document.querySelector(".popapwrapper").classList.add("none")
+// })
+
+// document.querySelector("#registration").addEventListener("click", (e) => {
+//     e.preventDefault();
+//     document.querySelector("#register").classList.remove("none")
+// })
+
+
+
+// document.querySelector(".register__form__close").addEventListener("click", () => {
+//     document.querySelector("#register").classList.add("none")
+// })

@@ -20,7 +20,7 @@
 
   <!-- ***** login ***** -->
 
-  <section class="popapwrapper none">
+  <section class="popapwrapper none" id="login_popup">
     <form class="popapwrapper__popap login__form" action="/user/login/" method="post">
       <div class="popapwrapper__clouse"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g id="style=stroke">
@@ -49,7 +49,7 @@
 
   <!-- ***** registration ***** -->
 
-  <section class="popapwrapper none" id="register">
+  <section class="popapwrapper none" id="registration_popup">
     <form class="popapwrapper__popap register__form" action="/user/login/" method="post">
       <div class="popapwrapper__clouse"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g id="style=stroke">
@@ -205,8 +205,8 @@
           </svg></a>
         <div class="contact__one">
           <div class="header__bottoms display__two">
-            <a class="button__indent__a button button__indent" id="login" href="#">Вход</a>
-            <a class="button__indent__a button button__indent" id="registration" href="#">Регистрация</a>
+            <a class="button__indent__a button button__indent" id="login" href="#" data-popup-link="login_popup">Вход</a>
+            <a class="button__indent__a button button__indent" id="registration" href="#" data-popup-link="registration_popup">Регистрация</a>
           </div>
         </div>
         <div class="header__other">
@@ -1308,6 +1308,7 @@
   <script type="module" src="script/script.js"></script>
   <script type="module" src="/script/login.js"></script>
   <script type="module" src="/script/registerForm.js"></script>
+  <script src="script/popup.js"></script>
 
 </body>
 
