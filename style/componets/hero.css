@@ -73,9 +73,6 @@ padding: 0 21px;
     line-height: 29px;
     margin-bottom: 90px;
 }
-.swiper-wrapper{
-   margin-top: 50px;
-}
 
 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {

@@ -32,27 +32,29 @@ function start() {
     })
 }
 
-
+// -----**** login
 
 document.querySelector("#login").addEventListener("click", (e) => {
     e.preventDefault();
-    document.querySelector(".popapwrapper").classList.remove("none")
+    document.querySelector(".popupwrapper").classList.remove("none")
     start()
 })
 
 
 
 document.querySelector(".login__form__close").addEventListener("click", () => {
-    document.querySelector(".popapwrapper").classList.add("none")
+    document.querySelector(".popupwrapper").classList.add("none")
 })
+
+// -----**** login
 
 document.querySelector("#registration").addEventListener("click", (e) => {
     e.preventDefault();
-    document.querySelector("#register").classList.remove("none")
+    document.querySelector(".popupwrapper").classList.remove("none")
 })
 
 
 
 document.querySelector(".register__form__close").addEventListener("click", () => {
-    document.querySelector("#register").classList.add("none")
+    document.querySelector(".popupwrapper").classList.add("none")
 })

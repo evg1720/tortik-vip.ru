@@ -306,9 +306,9 @@ body {
   color: var(--white);
 }
 
-.admin__orders {
-  width: 100%;
-}
+/* .admin__orders {
+  width: %;
+} */
 
 .admin__link__orders {
   display: flex;
@@ -324,7 +324,7 @@ footer {
   padding: 25px 0;
 }
 
-.footer__info {
+.footer__admin__info {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -332,7 +332,7 @@ footer {
   padding: 0;
 }
 
-.footer__link {
+.footer__admin__link {
   color: var(--gray);
   font-family: 'MullerMedium';
   font-size: 18px;
@@ -342,11 +342,11 @@ footer {
   padding: 2px 5px;
 }
 
-.footer__link:hover {
+.footer__admin__link:hover {
   color: gold;
 }
 
-.footer__link:focus {
+.footer__admin__link:focus {
   outline: 1px solid gold;
   color: gray;
 }
@@ -355,7 +355,7 @@ footer {
   margin-right: 25px;
 }
 
-.footer__text {
+.footer__admin__text {
   color: var(--gray);
   font-family: 'Montserrat';
   font-size: 16px;
@@ -364,7 +364,7 @@ footer {
   text-decoration: none;
 }
 
-.footer__smail {
+.footer__admin__smail {
   display: flex;
   margin-top: 20px;
 }
@@ -384,7 +384,7 @@ footer {
   transition-duration: 0.2s, 0.3s;
 }
 
-.footer-button {
+.footer__admin-button {
   width: 160px;
   margin-left: 125px;
   padding: 0.6em 1.2em;
@@ -394,15 +394,15 @@ footer {
   outline: 1px solid gold;
 }
 
-.footer__logomini {
+.footer__admin__logomini {
   display: none;
 }
 
-.footer__indent {
+.footer__admin__indent {
   margin-top: 20px;
 }
 
-.footer__logo {
+.footer__admin__logo {
   width: 100px;
 }
 

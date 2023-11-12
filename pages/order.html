@@ -12,11 +12,11 @@
 </head>
 
 <body>
-    <section class="popapwrapper">
-        <form class="order__form popapwrapper__popap" action="/user/login/" method="post">
+    <section class="popupwrapper">
+        <form class="order__form popupwrapper__popup" action="/user/login/" method="post">
             <a href="/index.html">
                 <!-- убрать ссылку -->
-                <div class="popapwrapper__clouse"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="popupwrapper__clouse"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="style=stroke">
                             <g id="close">
                                 <path id="vector (Stroke)" fill-rule="evenodd" clip-rule="evenodd"
@@ -80,7 +80,17 @@
                             <label class="order__form__label">Корпус</label>
                         </div>
                     </div>
-                 <div class="order__form__delivery flex">
+                    <div class="form__style form__style__order flex ">
+                        <div class="radio">
+                            <input class="radio__input" name="order_delivery_input" type="radio" id="order_delivery_input1">
+                            <label class="radio__label" for="order_delivery_input1">Доставка</label>
+                        </div>
+                        <div class="radio">
+                            <input class="radio__input" name="order_delivery_input" type="radio" id="order_delivery_input2" checked>
+                            <label class="radio__label" for="order_delivery_input2">Самовывоз</label>
+                        </div>
+                    </div>
+                 <!-- <div class="order__form__delivery flex">
                     <div class="order__form__group">
                         <input name="order_delivery_input" type="radio" id="order_delivery_input1">
                         <label for="order_delivery_input1">Доставка</label>
@@ -89,7 +99,7 @@
                         <input name="order_delivery_input" type="radio" id="order_delivery_input2" checked>
                         <label for="order_delivery_input2">Самовывоз</label>
                     </div>
-                </div>
+                </div> -->
                     <div class="order__promo flex">
                         <div class="order__form__group flex">
                             <input class="order__form__input" placeholder=" " type="text">
@@ -119,7 +129,7 @@
                                 <td class="order__header__bold">---</td>
                                 <td class="order__header__bold">1290</td>
                                 <td class="order__header__regular"><a class="order_a"
-                                        href="/site-admin/product_remove/1/">удалить</a></td>
+                                        href="/site-admin/product_remove/1/">Отменить</a></td>
                             </tr>
                             <tr>
                                 <td class=""><img class="order__img" src="/img/cake/cake14.jpg" alt=""></td>
@@ -129,7 +139,7 @@
                                 <td class="order__header__bold">---</td>
                                 <td class="order__header__bold">1290</td>
                                 <td class="order__header__regular"><a class="order_a"
-                                        href="/site-admin/product_remove/1/">удалить</a></td>
+                                        href="/site-admin/product_remove/1/">Отменить</a></td>
                             </tr>
                             <tr>
                                 <td class=""><img class="order__img" src="/img/cake/cake11.jpg" alt=""></td>
@@ -139,7 +149,7 @@
                                 <td class="order__header__bold">---</td>
                                 <td class="order__header__bold">1290</td>
                                 <td class="order__header__regular"><a class="order_a"
-                                        href="/site-admin/product_remove/1/">удалить</a></td>
+                                        href="/site-admin/product_remove/1/">Отменить</a></td>
                             </tr>
                             <tr>
                                 <td class=""><img class="order__img" src="/img/cake/cake11.jpg" alt=""></td>
@@ -149,7 +159,7 @@
                                 <td class="order__header__bold">---</td>
                                 <td class="order__header__bold">1290</td>
                                 <td class="order__header__regular"><a class="order_a"
-                                        href="/site-admin/product_remove/1/">удалить</a></td>
+                                        href="/site-admin/product_remove/1/">Отменить</a></td>
                             </tr>
                             <tr>
                                 <td class=""><img class="order__img" src="/img/cake/cake11.jpg" alt=""></td>
@@ -159,7 +169,7 @@
                                 <td class="order__header__bold">---</td>
                                 <td class="order__header__bold">1290</td>
                                 <td class="order__header__regular"><a class="order_a"
-                                        href="/site-admin/product_remove/1/">удалить</a></td>
+                                        href="/site-admin/product_remove/1/">Отменить</a></td>
                             </tr>
                             <tr>
                                 <td class=""><img class="order__img" src="/img/cake/cake11.jpg" alt=""></td>
@@ -169,7 +179,7 @@
                                 <td class="order__header__bold">---</td>
                                 <td class="order__header__bold">1290</td>
                                 <td class="order__header__regular"><a class="order_a"
-                                        href="/site-admin/product_remove/1/">удалить</a></td>
+                                        href="/site-admin/product_remove/1/">Отменить</a></td>
                             </tr>
                             <tr>
                                 <td class=""><img class="order__img" src="/img/cake/cake11.jpg" alt=""></td>
@@ -179,7 +189,7 @@
                                 <td class="order__header__bold">---</td>
                                 <td class="order__header__bold">1290</td>
                                 <td class="order__header__regular"><a class="order_a"
-                                        href="/site-admin/product_remove/1/">удалить</a></td>
+                                        href="/site-admin/product_remove/1/">Отменить</a></td>
                             </tr>
                             <tr>
                                 <td class=""><img class="order__img" src="/img/cake/cake11.jpg" alt=""></td>
@@ -189,7 +199,7 @@
                                 <td class="order__header__bold">---</td>
                                 <td class="order__header__bold">1290</td>
                                 <td class="order__header__regular"><a class="order_a"
-                                        href="/site-admin/product_remove/1/">удалить</a></td>
+                                        href="/site-admin/product_remove/1/">Отменить</a></td>
                             </tr>
                             <tr>
                                 <td class=""><img class="order__img" src="/img/cake/cake11.jpg" alt=""></td>
@@ -199,7 +209,7 @@
                                 <td class="order__header__bold">---</td>
                                 <td class="order__header__bold">1290</td>
                                 <td class="order__header__regular"><a class="order_a"
-                                        href="/site-admin/product_remove/1/">удалить</a></td>
+                                        href="/site-admin/product_remove/1/">Отменить</a></td>
                             </tr>
                         </tbody>
                     </table>
@@ -219,7 +229,7 @@
                 заказ</a>
         </form>
     </section>
-    <script src="order.js"></script>
+    <script src="/script/order.js"></script>
 </body>
 
 </html>

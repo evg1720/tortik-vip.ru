@@ -4,8 +4,16 @@
   align-items: center;
   min-height: 100vh;
 } */
-
-.mypage {
+.form__style{
+    width: 100%;
+}
+.form__group{
+    margin-bottom: 10px !important;
+}
+.form__title{
+    padding: 0 !important;
+}
+.slider {
     position: fixed;
     top: 0;
     left: 0;
@@ -16,7 +24,7 @@
     background: rgba(0, 0, 0, .8);
 }
 
-.mypage__form {
+.slider__form {
     position: relative;
     margin: auto;
     width: 500px;
@@ -29,21 +37,21 @@
     background: var(--white);
 }
 
-.mypage__form__title {
+.slider__form__title {
     text-align: center;
     padding: 0 0 20px 0;
 }
 
-.mypage__form__group {
+.slider__form__group {
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
-.mypage__form__grouptwo {
+.slider__form__grouptwo {
     position: relative;
 }
 
-.mypage__form__label {
+.slider__form__label {
     position: absolute;
     top: 0;
     left: 0;
@@ -53,7 +61,7 @@
 
 }
 
-.mypage__form__input {
+.slider__form__input {
     font-family: 'MullerBold';
     font-size: 18px;
     font-weight: 800;
@@ -66,31 +74,31 @@
     transition: 0.3s;
 }
 
-.mypage__form__input:focus {
+.slider__form__input:focus {
     border-bottom: 1px solid var(--brown-cold);
 }
 
-.mypage__form__button {
+.slider__form__button {
     display: block;
     padding: 0.8em 1.2em;
     cursor: pointer;
     text-decoration: none;
 }
 
-.mypage__form__button-disabled {
+.slider__form__button-disabled {
     background-color: var(--gray-gray);
     pointer-events: none;
 }
 
 
-.mypage__form__input:focus~.mypage__form__label,
-.mypage__form__input:not(:placeholder-shown)~.mypage__form__label {
+.slider__form__input:focus~.slider__form__label,
+.slider__form__input:not(:placeholder-shown)~.slider__form__label {
     top: -18px;
     font-size: 12px;
     color: var(--gray-gray);
 }
 
-.mypage__form__gender {
+.slider__form__gender {
     -webkit-appearance: none;
     appearance: none;
     position: absolute;
@@ -99,11 +107,11 @@
     margin-bottom: 20px;
 }
 
-.mypage__form__title__gender {
+.slider__form__title__gender {
     margin-bottom: 20px;
 }
 
-.mypage__form__gender input:nth-child(2) {
+.slider__form__gender input:nth-child(2) {
     margin-left: 40px;
 }
 
@@ -167,20 +175,21 @@
     opacity: 1;
 }
 
-.mypage__form__style {
+.slider__form__style {
+    width: 100%;
     gap: 20px;
 }
-.mypage__form__styletwo {
+.slider__form__styletwo {
     display: inline-grid;
     gap: 18px;
 }
 
-.mypage__form__style__gender {
+.slider__form__style__gender {
     justify-content: flex-start;
     gap: 50px;
 }
 
-.mypage__photo__img {
+.slider__photo__img {
     width: 100%;
     height: 100%;
     display: block;
@@ -249,7 +258,7 @@
   outline: 1px solid gray;
   outline-offset: 3px;
 } */
-.mypage__form__close {
+.slider__form__close {
     position: absolute;
     right: 15px;
     top: 15px;
@@ -257,49 +266,51 @@
     width: 30px;
 }
 
-.mypage__form__close:hover svg path {
+.slider__form__close:hover svg path {
     fill: var(--dark-green);
     transition: .3s;
 }
 
-.mypage__form__close:focus svg path {
+.slider__form__close:focus svg path {
     outline: 2px solid var(--dark-green);
     outline-offset: 5px;
 }
 
-.mypage__form__close:active svg path {
+.slider__form__close:active svg path {
     fill: var(--dark-green);
 }
-.mypage__form__close:active svg{
+.slider__form__close:active svg{
     outline: 2px solid var(--dark-green)
 }
 
-.mypage__form__title {
+.slider__form__title {
     text-align: center;
     padding: 0 0 11px 0;
 }
 
-.mypage__photo__left {
-    width: 50%;
-
+.slider__photo__left {
+    width: 15%;
+    display: grid;
+    gap: 5px;
 }
 
-.mypage__photo {
+.slider__photo {
     width: 100%;
-    height: 220px;
     border: 1px solid var(--gold-color);
     border-radius: 24px;
 }
 
-.mypage__link {
+.slider__link {
     gap: 20px;
-    margin-bottom: 28px;
     align-items: center;
 }
 
-.mypage__photo__link {
+.slider__photo__link {
     cursor: pointer;
     display: block;
     width: 100%;
     height: 100%;
+}
+.slider__btn{
+    padding: .4em;
 }

@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+/* ---- other----*/
+
 body {
     min-width: 320px;
 }
@@ -104,11 +106,6 @@ p {
     font-weight: normal;
 }
 
-.second__level__heading {
-    /* margin-top: 70px; */
-    margin-bottom: 20px;
-}
-
 .flex {
     display: flex;
 }
@@ -123,8 +120,8 @@ p {
     color: var(--gray) !important;
 }
 
-/*------------popap-----------*/
-.popapwrapper {
+/*------------popup-----------*/
+.popupwrapper {
     position: fixed;
     top: 0;
     left: 0;
@@ -135,10 +132,10 @@ p {
     background: rgba(0, 0, 0, .8);
 }
 
-.popapwrapper__popap {
+.popupwrapper__popup {
     position: relative;
     margin: auto;
-    padding: 32px;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 16px var(--brown-cold);
     letter-spacing: 1px;
@@ -147,26 +144,28 @@ p {
     background: var(--white);
 }
 
-.popapwrapper__clouse {
+.popupwrapper__clouse {
     position: absolute;
     right: 15px;
     top: 15px;
     cursor: pointer;
     width: 30px;
 }
-.popapwrapper__clouse:hover svg path {
+
+.popupwrapper__clouse:hover svg path {
     fill: var(--dark-green);
     transition: .3s;
 }
 
-.popapwrapper__clouse:focus svg path {
+.popupwrapper__clouse:focus svg path {
     outline: 2px solid var(--dark-green);
     outline-offset: 5px;
 }
 
-.popapwrapper__clouse:active svg path {
+.popupwrapper__clouse:active svg path {
     fill: var(--dark-green);
 }
-.popapwrapper__clouse:active svg{
+
+.popupwrapper__clouse:active svg {
     outline: 2px solid var(--dark-green)
 }
