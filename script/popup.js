@@ -6,7 +6,7 @@ class Popup {
     constructor(popupLink) {
         this.popupLink = popupLink;
         this.popup = document.querySelector(`#${this.popupLink.getAttribute("data-popup-link")}`)
-        this.popupCloseEl = this.popup.querySelector(".popapwrapper__clouse")
+        this.popupCloseEl = this.popup.querySelector(".popupwrapper__clouse")
 
         const self = this;
         this.popupLink.addEventListener("click", () => {
