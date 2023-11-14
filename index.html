@@ -12,7 +12,6 @@
   <link rel="stylesheet" href="style/style.css">
   <link rel="stylesheet" href="style/login.css">
   <link rel="stylesheet" href="style/registerform.css">
-  <link rel="stylesheet" href="../style/captcha_generation.css">
   <title>Document</title>
 </head>
 
@@ -21,9 +20,9 @@
   <!-- ***** login ***** -->
 
 
-  <section class="popapwrapper none" id="login_popup">
-    <form class="popapwrapper__popap login__form" action="/user/login/" method="post">
-      <div class="popapwrapper__clouse"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <section class="popupwrapper none" id="login_popup">
+    <form class="popupwrapper__popup login__form" action="/user/login/" method="post">
+      <div class="popupwrapper__clouse"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 
           <g id="style=stroke">
             <g id="close">
@@ -52,9 +51,9 @@
   <!-- ***** registration ***** -->
 
 
-  <section class="popapwrapper none" id="registration_popup">
-    <form class="popapwrapper__popap register__form" action="/user/login/" method="post">
-      <div class="popapwrapper__clouse"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <section class="popupwrapper none" id="registration_popup">
+    <form class="popupwrapper__popup register__form" action="/user/login/" method="post">
+      <div class="popupwrapper__clouse"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 
           <g id="style=stroke">
             <g id="close">
@@ -63,7 +62,7 @@
                 fill="#000000" />
               <path id="vector (Stroke)_2" fill-rule="evenodd" clip-rule="evenodd"
                 d="M17.7853 6.21479C18.0782 6.50769 18.0782 6.98256 17.7853 7.27545L7.28038 17.7802C6.98749 18.0731 6.51261 18.0731 6.21972 17.7802C5.92683 17.4873 5.92683 17.0124 6.21973 16.7195L16.7247 6.21478C17.0176 5.92189 17.4924 5.9219 17.7853 6.21479Z"
-                fill="#000000"/>
+                fill="#000000" />
             </g>
           </g>
         </svg></div>
@@ -140,7 +139,7 @@
         <label class="checkbox" for="checkbox">
           <input class="checkbox__inp" type="checkbox" id="checkbox" checked>
           <span class="checkbox__inner">
-            Я согласен <a class="checkbox__agreement" href="/pages/rest/personalization.html"> на обработку персональных
+            Я согласен <a class="checkbox__agreement" href="/pages/personalization.html"> на обработку персональных
               данных</a>
           </span>
         </label>
@@ -209,19 +208,21 @@
           </svg></a>
         <div class="contact__one">
           <div class="header__bottoms display__two">
-            <a class="button__indent__a button button__indent" id="login" href="#" data-popup-link="login_popup">Вход</a>
-            <a class="button__indent__a button button__indent" id="registration" href="#" data-popup-link="registration_popup">Регистрация</a>
+            <a class="button__indent__a button button__indent" id="login" href="#"
+              data-popup-link="login_popup">Вход</a>
+            <a class="button__indent__a button button__indent" id="registration" href="#"
+              data-popup-link="registration_popup">Регистрация</a>
           </div>
         </div>
-        <div class="header__other">
+        <!-- <div class="header__other">
           <button class="dropbutton button" id="сabinet">Кабинет</button>
-            <div class="drop-down">
-              <a href="/pages/my__page.html">Моя страница</a>
-              <a href="/pages/historyorder.html">Мои заказы</a>
-              <a href="/pages/admin.html">ADMIN</a>
-              <a href="/pages/password.html">Изменить пароль</a>
-            </div>
-        </div>
+          <div class="drop-down">
+            <a href="/pages/my__page.html">Моя страница</a>
+            <a href="/pages/historyorder.html">Мои заказы</a>
+            <a href="/pages/admin.html">ADMIN</a>
+            <a href="/pages/password.html">Изменить пароль</a>
+          </div>
+        </div> -->
       </div>
     </div>
   </header>
@@ -1136,7 +1137,7 @@
         <ul class="contact">
           <li class="flex fdc">
             <strong class="contact__bold contact__address">Адрес</strong>
-            <p class="contact__info contact__info__new">Иркутская область, город Саянск, микр. Южный д.45</p>
+            <p class="contact__info contact__info__new">Иркутская область, город Саянск, микр. Южный д.43</p>
           </li>
           <li class="contacts__line"> </li>
           <li class="no__flex fdc-f">
@@ -1287,12 +1288,19 @@
         </div>
       </div>
 
-      <div class="footer__form">
+      <div class="footer__form ">
         <h2 class="footer__title title">Служба потдержки</h2>
         <form action="https://jsonplaceholder.typicode.com/posts">
           <input type="text" placeholder="Фамилия, имя и отчество*">
           <input type="text" placeholder="E-mail*">
           <textarea placeholder="Сообщение"></textarea>
+          <div class="footer__captcha flex">
+            <input class="" placeholder="Введите код" type="text" id="captcha-footer">
+            <div class="footer__inline">
+              <img class="update__icon" src="/img/updatewhite.png" alt="">
+              <div class="footer__captcha__text flex inline" id="image-footer" selectable="False"></div>
+            </div>
+          </div>
           <button class="footer-button button">Отправить</button>
           <div class="footer__line"></div>
         </form>
@@ -1312,6 +1320,7 @@
   <script type="module" src="script/script.js"></script>
   <script type="module" src="/script/login.js"></script>
   <script type="module" src="/script/registerForm.js"></script>
+  <script type="module" src="/script/footer.js"></script>
   <script src="script/popup.js"></script>
 
 </body>

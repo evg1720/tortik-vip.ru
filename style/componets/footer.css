@@ -37,7 +37,7 @@ footer .container {
   font-size: 16px;
   font-weight: 400;
   line-height: 32px;
-  height: 60px;
+  height: 50px;
   width: 570px;
 }
 
@@ -53,10 +53,10 @@ footer .container {
 .footer__form textarea {
   outline: 0;
   border: none;
-  background: #fff;
-  color: #c5cfca;
-  border-radius: 16px;
-  padding: 14px 24px;
+  background: var(--white);
+  color: var(--dark-brown);
+  border-radius: 12px;
+  padding: 7px 20px;
 
 }
 
@@ -74,11 +74,14 @@ footer .container {
 
 .footer__title,
 .footer__form input {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+}
+#captcha-footer{
+  margin-bottom: 0px;
 }
 
 .footer__form textarea {
-  margin-bottom: 29px;
+  margin-bottom: 20px;
   resize: none;
   /*без расширения*/
 }
@@ -154,4 +157,18 @@ footer .container {
 
 .footer__logo {
   margin-top: 20px;
+}
+
+/*---- капча ----*/
+.footer__captcha {
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.footer__inline {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  height: 10px;
 }

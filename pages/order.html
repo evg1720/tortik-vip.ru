@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- пропорция-->
+    <link rel="stylesheet" href="../style/forms.css">
     <link rel="stylesheet" href="../style/order.css">
     <link rel="stylesheet" href="../style/varialdes.css">
     <link rel="stylesheet" href="../style/main.css">
-    <title>Регистрация</title>
+    <title>Заказ</title>
 </head>
 
 <body>
     <section class="popupwrapper">
-        <form class="order__form popupwrapper__popup" action="/user/login/" method="post">
+        <form class="order__form popupwrapper__popup form" action="/user/login/" method="post">
             <a href="/index.html">
                 <!-- убрать ссылку -->
                 <div class="popupwrapper__clouse"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -28,58 +29,59 @@
                             </g>
                     </g>
                 </svg></div></a> 
-            <h1 class="order__form__title">Оформление заказа #007</h1>
+            <h1 class="form__title">Оформление заказа #007</h1>
             <div class="order__parent flex">
                 <div class="order__left">
-                    <div class="order__form__style flex">
-                        <div class="order__form__group flex">
-                            <input class="order__form__input" placeholder=" " type="text">
-                            <label class="order__form__label">Ф.И.О.</label>
+                    <div class="form__style flex">
+                        <div class="form__group flex">
+                            <input class="form__input" placeholder=" " type="text">
+                            <label class="form__label">Ф.И.О.</label>
                         </div>
                     </div>
 
-                    <div class="order__form__style flex">
-                        <div class="order__form__group flex">
-                            <input class="order__form__input" placeholder="" type="tel">
-                            <label class="order__form__label">Телефон</label>
+                    <div class="form__style flex">
+                        <div class="form__group flex">
+                            <input class="form__input" placeholder="" type="tel">
+                            <label class="form__label">Телефон</label>
                         </div>
                     </div>
-                    <div class="order__form__style flex">
-                        <div class="order__form__group flex">
-                            <input class="order__form__input" placeholder="" type="email">
-                            <label class="order__form__label">E-mail:</label>
+                    <div class="form__style flex">
+                        <div class="form__group flex">
+                            <input class="form__input" placeholder="" type="email">
+                            <label class="form__label">E-mail:</label>
                         </div>
                     </div>
-                    <div class="order__form__group flex orderdelivery">
-                        <input class="order__form__input" placeholder=" " type="text">
-                        <label class="order__form__label">Индекс</label>
+                    <div class="form__group flex orderdelivery">
+                        <input class="form__input" placeholder=" " type="text">
+                        <label class="form__label">Индекс</label>
                     </div>
-                    <div class="order__form__group flex orderdelivery">
-                        <input class="order__form__input" placeholder=" " type="text">
-                        <label class="order__form__label">Регион</label>
+                    <div class="form__group flex orderdelivery">
+                        <input class="form__input" placeholder=" " type="text">
+                        <label class="form__label">Регион</label>
                     </div>
-                    <div class="order__form__group flex orderdelivery">
-                        <input class="order__form__input" placeholder=" " type="text">
-                        <label class="order__form__label">Город (нас.пункт)</label>
+                    <div class="form__group flex orderdelivery">
+                        <input class="form__input" placeholder=" " type="text">
+                        <label class="form__label">Город (нас.пункт)</label>
                     </div>
-                    <div class="order__form__group flex orderdelivery">
-                        <input class="order__form__input" placeholder=" " type="text">
-                        <label class="order__form__label">Улица</label>
+                    <div class="form__group flex orderdelivery">
+                        <input class="form__input" placeholder=" " type="text">
+                        <label class="form__label">Улица</label>
                     </div>
                     <div class="order__home flex orderdelivery">
-                        <div class="order__form__group flex">
-                            <input class="order__form__input" placeholder=" " type="text">
-                            <label class="order__form__label">Дом</label>
+                        <div class="form__group flex">
+                            <input class="form__input" placeholder=" " type="text">
+                            <label class="form__label">Дом</label>
                         </div>
-                        <div class="order__form__group flex">
-                            <input class="order__form__input" placeholder=" " type="text">
-                            <label class="order__form__label">Кв.</label>
+                        <div class="form__group flex">
+                            <input class="form__input" placeholder=" " type="text">
+                            <label class="form__label">Кв.</label>
                         </div>
-                        <div class="order__form__group flex">
-                            <input class="order__form__input" placeholder=" " type="text">
-                            <label class="order__form__label">Корпус</label>
+                        <div class="form__group flex">
+                            <input class="form__input" placeholder=" " type="text">
+                            <label class="form__label">Корпус</label>
                         </div>
                     </div>
+                    <div class="emptyblock"></div>
                     <div class="form__style form__style__order flex ">
                         <div class="radio">
                             <input class="radio__input" name="order_delivery_input" type="radio" id="order_delivery_input1">
@@ -101,9 +103,9 @@
                     </div>
                 </div> -->
                     <div class="order__promo flex">
-                        <div class="order__form__group flex">
-                            <input class="order__form__input" placeholder=" " type="text">
-                            <label class="order__form__label">ПРОМОКОД</label>
+                        <div class="form__group flex">
+                            <input class="form__input" placeholder=" " type="text">
+                            <label class="form__label">ПРОМОКОД</label>
                         </div>
                     </div>
                 </div>
@@ -220,12 +222,12 @@
                 <label class="checkbox" for="checkboxtwo">
                     <input class="checkbox__inp" type="checkbox" id="checkboxtwo" checked>
                     <span class="checkbox__inner">
-                        Я согласен на <a class="order__agreement" href="/pages/rest/personalization.html">обработку
+                        Я согласен на <a class="order__agreement" href="/pages/personalization.html">обработку
                             персональных данных</a>
                     </span>
                 </label>
             </div>
-            <a class="order__form__button button" id="btn" onclick="printmsg()" href="https://ya.ru/">Оформить
+            <a class="form__button button" id="btn" onclick="printmsg()" href="https://ya.ru/">Оформить
                 заказ</a>
         </form>
     </section>

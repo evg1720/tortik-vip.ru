@@ -2,8 +2,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
+}
+/**/
+
+/*---- scroll-----*/
+
+html::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
 }
 
+html::-webkit-scrollbar-thumb {
+    background: var(--gray);
+}
+
+html::-webkit-scrollbar-track {
+    /* фон */
+    background: var(--black);
+}
 /* ---- other----*/
 
 body {
@@ -130,6 +147,7 @@ p {
     height: 100vh;
     display: flex;
     background: rgba(0, 0, 0, .8);
+
 }
 
 .popupwrapper__popup {
@@ -142,8 +160,27 @@ p {
     font-family: 'MullerBold';
     font-size: 16px;
     background: var(--white);
+    max-height: 90vh;
+    overflow-y: scroll;
 }
 
+/*---- scroll-----*/
+
+.popupwrapper__popup::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+}
+
+.popupwrapper__popup::-webkit-scrollbar-thumb {
+    background: var(--gray);
+}
+
+.popupwrapper__popup::-webkit-scrollbar-track {
+    /* фон */
+    background: var(--black);
+}
+
+/*------------------*/
 .popupwrapper__clouse {
     position: absolute;
     right: 15px;
