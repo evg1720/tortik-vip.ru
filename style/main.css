@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    cursor: url('https://vsthemes.org//uploads/cursors/48862/e3436134cec2166922b836b0ee17e50e.webp'), auto;
+    /* cursor: url('https://vsthemes.org//uploads/cursors/48862/e3436134cec2166922b836b0ee17e50e.webp'), auto; */
 }
-a:hover {
+/* a:hover {
     cursor: url('foo519.cur'), auto;
-}
+} */
 /**/
 
 /*---- scroll-----*/
@@ -171,7 +171,7 @@ p {
     max-height: 90vh;
     
  
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
 
 }
 

@@ -31,7 +31,26 @@
           </g>
         </g>
       </svg></a></div>
-      <img class="zoom__img" src="" alt="" srcset="">
+      <!-- <img class="zoom__img" src="" alt="" srcset=""> -->
+      <section class="main__left section_swiper">
+        <div class="swiper-container gallery-top">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" data-zoom="zoom" style="background-image:url(/img/cake/cake1.jpg)"></div>
+            <div class="swiper-slide" data-zoom="zoom" style="background-image:url(/img/cake/cake2.jpg)"></div>
+            <div class="swiper-slide" data-zoom="zoom" style="background-image:url(/img/cake/cake3.jpg)"></div>
+          </div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next swiper-button-white"></div>
+          <div class="swiper-button-prev swiper-button-white"></div>
+        </div>
+        <div class="swiper-container gallery-thumbs">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image:url(/img/cake/cake1.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(/img/cake/cake2.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(/img/cake/cake3.jpg)"></div>
+          </div>
+        </div>
+      </section>
     </div>
   </section>
   <header class="header">
@@ -93,9 +112,9 @@
         <div class="contact__one">
           <div class="header__bottoms display__two">
             <a class="button__indent__a button button__indent" id="login" href="#"
-              data-popup-link="login_popup">Вход</a>
+              >Вход</a>
             <a class="button__indent__a button button__indent" id="registration" href="#"
-              data-popup-link="registration_popup">Регистрация</a>
+              >Регистрация</a>
           </div>
         </div>
         <!-- <div class="header__other">
@@ -114,9 +133,9 @@
     <section class="main__left section_swiper">
       <div class="swiper-container gallery-top">
         <div class="swiper-wrapper">
-          <div class="swiper-slide" data-zoom="zoom" style="background-image:url(/img/cake/cake1.jpg)"></div>
-          <div class="swiper-slide" data-zoom="zoom" style="background-image:url(/img/cake/cake2.jpg)"></div>
-          <div class="swiper-slide" data-zoom="zoom" style="background-image:url(/img/cake/cake3.jpg)"></div>
+          <div class="swiper-slide" data-zoom="zoom" data-popup-link="zoompopup" style="background-image:url(/img/cake/cake1.jpg)"></div>
+          <div class="swiper-slide" data-zoom="zoom" data-popup-link="zoompopup" style="background-image:url(/img/cake/cake2.jpg)"></div>
+          <div class="swiper-slide" data-zoom="zoom" data-popup-link="zoompopup" style="background-image:url(/img/cake/cake3.jpg)"></div>
         </div>
         <!-- Add Arrows -->
         <div class="swiper-button-next swiper-button-white"></div>
@@ -280,6 +299,7 @@
         вместе с нами!</p>
     </div>
   </footer>
+  <script src="/script/popup.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script>
     var galleryThumbs = new Swiper('.gallery-thumbs', {
@@ -305,7 +325,7 @@
   <script src="/script/star.js"></script>
   <script src="/script/file__add.js"></script>
 
-  <script src="/script/zoom.js"></script>
+  <!-- <script src="/script/zoom.js"></script> -->
 
   <script type="module" src="/script/footer.js"></script>
 </body>
