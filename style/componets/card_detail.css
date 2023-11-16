@@ -277,6 +277,10 @@
     align-items: center;
     gap: 30px;
 }
+.zoom__img {
+    display: block;
+    height: 70vh;
+
 
 /*---- капча ----*/
 .footer__captcha {
@@ -544,4 +548,5 @@
     .header__item:nth-child(1) {
         padding: 95px 20px 20px 20px;
     }
+
 }
