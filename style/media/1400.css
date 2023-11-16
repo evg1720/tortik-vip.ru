@@ -1,4 +1,9 @@
 @media (max-width: 1400px) {
+
+    .container {
+        padding: 0px 30px;
+    }
+
     .header__logo {
         margin-right: calc((100vw - 1025px)/(1920 - 1025) * (40 - 10) + 10px);
     }
@@ -8,6 +13,10 @@
     .header__menu__list {
         gap: 10px calc((100vw - 1025px)/(1400 - 1025) * (70 - 10) + 10px);
         margin-right: calc((100vw - 1025px)/(1400 - 1025) * (70 - 0) + 0px);
+    }
+
+    .header__item__link {
+        font-size: 16px;
     }
 
     /* ---hero--- */
@@ -35,6 +44,7 @@
 
     .list__cakes {
         grid-template-columns: repeat(4, calc((100vw - 1024px)/(1400 - 1024) * (300 - 235) + 235px));
+        gap: 15px;
 
     }
 
@@ -56,16 +66,13 @@
         padding: 0.8em calc((100vw - 1024px)/(1400 - 1024) * (1.2 - 0.5) + 0.5em);
     }
 
-    .list__righ__button {
-        font-size: 14px;
-    }
-
     .second__level__heading {
         margin-top: 40px;
     }
 
     .footer__text {
         font-size: calc((100vw - 320px)/(1400 - 320) * (16 - 14) + 14px);
+        padding-top: calc((100vw - 1024px)/(1400 - 1024) * (75 - 50) + 50px);
     }
 
     /* .footer__form {

@@ -360,3 +360,30 @@ footer .container {
 .footer__logo {
     margin-top: 20px;
 }
+@media (max-width: 1400px) {
+    .exclusive {
+        gap: 30px;
+    }
+    .exclusive__left{
+        width: 90%;
+    }
+}
+@media (max-width: 1024px) {
+    .exclusive {
+        flex-direction: column;
+    }
+    .exclusive__right{
+        width: 90%;
+    }
+}
+@media (max-width: 576px) {
+    .exclusive__heading,
+    .exclusive__text {
+       font-size: 32px;
+    }
+    .exclusive__description {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+}

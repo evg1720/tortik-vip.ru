@@ -178,6 +178,9 @@ body {
 }
 
 /* --- list --- */
+.card__item{
+  align-items: center;
+}
 .card__item__price{
   color: var(--black);
   font-size: 20px;
@@ -598,6 +601,7 @@ body {
 
 .product {
   cursor: pointer;
+  z-index: 1;
 }
 
 .product__image {
@@ -768,4 +772,34 @@ footer .container {
 
 .footer__logo {
   margin-top: 20px;
+}
+/*---------------- media ----------------*/
+
+
+@media (max-width: 1024px) {
+  .container {
+      padding: 0 30px;
+  }
+
+  .list__cakes{
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 30px !important;
+  }
+  
+}
+
+@media (max-width: 576px) {
+  .container {
+      padding: 0 20px;
+  }
+  .card__item{
+    flex-direction: column;
+  }
+  .svg-one{
+    display: none;
+  }
+  .product__image{
+    height: 250px !important;
+  }
 }

@@ -150,6 +150,7 @@ p {
 
 }
 
+
 .popupwrapper__popup {
     position: relative;
     margin: auto;
@@ -160,7 +161,7 @@ p {
     font-family: 'MullerBold';
     font-size: 16px;
     background: var(--white);
-    max-height: 90vh;
+    max-height: 95vh;
     overflow-y: scroll;
 }
 
