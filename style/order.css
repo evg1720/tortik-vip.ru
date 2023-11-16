@@ -214,5 +214,32 @@
 }
 .form__style__order{
   font-size: 15px;
-  gap: 10px;
+  gap: 7px;
+}
+@media (max-width: 768px) {
+  /*--------*/
+  .order__parent {
+      flex-direction: column-reverse;
+  }
+  .form__group{
+    width: 90%;
+  }
+  .order__right{
+    margin-bottom: 10px;
+  }
+  .order__left{
+    width: 90%;
+    margin: 0 0 0 20px;
+  }
+  .form__style__order{
+    gap: 80px;
+  }
+}
+@media (max-width: 576px) {
+  .form__style__order{
+      gap: 40px;
+  }
+  .order__right {
+    margin-bottom: 20px;
+}
 }

@@ -5,6 +5,22 @@
         height: 75px;
     }
 
+    .header__item:not(:first-child) {
+        padding: 20px 30px;
+    }
+
+    .header__item:nth-child(1) {
+        padding: 120px 20px 20px 30px;
+    }
+
+    .header__item__link {
+        line-height: 14px;
+    }
+
+    .header__menu__list {
+        border-radius: 0px 0px 24px 24px;
+    }
+
     .list__cakes {
         grid-template-columns: repeat(2, 1fr);
     }

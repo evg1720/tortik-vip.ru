@@ -396,3 +396,33 @@ footer .container {
 .footer__logo {
     margin-top: 20px;
 }
+
+@media (max-width: 1024px) {
+    .contacts__map__container {
+        gap: 30px;
+        ;
+    }
+}
+
+@media (max-width: 768px) {
+    .contacts__map__container {
+        flex-direction: column-reverse;
+    }
+    .contacts__map__left,
+    .ymaps-2-1-79-map {
+        width: 100% !important;
+    }
+    .contacts__map__name{
+        font-size: 32px;
+    }
+}
+@media (max-width: 768px) {
+    .contacts__map__left{
+        display: none;
+    }
+}
+@media (max-width: 576px) {
+    .contact__map__tell{
+        font-size: 14px;
+    }
+}

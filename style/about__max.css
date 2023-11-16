@@ -346,3 +346,37 @@ footer .container {
 .footer__logo {
     margin-top: 20px;
 }
+/*---- капча ----*/
+
+.footer__captcha {
+    gap: 25px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer__inline {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    height: 10px;
+}
+
+.footer__captcha__text {
+    color: var(--light-gold);
+    font-size: 24px;
+}
+
+#captcha-footer {
+    max-width: 40%;
+}
+
+@media (max-width: 576px) {
+    .about__max__heading{
+        font-size: 32px;
+    }
+    .about__max__description{
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+

@@ -1,4 +1,20 @@
 @media (max-width: 576px) {
+
+    .header__menu__list {
+        width: 320px;
+        top: 0px;
+        left: -320px;
+        border-radius: 0px 0px 16px 16px;
+    }
+
+    .header__item:not(:first-child) {
+        padding: 20px;
+    }
+
+    .header__item:nth-child(1) {
+        padding: 95px 20px 20px 20px;
+    }
+
     .container {
         padding: 0 15px;
     }
