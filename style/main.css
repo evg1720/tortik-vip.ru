@@ -2,7 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   
+    cursor: url('https://vsthemes.org//uploads/cursors/48862/e3436134cec2166922b836b0ee17e50e.webp'), auto;
+}
+a:hover {
+    cursor: url('foo519.cur'), auto;
 }
 /**/
 
@@ -41,6 +44,9 @@ header {
 .none {
     max-height: 0;
     overflow: hidden;
+}
+.overflow_yscroll {
+    overflow-y: scroll;
 }
 
 .button {
@@ -161,7 +167,7 @@ p {
     font-size: 16px;
     background: var(--white);
     max-height: 90vh;
-    overflow-y: scroll;
+    
 }
 
 /*---- scroll-----*/
@@ -176,9 +182,21 @@ p {
 }
 
 .popupwrapper__popup::-webkit-scrollbar-track {
-    /* фон */
     background: var(--black);
 }
+
+/* .popupwrapper__popup-scroll::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+}
+
+.popupwrapper__popup-scroll::-webkit-scrollbar-thumb {
+    background: var(--gray);
+}
+
+.popupwrapper__popup-scroll::-webkit-scrollbar-track {
+    background: var(--black);
+} */
 
 /*------------------*/
 .popupwrapper__clouse {

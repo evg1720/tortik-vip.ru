@@ -274,3 +274,7 @@
     align-items: center;
     gap: 30px;
 }
+.zoom__img {
+    display: block;
+    height: 70vh;
+}
