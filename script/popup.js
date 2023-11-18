@@ -34,7 +34,7 @@ class Popup {
     }
 
     popupScroll() {
-        if (this.popupBody.offsetHeight >= (window.innerHeight * 0.88)) {
+        if (this.popupBody.offsetHeight >= (window.innerHeight * 0.944)) {
             this.popupBody.classList.add("overflow_yscroll")
         } else {
             this.popupBody.classList.remove("overflow_yscroll")
