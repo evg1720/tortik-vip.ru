@@ -23,7 +23,6 @@ body {
   text-align: center;
   line-height: 1;
   border-radius: 10px;
-  font-family: 'MullerRegular';
   cursor: pointer;
   color: var(--gold-color);
   font-weight: 400;
@@ -328,12 +327,10 @@ body {
 }
 
 .registrationlist__header__regular {
-  font-family: 'MullerRegular';
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .registrationlist__header__bold {
-  font-family: 'MullerBold';
   font-size: 14px;
   font-weight: 700;
 }
@@ -423,7 +420,7 @@ tbody tr:nth-child(odd):hover {
   border-radius: 5px;
   padding: 10px 30px;
 
-  font-family: 'MullerBold';
+
   font-size: 18px;
   color: var(--black);
 

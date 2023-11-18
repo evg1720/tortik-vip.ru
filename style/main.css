@@ -4,6 +4,7 @@
     box-sizing: border-box;
     /* cursor: url('https://vsthemes.org//uploads/cursors/48862/e3436134cec2166922b836b0ee17e50e.webp'), auto; */
 }
+
 /* a:hover {
     cursor: url('foo519.cur'), auto;
 } */
@@ -12,8 +13,8 @@
 /*---- scroll-----*/
 
 html::-webkit-scrollbar {
-    width: 7px;
-    height: 7px;
+    width: 4px;
+    height: 4px;
 }
 
 html::-webkit-scrollbar-thumb {
@@ -24,6 +25,7 @@ html::-webkit-scrollbar-track {
     /* фон */
     background: var(--black);
 }
+
 /* ---- other----*/
 
 body {
@@ -45,6 +47,7 @@ header {
     max-height: 0;
     overflow: hidden;
 }
+
 .overflow_yscroll {
     overflow-y: scroll;
 }
@@ -168,9 +171,15 @@ p {
     font-size: 16px;
     background: var(--white);
 
+
     max-height: 95vh;
     
  
+
+   
+
+
+
     /* overflow-y: scroll; */
 
 }

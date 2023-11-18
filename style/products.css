@@ -333,7 +333,6 @@ body {
 }
 
 .products__header__bold {
-  font-family: 'MullerBold';
   font-size: 14px;
   font-weight: 700;
 }
@@ -391,7 +390,6 @@ tbody tr:hover {
   border-radius: 5px;
   padding: 10px 30px;
 
-  font-family: 'MullerBold';
   font-size: 18px;
   color: var(--black);
 
@@ -420,7 +418,6 @@ tbody tr:hover {
   border-radius: 5px;
   padding: 10px 30px;
 
-  font-family: 'MullerBold';
   font-size: 18px;
   color: var(--black);
 
@@ -665,4 +662,11 @@ footer {
   .display__two {
     display: none;
   }
+}
+@media (max-width: 576px) {
+  .products__link {
+    flex-direction: column;
+    gap: 25px;
+  }
+
 }

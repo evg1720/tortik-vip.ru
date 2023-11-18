@@ -333,7 +333,6 @@ body {
 }
 
 .categories__header__bold {
-  font-family: 'MullerBold';
   font-size: 14px;
   font-weight: 700;
 }
@@ -390,7 +389,6 @@ tbody tr:hover {
   border-radius: 5px;
   padding: 10px 30px;
 
-  font-family: 'MullerBold';
   font-size: 18px;
   color: var(--black);
 
@@ -419,7 +417,6 @@ tbody tr:hover {
   border-radius: 5px;
   padding: 10px 30px;
 
-  font-family: 'MullerBold';
   font-size: 18px;
   color: var(--black);
 
@@ -571,4 +568,17 @@ footer {
 
 .footer__logo {
   width: 100px;
+}
+/*---------------- media ----------------*/
+
+
+
+  
+@media (max-width: 576px) {
+.categories__link{
+  flex-direction: column;
+}
+.categories__link{
+  gap: 25px;
+}
 }

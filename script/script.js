@@ -1,7 +1,7 @@
 
 new Accordion('.accordion-container')
 
-import { MoreList } from "../script/moreList.js"
+import { MoreList } from "/script/moreList.js"
 
 let clouse_it = "<p>Закрыть</p>"
 
