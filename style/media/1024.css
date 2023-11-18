@@ -68,9 +68,9 @@
     display: block;
     position: absolute;
     top: -22px;
-    left: -420px;
+    left: -425px;
     background-color: var(--white);
-    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px var(--black);
     border-radius: 0px 0px 32px 32px;
     z-index: 2;
     transition: transform .5s;

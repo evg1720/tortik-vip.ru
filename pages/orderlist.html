@@ -5,59 +5,94 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- пропорция-->
-        <link rel="icon" href="../img/logo__img.png">
-        <link rel="stylesheet" href="../style/orderlist.css">
-        <link rel="stylesheet" href="../style/normalize.css">
-        <link rel="stylesheet" href="../style/varialdes.css">
+        <link rel="stylesheet" href="/style/orderlist.css">
+        <link rel="stylesheet" href="/style/admin.css">
+        <link rel="stylesheet" href="/style/normalize.css">
+        <link rel="stylesheet" href="/style/varialdes.css">
+        <link rel="stylesheet" href="/style/main.css">
+        <link rel="stylesheet" href="/style/registerform.css">
+        <link rel="stylesheet" href="/style/style.css">
         <title>Заказы</title>
 </head>
 
 <body>
-        <header class="header mb-5">
-                <div class="container">
-                        <div class="header__container">
-                                <button class="header__burger__btn" id="burger">
-                                        <span></span><span></span><span></span>
-                                </button>
-                                <a href="../index.html">
-                                        <picture class="header__logo">
-                                                <img class="header__logo__img" src="/img/header-logonew.png" alt="#">
-                                        </picture>
-                                </a>
-                                <nav class="header__menu">
-                                        <ul class="header__menu__list">
-                                                <li class="header__item">
-                                                        <a href="../pages/about__max.html" class="header__item__link">О
-                                                                нас
-                                                        </a>
-                                                </li>
-                                                <li class="header__item"><a href="../pages/exclusive.html"
-                                                                class="header__item__link">
-                                                                Эксклюзив
-                                                        </a></li>
-                                                <li class="header__item"><a href="../pages/partners.html"
-                                                                class="header__item__link">
-                                                                Партнеры
-                                                        </a></li>
-                                                <li class="header__item"><a href="../pages/contacts__map.html"
-                                                                class="header__item__link">
-                                                                Контакты
-                                                        </a></li>
-                                                <li class="header__item display"><a class="header__item__link"
-                                                                href="">Вход и регистрация</a></li>
-                                        </ul>
-                                </nav>
-                                <div class="contact__one">
-                                        <div class="header__bottoms">
-                                                <a class=" button button__indent__a" id="orderlist__exit"
-                                                        href="/user/logout/">Выход</a>
-                                                <a class="button__two button__indent__a" id="orderlist__admin"
-                                                        href="/site-admin/">Админка</a>
-                                        </div>
-                                </div>
-                        </div>
-                </div>
-        </header>
+        <!-- ***** header ***** -->
+
+  <header class="header mb-50">
+        <div class="container">
+          <div class="header__container">
+            <button class="header__burger__btn" id="burger">
+              <span></span><span></span><span></span>
+            </button>
+            <a href="/index.html">
+              <picture class="header__logo">
+                <img class="header__logo__img" src="/img/header-logonew.png" alt="#">
+              </picture>
+            </a>
+            <nav class="header__menu">
+              <ul class="header__menu__list">
+                <li class="header__item">
+                  <a href="/pages/about__max.html" class="header__item__link">О нас
+                  </a>
+                </li>
+                <li class="header__item"><a href="/pages/exclusive.html" class="header__item__link">
+                    Эксклюзив
+                  </a></li>
+                <li class="header__item"><a href="/pages/partners.html" class="header__item__link">
+                    Партнеры
+                  </a></li>
+                <li class="header__item"><a href="/pages/contacts__map.html" class="header__item__link">
+                    Контакты
+                  </a></li>
+                <li class="header__item display"><a class="header__item__link" href="">Вход</a></li>
+                <li class="header__item display"><a class="header__item__link" href="">Регистрация</a></li>
+              </ul>
+            </nav>
+            <a class="header__recycle" href="/pages/order.html">
+    
+              <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+              <svg class="header__recycle__svg" width="800px" height="800px" viewBox="0 0 32 32" id="svg5">
+    
+                <defs id="defs2" />
+    
+                <g id="layer1" transform="translate(-12,-292)">
+    
+                  <path
+                    d="m 21,316.00586 c -1.645008,0 -3,1.35499 -3,3 0,1.64501 1.354992,3 3,3 1.645008,0 3,-1.35499 3,-3 0,-1.64501 -1.354992,-3 -3,-3 z m 0,2 c 0.564129,0 1,0.43587 1,1 0,0.56413 -0.435871,1 -1,1 -0.564129,0 -1,-0.43587 -1,-1 0,-0.56413 0.435871,-1 1,-1 z"
+                    id="circle5400"
+                    style="fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;-inkscape-stroke:none" />
+    
+                  <path
+                    d="m 35.999999,316.00586 c -1.645008,0 -3,1.35499 -3,3 0,1.64501 1.354992,3 3,3 1.645008,0 3,-1.35499 3,-3 0,-1.64501 -1.354992,-3 -3,-3 z m 0,2 c 0.564129,0 1,0.43587 1,1 0,0.56413 -0.435871,1 -1,1 -0.564129,0 -1,-0.43587 -1,-1 0,-0.56413 0.435871,-1 1,-1 z"
+                    id="circle5402"
+                    style="fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;-inkscape-stroke:none" />
+    
+                  <path
+                    d="m 15,294.00586 c -0.552285,0 -1,0.44772 -1,1 0,0.55228 0.447715,1 1,1 h 1.179688 l 2.65039,13.24219 C 17.759297,309.70823 17,310.77542 17,312.00586 c 0,1.6447 1.355301,3 3,3 h 18.011718 c 0.552285,0 1,-0.44772 1,-1 0,-0.55228 -0.447715,-1 -1,-1 H 20 c -0.571296,0 -1,-0.4287 -1,-1 0,-0.5713 0.428704,-1 1,-1 h 16.011718 3 c 0.492161,2.4e-4 0.911339,-0.35764 0.988281,-0.84375 l 1.730469,-11 c 0.09599,-0.60725 -0.373487,-1.15652 -0.988281,-1.15625 H 18.619141 l -0.638672,-3.19531 C 17.887292,294.34287 17.476874,294.00603 17,294.00586 Z m 4.019531,6 h 20.552734 l -1.416016,9 L 20.820312,309 Z m 3.980469,2 c -0.552285,0 -1,0.44772 -1,1 0,0.55228 0.447715,1 1,1 h 13.011718 c 0.552285,0 1,-0.44772 1,-1 0,-0.55228 -0.447715,-1 -1,-1 z m 2,3 c -0.552285,0 -1,0.44772 -1,1 0,0.55228 0.447715,1 1,1 h 9.011718 c 0.552285,0 1,-0.44772 1,-1 0,-0.55228 -0.447715,-1 -1,-1 z"
+                    id="path5404"
+                    style="fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;-inkscape-stroke:none" />
+                </g>
+              </svg></a>
+            <div class="contact__one">
+              <div class="header__bottoms display__two">
+                <a class="button__indent__a button button__indent" id="login" href="#"
+                  data-popup-link="login_popup">Вход</a>
+                <a class="button__indent__a button button__indent" id="registration" href="#"
+                  data-popup-link="registration_popup">Регистрация</a>
+              </div>
+            </div>
+            <!-- <div class="header__other">
+              <button class="dropbutton button" id="сabinet">Кабинет</button>
+              <div class="drop-down">
+                <a href="/pages/my__page.html">Моя страница</a>
+                <a href="/pages/historyorder.html">Мои заказы</a>
+                <a href="/pages/admin.html">ADMIN</a>
+                <a href="/pages/password.html">Изменить пароль</a>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </header>
 
         <section class="orderlist">
                 <div class="container">
@@ -87,9 +122,9 @@
                                                         <td class="orderlist__header__bold">Улица</td>
                                                         <td class="orderlist__header__bold">Дом-кв</td>
                                                         <td class="orderlist__header__bold">ТМЦ</td>
-                                                        <td class="orderlist__header__bold">Кол-во (шт.)</td>
-                                                        <td class="orderlist__header__bold">Масса (кг.)</td>
-                                                        <td class="orderlist__header__bold">Скидка (%)</td>
+                                                        <td class="orderlist__header__bold orderlist__padding">шт.</td>
+                                                        <td class="orderlist__header__bold orderlist__padding">кг.</td>
+                                                        <td class="orderlist__header__bold orderlist__padding">%</td>
                                                         <td class="orderlist__header__bold">Сумма (руб.)</td>
                                                         <td class="orderlist__header__bold">-----</td>
                                                         <td class="orderlist__header__bold">-----</td>
@@ -116,12 +151,12 @@
                                                         <td class="orderlist__header__regular">0</td>
                                                         <td class="orderlist__header__regular">790</td>
                                                         <td class="orderlist__header__regular"><a class="orderlist_a"
-                                                                        href="/detail/1/">Просмотреть</a></td>
+                                                                        href="/detail/1/">Просмотр</a></td>
                                                         <td class="orderlist__header__regular"><a class="orderlist_a"
                                                                         href="/site-admin/product_update/1/">Изменить</a>
                                                         </td>
                                                         <td class="orderlist__header__regular"><a class="orderlist_a"
-                                                                        href="/site-admin/product_remove/1/">удалить</a>
+                                                                        href="/site-admin/product_remove/1/">Удалить</a>
                                                         </td>
                                                 </tr>
                                                 <tr class="orderlist__table__body">
@@ -143,12 +178,12 @@
                                                         <td class="orderlist__header__regular">0</td>
                                                         <td class="orderlist__header__regular">790</td>
                                                         <td class="orderlist__header__regular"><a class="orderlist_a"
-                                                                        href="/detail/1/">Просмотреть</a></td>
+                                                                        href="/detail/1/">Просмотр</a></td>
                                                         <td class="orderlist__header__regular"><a class="orderlist_a"
                                                                         href="/site-admin/product_update/1/">Изменить</a>
                                                         </td>
                                                         <td class="orderlist__header__regular"><a class="orderlist_a"
-                                                                        href="/site-admin/product_remove/1/">удалить</a>
+                                                                        href="/site-admin/product_remove/1/">Удалить</a>
                                                         </td>
                                                 </tr>
                                                 <tr class="orderlist__table__body">
@@ -170,12 +205,12 @@
                                                         <td class="orderlist__header__regular">0</td>
                                                         <td class="orderlist__header__regular">790</td>
                                                         <td class="orderlist__header__regular"><a class="orderlist_a"
-                                                                        href="/detail/1/">Просмотреть</a></td>
+                                                                        href="/detail/1/">Просмотр</a></td>
                                                         <td class="orderlist__header__regular"><a class="orderlist_a"
                                                                         href="/site-admin/product_update/1/">Изменить</a>
                                                         </td>
                                                         <td class="orderlist__header__regular"><a class="orderlist_a"
-                                                                        href="/site-admin/product_remove/1/">удалить</a>
+                                                                        href="/site-admin/product_remove/1/">Удалить</a>
                                                         </td>
                                                 </tr>
                                                 <tr class="orderlist__table__body">
@@ -197,12 +232,12 @@
                                                         <td class="orderlist__header__regular">0</td>
                                                         <td class="orderlist__header__regular">790</td>
                                                         <td class="orderlist__header__regular"><a class="orderlist_a"
-                                                                        href="/detail/1/">Просмотреть</a></td>
+                                                                        href="/detail/1/">Просмотр</a></td>
                                                         <td class="orderlist__header__regular"><a class="orderlist_a"
                                                                         href="/site-admin/product_update/1/">Изменить</a>
                                                         </td>
                                                         <td class="orderlist__header__regular"><a class="orderlist_a"
-                                                                        href="/site-admin/product_remove/1/">удалить</a>
+                                                                        href="/site-admin/product_remove/1/">Удалить</a>
                                                         </td>
                                                 </tr>
                                                 <tr class="orderlist__table__body">
@@ -224,12 +259,12 @@
                                                         <td class="orderlist__header__regular">0</td>
                                                         <td class="orderlist__header__regular">790</td>
                                                         <td class="orderlist__header__regular"><a class="orderlist_a"
-                                                                        href="/detail/1/">Просмотреть</a></td>
+                                                                        href="/detail/1/">Просмотр</a></td>
                                                         <td class="orderlist__header__regular"><a class="orderlist_a"
                                                                         href="/site-admin/product_update/1/">Изменить</a>
                                                         </td>
                                                         <td class="orderlist__header__regular"><a class="orderlist_a"
-                                                                        href="/site-admin/product_remove/1/">удалить</a>
+                                                                        href="/site-admin/product_remove/1/">Удалить</a>
                                                         </td>
                                                 </tr>
                                                 <tr class="orderlist__table__body">
@@ -251,12 +286,12 @@
                                                         <td class="orderlist__header__regular">0</td>
                                                         <td class="orderlist__header__regular">790</td>
                                                         <td class="orderlist__header__regular"><a class="orderlist_a"
-                                                                        href="/detail/1/">Просмотреть</a></td>
+                                                                        href="/detail/1/">Просмотр</a></td>
                                                         <td class="orderlist__header__regular"><a class="orderlist_a"
                                                                         href="/site-admin/product_update/1/">Изменить</a>
                                                         </td>
                                                         <td class="orderlist__header__regular"><a class="orderlist_a"
-                                                                        href="/site-admin/product_remove/1/">удалить</a>
+                                                                        href="/site-admin/product_remove/1/">Удалить</a>
                                                         </td>
                                                 </tr>
                                                 <tr class="orderlist__table__body">
@@ -278,12 +313,12 @@
                                                         <td class="orderlist__header__regular">0</td>
                                                         <td class="orderlist__header__regular">790</td>
                                                         <td class="orderlist__header__regular"><a class="orderlist_a"
-                                                                        href="/detail/1/">Просмотреть</a></td>
+                                                                        href="/detail/1/">Просмотр</a></td>
                                                         <td class="orderlist__header__regular"><a class="orderlist_a"
                                                                         href="/site-admin/product_update/1/">Изменить</a>
                                                         </td>
                                                         <td class="orderlist__header__regular"><a class="orderlist_a"
-                                                                        href="/site-admin/product_remove/1/">удалить</a>
+                                                                        href="/site-admin/product_remove/1/">Удалить</a>
                                                         </td>
                                                 </tr>
                                                 <tr class="orderlist__table__body">
@@ -305,12 +340,12 @@
                                                         <td class="orderlist__header__regular">0</td>
                                                         <td class="orderlist__header__regular">790</td>
                                                         <td class="orderlist__header__regular"><a class="orderlist_a"
-                                                                        href="/detail/1/">Просмотреть</a></td>
+                                                                        href="/detail/1/">Просмотр</a></td>
                                                         <td class="orderlist__header__regular"><a class="orderlist_a"
                                                                         href="/site-admin/product_update/1/">Изменить</a>
                                                         </td>
                                                         <td class="orderlist__header__regular"><a class="orderlist_a"
-                                                                        href="/site-admin/product_remove/1/">удалить</a>
+                                                                        href="/site-admin/product_remove/1/">Удалить</a>
                                                         </td>
                                                 </tr>
                                                 <tr class="orderlist__table__body">
@@ -332,12 +367,12 @@
                                                         <td class="orderlist__header__regular">0</td>
                                                         <td class="orderlist__header__regular">790</td>
                                                         <td class="orderlist__header__regular"><a class="orderlist_a"
-                                                                        href="/detail/1/">Просмотреть</a></td>
+                                                                        href="/detail/1/">Просмотр</a></td>
                                                         <td class="orderlist__header__regular"><a class="orderlist_a"
                                                                         href="/site-admin/product_update/1/">Изменить</a>
                                                         </td>
                                                         <td class="orderlist__header__regular"><a class="orderlist_a"
-                                                                        href="/site-admin/product_remove/1/">удалить</a>
+                                                                        href="/site-admin/product_remove/1/">Удалить</a>
                                                         </td>
                                                 </tr>
                                                 <tr class="orderlist__table__body">
@@ -359,12 +394,12 @@
                                                         <td class="orderlist__header__regular">0</td>
                                                         <td class="orderlist__header__regular">790</td>
                                                         <td class="orderlist__header__regular"><a class="orderlist_a"
-                                                                        href="/detail/1/">Просмотреть</a></td>
+                                                                        href="/detail/1/">Просмотр</a></td>
                                                         <td class="orderlist__header__regular"><a class="orderlist_a"
                                                                         href="/site-admin/product_update/1/">Изменить</a>
                                                         </td>
                                                         <td class="orderlist__header__regular"><a class="orderlist_a"
-                                                                        href="/site-admin/product_remove/1/">удалить</a>
+                                                                        href="/site-admin/product_remove/1/">Удалить</a>
                                                         </td>
                                                 </tr>
                                                 <tr class="orderlist__table__body">
@@ -386,12 +421,12 @@
                                                         <td class="orderlist__header__regular">0</td>
                                                         <td class="orderlist__header__regular">790</td>
                                                         <td class="orderlist__header__regular"><a class="orderlist_a"
-                                                                        href="/detail/1/">Просмотреть</a></td>
+                                                                        href="/detail/1/">Просмотр</a></td>
                                                         <td class="orderlist__header__regular"><a class="orderlist_a"
                                                                         href="/site-admin/product_update/1/">Изменить</a>
                                                         </td>
                                                         <td class="orderlist__header__regular"><a class="orderlist_a"
-                                                                        href="/site-admin/product_remove/1/">удалить</a>
+                                                                        href="/site-admin/product_remove/1/">Удалить</a>
                                                         </td>
                                                 </tr>
                                                 <tr class="orderlist__table__body">
@@ -413,12 +448,12 @@
                                                         <td class="orderlist__header__regular">0</td>
                                                         <td class="orderlist__header__regular">790</td>
                                                         <td class="orderlist__header__regular"><a class="orderlist_a"
-                                                                        href="/detail/1/">Просмотреть</a></td>
+                                                                        href="/detail/1/">Просмотр</a></td>
                                                         <td class="orderlist__header__regular"><a class="orderlist_a"
                                                                         href="/site-admin/product_update/1/">Изменить</a>
                                                         </td>
                                                         <td class="orderlist__header__regular"><a class="orderlist_a"
-                                                                        href="/site-admin/product_remove/1/">удалить</a>
+                                                                        href="/site-admin/product_remove/1/">Удалить</a>
                                                         </td>
                                                 </tr>
                                                 <tr class="orderlist__table__body">
@@ -440,12 +475,12 @@
                                                         <td class="orderlist__header__regular">0</td>
                                                         <td class="orderlist__header__regular">790</td>
                                                         <td class="orderlist__header__regular"><a class="orderlist_a"
-                                                                        href="/detail/1/">Просмотреть</a></td>
+                                                                        href="/detail/1/">Просмотр</a></td>
                                                         <td class="orderlist__header__regular"><a class="orderlist_a"
                                                                         href="/site-admin/product_update/1/">Изменить</a>
                                                         </td>
                                                         <td class="orderlist__header__regular"><a class="orderlist_a"
-                                                                        href="/site-admin/product_remove/1/">удалить</a>
+                                                                        href="/site-admin/product_remove/1/">Удалить</a>
                                                         </td>
                                                 </tr>
                                                 <tr class="orderlist__table__body">
@@ -467,12 +502,12 @@
                                                         <td class="orderlist__header__regular">0</td>
                                                         <td class="orderlist__header__regular">790</td>
                                                         <td class="orderlist__header__regular"><a class="orderlist_a"
-                                                                        href="/detail/1/">Просмотреть</a></td>
+                                                                        href="/detail/1/">Просмотр</a></td>
                                                         <td class="orderlist__header__regular"><a class="orderlist_a"
                                                                         href="/site-admin/product_update/1/">Изменить</a>
                                                         </td>
                                                         <td class="orderlist__header__regular"><a class="orderlist_a"
-                                                                        href="/site-admin/product_remove/1/">удалить</a>
+                                                                        href="/site-admin/product_remove/1/">Удалить</a>
                                                         </td>
                                                 </tr>
                                                 <tr class="orderlist__table__body">
@@ -494,12 +529,12 @@
                                                         <td class="orderlist__header__regular">0</td>
                                                         <td class="orderlist__header__regular">790</td>
                                                         <td class="orderlist__header__regular"><a class="orderlist_a"
-                                                                        href="/detail/1/">Просмотреть</a></td>
+                                                                        href="/detail/1/">Просмотр</a></td>
                                                         <td class="orderlist__header__regular"><a class="orderlist_a"
                                                                         href="/site-admin/product_update/1/">Изменить</a>
                                                         </td>
                                                         <td class="orderlist__header__regular"><a class="orderlist_a"
-                                                                        href="/site-admin/product_remove/1/">удалить</a>
+                                                                        href="/site-admin/product_remove/1/">Удалить</a>
                                                         </td>
                                                 </tr>
                                         </tbody>
@@ -508,46 +543,42 @@
                 </div>
         </section>
         <footer>
-                <div class="container footer">
-                        <div class="footer__menu">
-                                <nav class="footer__list">
-                                        <ul class="footer__info">
-                                                <li class="footer__item"><a href="/index.html"><img class="footer__logo"
-                                                                        src="/img/footer-logonew.png" alt=""></a></li>
-                                                <li class="footer__item"><a href="../pages/about__max.html"
-                                                                class="footer__link">О нас</a></li>
-                                                <li class="footer__item"><a href="../pages/exclusive.html"
-                                                                class="footer__link">Эксклюзив</a></li>
-                                                <li class="footer__item"><a href="../pages/partners.html"
-                                                                class="footer__link">Партнёры</a></li>
-                                                <li class="footer__item"><a href="#" class="footer__link">Мои
-                                                                рецепты</a></li>
-                                                <li class="footer__item"><a href="#" class="footer__link">Бизнес
-                                                                план</a></li>
-                                                <li class="footer__item"><a href="#" class="footer__link">Реализация</a>
-                                                </li>
-                                                <li><a href="#" class="ok smail"><svg class="smail__zero" width="60"
-                                                                        height="60" viewBox="0 0 60 60" fill="none"
-                                                                        xmlns="http://www.w3.org/2000/svg">
-                                                                        <path d="M25.7054 19.9812C25.7054 22.4546 27.7105 24.4598 30.1838 24.4598C32.6572 24.4598 34.6623 22.4546 34.6623 19.9812C34.6623 17.5079 32.6572 15.5028 30.1838 15.5028C27.7105 15.5028 25.7054 17.5079 25.7054 19.9812Z"
-                                                                                fill="#666666" />
-                                                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                                d="M30 60C46.5686 60 60 46.5685 60 30C60 13.4315 46.5686 0 30 0C13.4314 0 0 13.4315 0 30C0 46.5685 13.4314 60 30 60ZM19.35 19.9811C19.35 13.9978 24.2004 9.14729 30.1838 9.14729C36.1673 9.14729 41.0176 13.9978 41.0176 19.9811C41.0176 25.9645 36.1673 30.8154 30.1838 30.8154C24.2004 30.8154 19.35 25.9645 19.35 19.9811ZM41.0823 36.3881C40.9448 36.4983 38.3457 38.5522 34.0085 39.4358L40.5554 45.9243C41.7067 47.0738 41.7081 48.9389 40.5586 50.0902C39.4091 51.2414 37.5444 51.2432 36.3927 50.0935L30.0368 43.904L24.2639 50.0536C23.6859 50.6532 22.9149 50.9547 22.1431 50.9547C21.407 50.9547 20.6703 50.6808 20.0986 50.1296C18.9274 49.0003 18.8935 47.1355 20.0228 45.9643L26.2369 39.4701C21.7782 38.6073 19.0718 36.4998 18.9324 36.3881C17.6633 35.3702 17.4594 33.5163 18.4772 32.247C19.4949 30.9778 21.3487 30.7739 22.6182 31.7916C22.645 31.8133 25.4756 33.9398 30.0366 33.9429C34.5977 33.9398 37.3698 31.8133 37.3966 31.7916C38.666 30.7739 40.5198 30.9778 41.5375 32.247C42.5553 33.5163 42.3515 35.3702 41.0823 36.3881Z"
-                                                                                fill="#666666" />
-                                                                </svg></a>
-                                                </li>
-                                                <li><a href="#" class="vk smail"><svg class="smail__zero" width="60"
-                                                                        height="60" viewBox="0 0 60 60" fill="none"
-                                                                        xmlns="http://www.w3.org/2000/svg">
-                                                                        <path d="M30 0C13.432 0 0 13.4314 0 30C0 46.5686 13.432 60 30 60C46.568 60 60 46.5686 60 30C60 13.4314 46.568 0 30 0ZM45.2176 33.2446C46.6159 34.6103 48.0951 35.8957 49.3504 37.4026C49.9065 38.0692 50.4307 38.7585 50.8297 39.5337C51.3993 40.6392 50.8849 41.8515 49.8954 41.9171L43.7494 41.9159C42.162 42.0473 40.8988 41.4071 39.8339 40.3218C38.9837 39.457 38.195 38.5332 37.3762 37.6389C37.0416 37.2718 36.6893 36.9262 36.2695 36.6543C35.4316 36.1093 34.7036 36.2762 34.2236 37.1515C33.7344 38.0421 33.6227 39.0292 33.5761 40.0205C33.5092 41.4697 33.0721 41.8484 31.618 41.9165C28.5109 42.062 25.5628 41.5906 22.8227 40.0241C20.4055 38.6425 18.5346 36.6924 16.9043 34.4845C13.7297 30.1805 11.2984 25.4566 9.11386 20.597C8.6222 19.5026 8.98189 18.917 10.1893 18.8943C12.1952 18.8557 14.2011 18.8606 16.2071 18.8925C17.0234 18.9054 17.5636 19.3725 17.8772 20.1428C18.9612 22.8098 20.2901 25.3473 21.9554 27.7007C22.3992 28.3274 22.8522 28.9522 23.4973 29.3948C24.2093 29.8834 24.7519 29.7219 25.0877 28.9271C25.3025 28.4219 25.3952 27.8817 25.4418 27.3404C25.6014 25.486 25.6205 23.6323 25.3442 21.7854C25.1724 20.6296 24.5224 19.8832 23.3702 19.6647C22.7834 19.5536 22.8694 19.3363 23.1548 19.0011C23.6501 18.4217 24.1142 18.0632 25.0416 18.0632L31.9857 18.062C33.0801 18.2768 33.3256 18.7679 33.4742 19.8703L33.4803 27.5871C33.4674 28.0137 33.6945 29.2782 34.4606 29.5574C35.0744 29.76 35.4795 29.2677 35.8465 28.8792C37.5118 27.112 38.6983 25.0263 39.7608 22.8675C40.2298 21.9155 40.6343 20.9303 41.0271 19.9433C41.3193 19.2135 41.7735 18.8544 42.5972 18.8667L49.2841 18.8747C49.4811 18.8747 49.6812 18.8765 49.8764 18.9103C51.0034 19.103 51.3121 19.5879 50.9635 20.6873C50.4147 22.4145 49.3485 23.8533 48.3063 25.2958C47.1892 26.8401 45.9977 28.3304 44.8917 29.8815C43.8752 31.2994 43.9556 32.0133 45.2176 33.2446Z"
-                                                                                fill="#666666" />
-                                                                </svg></a>
-                                                </li>
-                                        </ul>
-                                </nav>
-                        </div>
+                <div class="container footer__admin">
+                  <div class="footer__admin__menu">
+                    <nav class="footer__admin__list">
+                      <div class="footer__admin__item"><a href="/index.html"><img class="footer__admin__logo"
+                        src="/img/footer-logonew.png" alt=""></a></div>
+                      <ul class="footer__admin__info">
+                        <li class="footer__admin__item"><a href="/pages/about__max.html" class="footer__admin__link">О нас</a>
+                        </li>
+                        <li class="footer__admin__item"><a href="/pages/exclusive.html" class="footer__admin__link">Эксклюзив</a>
+                        </li>
+                        <li class="footer__admin__item"><a href="/pages/partners.html" class="footer__admin__link">Партнёры</a>
+                        </li>
+                        <li class="footer__admin__item display__three"><a href="#" class="footer__admin__link">Мои рецепты</a></li>
+                        <li class="footer__admin__item display__three"><a href="#" class="footer__admin__link">Бизнес план</a></li>
+                        <li class="footer__admin__item display__three"><a href="#" class="footer__admin__link">Реализация</a></li>
+                      </ul>
+                      <div class="flex">
+                      <div><a href="https://web.telegram.org/k/#@svetlana_cakes_sayansk" class="ok smail"><svg class="smail__zero"
+                        fill="#919191" width="60px" height="60px" viewBox="0 0 24 24">
+                        <path
+                          d="m12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12c0-6.627-5.373-12-12-12zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z" />
+                      </svg></a>
+                  </div>
+                  <div><a href="#" class="vk smail"><svg class="smail__zero" width="60" height="60" viewBox="0 0 60 60"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M30 0C13.432 0 0 13.4314 0 30C0 46.5686 13.432 60 30 60C46.568 60 60 46.5686 60 30C60 13.4314 46.568 0 30 0ZM45.2176 33.2446C46.6159 34.6103 48.0951 35.8957 49.3504 37.4026C49.9065 38.0692 50.4307 38.7585 50.8297 39.5337C51.3993 40.6392 50.8849 41.8515 49.8954 41.9171L43.7494 41.9159C42.162 42.0473 40.8988 41.4071 39.8339 40.3218C38.9837 39.457 38.195 38.5332 37.3762 37.6389C37.0416 37.2718 36.6893 36.9262 36.2695 36.6543C35.4316 36.1093 34.7036 36.2762 34.2236 37.1515C33.7344 38.0421 33.6227 39.0292 33.5761 40.0205C33.5092 41.4697 33.0721 41.8484 31.618 41.9165C28.5109 42.062 25.5628 41.5906 22.8227 40.0241C20.4055 38.6425 18.5346 36.6924 16.9043 34.4845C13.7297 30.1805 11.2984 25.4566 9.11386 20.597C8.6222 19.5026 8.98189 18.917 10.1893 18.8943C12.1952 18.8557 14.2011 18.8606 16.2071 18.8925C17.0234 18.9054 17.5636 19.3725 17.8772 20.1428C18.9612 22.8098 20.2901 25.3473 21.9554 27.7007C22.3992 28.3274 22.8522 28.9522 23.4973 29.3948C24.2093 29.8834 24.7519 29.7219 25.0877 28.9271C25.3025 28.4219 25.3952 27.8817 25.4418 27.3404C25.6014 25.486 25.6205 23.6323 25.3442 21.7854C25.1724 20.6296 24.5224 19.8832 23.3702 19.6647C22.7834 19.5536 22.8694 19.3363 23.1548 19.0011C23.6501 18.4217 24.1142 18.0632 25.0416 18.0632L31.9857 18.062C33.0801 18.2768 33.3256 18.7679 33.4742 19.8703L33.4803 27.5871C33.4674 28.0137 33.6945 29.2782 34.4606 29.5574C35.0744 29.76 35.4795 29.2677 35.8465 28.8792C37.5118 27.112 38.6983 25.0263 39.7608 22.8675C40.2298 21.9155 40.6343 20.9303 41.0271 19.9433C41.3193 19.2135 41.7735 18.8544 42.5972 18.8667L49.2841 18.8747C49.4811 18.8747 49.6812 18.8765 49.8764 18.9103C51.0034 19.103 51.3121 19.5879 50.9635 20.6873C50.4147 22.4145 49.3485 23.8533 48.3063 25.2958C47.1892 26.8401 45.9977 28.3304 44.8917 29.8815C43.8752 31.2994 43.9556 32.0133 45.2176 33.2446Z"
+                          fill="#666666" />
+                      </svg></a>
+                    </div>
+                  </div>
+                    </nav>
+                  </div>
                 </div>
-        </footer>
+              </footer>
+              <script src="/script/burger.js"></script>
 </body>
 
 </html>

@@ -336,7 +336,6 @@ tbody tr:nth-child(odd):hover {
     border-radius: 5px;
     padding: 10px 30px;
 
-    font-family: 'MullerBold';
     font-size: 18px;
     color: var(--black);
 
@@ -559,4 +558,9 @@ tbody tr:nth-child(odd):hover {
   
   .footer__logo {
     margin-top: 20px;
+  }
+  @media (max-width: 768px) {
+    .container {
+      padding: 0 10px !important;
+    }
   }

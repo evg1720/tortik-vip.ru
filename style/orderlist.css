@@ -293,7 +293,7 @@ body {
 .orderlist__table td,
 .products__table tr {
     text-align: center;
-    padding: 10px 0;
+    padding: 2px 0;
 }
 
 .orderlist__table__header {
@@ -302,12 +302,10 @@ body {
 }
 
 .orderlist__header__regular {
-    font-family: 'MullerRegular';
     font-size: 14px;
 }
 
 .orderlist__header__bold {
-    font-family: 'MullerRegular';
     font-size: 14px;
     color: var(--dark);
     font-weight: 700;
@@ -370,12 +368,14 @@ tbody tr:nth-child(odd):hover {
     border-radius: 5px;
     padding: 10px 30px;
 
-    font-family: 'MullerBold';
     font-size: 18px;
     color: var(--black);
 
     transition-duration: 0.2s, 0.3s;
     cursor: pointer;
+}
+.orderlist__padding{
+    padding: 0 5px !important;
 }
 
 .orderlist__link__item:hover {
@@ -399,7 +399,6 @@ tbody tr:nth-child(odd):hover {
     border-radius: 5px;
     padding: 10px 30px;
 
-    font-family: 'MullerBold';
     font-size: 18px;
     color: var(--black);
 
@@ -648,3 +647,9 @@ footer {
         display: none;
     }
 }
+@media (max-width: 576px) {
+    .orderlist__link {
+      flex-direction: column;
+      gap: 25px;
+    }
+  }

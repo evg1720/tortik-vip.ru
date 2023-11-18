@@ -359,7 +359,7 @@ body {
 }
 
 .list__more:not(.onclick) {
-  background: url("../../img/logo__three.svg") no-repeat;
+  background: url("//img/logo__three.svg") no-repeat;
   /* background-size: contain; */
   background-size: cover;
   background-position: center;
@@ -372,7 +372,7 @@ body {
 
 .list__close {
   position: relative;
-  background: url("../../img/logo__three.svg") no-repeat;
+  background: url("//img/logo__three.svg") no-repeat;
   /* background-size: contain; */
   background-size: cover;
   background-position: center;
@@ -382,7 +382,7 @@ body {
 }
 
 .list__close:hover {
-  /* background: url("../../img/footer-logo.png") no-repeat; */
+  /* background: url("//img/footer-logo.png") no-repeat; */
   background-color: var(--gold-x);
 }
 

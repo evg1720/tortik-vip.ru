@@ -1,4 +1,4 @@
-import { changeLabel } from "./../script/forms.js";
+import { changeLabel } from ".//script/forms.js";
 
 function noDigits(event) {
     let re = /^[\d\+][\d\(\)\ -]{4,14}\d$/;
