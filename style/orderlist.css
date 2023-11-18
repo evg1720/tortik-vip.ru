@@ -303,6 +303,7 @@ body {
 
 .orderlist__header__regular {
     font-size: 14px;
+    max-width: 50px;
 }
 
 .orderlist__header__bold {
@@ -374,7 +375,8 @@ tbody tr:nth-child(odd):hover {
     transition-duration: 0.2s, 0.3s;
     cursor: pointer;
 }
-.orderlist__padding{
+
+.orderlist__padding {
     padding: 0 5px !important;
 }
 
@@ -458,11 +460,11 @@ tbody tr:nth-child(odd):hover {
     color: var(--white);
 }
 
-.table-responsive{
+.table-responsive {
     max-height: 50vh;
     overflow-y: scroll;
     padding: 15px;
-  }
+}
 
 /*-----------------------footer----------------------*/
 footer {
@@ -647,9 +649,10 @@ footer {
         display: none;
     }
 }
+
 @media (max-width: 576px) {
     .orderlist__link {
-      flex-direction: column;
-      gap: 25px;
+        flex-direction: column;
+        gap: 25px;
     }
-  }
+}

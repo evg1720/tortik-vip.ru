@@ -524,14 +524,6 @@ tbody tr:nth-child(odd):hover {
     margin-top: 20px;
   }
   
-  .ok {
-    cursor: pointer;
-  }
-  
-  .vk {
-    cursor: pointer;
-    margin-left: 25px;
-  }
   
   .smail:hover svg path {
     fill: gold;

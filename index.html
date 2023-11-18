@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="style/accordion.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
   <link rel="icon" href="/img/logo__img.png">
+  <link rel="stylesheet" href="/style/my__page.css">
+  <link rel="stylesheet" href="/style/forms.css">
   <script defer src="script/swiper-main.js"></script>
   <link rel="stylesheet" href="style/style.css">
   <link rel="stylesheet" href="style/login.css">
@@ -149,6 +151,99 @@
     </form>
   </section>
 
+    <!-- ***** mypage ***** -->
+
+  <section class="popupwrapper none mypage" id="mypage__popup">
+    <form class="form mypage__form popupwrapper__popup" action="/user/login/" method="post">
+       <a href="/index.html"><div class="form__close"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="close">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M6.21991 6.21479C6.51281 5.92189 6.98768 5.92189 7.28057 6.21479L17.7854 16.7196C18.0783 17.0125 18.0783 17.4874 17.7854 17.7803C17.4925 18.0732 17.0177 18.0732 16.7248 17.7803L6.21991 7.27545C5.92702 6.98255 5.92702 6.50768 6.21991 6.21479Z"
+                            fill="#000000" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M17.7853 6.21479C18.0782 6.50769 18.0782 6.98256 17.7853 7.27545L7.28038 17.7802C6.98749 18.0731 6.51261 18.0731 6.21972 17.7802C5.92683 17.4873 5.92683 17.0124 6.21973 16.7195L16.7247 6.21478C17.0176 5.92189 17.4924 5.9219 17.7853 6.21479Z"
+                            fill="#000000" />
+                    </g>
+            </svg></div></a>
+        <h1 class="form__title">Моя страница</h1>
+        <div class="flex mypage__link">
+            <div class="mypage__photo__left">
+                <div class="mypage__photo">
+                    <label for="mypage__photoi" class="mypage__photo__link"><img src="/img/user.svg"
+                            class="mypage__photo__img" alt=""></label>
+                </div>
+                <input type="file" class="none" id="mypage__photoi" accept=".jpg,.jpeg,.svg,.png">
+                <!-- <label for="mypage__photoi" class="button">Изменить фото</label> -->
+
+            </div>
+            <div class="form__style">
+                <div class="form__group">
+                    <input class="form__input" placeholder=" " type="text">
+                    <label class="form__label">Имя</label>
+                </div>
+                <div class="form__group">
+                    <input class="form__input" placeholder=" " type="text">
+                    <label class="form__label">Фамилия</label>
+                </div>
+                <div class="form__group">
+                    <input class="form__input" placeholder=" " type="text">
+                    <label class="form__label">Отчество</label>
+                </div>
+
+                <div class="form__group">
+                    <input class="form__input" placeholder=" " type="text" id="username_input">
+                    <label class="form__label">Имя пользователя</label>
+                </div>
+            </div>
+        </div>
+        <div class="form__group">
+            <input class="form__input" type="date" name="trip-start">
+            <label class="form__label">Дата рождения</label>
+        </div>
+        <h4 class="form__title__gender">Пол</h4>
+        <div class="form__style form__style__gender flex ">
+            <div class="radio">
+                <input class="radio__input" name="male" type="radio" id="radio_1">
+                <label class="radio__label" for="radio_1">Мужской</label>
+            </div>
+            <div class="radio">
+                <input class="radio__input" name="male" type="radio" id="radio_2" checked>
+                <label class="radio__label" for="radio_2">Женский</label>
+            </div>
+        </div>
+        <div class="form__style flex">
+            <div class="form__group flex">
+                <input class="form__input" placeholder="" type="tel">
+                <label class="form__label">Телефон</label>
+            </div>
+            <div class="form__group flex">
+                <input class="form__input" placeholder=" " type="email">
+                <label class="form__label">E-mail:</label>
+            </div>
+        </div>
+        <div class="form__group flex">
+            <input class="form__input" placeholder=" " type="text">
+            <label class="form__label">Адрес</label>
+        </div>
+        <!-- <div class="form__style flex">
+        <div class="form__group flex">
+          <input class="form__input" placeholder=" " type="password">
+          <label class="form__label">Старый пароль:</label>
+        </div>
+        <div class="form__group flex">
+            <input class="form__input" placeholder=" " type="password">
+            <label class="form__label">Новый пароль:</label>
+          </div>
+        <div class="form__group flex">
+          <input class="form__input" placeholder=" " type="password">
+          <label class="form__label">Подтверждение пароля:</label>
+        </div>
+      </div> -->
+        <a class="form__button button" id="btn" onclick="printmsg()" href="https://ya.ru/">Сохранить</a>
+    </form>
+    <!-- <script type="module" src="mypageForm.js"></script> -->
+</section>
+
   <!-- ***** header ***** -->
 
   <header class="header mb-50">
@@ -217,7 +312,7 @@
         <div class="header__other">
           <button class="dropbutton button" id="сabinet">Кабинет</button>
           <div class="drop-down">
-            <a href="/pages/my__page.html">Моя страница</a>
+            <a data-popup-link="mypage__popup">Моя страница</a>
             <a href="/pages/historyorder.html">Мои заказы</a>
             <a href="/pages/admin.html">ADMIN</a>
             <a href="/pages/password.html">Изменить пароль</a>
@@ -367,7 +462,7 @@
             </div>
             <div class="list__card__more flex aic card__item">
               <a class="list__more__details" href="/pages/card__one.html">Подробнее</a>
-              <svg width="11" class="svg-one" height="18" viewBox="0 0 11 18" fill="none">
+              <svg width="11" class="svg-one" height="18" fill="none">
                 <path d="M1.49998 1.00002L9.27815 8.7782L1.49998 16.5564" stroke="#028e15" stroke-width="2" />
               </svg>
             </div>
@@ -441,7 +536,7 @@
             </div>
             <div class="list__card__more flex aic card__item">
               <a class="list__more__details" href="/pages/card__one.html">Подробнее</a>
-              <svg width="11" class="svg-one" height="18" viewBox="0 0 11 18" fill="none">
+              <svg width="11" class="svg-one" height="18" fill="none">
                 <path d="M1.49998 1.00002L9.27815 8.7782L1.49998 16.5564" stroke="#028e15" stroke-width="2" />
               </svg>
             </div>
@@ -515,7 +610,7 @@
             </div>
             <div class="list__card__more flex aic card__item">
               <a class="list__more__details" href="/pages/card__one.html">Подробнее</a>
-              <svg width="11" class="svg-one" height="18" viewBox="0 0 11 18" fill="none">
+              <svg width="11" class="svg-one" height="18" fill="none">
                 <path d="M1.49998 1.00002L9.27815 8.7782L1.49998 16.5564" stroke="#028e15" stroke-width="2" />
               </svg>
             </div>
@@ -589,7 +684,7 @@
             </div>
             <div class="list__card__more flex aic card__item">
               <a class="list__more__details" href="/pages/card__one.html">Подробнее</a>
-              <svg width="11" class="svg-one" height="18" viewBox="0 0 11 18" fill="none">
+              <svg width="11" class="svg-one" height="18" fill="none">
                 <path d="M1.49998 1.00002L9.27815 8.7782L1.49998 16.5564" stroke="#028e15" stroke-width="2" />
               </svg>
             </div>
@@ -663,7 +758,7 @@
             </div>
             <div class="list__card__more flex aic card__item">
               <a class="list__more__details" href="/pages/card__one.html">Подробнее</a>
-              <svg width="11" class="svg-one" height="18" viewBox="0 0 11 18" fill="none">
+              <svg width="11" class="svg-one" height="18" fill="none">
                 <path d="M1.49998 1.00002L9.27815 8.7782L1.49998 16.5564" stroke="#028e15" stroke-width="2" />
               </svg>
             </div>
@@ -737,7 +832,7 @@
             </div>
             <div class="list__card__more flex aic card__item">
               <a class="list__more__details" href="/pages/card__one.html">Подробнее</a>
-              <svg width="11" class="svg-one" height="18" viewBox="0 0 11 18" fill="none">
+              <svg width="11" class="svg-one" height="18" fill="none">
                 <path d="M1.49998 1.00002L9.27815 8.7782L1.49998 16.5564" stroke="#028e15" stroke-width="2" />
               </svg>
             </div>
@@ -811,7 +906,7 @@
             </div>
             <div class="list__card__more flex aic card__item">
               <a class="list__more__details" href="/pages/card__one.html">Подробнее</a>
-              <svg width="11" class="svg-one" height="18" viewBox="0 0 11 18" fill="none">
+              <svg width="11" class="svg-one" height="18"  fill="none">
                 <path d="M1.49998 1.00002L9.27815 8.7782L1.49998 16.5564" stroke="#028e15" stroke-width="2" />
               </svg>
             </div>
@@ -885,7 +980,7 @@
             </div>
             <div class="list__card__more flex aic card__item">
               <a class="list__more__details" href="/pages/card__one.html">Подробнее</a>
-              <svg width="11" class="svg-one" height="18" viewBox="0 0 11 18" fill="none">
+              <svg width="11" class="svg-one" height="18" fill="none">
                 <path d="M1.49998 1.00002L9.27815 8.7782L1.49998 16.5564" stroke="#028e15" stroke-width="2" />
               </svg>
             </div>
@@ -1306,6 +1401,7 @@
   <script type="module" src="/script/login.js"></script>
   <script type="module" src="/script/registerForm.js"></script>
   <script type="module" src="/script/footer.js"></script>
+  <script src="/script/my__page.js"></script>
   <script src="script/popup.js"></script>
 
 </body>
