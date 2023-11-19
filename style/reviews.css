@@ -108,6 +108,9 @@ body {
 }
 
 /*----------------------header---------------------------*/
+.display {
+  display: none;
+}
 
 .header {
   padding: 1px 0;
@@ -294,45 +297,42 @@ body {
 } */
 
 /*-------------------------Registrationlist--------------------------*/
-.display {
-  display: none;
-}
 .mtb-3 {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
 
-.slider {
+.support {
   flex-grow: 1;
 }
 
-.slider__table {
+.support__table {
   margin: auto;
   /*----Центрирование по центру---*/
-  width: 50%;
+  width: 100%;
   border-radius: 10px;
   box-shadow: 0 4px 16px var(--brown-cold);
   border-collapse: collapse;
   /*--Убрать сетку--*/
 }
 
-.slider__table td,
+.support__table td,
 .products__table tr {
   text-align: center;
   padding: 10px;
 }
 
-.slider__table__header {
+.support__table__header {
   border-radius: 10px;
   box-shadow: 0 4px 16px var(--brown-cold);
 }
 
-.slider__header__regular {
+.support__header__regular {
   font-family: 'MullerRegular';
-  font-size: 16px;
+  font-size: 14px;
 }
 
-.slider__header__bold {
+.support__header__bold {
   font-size: 14px;
   font-weight: 700;
 }
@@ -350,47 +350,50 @@ tbody td {
   outline: 1px solid var(--gray);
 }
 
-tbody tr:hover {
+
+tbody tr:nth-child(even):hover, 
+tbody tr:nth-child(odd):hover {
+  position: relative;
+  z-index: 1;
   background-color: var(--green-y);
   box-shadow: 0 4px 16px var(--dark-brown);
 }
 
-.slider_a {
+.support_a {
   color: var(--gray-gray);
 }
 
-.slider_a:hover {
+.support_a:hover {
   color: var(--dark-green);
 }
-.slider_a:focus {
+.support_a:focus {
   transition: background 0.3s ease, color 0.2s linear;
 }
 
-.slider_a:active {
+.support_a:active {
   color: var(--dark-brown);
 }
-.slider__img{
-    max-width: 50px;
-}
-.slider__info {
+
+.support__info {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.slider__link {
+.support__link {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 50px;
 }
 
-.slider__link__item {
+.support__link__item {
   display: block;
   outline: 2px solid var(--green);
   border-radius: 5px;
   padding: 10px 30px;
 
+  font-family: 'MullerBold';
   font-size: 18px;
   color: var(--black);
 
@@ -398,27 +401,26 @@ tbody tr:hover {
   cursor: pointer;
 }
 
-.slider__link__item:hover {
+.support__link__item:hover {
   background-color: var(--green);
   color: var(--white);
   transition-duration: 0.2s, 0.3s;
 }
 
-.slider__link__item:focus {
+.support__link__item:focus {
   transition: background 0.3s ease, color 0.2s linear;
 }
 
-.slider__link__item:active {
+.support__link__item:active {
   background-color: var(--dark-green);
   color: var(--white);
 }
 
-.slider__link__itemone {
+.support__link__itemone {
   display: block;
   background-color: var(--white-green);
   border-radius: 5px;
   padding: 10px 30px;
-
   font-size: 18px;
   color: var(--black);
 
@@ -426,17 +428,17 @@ tbody tr:hover {
   cursor: pointer;
 }
 
-.slider__link__itemone:hover {
+.support__link__itemone:hover {
   background-color: var(--green);
   color: var(--white);
   transition-duration: 0.2s, 0.3s;
 }
 
-.slider__link__itemone:focus {
+.support__link__itemone:focus {
   transition: background 0.3s ease, color 0.2s linear;
 }
 
-.slider__link__itemone:active {
+.support__link__itemone:active {
   background-color: var(--dark-green);
   color: var(--white);
 }
@@ -448,7 +450,7 @@ tbody tr:hover {
   } */
 /* катигории-кнопки */
 
-.registrationlist__table__change {
+.support__table__change {
   outline: none;
   border: 1px;
   border-color: var(--white-green);
@@ -468,20 +470,24 @@ tbody tr:hover {
   padding: 3px 10px;
 }
 
-.registrationlist__table__change:hover {
+.support__table__change:hover {
   background-color: var(--green);
   color: var(--white);
 }
 
-.registrationlist__table__change:focus {
+.support__table__change:focus {
   transition: background 0.3s ease, color 0.2s linear;
 }
 
-.registrationlist__table__change:active {
+.support__table__change:active {
   background-color: var(--dark-green);
   color: var(--white);
 }
-
+.table-responsive{
+  max-height: 50vh;
+  overflow-y: scroll;
+  padding: 15px;
+}
 /*-----------------------footer----------------------*/
 footer {
   width: 100%;
@@ -571,16 +577,96 @@ footer {
 .footer__logo {
   width: 100px;
 }
-/*---------------- media ----------------*/
+@media (max-width: 1024px) {
+  /*----------------header---------------*/
 
+  .header.open .header__menu__list {
+    transform: translateX(100%);
+  }
 
+  .header__burger__btn {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    z-index: 3;
+  }
 
-  
-@media (max-width: 576px) {
-.slider__link{
-  flex-direction: column;
-}
-.slider__link{
-  gap: 25px;
-}
+  .header__burger__btn span {
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    left: 0px;
+    top: 18px;
+    background-color: var(--black);
+    transition: transform .5s, opacity .5s, background-color .5s;
+  }
+
+  .header__burger__btn span:nth-child(1) {
+    transform: translateY(-10px);
+
+  }
+
+  .header__burger__btn span:nth-child(3) {
+    transform: translateY(10px);
+  }
+
+  .header.open .header__burger__btn span:nth-child(1) {
+    transform: translateY(0) rotate(45deg);
+  }
+
+  .header.open .header__burger__btn span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .header.open .header__burger__btn span:nth-child(3) {
+    transform: translateY(0) rotate(-45deg);
+  }
+
+  .header__logo {
+    display: block;
+    margin-right: 10px;
+    margin-top: 2px;
+    margin-left: auto;
+  }
+
+  .header__mobaile__menu {
+    display: block;
+  }
+
+  .header__menu__list {
+    width: 420px;
+    min-height: fit-content;
+    display: block;
+    position: absolute;
+    top: -22px;
+    left: -420px;
+    background-color: var(--white);
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 32px 32px;
+    z-index: 2;
+    transition: transform .5s;
+  }
+
+  .header__item:nth-child(1) {
+    padding: 170px 20px 20px 20px;
+  }
+
+  .header__item:not(:first-child) {
+    margin-left: 0;
+    padding: 20px 20px 20px 20px;
+  }
+
+  .header__item__link {
+    line-height: 32px;
+  }
+
+  .display {
+    display: block;
+  }
+
+  .display__two {
+    display: none;
+  }
 }
