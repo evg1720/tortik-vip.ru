@@ -6,7 +6,6 @@ class Popup {
     constructor(popupLink) {
         this.popupLink = popupLink;
         this.popup = document.querySelector(`#${this.popupLink.getAttribute("data-popup-link")}`)
-        console.log (this.popup)
         this.popupBody = this.popup.querySelector(".popupwrapper__popup")
         this.popupCloseEl = this.popup.querySelector(".popupwrapper__clouse")
 
@@ -14,7 +13,7 @@ class Popup {
         this.popupLink.addEventListener("click", () => {
             self.popupOpen()
         })
-
+        
         this.popupCloseEl.addEventListener("click", () => {
             self.popupClose()
         });
@@ -44,7 +43,5 @@ class Popup {
 }
 
 popupLinks.forEach(element => {
-    console.log(element);
     new Popup(element)
 })
-console.log(window.innerHeight);

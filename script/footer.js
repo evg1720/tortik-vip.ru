@@ -35,6 +35,6 @@ class FooterForm {
 
 let form = document.querySelector(".footer__form")
 
-console.log(form);
+
 
 let a = new FooterForm(form); 
