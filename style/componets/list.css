@@ -177,6 +177,12 @@
   background-color: var(--white);
   transition: 0.3s;
 }
+.list__more:not(.onclick)::after {
+  content: "посмотреть все варианты";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
 
 .list__close {
   position: relative;

@@ -3,7 +3,7 @@ import { changeLabel } from ".//script/forms.js";
 function noDigits(event) {
     let re = /^[\d\+][\d\(\)\ -]{4,14}\d$/;
     let valid = re.test(event.target.value);
-    console.log(valid);
+
     let btn = document.querySelector("#login__btn")
     if (valid) {
         btn.disabled = false

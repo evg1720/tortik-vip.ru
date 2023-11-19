@@ -27,7 +27,7 @@
       <div class="popupwrapper__clouse"><svg viewBox="0 0 24 24" fill="none">
 
           <g id="style-stroke-2">
-            <g id="close">
+            <g >
               <path id="vector-4" fill-rule="evenodd" clip-rule="evenodd"
                 d="M6.21991 6.21479C6.51281 5.92189 6.98768 5.92189 7.28057 6.21479L17.7854 16.7196C18.0783 17.0125 18.0783 17.4874 17.7854 17.7803C17.4925 18.0732 17.0177 18.0732 16.7248 17.7803L6.21991 7.27545C5.92702 6.98255 5.92702 6.50768 6.21991 6.21479Z"
                 fill="#000000" />
@@ -155,8 +155,8 @@
 
   <section class="popupwrapper none mypage" id="mypage__popup">
     <form class="form mypage__form popupwrapper__popup" action="/user/login/" method="post">
-       <a href="/index.html"><div class="form__close"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g id="close">
+       <a href="/index.html"><div class="popupwrapper__clouse"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g >
                         <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M6.21991 6.21479C6.51281 5.92189 6.98768 5.92189 7.28057 6.21479L17.7854 16.7196C18.0783 17.0125 18.0783 17.4874 17.7854 17.7803C17.4925 18.0732 17.0177 18.0732 16.7248 17.7803L6.21991 7.27545C5.92702 6.98255 5.92702 6.50768 6.21991 6.21479Z"
                             fill="#000000" />
@@ -191,7 +191,7 @@
                 </div>
 
                 <div class="form__group">
-                    <input class="form__input" placeholder=" " type="text" id="username_input">
+                    <input class="form__input" placeholder=" " type="text">
                     <label class="form__label">Имя пользователя</label>
                 </div>
             </div>
@@ -203,12 +203,14 @@
         <h4 class="form__title__gender">Пол</h4>
         <div class="form__style form__style__gender flex ">
             <div class="radio">
-                <input class="radio__input" name="male" type="radio" id="radio_3">
-                <label class="radio__label" for="radio_3">Мужской</label>
+
+                <input class="radio__input" name="male" type="radio" id="radio_m">
+                <label class="radio__label" for="radio_m">Мужской</label>
             </div>
             <div class="radio">
-                <input class="radio__input" name="male" type="radio" id="radio_4" checked>
-                <label class="radio__label" for="radio_4">Женский</label>
+                <input class="radio__input" name="male" type="radio" id="radio_w" checked>
+                <label class="radio__label" for="radio_w">Женский</label>
+
             </div>
         </div>
         <div class="form__style flex">
@@ -239,7 +241,7 @@
           <label class="form__label">Подтверждение пароля:</label>
         </div>
       </div> -->
-        <a class="form__button button" id="btn" onclick="printmsg()" href="https://ya.ru/">Сохранить</a>
+        <a class="form__button button" onclick="printmsg()" href="https://ya.ru/">Сохранить</a>
     </form>
     <!-- <script type="module" src="mypageForm.js"></script> -->
 </section>
