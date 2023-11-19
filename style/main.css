@@ -11,20 +11,26 @@
 /**/
 
 /*---- scroll-----*/
+.scroll{
+    overflow: scroll;
+}
 
 html::-webkit-scrollbar,
-.scroll::-webkit-scrollbar {
-    width: 4px;
-    height: 4px;
+.scroll::-webkit-scrollbar,
+.table-responsive::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
 }
 
 html::-webkit-scrollbar-thumb,
-.scroll::-webkit-scrollbar-thumb {
+.scroll::-webkit-scrollbar-thumb,
+.table-responsive::-webkit-scrollbar-thumb{
     background: var(--gray);
 }
 
 html::-webkit-scrollbar-track,
-.scroll::-webkit-scrollbar-track {
+.scroll::-webkit-scrollbar-track,
+.table-responsive::-webkit-scrollbar-track{
     /* фон */
     background: var(--black);
 }

@@ -32,9 +32,9 @@
 }
 
 .form__input {
-    font-family: 'MullerBold';
+    /* font-family: 'MullerBold';
     font-size: 18px;
-    font-weight: 800;
+    font-weight: 800; */
     width: 100%;
     padding: 0 0 10px 0;
     border: none;

@@ -7,6 +7,7 @@ class Popup {
         this.popupLink = popupLink;
         this.popup = document.querySelector(`#${this.popupLink.getAttribute("data-popup-link")}`)
         console.log (this.popup)
+        console.log(this.popupLink,this.popup);
         this.popupBody = this.popup.querySelector(".popupwrapper__popup")
         this.popupCloseEl = this.popup.querySelector(".popupwrapper__clouse")
 

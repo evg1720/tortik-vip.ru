@@ -8,14 +8,21 @@
     display: flex;
     background: rgba(0, 0, 0, .8);
 }
+.mypage__link{
+    align-items: center;
+}
 
 .mypage__form {
     margin: auto;
 }
+.mypage__photo__left{
+    width: 40%;
+}
 .mypage__photo__img{
-max-width: 200px;
 max-height: 200px;
 object-fit: cover;
+cursor: pointer;
+border: 1px solid var(--gold-color);
 }
 #mypage__photoi{
     border: 0;
