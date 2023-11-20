@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- пропорция-->
+    <link rel="stylesheet" href="/style/forms.css">
+    <link rel="stylesheet" href="/style/addorderlist.css">
+    <link rel="stylesheet" href="/style/varialdes.css">
+    <link rel="stylesheet" href="/style/main.css">
+    <title>Заказ</title>
+</head>
+
+<body>
+    <section class="popupwrapper">
+        <form class="addorderlist__form popupwrapper__popup form scroll" action="/user/login/" method="post">
+            <a href="/index.html">
+                <!-- убрать ссылку -->
+                <div class="popupwrapper__clouse"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="close">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.21991 6.21479C6.51281 5.92189 6.98768 5.92189 7.28057 6.21479L17.7854 16.7196C18.0783 17.0125 18.0783 17.4874 17.7854 17.7803C17.4925 18.0732 17.0177 18.0732 16.7248 17.7803L6.21991 7.27545C5.92702 6.98255 5.92702 6.50768 6.21991 6.21479Z"
+                                    fill="#000000" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M17.7853 6.21479C18.0782 6.50769 18.0782 6.98256 17.7853 7.27545L7.28038 17.7802C6.98749 18.0731 6.51261 18.0731 6.21972 17.7802C5.92683 17.4873 5.92683 17.0124 6.21973 16.7195L16.7247 6.21478C17.0176 5.92189 17.4924 5.9219 17.7853 6.21479Z"
+                                    fill="#000000" />
+                            </g>
+                </svg></div></a> 
+            <h1 class="form__title">Оформление заказа #007</h1>
+            <div class="addorderlist__parent flex">
+                <div class="addorderlist__left">
+                    <div class="form__style flex">
+                        <div class="form__group flex">
+                            <input class="form__input" placeholder=" " type="text">
+                            <label class="form__label">Ф.И.О.</label>
+                        </div>
+                    </div>
+
+                    <div class="form__style flex">
+                        <div class="form__group flex">
+                            <input class="form__input" placeholder="" type="tel">
+                            <label class="form__label">Телефон</label>
+                        </div>
+                    </div>
+                    <div class="form__style flex">
+                        <div class="form__group flex">
+                            <input class="form__input" placeholder="" type="email">
+                            <label class="form__label">E-mail:</label>
+                        </div>
+                    </div>
+                    <div class="form__group flex addorderlistdelivery">
+                        <input class="form__input" placeholder=" " type="text">
+                        <label class="form__label">Индекс</label>
+                    </div>
+                    <div class="form__group flex addorderlistdelivery">
+                        <input class="form__input" placeholder=" " type="text">
+                        <label class="form__label">Регион</label>
+                    </div>
+                    <div class="form__group flex addorderlistdelivery">
+                        <input class="form__input" placeholder=" " type="text">
+                        <label class="form__label">Город (нас.пункт)</label>
+                    </div>
+                    <div class="form__group flex addorderlistdelivery">
+                        <input class="form__input" placeholder=" " type="text">
+                        <label class="form__label">Улица</label>
+                    </div>
+                    <div class="addorderlist__home flex addorderlistdelivery">
+                        <div class="form__group flex">
+                            <input class="form__input" placeholder=" " type="text">
+                            <label class="form__label">Дом</label>
+                        </div>
+                        <div class="form__group flex">
+                            <input class="form__input" placeholder=" " type="text">
+                            <label class="form__label">Кв.</label>
+                        </div>
+                        <div class="form__group flex">
+                            <input class="form__input" placeholder=" " type="text">
+                            <label class="form__label">Корпус</label>
+                        </div>
+                    </div>
+                    <div class="emptyblock"></div>
+                    <div class="form__style form__style__addorderlist flex ">
+                        <div class="radio">
+                            <input class="radio__input" name="addorderlist_delivery_input" type="radio" id="addorderlist_delivery_input1">
+                            <label class="radio__label" for="addorderlist_delivery_input1">Доставка</label>
+                        </div>
+                        <div class="radio">
+                            <input class="radio__input" name="addorderlist_delivery_input" type="radio" id="addorderlist_delivery_input2" checked>
+                            <label class="radio__label" for="addorderlist_delivery_input2">Самовывоз</label>
+                        </div>
+                    </div>
+                 <!-- <div class="addorderlist__form__delivery flex">
+                    <div class="addorderlist__form__group">
+                        <input name="addorderlist_delivery_input" type="radio" id="addorderlist_delivery_input1">
+                        <label for="addorderlist_delivery_input1">Доставка</label>
+                    </div>
+                    <div class="addorderlist__form__group">
+                        <input name="addorderlist_delivery_input" type="radio" id="addorderlist_delivery_input2" checked>
+                        <label for="addorderlist_delivery_input2">Самовывоз</label>
+                    </div>
+                </div> -->
+                    <div class="addorderlist__promo flex">
+                        <div class="form__group flex">
+                            <input class="form__input" placeholder=" " type="text">
+                            <label class="form__label">ПРОМОКОД</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="addorderlist__right">
+                    <table class="addorderlist__table">
+                        <thead class="addorderlist__table__header">
+                            <tr>
+                                <td class="addorderlist__header__bold">Фото</td>
+                                <td class="addorderlist__header__bold">Позиция</td>
+                                <td class="addorderlist__header__bold">Кол-во (шт)</td>
+                                <td class="addorderlist__header__bold">Масса (кг)</td>
+                                <td class="addorderlist__header__bold">Скидка (%)</td>
+                                <td class="addorderlist__header__bold">Сумма (руб)</td>
+                                <td class="addorderlist__header__bold">-----</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="addorderlist__table__body">
+                                <td class=""><img class="addorderlist__img" src="/img/cake/cake12.jpg" alt=""></td>
+                                <td class="addorderlist__header__regular">Наполеон</td>
+                                <td class="addorderlist__header__regular">2</td>
+                                <td class="addorderlist__header__bold">0,6</td>
+                                <td class="addorderlist__header__bold">---</td>
+                                <td class="addorderlist__header__bold">1290</td>
+                                <td class="addorderlist__header__regular"><a class="addorderlist_a"
+                                        href="/site-admin/product_remove/1/">Отменить</a></td>
+                            </tr>
+                            <tr>
+                                <td class=""><img class="addorderlist__img" src="/img/cake/cake14.jpg" alt=""></td>
+                                <td class="addorderlist__header__regular">Картошка</td>
+                                <td class="addorderlist__header__regular">2</td>
+                                <td class="addorderlist__header__bold">0,6</td>
+                                <td class="addorderlist__header__bold">---</td>
+                                <td class="addorderlist__header__bold">1290</td>
+                                <td class="addorderlist__header__regular"><a class="addorderlist_a"
+                                        href="/site-admin/product_remove/1/">Отменить</a></td>
+                            </tr>
+                            <tr>
+                                <td class=""><img class="addorderlist__img" src="/img/cake/cake11.jpg" alt=""></td>
+                                <td class="addorderlist__header__regular">Чудо</td>
+                                <td class="addorderlist__header__regular">2</td>
+                                <td class="addorderlist__header__bold">0,6</td>
+                                <td class="addorderlist__header__bold">---</td>
+                                <td class="addorderlist__header__bold">1290</td>
+                                <td class="addorderlist__header__regular"><a class="addorderlist_a"
+                                        href="/site-admin/product_remove/1/">Отменить</a></td>
+                            </tr>
+                            <tr>
+                                <td class=""><img class="addorderlist__img" src="/img/cake/cake11.jpg" alt=""></td>
+                                <td class="addorderlist__header__regular">Чудо</td>
+                                <td class="addorderlist__header__regular">2</td>
+                                <td class="addorderlist__header__bold">0,6</td>
+                                <td class="addorderlist__header__bold">---</td>
+                                <td class="addorderlist__header__bold">1290</td>
+                                <td class="addorderlist__header__regular"><a class="addorderlist_a"
+                                        href="/site-admin/product_remove/1/">Отменить</a></td>
+                            </tr>
+                            <tr>
+                                <td class=""><img class="addorderlist__img" src="/img/cake/cake11.jpg" alt=""></td>
+                                <td class="addorderlist__header__regular">Чудо</td>
+                                <td class="addorderlist__header__regular">2</td>
+                                <td class="addorderlist__header__bold">0,6</td>
+                                <td class="addorderlist__header__bold">---</td>
+                                <td class="addorderlist__header__bold">1290</td>
+                                <td class="addorderlist__header__regular"><a class="addorderlist_a"
+                                        href="/site-admin/product_remove/1/">Отменить</a></td>
+                            </tr>
+                            <tr>
+                                <td class=""><img class="addorderlist__img" src="/img/cake/cake11.jpg" alt=""></td>
+                                <td class="addorderlist__header__regular">Чудо</td>
+                                <td class="addorderlist__header__regular">2</td>
+                                <td class="addorderlist__header__bold">0,6</td>
+                                <td class="addorderlist__header__bold">---</td>
+                                <td class="addorderlist__header__bold">1290</td>
+                                <td class="addorderlist__header__regular"><a class="addorderlist_a"
+                                        href="/site-admin/product_remove/1/">Отменить</a></td>
+                            </tr>
+                            <tr>
+                                <td class=""><img class="addorderlist__img" src="/img/cake/cake11.jpg" alt=""></td>
+                                <td class="addorderlist__header__regular">Чудо</td>
+                                <td class="addorderlist__header__regular">2</td>
+                                <td class="addorderlist__header__bold">0,6</td>
+                                <td class="addorderlist__header__bold">---</td>
+                                <td class="addorderlist__header__bold">1290</td>
+                                <td class="addorderlist__header__regular"><a class="addorderlist_a"
+                                        href="/site-admin/product_remove/1/">Отменить</a></td>
+                            </tr>
+                            <tr>
+                                <td class=""><img class="addorderlist__img" src="/img/cake/cake11.jpg" alt=""></td>
+                                <td class="addorderlist__header__regular">Чудо</td>
+                                <td class="addorderlist__header__regular">2</td>
+                                <td class="addorderlist__header__bold">0,6</td>
+                                <td class="addorderlist__header__bold">---</td>
+                                <td class="addorderlist__header__bold">1290</td>
+                                <td class="addorderlist__header__regular"><a class="addorderlist_a"
+                                        href="/site-admin/product_remove/1/">Отменить</a></td>
+                            </tr>
+                            <tr>
+                                <td class=""><img class="addorderlist__img" src="/img/cake/cake11.jpg" alt=""></td>
+                                <td class="addorderlist__header__regular">Чудо</td>
+                                <td class="addorderlist__header__regular">2</td>
+                                <td class="addorderlist__header__bold">0,6</td>
+                                <td class="addorderlist__header__bold">---</td>
+                                <td class="addorderlist__header__bold">1290</td>
+                                <td class="addorderlist__header__regular"><a class="addorderlist_a"
+                                        href="/site-admin/product_remove/1/">Отменить</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+            <div class="addorderlist__form__checkbox">
+                <label class="checkbox" for="checkboxtwo">
+                    <input class="checkbox__inp" type="checkbox" id="checkboxtwo" checked>
+                    <span class="checkbox__inner">
+                        Я согласен на <a class="addorderlist__agreement" href="/pages/personalization.html">обработку
+                            персональных данных</a>
+                    </span>
+                </label>
+            </div>
+            <a class="form__button button" id="btn" onclick="printmsg()" href="https://ya.ru/">Оформить
+                заказ</a>
+        </form>
+    </section>
+    <script src="/script/addorderlist.js"></script>
+</body>
+
+</html>

@@ -180,7 +180,7 @@
 .list__more:not(.onclick)::after {
   content: "посмотреть все варианты";
   position: absolute;
-  top: 15px;
+  bottom: 15px;
   left: 15px;
 }
 

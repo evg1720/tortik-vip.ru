@@ -138,6 +138,10 @@
     color: var(--dark);
     font-weight: 700;
 }
+.addpromo__item{
+    justify-content: space-between;
+    gap: 30px;
+}
 
 /* --- file --- */
 

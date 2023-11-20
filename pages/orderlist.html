@@ -2,86 +2,309 @@
 <html lang="ru">
 
 <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- пропорция-->
-        <link rel="stylesheet" href="/style/orderlist.css">
-        <link rel="stylesheet" href="/style/admin.css">
-        <link rel="stylesheet" href="/style/normalize.css">
-        <link rel="stylesheet" href="/style/varialdes.css">
-        <link rel="stylesheet" href="/style/main.css">
-        <link rel="stylesheet" href="/style/registerform.css">
-        <link rel="stylesheet" href="/style/style.css">
-        <title>Заказы</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- пропорция-->
+  <link rel="stylesheet" href="/style/orderlist.css">
+  <link rel="stylesheet" href="/style/addorderlist.css">
+  <link rel="stylesheet" href="/style/admin.css">
+  <link rel="stylesheet" href="/style/normalize.css">
+  <link rel="stylesheet" href="/style/varialdes.css">
+  <link rel="stylesheet" href="/style/main.css">
+  <link rel="stylesheet" href="/style/registerform.css">
+  <link rel="stylesheet" href="/style/style.css">
+  <link rel="stylesheet" href="/style/forms.css">
+  <title>Заказы</title>
 </head>
 
 <body>
-        <!-- ***** header ***** -->
+
+  <!-- addorderlist -->
+
+  <section class="popupwrapper none" id="addorderlist">
+    <form class="addorderlist__form popupwrapper__popup form scroll" action="/user/login/" method="post">
+      <a href="/index.html">
+        <!-- убрать ссылку -->
+        <div class="popupwrapper__clouse"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="close">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M6.21991 6.21479C6.51281 5.92189 6.98768 5.92189 7.28057 6.21479L17.7854 16.7196C18.0783 17.0125 18.0783 17.4874 17.7854 17.7803C17.4925 18.0732 17.0177 18.0732 16.7248 17.7803L6.21991 7.27545C5.92702 6.98255 5.92702 6.50768 6.21991 6.21479Z"
+                fill="#000000" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M17.7853 6.21479C18.0782 6.50769 18.0782 6.98256 17.7853 7.27545L7.28038 17.7802C6.98749 18.0731 6.51261 18.0731 6.21972 17.7802C5.92683 17.4873 5.92683 17.0124 6.21973 16.7195L16.7247 6.21478C17.0176 5.92189 17.4924 5.9219 17.7853 6.21479Z"
+                fill="#000000" />
+            </g>
+          </svg></div>
+      </a>
+      <h1 class="form__title">Оформление заказа #007</h1>
+      <div class="addorderlist__parent flex">
+        <div class="addorderlist__left">
+          <div class="form__style flex">
+            <div class="form__group flex">
+              <input class="form__input" placeholder=" " type="text">
+              <label class="form__label">Ф.И.О.</label>
+            </div>
+          </div>
+
+          <div class="form__style flex">
+            <div class="form__group flex">
+              <input class="form__input" placeholder="" type="tel">
+              <label class="form__label">Телефон</label>
+            </div>
+          </div>
+          <div class="form__style flex">
+            <div class="form__group flex">
+              <input class="form__input" placeholder="" type="email">
+              <label class="form__label">E-mail:</label>
+            </div>
+          </div>
+          <div class="form__group flex addorderlistdelivery">
+            <input class="form__input" placeholder=" " type="text">
+            <label class="form__label">Индекс</label>
+          </div>
+          <div class="form__group flex addorderlistdelivery">
+            <input class="form__input" placeholder=" " type="text">
+            <label class="form__label">Регион</label>
+          </div>
+          <div class="form__group flex addorderlistdelivery">
+            <input class="form__input" placeholder=" " type="text">
+            <label class="form__label">Город (нас.пункт)</label>
+          </div>
+          <div class="form__group flex addorderlistdelivery">
+            <input class="form__input" placeholder=" " type="text">
+            <label class="form__label">Улица</label>
+          </div>
+          <div class="addorderlist__home flex addorderlistdelivery">
+            <div class="form__group flex">
+              <input class="form__input" placeholder=" " type="text">
+              <label class="form__label">Дом</label>
+            </div>
+            <div class="form__group flex">
+              <input class="form__input" placeholder=" " type="text">
+              <label class="form__label">Кв.</label>
+            </div>
+            <div class="form__group flex">
+              <input class="form__input" placeholder=" " type="text">
+              <label class="form__label">Корпус</label>
+            </div>
+          </div>
+          <div class="emptyblock"></div>
+          <div class="form__style form__style__addorderlist flex ">
+            <div class="radio">
+              <input class="radio__input" name="addorderlist_delivery_input" type="radio"
+                id="addorderlist_delivery_input1">
+              <label class="radio__label" for="addorderlist_delivery_input1">Доставка</label>
+            </div>
+            <div class="radio">
+              <input class="radio__input" name="addorderlist_delivery_input" type="radio"
+                id="addorderlist_delivery_input2" checked>
+              <label class="radio__label" for="addorderlist_delivery_input2">Самовывоз</label>
+            </div>
+          </div>
+          <!-- <div class="addorderlist__form__delivery flex">
+                <div class="addorderlist__form__group">
+                    <input name="addorderlist_delivery_input" type="radio" id="addorderlist_delivery_input1">
+                    <label for="addorderlist_delivery_input1">Доставка</label>
+                </div>
+                <div class="addorderlist__form__group">
+                    <input name="addorderlist_delivery_input" type="radio" id="addorderlist_delivery_input2" checked>
+                    <label for="addorderlist_delivery_input2">Самовывоз</label>
+                </div>
+            </div> -->
+          <div class="addorderlist__promo flex">
+            <div class="form__group flex">
+              <input class="form__input" placeholder=" " type="text">
+              <label class="form__label">ПРОМОКОД</label>
+            </div>
+          </div>
+        </div>
+        <div class="addorderlist__right">
+          <table class="addorderlist__table">
+            <thead class="addorderlist__table__header">
+              <tr>
+                <td class="addorderlist__header__bold">Фото</td>
+                <td class="addorderlist__header__bold">Позиция</td>
+                <td class="addorderlist__header__bold">Кол-во (шт)</td>
+                <td class="addorderlist__header__bold">Масса (кг)</td>
+                <td class="addorderlist__header__bold">Скидка (%)</td>
+                <td class="addorderlist__header__bold">Сумма (руб)</td>
+                <td class="addorderlist__header__bold">-----</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="addorderlist__table__body">
+                <td class=""><img class="addorderlist__img" src="/img/cake/cake12.jpg" alt=""></td>
+                <td class="addorderlist__header__regular">Наполеон</td>
+                <td class="addorderlist__header__regular">2</td>
+                <td class="addorderlist__header__bold">0,6</td>
+                <td class="addorderlist__header__bold">---</td>
+                <td class="addorderlist__header__bold">1290</td>
+                <td class="addorderlist__header__regular"><a class="addorderlist_a"
+                    href="/site-admin/product_remove/1/">Отменить</a></td>
+              </tr>
+              <tr>
+                <td class=""><img class="addorderlist__img" src="/img/cake/cake14.jpg" alt=""></td>
+                <td class="addorderlist__header__regular">Картошка</td>
+                <td class="addorderlist__header__regular">2</td>
+                <td class="addorderlist__header__bold">0,6</td>
+                <td class="addorderlist__header__bold">---</td>
+                <td class="addorderlist__header__bold">1290</td>
+                <td class="addorderlist__header__regular"><a class="addorderlist_a"
+                    href="/site-admin/product_remove/1/">Отменить</a></td>
+              </tr>
+              <tr>
+                <td class=""><img class="addorderlist__img" src="/img/cake/cake11.jpg" alt=""></td>
+                <td class="addorderlist__header__regular">Чудо</td>
+                <td class="addorderlist__header__regular">2</td>
+                <td class="addorderlist__header__bold">0,6</td>
+                <td class="addorderlist__header__bold">---</td>
+                <td class="addorderlist__header__bold">1290</td>
+                <td class="addorderlist__header__regular"><a class="addorderlist_a"
+                    href="/site-admin/product_remove/1/">Отменить</a></td>
+              </tr>
+              <tr>
+                <td class=""><img class="addorderlist__img" src="/img/cake/cake11.jpg" alt=""></td>
+                <td class="addorderlist__header__regular">Чудо</td>
+                <td class="addorderlist__header__regular">2</td>
+                <td class="addorderlist__header__bold">0,6</td>
+                <td class="addorderlist__header__bold">---</td>
+                <td class="addorderlist__header__bold">1290</td>
+                <td class="addorderlist__header__regular"><a class="addorderlist_a"
+                    href="/site-admin/product_remove/1/">Отменить</a></td>
+              </tr>
+              <tr>
+                <td class=""><img class="addorderlist__img" src="/img/cake/cake11.jpg" alt=""></td>
+                <td class="addorderlist__header__regular">Чудо</td>
+                <td class="addorderlist__header__regular">2</td>
+                <td class="addorderlist__header__bold">0,6</td>
+                <td class="addorderlist__header__bold">---</td>
+                <td class="addorderlist__header__bold">1290</td>
+                <td class="addorderlist__header__regular"><a class="addorderlist_a"
+                    href="/site-admin/product_remove/1/">Отменить</a></td>
+              </tr>
+              <tr>
+                <td class=""><img class="addorderlist__img" src="/img/cake/cake11.jpg" alt=""></td>
+                <td class="addorderlist__header__regular">Чудо</td>
+                <td class="addorderlist__header__regular">2</td>
+                <td class="addorderlist__header__bold">0,6</td>
+                <td class="addorderlist__header__bold">---</td>
+                <td class="addorderlist__header__bold">1290</td>
+                <td class="addorderlist__header__regular"><a class="addorderlist_a"
+                    href="/site-admin/product_remove/1/">Отменить</a></td>
+              </tr>
+              <tr>
+                <td class=""><img class="addorderlist__img" src="/img/cake/cake11.jpg" alt=""></td>
+                <td class="addorderlist__header__regular">Чудо</td>
+                <td class="addorderlist__header__regular">2</td>
+                <td class="addorderlist__header__bold">0,6</td>
+                <td class="addorderlist__header__bold">---</td>
+                <td class="addorderlist__header__bold">1290</td>
+                <td class="addorderlist__header__regular"><a class="addorderlist_a"
+                    href="/site-admin/product_remove/1/">Отменить</a></td>
+              </tr>
+              <tr>
+                <td class=""><img class="addorderlist__img" src="/img/cake/cake11.jpg" alt=""></td>
+                <td class="addorderlist__header__regular">Чудо</td>
+                <td class="addorderlist__header__regular">2</td>
+                <td class="addorderlist__header__bold">0,6</td>
+                <td class="addorderlist__header__bold">---</td>
+                <td class="addorderlist__header__bold">1290</td>
+                <td class="addorderlist__header__regular"><a class="addorderlist_a"
+                    href="/site-admin/product_remove/1/">Отменить</a></td>
+              </tr>
+              <tr>
+                <td class=""><img class="addorderlist__img" src="/img/cake/cake11.jpg" alt=""></td>
+                <td class="addorderlist__header__regular">Чудо</td>
+                <td class="addorderlist__header__regular">2</td>
+                <td class="addorderlist__header__bold">0,6</td>
+                <td class="addorderlist__header__bold">---</td>
+                <td class="addorderlist__header__bold">1290</td>
+                <td class="addorderlist__header__regular"><a class="addorderlist_a"
+                    href="/site-admin/product_remove/1/">Отменить</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+      <div class="addorderlist__form__checkbox">
+        <label class="checkbox" for="checkboxtwo">
+          <input class="checkbox__inp" type="checkbox" id="checkboxtwo" checked>
+          <span class="checkbox__inner">
+            Я согласен на <a class="addorderlist__agreement" href="/pages/personalization.html">обработку
+              персональных данных</a>
+          </span>
+        </label>
+      </div>
+      <a class="form__button button" id="btn" onclick="printmsg()" href="https://ya.ru/">Оформить
+        заказ</a>
+    </form>
+  </section>
+
+  <!-- ***** header ***** -->
 
   <header class="header mb-50">
-        <div class="container">
-          <div class="header__container">
-            <button class="header__burger__btn" id="burger">
-              <span></span><span></span><span></span>
-            </button>
-            <a href="/index.html">
-              <picture class="header__logo">
-                <img class="header__logo__img" src="/img/header-logonew.png" alt="#">
-              </picture>
-            </a>
-            <nav class="header__menu">
-              <ul class="header__menu__list">
-                <li class="header__item">
-                  <a href="/pages/about__max.html" class="header__item__link">О нас
-                  </a>
-                </li>
-                <li class="header__item"><a href="/pages/exclusive.html" class="header__item__link">
-                    Эксклюзив
-                  </a></li>
-                <li class="header__item"><a href="/pages/partners.html" class="header__item__link">
-                    Партнеры
-                  </a></li>
-                <li class="header__item"><a href="/pages/contacts__map.html" class="header__item__link">
-                    Контакты
-                  </a></li>
-                <li class="header__item display"><a class="header__item__link" href="">Вход</a></li>
-                <li class="header__item display"><a class="header__item__link" href="">Регистрация</a></li>
-              </ul>
-            </nav>
-            <a class="header__recycle" href="/pages/order.html">
-    
-              <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-              <svg class="header__recycle__svg" width="800px" height="800px" viewBox="0 0 32 32" id="svg5">
-    
-                <defs id="defs2" />
-    
-                <g id="layer1" transform="translate(-12,-292)">
-    
-                  <path
-                    d="m 21,316.00586 c -1.645008,0 -3,1.35499 -3,3 0,1.64501 1.354992,3 3,3 1.645008,0 3,-1.35499 3,-3 0,-1.64501 -1.354992,-3 -3,-3 z m 0,2 c 0.564129,0 1,0.43587 1,1 0,0.56413 -0.435871,1 -1,1 -0.564129,0 -1,-0.43587 -1,-1 0,-0.56413 0.435871,-1 1,-1 z"
-                    id="circle5400"
-                    style="fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;-inkscape-stroke:none" />
-    
-                  <path
-                    d="m 35.999999,316.00586 c -1.645008,0 -3,1.35499 -3,3 0,1.64501 1.354992,3 3,3 1.645008,0 3,-1.35499 3,-3 0,-1.64501 -1.354992,-3 -3,-3 z m 0,2 c 0.564129,0 1,0.43587 1,1 0,0.56413 -0.435871,1 -1,1 -0.564129,0 -1,-0.43587 -1,-1 0,-0.56413 0.435871,-1 1,-1 z"
-                    id="circle5402"
-                    style="fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;-inkscape-stroke:none" />
-    
-                  <path
-                    d="m 15,294.00586 c -0.552285,0 -1,0.44772 -1,1 0,0.55228 0.447715,1 1,1 h 1.179688 l 2.65039,13.24219 C 17.759297,309.70823 17,310.77542 17,312.00586 c 0,1.6447 1.355301,3 3,3 h 18.011718 c 0.552285,0 1,-0.44772 1,-1 0,-0.55228 -0.447715,-1 -1,-1 H 20 c -0.571296,0 -1,-0.4287 -1,-1 0,-0.5713 0.428704,-1 1,-1 h 16.011718 3 c 0.492161,2.4e-4 0.911339,-0.35764 0.988281,-0.84375 l 1.730469,-11 c 0.09599,-0.60725 -0.373487,-1.15652 -0.988281,-1.15625 H 18.619141 l -0.638672,-3.19531 C 17.887292,294.34287 17.476874,294.00603 17,294.00586 Z m 4.019531,6 h 20.552734 l -1.416016,9 L 20.820312,309 Z m 3.980469,2 c -0.552285,0 -1,0.44772 -1,1 0,0.55228 0.447715,1 1,1 h 13.011718 c 0.552285,0 1,-0.44772 1,-1 0,-0.55228 -0.447715,-1 -1,-1 z m 2,3 c -0.552285,0 -1,0.44772 -1,1 0,0.55228 0.447715,1 1,1 h 9.011718 c 0.552285,0 1,-0.44772 1,-1 0,-0.55228 -0.447715,-1 -1,-1 z"
-                    id="path5404"
-                    style="fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;-inkscape-stroke:none" />
-                </g>
-              </svg></a>
-            <div class="contact__one">
-              <div class="header__bottoms display__two">
-                <a class="button__indent__a button button__indent" id="login" href="#"
-                  data-popup-link="login_popup">Вход</a>
-                <a class="button__indent__a button button__indent" id="registration" href="#"
-                  data-popup-link="registration_popup">Регистрация</a>
-              </div>
-            </div>
-            <!-- <div class="header__other">
+    <div class="container">
+      <div class="header__container">
+        <button class="header__burger__btn" id="burger">
+          <span></span><span></span><span></span>
+        </button>
+        <a href="/index.html">
+          <picture class="header__logo">
+            <img class="header__logo__img" src="/img/header-logonew.png" alt="#">
+          </picture>
+        </a>
+        <nav class="header__menu">
+          <ul class="header__menu__list">
+            <li class="header__item">
+              <a href="/pages/about__max.html" class="header__item__link">О нас
+              </a>
+            </li>
+            <li class="header__item"><a href="/pages/exclusive.html" class="header__item__link">
+                Эксклюзив
+              </a></li>
+            <li class="header__item"><a href="/pages/partners.html" class="header__item__link">
+                Партнеры
+              </a></li>
+            <li class="header__item"><a href="/pages/contacts__map.html" class="header__item__link">
+                Контакты
+              </a></li>
+            <li class="header__item display"><a class="header__item__link" href="">Вход</a></li>
+            <li class="header__item display"><a class="header__item__link" href="">Регистрация</a></li>
+          </ul>
+        </nav>
+        <a class="header__recycle" href="/pages/order.html">
+
+          <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+          <svg class="header__recycle__svg" width="800px" height="800px" viewBox="0 0 32 32" id="svg5">
+
+            <defs id="defs2" />
+
+            <g id="layer1" transform="translate(-12,-292)">
+
+              <path
+                d="m 21,316.00586 c -1.645008,0 -3,1.35499 -3,3 0,1.64501 1.354992,3 3,3 1.645008,0 3,-1.35499 3,-3 0,-1.64501 -1.354992,-3 -3,-3 z m 0,2 c 0.564129,0 1,0.43587 1,1 0,0.56413 -0.435871,1 -1,1 -0.564129,0 -1,-0.43587 -1,-1 0,-0.56413 0.435871,-1 1,-1 z"
+                id="circle5400"
+                style="fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;-inkscape-stroke:none" />
+
+              <path
+                d="m 35.999999,316.00586 c -1.645008,0 -3,1.35499 -3,3 0,1.64501 1.354992,3 3,3 1.645008,0 3,-1.35499 3,-3 0,-1.64501 -1.354992,-3 -3,-3 z m 0,2 c 0.564129,0 1,0.43587 1,1 0,0.56413 -0.435871,1 -1,1 -0.564129,0 -1,-0.43587 -1,-1 0,-0.56413 0.435871,-1 1,-1 z"
+                id="circle5402"
+                style="fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;-inkscape-stroke:none" />
+
+              <path
+                d="m 15,294.00586 c -0.552285,0 -1,0.44772 -1,1 0,0.55228 0.447715,1 1,1 h 1.179688 l 2.65039,13.24219 C 17.759297,309.70823 17,310.77542 17,312.00586 c 0,1.6447 1.355301,3 3,3 h 18.011718 c 0.552285,0 1,-0.44772 1,-1 0,-0.55228 -0.447715,-1 -1,-1 H 20 c -0.571296,0 -1,-0.4287 -1,-1 0,-0.5713 0.428704,-1 1,-1 h 16.011718 3 c 0.492161,2.4e-4 0.911339,-0.35764 0.988281,-0.84375 l 1.730469,-11 c 0.09599,-0.60725 -0.373487,-1.15652 -0.988281,-1.15625 H 18.619141 l -0.638672,-3.19531 C 17.887292,294.34287 17.476874,294.00603 17,294.00586 Z m 4.019531,6 h 20.552734 l -1.416016,9 L 20.820312,309 Z m 3.980469,2 c -0.552285,0 -1,0.44772 -1,1 0,0.55228 0.447715,1 1,1 h 13.011718 c 0.552285,0 1,-0.44772 1,-1 0,-0.55228 -0.447715,-1 -1,-1 z m 2,3 c -0.552285,0 -1,0.44772 -1,1 0,0.55228 0.447715,1 1,1 h 9.011718 c 0.552285,0 1,-0.44772 1,-1 0,-0.55228 -0.447715,-1 -1,-1 z"
+                id="path5404"
+                style="fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.1;-inkscape-stroke:none" />
+            </g>
+          </svg></a>
+        <div class="contact__one">
+          <div class="header__bottoms display__two">
+            <a class="button__indent__a button button__indent" id="login" href="#">Вход</a>
+            <a class="button__indent__a button button__indent" id="registration" href="#">Регистрация</a>
+          </div>
+        </div>
+        <!-- <div class="header__other">
               <button class="dropbutton button" id="сabinet">Кабинет</button>
               <div class="drop-down">
                 <a href="/pages/my__page.html">Моя страница</a>
@@ -90,495 +313,481 @@
                 <a href="/pages/password.html">Изменить пароль</a>
               </div>
             </div> -->
-          </div>
-        </div>
-      </header>
+      </div>
+    </div>
+  </header>
 
-        <section class="orderlist">
-                <div class="container">
-                        <h1 class="orderlist__info mb-5">Заказы</h1>
-                        <ul class="orderlist__link mb-5">
-                                <li class="orderlist__link__a"><a class="orderlist__link__itemone"
-                                                href="/pages/admin.html">Назад</a>
-                                </li>
-                                <li class="orderlist__link__a"><a class="orderlist__link__item"
-                                                href="/pages/order.html">Добавить
-                                                заказ</a></li>
-                        </ul>
-                        <div class="table-responsive mb-5">
-                                <table class="orderlist__table">
-                                        <thead class="orderlist__table__header">
-                                                <tr>
-                                                        <td class="orderlist__header__bold">№</td>
-                                                        <td class="orderlist__header__bold">Статус</td>
-                                                        <td class="orderlist__header__bold">Заказы</td>
-                                                        <td class="orderlist__header__bold">Дата</td>
-                                                        <td class="orderlist__header__bold">Ф.И.О.</td>
-                                                        <td class="orderlist__header__bold">Телефон</td>
-                                                        <td class="orderlist__header__bold">Email@</td>
-                                                        <td class="orderlist__header__bold">Индекс</td>
-                                                        <td class="orderlist__header__bold">Регион</td>
-                                                        <td class="orderlist__header__bold">Город</td>
-                                                        <td class="orderlist__header__bold">Улица</td>
-                                                        <td class="orderlist__header__bold">Дом-кв</td>
-                                                        <td class="orderlist__header__bold">ТМЦ</td>
-                                                        <td class="orderlist__header__bold orderlist__padding">шт.</td>
-                                                        <td class="orderlist__header__bold orderlist__padding">кг.</td>
-                                                        <td class="orderlist__header__bold orderlist__padding">%</td>
-                                                        <td class="orderlist__header__bold">Сумма (руб.)</td>
-                                                        <td class="orderlist__header__bold">-----</td>
-                                                        <td class="orderlist__header__bold">-----</td>
-                                                        <td class="orderlist__header__bold">-----</td>
-                                                </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr class="orderlist__table__body">
-                                                        <td class="orderlist__header__regular ">1</td>
-                                                        <td class="orderlist__header__regular "><img src="/img/ок.svg" alt=""></td>
-                                                        <td class="orderlist__header__regular ">#0007</td>
-                                                        <td class="orderlist__header__regular ">02.11.2023</td>
-                                                        <td class="orderlist__header__regular ">Юхнов Е.А. </td>
-                                                        <td class="orderlist__header__regular ">89876054555</td>
-                                                        <td class="orderlist__header__regular ">evg1720@yandex.ru</td>
-                                                        <td class="orderlist__header__regular ">458768</td>
-                                                        <td class="orderlist__header__regular ">Башкирия</td>
-                                                        <td class="orderlist__header__regular ">Уфа</td>
-                                                        <td class="orderlist__header__regular ">Рудольфа Нуреева</td>
-                                                        <td class="orderlist__header__regular ">16-201</td>
-                                                        <td class="orderlist__header__regular ">Торт чудо</td>
-                                                        <td class="orderlist__header__regular ">1</td>
-                                                        <td class="orderlist__header__regular ">0,6</td>
-                                                        <td class="orderlist__header__regular ">0</td>
-                                                        <td class="orderlist__header__regular ">790</td>
-                                                        <td class="orderlist__header__regular "><a class="orderlist_a"
-                                                                        href="/detail/1/">Просмотр</a></td>
-                                                        <td class="orderlist__header__regular "><a class="orderlist_a"
-                                                                        href="/site-admin/product_update/1/">Изменить</a>
-                                                        </td>
-                                                        <td class="orderlist__header__regular "><a class="orderlist_a"
-                                                                        href="/site-admin/product_remove/1/">Удалить</a>
-                                                        </td>
-                                                </tr>
-                                                <tr class="orderlist__table__body">
-                                                        <td class="orderlist__header__regular ">2</td>
-                                                        <td class="orderlist__header__regular "><img src="/img/clous.svg" alt=""></td>
-                                                        <td class="orderlist__header__regular ">#0008</td>
-                                                        <td class="orderlist__header__regular ">02.11.2023</td>
-                                                        <td class="orderlist__header__regular ">Юхнов Е.А. </td>
-                                                        <td class="orderlist__header__regular ">89876054555</td>
-                                                        <td class="orderlist__header__regular ">evg1720@yandex.ru</td>
-                                                        <td class="orderlist__header__regular ">458768</td>
-                                                        <td class="orderlist__header__regular ">Башкирия</td>
-                                                        <td class="orderlist__header__regular ">Уфа</td>
-                                                        <td class="orderlist__header__regular ">Рудольфа Нуреева</td>
-                                                        <td class="orderlist__header__regular ">16-201</td>
-                                                        <td class="orderlist__header__regular ">Торт чудо</td>
-                                                        <td class="orderlist__header__regular ">1</td>
-                                                        <td class="orderlist__header__regular ">0,6</td>
-                                                        <td class="orderlist__header__regular ">0</td>
-                                                        <td class="orderlist__header__regular ">790</td>
-                                                        <td class="orderlist__header__regular "><a class="orderlist_a"
-                                                                        href="/detail/1/">Просмотр</a></td>
-                                                        <td class="orderlist__header__regular "><a class="orderlist_a"
-                                                                        href="/site-admin/product_update/1/">Изменить</a>
-                                                        </td>
-                                                        <td class="orderlist__header__regular "><a class="orderlist_a"
-                                                                        href="/site-admin/product_remove/1/">Удалить</a>
-                                                        </td>
-                                                </tr>
-                                                <tr class="orderlist__table__body">
-                                                        <td class="orderlist__header__regular ">3</td>
-                                                        <td class="orderlist__header__regular "><img src="/img/ок.svg" alt=""></td>
-                                                        <td class="orderlist__header__regular ">#0009</td>
-                                                        <td class="orderlist__header__regular ">02.11.2023</td>
-                                                        <td class="orderlist__header__regular ">Юхнов Е.А. </td>
-                                                        <td class="orderlist__header__regular ">89876054555</td>
-                                                        <td class="orderlist__header__regular ">evg1720@yandex.ru</td>
-                                                        <td class="orderlist__header__regular ">458768</td>
-                                                        <td class="orderlist__header__regular ">Башкирия</td>
-                                                        <td class="orderlist__header__regular ">Уфа</td>
-                                                        <td class="orderlist__header__regular ">Рудольфа Нуреева</td>
-                                                        <td class="orderlist__header__regular ">16-201</td>
-                                                        <td class="orderlist__header__regular ">Торт чудо</td>
-                                                        <td class="orderlist__header__regular ">1</td>
-                                                        <td class="orderlist__header__regular ">0,6</td>
-                                                        <td class="orderlist__header__regular ">0</td>
-                                                        <td class="orderlist__header__regular ">790</td>
-                                                        <td class="orderlist__header__regular "><a class="orderlist_a"
-                                                                        href="/detail/1/">Просмотр</a></td>
-                                                        <td class="orderlist__header__regular "><a class="orderlist_a"
-                                                                        href="/site-admin/product_update/1/">Изменить</a>
-                                                        </td>
-                                                        <td class="orderlist__header__regular "><a class="orderlist_a"
-                                                                        href="/site-admin/product_remove/1/">Удалить</a>
-                                                        </td>
-                                                </tr>
-                                                <tr class="orderlist__table__body">
-                                                        <td class="orderlist__header__regular ">4</td>
-                                                        <td class="orderlist__header__regular "><img src="/img/three__dots.svg" alt=""></td>
-                                                        <td class="orderlist__header__regular ">#0009</td>
-                                                        <td class="orderlist__header__regular ">02.11.2023</td>
-                                                        <td class="orderlist__header__regular ">Юхнов Е.А. </td>
-                                                        <td class="orderlist__header__regular ">89876054555</td>
-                                                        <td class="orderlist__header__regular ">evg1720@yandex.ru</td>
-                                                        <td class="orderlist__header__regular ">458768</td>
-                                                        <td class="orderlist__header__regular ">Башкирия</td>
-                                                        <td class="orderlist__header__regular ">Уфа</td>
-                                                        <td class="orderlist__header__regular ">Рудольфа Нуреева</td>
-                                                        <td class="orderlist__header__regular ">16-201</td>
-                                                        <td class="orderlist__header__regular ">Торт чудо</td>
-                                                        <td class="orderlist__header__regular ">1</td>
-                                                        <td class="orderlist__header__regular ">0,6</td>
-                                                        <td class="orderlist__header__regular ">0</td>
-                                                        <td class="orderlist__header__regular ">790</td>
-                                                        <td class="orderlist__header__regular "><a class="orderlist_a"
-                                                                        href="/detail/1/">Просмотр</a></td>
-                                                        <td class="orderlist__header__regular "><a class="orderlist_a"
-                                                                        href="/site-admin/product_update/1/">Изменить</a>
-                                                        </td>
-                                                        <td class="orderlist__header__regular "><a class="orderlist_a"
-                                                                        href="/site-admin/product_remove/1/">Удалить</a>
-                                                        </td>
-                                                </tr>
-                                                <tr class="orderlist__table__body">
-                                                        <td class="orderlist__header__regular ">5</td>
-                                                        <td class="orderlist__header__regular "><img src="/img/ок.svg" alt=""></td>
-                                                        <td class="orderlist__header__regular ">#0010</td>
-                                                        <td class="orderlist__header__regular ">02.11.2023</td>
-                                                        <td class="orderlist__header__regular ">Юхнов Е.А. </td>
-                                                        <td class="orderlist__header__regular ">89876054555</td>
-                                                        <td class="orderlist__header__regular ">evg1720@yandex.ru</td>
-                                                        <td class="orderlist__header__regular ">458768</td>
-                                                        <td class="orderlist__header__regular ">Башкирия</td>
-                                                        <td class="orderlist__header__regular ">Уфа</td>
-                                                        <td class="orderlist__header__regular ">Рудольфа Нуреева</td>
-                                                        <td class="orderlist__header__regular ">16-201</td>
-                                                        <td class="orderlist__header__regular ">Торт чудо</td>
-                                                        <td class="orderlist__header__regular ">1</td>
-                                                        <td class="orderlist__header__regular ">0,6</td>
-                                                        <td class="orderlist__header__regular ">0</td>
-                                                        <td class="orderlist__header__regular ">790</td>
-                                                        <td class="orderlist__header__regular "><a class="orderlist_a"
-                                                                        href="/detail/1/">Просмотр</a></td>
-                                                        <td class="orderlist__header__regular "><a class="orderlist_a"
-                                                                        href="/site-admin/product_update/1/">Изменить</a>
-                                                        </td>
-                                                        <td class="orderlist__header__regular "><a class="orderlist_a"
-                                                                        href="/site-admin/product_remove/1/">Удалить</a>
-                                                        </td>
-                                                </tr>
-                                                <tr class="orderlist__table__body">
-                                                        <td class="orderlist__header__regular ">6</td>
-                                                        <td class="orderlist__header__regular "><img src="/img/clous.svg" alt=""></td>
-                                                        <td class="orderlist__header__regular ">#0011</td>
-                                                        <td class="orderlist__header__regular ">02.11.2023</td>
-                                                        <td class="orderlist__header__regular ">Юхнов Е.А. </td>
-                                                        <td class="orderlist__header__regular ">89876054555</td>
-                                                        <td class="orderlist__header__regular ">evg1720@yandex.ru</td>
-                                                        <td class="orderlist__header__regular ">458768</td>
-                                                        <td class="orderlist__header__regular ">Башкирия</td>
-                                                        <td class="orderlist__header__regular ">Уфа</td>
-                                                        <td class="orderlist__header__regular ">Рудольфа Нуреева</td>
-                                                        <td class="orderlist__header__regular ">16-201</td>
-                                                        <td class="orderlist__header__regular ">Торт чудо</td>
-                                                        <td class="orderlist__header__regular ">1</td>
-                                                        <td class="orderlist__header__regular ">0,6</td>
-                                                        <td class="orderlist__header__regular ">0</td>
-                                                        <td class="orderlist__header__regular ">790</td>
-                                                        <td class="orderlist__header__regular "><a class="orderlist_a"
-                                                                        href="/detail/1/">Просмотр</a></td>
-                                                        <td class="orderlist__header__regular "><a class="orderlist_a"
-                                                                        href="/site-admin/product_update/1/">Изменить</a>
-                                                        </td>
-                                                        <td class="orderlist__header__regular "><a class="orderlist_a"
-                                                                        href="/site-admin/product_remove/1/">Удалить</a>
-                                                        </td>
-                                                </tr>
-                                                <tr class="orderlist__table__body">
-                                                        <td class="orderlist__header__regular ">7</td>
-                                                        <td class="orderlist__header__regular "><img src="/img/ок.svg" alt=""></td>
-                                                        <td class="orderlist__header__regular ">#0012</td>
-                                                        <td class="orderlist__header__regular ">03.11.2023</td>
-                                                        <td class="orderlist__header__regular ">Юхнов Е.А. </td>
-                                                        <td class="orderlist__header__regular ">89876054555</td>
-                                                        <td class="orderlist__header__regular ">evg1720@yandex.ru</td>
-                                                        <td class="orderlist__header__regular ">458768</td>
-                                                        <td class="orderlist__header__regular ">Башкирия</td>
-                                                        <td class="orderlist__header__regular ">Уфа</td>
-                                                        <td class="orderlist__header__regular ">Рудольфа Нуреева</td>
-                                                        <td class="orderlist__header__regular ">16-201</td>
-                                                        <td class="orderlist__header__regular ">Торт чудо</td>
-                                                        <td class="orderlist__header__regular ">1</td>
-                                                        <td class="orderlist__header__regular ">0,6</td>
-                                                        <td class="orderlist__header__regular ">0</td>
-                                                        <td class="orderlist__header__regular ">790</td>
-                                                        <td class="orderlist__header__regular "><a class="orderlist_a"
-                                                                        href="/detail/1/">Просмотр</a></td>
-                                                        <td class="orderlist__header__regular "><a class="orderlist_a"
-                                                                        href="/site-admin/product_update/1/">Изменить</a>
-                                                        </td>
-                                                        <td class="orderlist__header__regular "><a class="orderlist_a"
-                                                                        href="/site-admin/product_remove/1/">Удалить</a>
-                                                        </td>
-                                                </tr>
-                                                <tr class="orderlist__table__body">
-                                                        <td class="orderlist__header__regular ">8</td>
-                                                        <td class="orderlist__header__regular "><img src="/img/ок.svg" alt=""></td>
-                                                        <td class="orderlist__header__regular ">#0013</td>
-                                                        <td class="orderlist__header__regular ">03.11.2023</td>
-                                                        <td class="orderlist__header__regular ">Юхнов Е.А. </td>
-                                                        <td class="orderlist__header__regular ">89876054555</td>
-                                                        <td class="orderlist__header__regular ">evg1720@yandex.ru</td>
-                                                        <td class="orderlist__header__regular ">458768</td>
-                                                        <td class="orderlist__header__regular ">Башкирия</td>
-                                                        <td class="orderlist__header__regular ">Уфа</td>
-                                                        <td class="orderlist__header__regular ">Рудольфа Нуреева</td>
-                                                        <td class="orderlist__header__regular ">16-201</td>
-                                                        <td class="orderlist__header__regular ">Торт чудо</td>
-                                                        <td class="orderlist__header__regular ">1</td>
-                                                        <td class="orderlist__header__regular ">0,6</td>
-                                                        <td class="orderlist__header__regular ">0</td>
-                                                        <td class="orderlist__header__regular ">790</td>
-                                                        <td class="orderlist__header__regular "><a class="orderlist_a"
-                                                                        href="/detail/1/">Просмотр</a></td>
-                                                        <td class="orderlist__header__regular "><a class="orderlist_a"
-                                                                        href="/site-admin/product_update/1/">Изменить</a>
-                                                        </td>
-                                                        <td class="orderlist__header__regular "><a class="orderlist_a"
-                                                                        href="/site-admin/product_remove/1/">Удалить</a>
-                                                        </td>
-                                                </tr>
-                                                <tr class="orderlist__table__body">
-                                                        <td class="orderlist__header__regular ">9</td>
-                                                        <td class="orderlist__header__regular "><img src="/img/ок.svg" alt=""></td>
-                                                        <td class="orderlist__header__regular ">#0014</td>
-                                                        <td class="orderlist__header__regular ">04.11.2023</td>
-                                                        <td class="orderlist__header__regular ">Юхнов Е.А. </td>
-                                                        <td class="orderlist__header__regular ">89876054555</td>
-                                                        <td class="orderlist__header__regular ">evg1720@yandex.ru</td>
-                                                        <td class="orderlist__header__regular ">458768</td>
-                                                        <td class="orderlist__header__regular ">Башкирия</td>
-                                                        <td class="orderlist__header__regular ">Уфа</td>
-                                                        <td class="orderlist__header__regular ">Рудольфа Нуреева</td>
-                                                        <td class="orderlist__header__regular ">16-201</td>
-                                                        <td class="orderlist__header__regular ">Торт чудо</td>
-                                                        <td class="orderlist__header__regular ">1</td>
-                                                        <td class="orderlist__header__regular ">0,6</td>
-                                                        <td class="orderlist__header__regular ">0</td>
-                                                        <td class="orderlist__header__regular ">790</td>
-                                                        <td class="orderlist__header__regular "><a class="orderlist_a"
-                                                                        href="/detail/1/">Просмотр</a></td>
-                                                        <td class="orderlist__header__regular "><a class="orderlist_a"
-                                                                        href="/site-admin/product_update/1/">Изменить</a>
-                                                        </td>
-                                                        <td class="orderlist__header__regular "><a class="orderlist_a"
-                                                                        href="/site-admin/product_remove/1/">Удалить</a>
-                                                        </td>
-                                                </tr>
-                                                <tr class="orderlist__table__body">
-                                                        <td class="orderlist__header__regular ">10</td>
-                                                        <td class="orderlist__header__regular "><img src="/img/ок.svg" alt=""></td>
-                                                        <td class="orderlist__header__regular ">#0015</td>
-                                                        <td class="orderlist__header__regular ">04.11.2023</td>
-                                                        <td class="orderlist__header__regular ">Юхнов Е.А. </td>
-                                                        <td class="orderlist__header__regular ">89876054555</td>
-                                                        <td class="orderlist__header__regular ">evg1720@yandex.ru</td>
-                                                        <td class="orderlist__header__regular ">458768</td>
-                                                        <td class="orderlist__header__regular ">Башкирия</td>
-                                                        <td class="orderlist__header__regular ">Уфа</td>
-                                                        <td class="orderlist__header__regular ">Рудольфа Нуреева</td>
-                                                        <td class="orderlist__header__regular ">16-201</td>
-                                                        <td class="orderlist__header__regular ">Торт чудо</td>
-                                                        <td class="orderlist__header__regular ">1</td>
-                                                        <td class="orderlist__header__regular ">0,6</td>
-                                                        <td class="orderlist__header__regular ">0</td>
-                                                        <td class="orderlist__header__regular ">790</td>
-                                                        <td class="orderlist__header__regular "><a class="orderlist_a"
-                                                                        href="/detail/1/">Просмотр</a></td>
-                                                        <td class="orderlist__header__regular "><a class="orderlist_a"
-                                                                        href="/site-admin/product_update/1/">Изменить</a>
-                                                        </td>
-                                                        <td class="orderlist__header__regular "><a class="orderlist_a"
-                                                                        href="/site-admin/product_remove/1/">Удалить</a>
-                                                        </td>
-                                                </tr>
-                                                <tr class="orderlist__table__body">
-                                                        <td class="orderlist__header__regular ">11</td>
-                                                        <td class="orderlist__header__regular "><img src="/img/ок.svg" alt=""></td>
-                                                        <td class="orderlist__header__regular ">#0016</td>
-                                                        <td class="orderlist__header__regular ">05.11.2023</td>
-                                                        <td class="orderlist__header__regular ">Юхнов Е.А. </td>
-                                                        <td class="orderlist__header__regular ">89876054555</td>
-                                                        <td class="orderlist__header__regular ">evg1720@yandex.ru</td>
-                                                        <td class="orderlist__header__regular ">458768</td>
-                                                        <td class="orderlist__header__regular ">Башкирия</td>
-                                                        <td class="orderlist__header__regular ">Уфа</td>
-                                                        <td class="orderlist__header__regular ">Рудольфа Нуреева</td>
-                                                        <td class="orderlist__header__regular ">16-201</td>
-                                                        <td class="orderlist__header__regular ">Торт чудо</td>
-                                                        <td class="orderlist__header__regular ">1</td>
-                                                        <td class="orderlist__header__regular ">0,6</td>
-                                                        <td class="orderlist__header__regular ">0</td>
-                                                        <td class="orderlist__header__regular ">790</td>
-                                                        <td class="orderlist__header__regular "><a class="orderlist_a"
-                                                                        href="/detail/1/">Просмотр</a></td>
-                                                        <td class="orderlist__header__regular "><a class="orderlist_a"
-                                                                        href="/site-admin/product_update/1/">Изменить</a>
-                                                        </td>
-                                                        <td class="orderlist__header__regular "><a class="orderlist_a"
-                                                                        href="/site-admin/product_remove/1/">Удалить</a>
-                                                        </td>
-                                                </tr>
-                                                <tr class="orderlist__table__body">
-                                                        <td class="orderlist__header__regular ">12</td>
-                                                        <td class="orderlist__header__regular "><img src="/img/ок.svg" alt=""></td>
-                                                        <td class="orderlist__header__regular ">#0017</td>
-                                                        <td class="orderlist__header__regular ">05.11.2023</td>
-                                                        <td class="orderlist__header__regular ">Юхнов Е.А. </td>
-                                                        <td class="orderlist__header__regular ">89876054555</td>
-                                                        <td class="orderlist__header__regular ">evg1720@yandex.ru</td>
-                                                        <td class="orderlist__header__regular ">458768</td>
-                                                        <td class="orderlist__header__regular ">Башкирия</td>
-                                                        <td class="orderlist__header__regular ">Уфа</td>
-                                                        <td class="orderlist__header__regular ">Рудольфа Нуреева</td>
-                                                        <td class="orderlist__header__regular ">16-201</td>
-                                                        <td class="orderlist__header__regular ">Торт чудо</td>
-                                                        <td class="orderlist__header__regular ">1</td>
-                                                        <td class="orderlist__header__regular ">0,6</td>
-                                                        <td class="orderlist__header__regular ">0</td>
-                                                        <td class="orderlist__header__regular ">790</td>
-                                                        <td class="orderlist__header__regular "><a class="orderlist_a"
-                                                                        href="/detail/1/">Просмотр</a></td>
-                                                        <td class="orderlist__header__regular "><a class="orderlist_a"
-                                                                        href="/site-admin/product_update/1/">Изменить</a>
-                                                        </td>
-                                                        <td class="orderlist__header__regular "><a class="orderlist_a"
-                                                                        href="/site-admin/product_remove/1/">Удалить</a>
-                                                        </td>
-                                                </tr>
-                                                <tr class="orderlist__table__body">
-                                                        <td class="orderlist__header__regular ">13</td>
-                                                        <td class="orderlist__header__regular "><img src="/img/ок.svg" alt=""></td>
-                                                        <td class="orderlist__header__regular ">#0018</td>
-                                                        <td class="orderlist__header__regular ">05.11.2023</td>
-                                                        <td class="orderlist__header__regular ">Юхнов Е.А. </td>
-                                                        <td class="orderlist__header__regular ">89876054555</td>
-                                                        <td class="orderlist__header__regular ">evg1720@yandex.ru</td>
-                                                        <td class="orderlist__header__regular ">458768</td>
-                                                        <td class="orderlist__header__regular ">Башкирия</td>
-                                                        <td class="orderlist__header__regular ">Уфа</td>
-                                                        <td class="orderlist__header__regular ">Рудольфа Нуреева</td>
-                                                        <td class="orderlist__header__regular ">16-201</td>
-                                                        <td class="orderlist__header__regular ">Торт чудо</td>
-                                                        <td class="orderlist__header__regular ">1</td>
-                                                        <td class="orderlist__header__regular ">0,6</td>
-                                                        <td class="orderlist__header__regular ">0</td>
-                                                        <td class="orderlist__header__regular ">790</td>
-                                                        <td class="orderlist__header__regular "><a class="orderlist_a"
-                                                                        href="/detail/1/">Просмотр</a></td>
-                                                        <td class="orderlist__header__regular "><a class="orderlist_a"
-                                                                        href="/site-admin/product_update/1/">Изменить</a>
-                                                        </td>
-                                                        <td class="orderlist__header__regular "><a class="orderlist_a"
-                                                                        href="/site-admin/product_remove/1/">Удалить</a>
-                                                        </td>
-                                                </tr>
-                                                <tr class="orderlist__table__body">
-                                                        <td class="orderlist__header__regular ">14</td>
-                                                        <td class="orderlist__header__regular "><img src="/img/ок.svg" alt=""></td>
-                                                        <td class="orderlist__header__regular ">#0019</td>
-                                                        <td class="orderlist__header__regular ">05.11.2023</td>
-                                                        <td class="orderlist__header__regular ">Юхнов Е.А. </td>
-                                                        <td class="orderlist__header__regular ">89876054555</td>
-                                                        <td class="orderlist__header__regular ">evg1720@yandex.ru</td>
-                                                        <td class="orderlist__header__regular ">458768</td>
-                                                        <td class="orderlist__header__regular ">Башкирия</td>
-                                                        <td class="orderlist__header__regular ">Уфа</td>
-                                                        <td class="orderlist__header__regular ">Рудольфа Нуреева</td>
-                                                        <td class="orderlist__header__regular ">16-201</td>
-                                                        <td class="orderlist__header__regular ">Торт чудо</td>
-                                                        <td class="orderlist__header__regular ">1</td>
-                                                        <td class="orderlist__header__regular ">0,6</td>
-                                                        <td class="orderlist__header__regular ">0</td>
-                                                        <td class="orderlist__header__regular ">790</td>
-                                                        <td class="orderlist__header__regular "><a class="orderlist_a"
-                                                                        href="/detail/1/">Просмотр</a></td>
-                                                        <td class="orderlist__header__regular "><a class="orderlist_a"
-                                                                        href="/site-admin/product_update/1/">Изменить</a>
-                                                        </td>
-                                                        <td class="orderlist__header__regular "><a class="orderlist_a"
-                                                                        href="/site-admin/product_remove/1/">Удалить</a>
-                                                        </td>
-                                                </tr>
-                                                <tr class="orderlist__table__body">
-                                                        <td class="orderlist__header__regular ">15</td>
-                                                        <td class="orderlist__header__regular "><img src="/img/ок.svg" alt=""></td>
-                                                        <td class="orderlist__header__regular ">#0020</td>
-                                                        <td class="orderlist__header__regular ">06.11.2023</td>
-                                                        <td class="orderlist__header__regular ">Юхнов Е.А. </td>
-                                                        <td class="orderlist__header__regular ">89876054555</td>
-                                                        <td class="orderlist__header__regular ">evg1720@yandex.ru</td>
-                                                        <td class="orderlist__header__regular ">458768</td>
-                                                        <td class="orderlist__header__regular ">Башкирия</td>
-                                                        <td class="orderlist__header__regular ">Уфа</td>
-                                                        <td class="orderlist__header__regular ">Рудольфа Нуреева</td>
-                                                        <td class="orderlist__header__regular ">16-201</td>
-                                                        <td class="orderlist__header__regular ">Торт чудо</td>
-                                                        <td class="orderlist__header__regular ">1</td>
-                                                        <td class="orderlist__header__regular ">0,6</td>
-                                                        <td class="orderlist__header__regular ">0</td>
-                                                        <td class="orderlist__header__regular ">790</td>
-                                                        <td class="orderlist__header__regular "><a class="orderlist_a"
-                                                                        href="/detail/1/">Просмотр</a></td>
-                                                        <td class="orderlist__header__regular "><a class="orderlist_a"
-                                                                        href="/site-admin/product_update/1/">Изменить</a>
-                                                        </td>
-                                                        <td class="orderlist__header__regular "><a class="orderlist_a"
-                                                                        href="/site-admin/product_remove/1/">Удалить</a>
-                                                        </td>
-                                                </tr>
-                                        </tbody>
-                                </table>
-                        </div>
-                </div>
-        </section>
-        <footer>
-                <div class="container footer__admin">
-                  <div class="footer__admin__menu">
-                    <nav class="footer__admin__list">
-                      <div class="footer__admin__item"><a href="/index.html"><img class="footer__admin__logo"
-                        src="/img/footer-logonew.png" alt=""></a></div>
-                      <ul class="footer__admin__info">
-                        <li class="footer__admin__item"><a href="/pages/about__max.html" class="footer__admin__link">О нас</a>
-                        </li>
-                        <li class="footer__admin__item"><a href="/pages/exclusive.html" class="footer__admin__link">Эксклюзив</a>
-                        </li>
-                        <li class="footer__admin__item"><a href="/pages/partners.html" class="footer__admin__link">Партнёры</a>
-                        </li>
-                        <li class="footer__admin__item display__three"><a href="#" class="footer__admin__link">Мои рецепты</a></li>
-                        <li class="footer__admin__item display__three"><a href="#" class="footer__admin__link">Бизнес план</a></li>
-                        <li class="footer__admin__item display__three"><a href="#" class="footer__admin__link">Реализация</a></li>
-                      </ul>
-                      <div class="flex">
-                      <div><a href="https://web.telegram.org/k/#@svetlana_cakes_sayansk" class="ok smail"><svg class="smail__zero"
-                        fill="#919191" width="60px" height="60px" viewBox="0 0 24 24">
-                        <path
-                          d="m12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12c0-6.627-5.373-12-12-12zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z" />
-                      </svg></a>
-                  </div>
-                  <div><a href="#" class="vk smail"><svg class="smail__zero" width="60" height="60" viewBox="0 0 60 60"
-                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M30 0C13.432 0 0 13.4314 0 30C0 46.5686 13.432 60 30 60C46.568 60 60 46.5686 60 30C60 13.4314 46.568 0 30 0ZM45.2176 33.2446C46.6159 34.6103 48.0951 35.8957 49.3504 37.4026C49.9065 38.0692 50.4307 38.7585 50.8297 39.5337C51.3993 40.6392 50.8849 41.8515 49.8954 41.9171L43.7494 41.9159C42.162 42.0473 40.8988 41.4071 39.8339 40.3218C38.9837 39.457 38.195 38.5332 37.3762 37.6389C37.0416 37.2718 36.6893 36.9262 36.2695 36.6543C35.4316 36.1093 34.7036 36.2762 34.2236 37.1515C33.7344 38.0421 33.6227 39.0292 33.5761 40.0205C33.5092 41.4697 33.0721 41.8484 31.618 41.9165C28.5109 42.062 25.5628 41.5906 22.8227 40.0241C20.4055 38.6425 18.5346 36.6924 16.9043 34.4845C13.7297 30.1805 11.2984 25.4566 9.11386 20.597C8.6222 19.5026 8.98189 18.917 10.1893 18.8943C12.1952 18.8557 14.2011 18.8606 16.2071 18.8925C17.0234 18.9054 17.5636 19.3725 17.8772 20.1428C18.9612 22.8098 20.2901 25.3473 21.9554 27.7007C22.3992 28.3274 22.8522 28.9522 23.4973 29.3948C24.2093 29.8834 24.7519 29.7219 25.0877 28.9271C25.3025 28.4219 25.3952 27.8817 25.4418 27.3404C25.6014 25.486 25.6205 23.6323 25.3442 21.7854C25.1724 20.6296 24.5224 19.8832 23.3702 19.6647C22.7834 19.5536 22.8694 19.3363 23.1548 19.0011C23.6501 18.4217 24.1142 18.0632 25.0416 18.0632L31.9857 18.062C33.0801 18.2768 33.3256 18.7679 33.4742 19.8703L33.4803 27.5871C33.4674 28.0137 33.6945 29.2782 34.4606 29.5574C35.0744 29.76 35.4795 29.2677 35.8465 28.8792C37.5118 27.112 38.6983 25.0263 39.7608 22.8675C40.2298 21.9155 40.6343 20.9303 41.0271 19.9433C41.3193 19.2135 41.7735 18.8544 42.5972 18.8667L49.2841 18.8747C49.4811 18.8747 49.6812 18.8765 49.8764 18.9103C51.0034 19.103 51.3121 19.5879 50.9635 20.6873C50.4147 22.4145 49.3485 23.8533 48.3063 25.2958C47.1892 26.8401 45.9977 28.3304 44.8917 29.8815C43.8752 31.2994 43.9556 32.0133 45.2176 33.2446Z"
-                          fill="#666666" />
-                      </svg></a>
-                    </div>
-                  </div>
-                    </nav>
-                  </div>
-                </div>
-              </footer>
-              <script src="/script/burger.js"></script>
+  <section class="orderlist">
+    <div class="container">
+      <h1 class="orderlist__info mb-5">Заказы</h1>
+      <ul class="orderlist__link mb-5">
+        <li class="orderlist__link__a"><a class="orderlist__link__itemone" href="/pages/admin.html">Назад</a>
+        </li>
+        <li class="orderlist__link__a"><a class="orderlist__link__item" data-popup-link="addorderlist">Добавить
+            заказ</a></li>
+      </ul>
+      <div class="table-responsive mb-5">
+        <table class="orderlist__table">
+          <thead class="orderlist__table__header">
+            <tr>
+              <td class="orderlist__header__bold">№</td>
+              <td class="orderlist__header__bold">Статус</td>
+              <td class="orderlist__header__bold">Заказы</td>
+              <td class="orderlist__header__bold">Дата</td>
+              <td class="orderlist__header__bold">Ф.И.О.</td>
+              <td class="orderlist__header__bold">Телефон</td>
+              <td class="orderlist__header__bold">Email@</td>
+              <td class="orderlist__header__bold">Индекс</td>
+              <td class="orderlist__header__bold">Регион</td>
+              <td class="orderlist__header__bold">Город</td>
+              <td class="orderlist__header__bold">Улица</td>
+              <td class="orderlist__header__bold">Дом-кв</td>
+              <td class="orderlist__header__bold">ТМЦ</td>
+              <td class="orderlist__header__bold orderlist__padding">шт.</td>
+              <td class="orderlist__header__bold orderlist__padding">кг.</td>
+              <td class="orderlist__header__bold orderlist__padding">%</td>
+              <td class="orderlist__header__bold">Сумма (руб.)</td>
+              <td class="orderlist__header__bold">-----</td>
+              <td class="orderlist__header__bold">-----</td>
+              <td class="orderlist__header__bold">-----</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="orderlist__table__body">
+              <td class="orderlist__header__regular ">1</td>
+              <td class="orderlist__header__regular "><img src="/img/ок.svg" alt=""></td>
+              <td class="orderlist__header__regular ">#0007</td>
+              <td class="orderlist__header__regular ">02.11.2023</td>
+              <td class="orderlist__header__regular ">Юхнов Е.А. </td>
+              <td class="orderlist__header__regular ">89876054555</td>
+              <td class="orderlist__header__regular ">evg1720@yandex.ru</td>
+              <td class="orderlist__header__regular ">458768</td>
+              <td class="orderlist__header__regular ">Башкирия</td>
+              <td class="orderlist__header__regular ">Уфа</td>
+              <td class="orderlist__header__regular ">Рудольфа Нуреева</td>
+              <td class="orderlist__header__regular ">16-201</td>
+              <td class="orderlist__header__regular ">Торт чудо</td>
+              <td class="orderlist__header__regular ">1</td>
+              <td class="orderlist__header__regular ">0,6</td>
+              <td class="orderlist__header__regular ">0</td>
+              <td class="orderlist__header__regular ">790</td>
+              <td class="orderlist__header__regular "><a class="orderlist_a" href="/detail/1/">Просмотр</a></td>
+              <td class="orderlist__header__regular "><a class="orderlist_a"
+                  href="/site-admin/product_update/1/">Изменить</a>
+              </td>
+              <td class="orderlist__header__regular "><a class="orderlist_a"
+                  href="/site-admin/product_remove/1/">Удалить</a>
+              </td>
+            </tr>
+            <tr class="orderlist__table__body">
+              <td class="orderlist__header__regular ">2</td>
+              <td class="orderlist__header__regular "><img src="/img/clous.svg" alt=""></td>
+              <td class="orderlist__header__regular ">#0008</td>
+              <td class="orderlist__header__regular ">02.11.2023</td>
+              <td class="orderlist__header__regular ">Юхнов Е.А. </td>
+              <td class="orderlist__header__regular ">89876054555</td>
+              <td class="orderlist__header__regular ">evg1720@yandex.ru</td>
+              <td class="orderlist__header__regular ">458768</td>
+              <td class="orderlist__header__regular ">Башкирия</td>
+              <td class="orderlist__header__regular ">Уфа</td>
+              <td class="orderlist__header__regular ">Рудольфа Нуреева</td>
+              <td class="orderlist__header__regular ">16-201</td>
+              <td class="orderlist__header__regular ">Торт чудо</td>
+              <td class="orderlist__header__regular ">1</td>
+              <td class="orderlist__header__regular ">0,6</td>
+              <td class="orderlist__header__regular ">0</td>
+              <td class="orderlist__header__regular ">790</td>
+              <td class="orderlist__header__regular "><a class="orderlist_a" href="/detail/1/">Просмотр</a></td>
+              <td class="orderlist__header__regular "><a class="orderlist_a"
+                  href="/site-admin/product_update/1/">Изменить</a>
+              </td>
+              <td class="orderlist__header__regular "><a class="orderlist_a"
+                  href="/site-admin/product_remove/1/">Удалить</a>
+              </td>
+            </tr>
+            <tr class="orderlist__table__body">
+              <td class="orderlist__header__regular ">3</td>
+              <td class="orderlist__header__regular "><img src="/img/ок.svg" alt=""></td>
+              <td class="orderlist__header__regular ">#0009</td>
+              <td class="orderlist__header__regular ">02.11.2023</td>
+              <td class="orderlist__header__regular ">Юхнов Е.А. </td>
+              <td class="orderlist__header__regular ">89876054555</td>
+              <td class="orderlist__header__regular ">evg1720@yandex.ru</td>
+              <td class="orderlist__header__regular ">458768</td>
+              <td class="orderlist__header__regular ">Башкирия</td>
+              <td class="orderlist__header__regular ">Уфа</td>
+              <td class="orderlist__header__regular ">Рудольфа Нуреева</td>
+              <td class="orderlist__header__regular ">16-201</td>
+              <td class="orderlist__header__regular ">Торт чудо</td>
+              <td class="orderlist__header__regular ">1</td>
+              <td class="orderlist__header__regular ">0,6</td>
+              <td class="orderlist__header__regular ">0</td>
+              <td class="orderlist__header__regular ">790</td>
+              <td class="orderlist__header__regular "><a class="orderlist_a" href="/detail/1/">Просмотр</a></td>
+              <td class="orderlist__header__regular "><a class="orderlist_a"
+                  href="/site-admin/product_update/1/">Изменить</a>
+              </td>
+              <td class="orderlist__header__regular "><a class="orderlist_a"
+                  href="/site-admin/product_remove/1/">Удалить</a>
+              </td>
+            </tr>
+            <tr class="orderlist__table__body">
+              <td class="orderlist__header__regular ">4</td>
+              <td class="orderlist__header__regular "><img src="/img/three__dots.svg" alt=""></td>
+              <td class="orderlist__header__regular ">#0009</td>
+              <td class="orderlist__header__regular ">02.11.2023</td>
+              <td class="orderlist__header__regular ">Юхнов Е.А. </td>
+              <td class="orderlist__header__regular ">89876054555</td>
+              <td class="orderlist__header__regular ">evg1720@yandex.ru</td>
+              <td class="orderlist__header__regular ">458768</td>
+              <td class="orderlist__header__regular ">Башкирия</td>
+              <td class="orderlist__header__regular ">Уфа</td>
+              <td class="orderlist__header__regular ">Рудольфа Нуреева</td>
+              <td class="orderlist__header__regular ">16-201</td>
+              <td class="orderlist__header__regular ">Торт чудо</td>
+              <td class="orderlist__header__regular ">1</td>
+              <td class="orderlist__header__regular ">0,6</td>
+              <td class="orderlist__header__regular ">0</td>
+              <td class="orderlist__header__regular ">790</td>
+              <td class="orderlist__header__regular "><a class="orderlist_a" href="/detail/1/">Просмотр</a></td>
+              <td class="orderlist__header__regular "><a class="orderlist_a"
+                  href="/site-admin/product_update/1/">Изменить</a>
+              </td>
+              <td class="orderlist__header__regular "><a class="orderlist_a"
+                  href="/site-admin/product_remove/1/">Удалить</a>
+              </td>
+            </tr>
+            <tr class="orderlist__table__body">
+              <td class="orderlist__header__regular ">5</td>
+              <td class="orderlist__header__regular "><img src="/img/ок.svg" alt=""></td>
+              <td class="orderlist__header__regular ">#0010</td>
+              <td class="orderlist__header__regular ">02.11.2023</td>
+              <td class="orderlist__header__regular ">Юхнов Е.А. </td>
+              <td class="orderlist__header__regular ">89876054555</td>
+              <td class="orderlist__header__regular ">evg1720@yandex.ru</td>
+              <td class="orderlist__header__regular ">458768</td>
+              <td class="orderlist__header__regular ">Башкирия</td>
+              <td class="orderlist__header__regular ">Уфа</td>
+              <td class="orderlist__header__regular ">Рудольфа Нуреева</td>
+              <td class="orderlist__header__regular ">16-201</td>
+              <td class="orderlist__header__regular ">Торт чудо</td>
+              <td class="orderlist__header__regular ">1</td>
+              <td class="orderlist__header__regular ">0,6</td>
+              <td class="orderlist__header__regular ">0</td>
+              <td class="orderlist__header__regular ">790</td>
+              <td class="orderlist__header__regular "><a class="orderlist_a" href="/detail/1/">Просмотр</a></td>
+              <td class="orderlist__header__regular "><a class="orderlist_a"
+                  href="/site-admin/product_update/1/">Изменить</a>
+              </td>
+              <td class="orderlist__header__regular "><a class="orderlist_a"
+                  href="/site-admin/product_remove/1/">Удалить</a>
+              </td>
+            </tr>
+            <tr class="orderlist__table__body">
+              <td class="orderlist__header__regular ">6</td>
+              <td class="orderlist__header__regular "><img src="/img/clous.svg" alt=""></td>
+              <td class="orderlist__header__regular ">#0011</td>
+              <td class="orderlist__header__regular ">02.11.2023</td>
+              <td class="orderlist__header__regular ">Юхнов Е.А. </td>
+              <td class="orderlist__header__regular ">89876054555</td>
+              <td class="orderlist__header__regular ">evg1720@yandex.ru</td>
+              <td class="orderlist__header__regular ">458768</td>
+              <td class="orderlist__header__regular ">Башкирия</td>
+              <td class="orderlist__header__regular ">Уфа</td>
+              <td class="orderlist__header__regular ">Рудольфа Нуреева</td>
+              <td class="orderlist__header__regular ">16-201</td>
+              <td class="orderlist__header__regular ">Торт чудо</td>
+              <td class="orderlist__header__regular ">1</td>
+              <td class="orderlist__header__regular ">0,6</td>
+              <td class="orderlist__header__regular ">0</td>
+              <td class="orderlist__header__regular ">790</td>
+              <td class="orderlist__header__regular "><a class="orderlist_a" href="/detail/1/">Просмотр</a></td>
+              <td class="orderlist__header__regular "><a class="orderlist_a"
+                  href="/site-admin/product_update/1/">Изменить</a>
+              </td>
+              <td class="orderlist__header__regular "><a class="orderlist_a"
+                  href="/site-admin/product_remove/1/">Удалить</a>
+              </td>
+            </tr>
+            <tr class="orderlist__table__body">
+              <td class="orderlist__header__regular ">7</td>
+              <td class="orderlist__header__regular "><img src="/img/ок.svg" alt=""></td>
+              <td class="orderlist__header__regular ">#0012</td>
+              <td class="orderlist__header__regular ">03.11.2023</td>
+              <td class="orderlist__header__regular ">Юхнов Е.А. </td>
+              <td class="orderlist__header__regular ">89876054555</td>
+              <td class="orderlist__header__regular ">evg1720@yandex.ru</td>
+              <td class="orderlist__header__regular ">458768</td>
+              <td class="orderlist__header__regular ">Башкирия</td>
+              <td class="orderlist__header__regular ">Уфа</td>
+              <td class="orderlist__header__regular ">Рудольфа Нуреева</td>
+              <td class="orderlist__header__regular ">16-201</td>
+              <td class="orderlist__header__regular ">Торт чудо</td>
+              <td class="orderlist__header__regular ">1</td>
+              <td class="orderlist__header__regular ">0,6</td>
+              <td class="orderlist__header__regular ">0</td>
+              <td class="orderlist__header__regular ">790</td>
+              <td class="orderlist__header__regular "><a class="orderlist_a" href="/detail/1/">Просмотр</a></td>
+              <td class="orderlist__header__regular "><a class="orderlist_a"
+                  href="/site-admin/product_update/1/">Изменить</a>
+              </td>
+              <td class="orderlist__header__regular "><a class="orderlist_a"
+                  href="/site-admin/product_remove/1/">Удалить</a>
+              </td>
+            </tr>
+            <tr class="orderlist__table__body">
+              <td class="orderlist__header__regular ">8</td>
+              <td class="orderlist__header__regular "><img src="/img/ок.svg" alt=""></td>
+              <td class="orderlist__header__regular ">#0013</td>
+              <td class="orderlist__header__regular ">03.11.2023</td>
+              <td class="orderlist__header__regular ">Юхнов Е.А. </td>
+              <td class="orderlist__header__regular ">89876054555</td>
+              <td class="orderlist__header__regular ">evg1720@yandex.ru</td>
+              <td class="orderlist__header__regular ">458768</td>
+              <td class="orderlist__header__regular ">Башкирия</td>
+              <td class="orderlist__header__regular ">Уфа</td>
+              <td class="orderlist__header__regular ">Рудольфа Нуреева</td>
+              <td class="orderlist__header__regular ">16-201</td>
+              <td class="orderlist__header__regular ">Торт чудо</td>
+              <td class="orderlist__header__regular ">1</td>
+              <td class="orderlist__header__regular ">0,6</td>
+              <td class="orderlist__header__regular ">0</td>
+              <td class="orderlist__header__regular ">790</td>
+              <td class="orderlist__header__regular "><a class="orderlist_a" href="/detail/1/">Просмотр</a></td>
+              <td class="orderlist__header__regular "><a class="orderlist_a"
+                  href="/site-admin/product_update/1/">Изменить</a>
+              </td>
+              <td class="orderlist__header__regular "><a class="orderlist_a"
+                  href="/site-admin/product_remove/1/">Удалить</a>
+              </td>
+            </tr>
+            <tr class="orderlist__table__body">
+              <td class="orderlist__header__regular ">9</td>
+              <td class="orderlist__header__regular "><img src="/img/ок.svg" alt=""></td>
+              <td class="orderlist__header__regular ">#0014</td>
+              <td class="orderlist__header__regular ">04.11.2023</td>
+              <td class="orderlist__header__regular ">Юхнов Е.А. </td>
+              <td class="orderlist__header__regular ">89876054555</td>
+              <td class="orderlist__header__regular ">evg1720@yandex.ru</td>
+              <td class="orderlist__header__regular ">458768</td>
+              <td class="orderlist__header__regular ">Башкирия</td>
+              <td class="orderlist__header__regular ">Уфа</td>
+              <td class="orderlist__header__regular ">Рудольфа Нуреева</td>
+              <td class="orderlist__header__regular ">16-201</td>
+              <td class="orderlist__header__regular ">Торт чудо</td>
+              <td class="orderlist__header__regular ">1</td>
+              <td class="orderlist__header__regular ">0,6</td>
+              <td class="orderlist__header__regular ">0</td>
+              <td class="orderlist__header__regular ">790</td>
+              <td class="orderlist__header__regular "><a class="orderlist_a" href="/detail/1/">Просмотр</a></td>
+              <td class="orderlist__header__regular "><a class="orderlist_a"
+                  href="/site-admin/product_update/1/">Изменить</a>
+              </td>
+              <td class="orderlist__header__regular "><a class="orderlist_a"
+                  href="/site-admin/product_remove/1/">Удалить</a>
+              </td>
+            </tr>
+            <tr class="orderlist__table__body">
+              <td class="orderlist__header__regular ">10</td>
+              <td class="orderlist__header__regular "><img src="/img/ок.svg" alt=""></td>
+              <td class="orderlist__header__regular ">#0015</td>
+              <td class="orderlist__header__regular ">04.11.2023</td>
+              <td class="orderlist__header__regular ">Юхнов Е.А. </td>
+              <td class="orderlist__header__regular ">89876054555</td>
+              <td class="orderlist__header__regular ">evg1720@yandex.ru</td>
+              <td class="orderlist__header__regular ">458768</td>
+              <td class="orderlist__header__regular ">Башкирия</td>
+              <td class="orderlist__header__regular ">Уфа</td>
+              <td class="orderlist__header__regular ">Рудольфа Нуреева</td>
+              <td class="orderlist__header__regular ">16-201</td>
+              <td class="orderlist__header__regular ">Торт чудо</td>
+              <td class="orderlist__header__regular ">1</td>
+              <td class="orderlist__header__regular ">0,6</td>
+              <td class="orderlist__header__regular ">0</td>
+              <td class="orderlist__header__regular ">790</td>
+              <td class="orderlist__header__regular "><a class="orderlist_a" href="/detail/1/">Просмотр</a></td>
+              <td class="orderlist__header__regular "><a class="orderlist_a"
+                  href="/site-admin/product_update/1/">Изменить</a>
+              </td>
+              <td class="orderlist__header__regular "><a class="orderlist_a"
+                  href="/site-admin/product_remove/1/">Удалить</a>
+              </td>
+            </tr>
+            <tr class="orderlist__table__body">
+              <td class="orderlist__header__regular ">11</td>
+              <td class="orderlist__header__regular "><img src="/img/ок.svg" alt=""></td>
+              <td class="orderlist__header__regular ">#0016</td>
+              <td class="orderlist__header__regular ">05.11.2023</td>
+              <td class="orderlist__header__regular ">Юхнов Е.А. </td>
+              <td class="orderlist__header__regular ">89876054555</td>
+              <td class="orderlist__header__regular ">evg1720@yandex.ru</td>
+              <td class="orderlist__header__regular ">458768</td>
+              <td class="orderlist__header__regular ">Башкирия</td>
+              <td class="orderlist__header__regular ">Уфа</td>
+              <td class="orderlist__header__regular ">Рудольфа Нуреева</td>
+              <td class="orderlist__header__regular ">16-201</td>
+              <td class="orderlist__header__regular ">Торт чудо</td>
+              <td class="orderlist__header__regular ">1</td>
+              <td class="orderlist__header__regular ">0,6</td>
+              <td class="orderlist__header__regular ">0</td>
+              <td class="orderlist__header__regular ">790</td>
+              <td class="orderlist__header__regular "><a class="orderlist_a" href="/detail/1/">Просмотр</a></td>
+              <td class="orderlist__header__regular "><a class="orderlist_a"
+                  href="/site-admin/product_update/1/">Изменить</a>
+              </td>
+              <td class="orderlist__header__regular "><a class="orderlist_a"
+                  href="/site-admin/product_remove/1/">Удалить</a>
+              </td>
+            </tr>
+            <tr class="orderlist__table__body">
+              <td class="orderlist__header__regular ">12</td>
+              <td class="orderlist__header__regular "><img src="/img/ок.svg" alt=""></td>
+              <td class="orderlist__header__regular ">#0017</td>
+              <td class="orderlist__header__regular ">05.11.2023</td>
+              <td class="orderlist__header__regular ">Юхнов Е.А. </td>
+              <td class="orderlist__header__regular ">89876054555</td>
+              <td class="orderlist__header__regular ">evg1720@yandex.ru</td>
+              <td class="orderlist__header__regular ">458768</td>
+              <td class="orderlist__header__regular ">Башкирия</td>
+              <td class="orderlist__header__regular ">Уфа</td>
+              <td class="orderlist__header__regular ">Рудольфа Нуреева</td>
+              <td class="orderlist__header__regular ">16-201</td>
+              <td class="orderlist__header__regular ">Торт чудо</td>
+              <td class="orderlist__header__regular ">1</td>
+              <td class="orderlist__header__regular ">0,6</td>
+              <td class="orderlist__header__regular ">0</td>
+              <td class="orderlist__header__regular ">790</td>
+              <td class="orderlist__header__regular "><a class="orderlist_a" href="/detail/1/">Просмотр</a></td>
+              <td class="orderlist__header__regular "><a class="orderlist_a"
+                  href="/site-admin/product_update/1/">Изменить</a>
+              </td>
+              <td class="orderlist__header__regular "><a class="orderlist_a"
+                  href="/site-admin/product_remove/1/">Удалить</a>
+              </td>
+            </tr>
+            <tr class="orderlist__table__body">
+              <td class="orderlist__header__regular ">13</td>
+              <td class="orderlist__header__regular "><img src="/img/ок.svg" alt=""></td>
+              <td class="orderlist__header__regular ">#0018</td>
+              <td class="orderlist__header__regular ">05.11.2023</td>
+              <td class="orderlist__header__regular ">Юхнов Е.А. </td>
+              <td class="orderlist__header__regular ">89876054555</td>
+              <td class="orderlist__header__regular ">evg1720@yandex.ru</td>
+              <td class="orderlist__header__regular ">458768</td>
+              <td class="orderlist__header__regular ">Башкирия</td>
+              <td class="orderlist__header__regular ">Уфа</td>
+              <td class="orderlist__header__regular ">Рудольфа Нуреева</td>
+              <td class="orderlist__header__regular ">16-201</td>
+              <td class="orderlist__header__regular ">Торт чудо</td>
+              <td class="orderlist__header__regular ">1</td>
+              <td class="orderlist__header__regular ">0,6</td>
+              <td class="orderlist__header__regular ">0</td>
+              <td class="orderlist__header__regular ">790</td>
+              <td class="orderlist__header__regular "><a class="orderlist_a" href="/detail/1/">Просмотр</a></td>
+              <td class="orderlist__header__regular "><a class="orderlist_a"
+                  href="/site-admin/product_update/1/">Изменить</a>
+              </td>
+              <td class="orderlist__header__regular "><a class="orderlist_a"
+                  href="/site-admin/product_remove/1/">Удалить</a>
+              </td>
+            </tr>
+            <tr class="orderlist__table__body">
+              <td class="orderlist__header__regular ">14</td>
+              <td class="orderlist__header__regular "><img src="/img/ок.svg" alt=""></td>
+              <td class="orderlist__header__regular ">#0019</td>
+              <td class="orderlist__header__regular ">05.11.2023</td>
+              <td class="orderlist__header__regular ">Юхнов Е.А. </td>
+              <td class="orderlist__header__regular ">89876054555</td>
+              <td class="orderlist__header__regular ">evg1720@yandex.ru</td>
+              <td class="orderlist__header__regular ">458768</td>
+              <td class="orderlist__header__regular ">Башкирия</td>
+              <td class="orderlist__header__regular ">Уфа</td>
+              <td class="orderlist__header__regular ">Рудольфа Нуреева</td>
+              <td class="orderlist__header__regular ">16-201</td>
+              <td class="orderlist__header__regular ">Торт чудо</td>
+              <td class="orderlist__header__regular ">1</td>
+              <td class="orderlist__header__regular ">0,6</td>
+              <td class="orderlist__header__regular ">0</td>
+              <td class="orderlist__header__regular ">790</td>
+              <td class="orderlist__header__regular "><a class="orderlist_a" href="/detail/1/">Просмотр</a></td>
+              <td class="orderlist__header__regular "><a class="orderlist_a"
+                  href="/site-admin/product_update/1/">Изменить</a>
+              </td>
+              <td class="orderlist__header__regular "><a class="orderlist_a"
+                  href="/site-admin/product_remove/1/">Удалить</a>
+              </td>
+            </tr>
+            <tr class="orderlist__table__body">
+              <td class="orderlist__header__regular ">15</td>
+              <td class="orderlist__header__regular "><img src="/img/ок.svg" alt=""></td>
+              <td class="orderlist__header__regular ">#0020</td>
+              <td class="orderlist__header__regular ">06.11.2023</td>
+              <td class="orderlist__header__regular ">Юхнов Е.А. </td>
+              <td class="orderlist__header__regular ">89876054555</td>
+              <td class="orderlist__header__regular ">evg1720@yandex.ru</td>
+              <td class="orderlist__header__regular ">458768</td>
+              <td class="orderlist__header__regular ">Башкирия</td>
+              <td class="orderlist__header__regular ">Уфа</td>
+              <td class="orderlist__header__regular ">Рудольфа Нуреева</td>
+              <td class="orderlist__header__regular ">16-201</td>
+              <td class="orderlist__header__regular ">Торт чудо</td>
+              <td class="orderlist__header__regular ">1</td>
+              <td class="orderlist__header__regular ">0,6</td>
+              <td class="orderlist__header__regular ">0</td>
+              <td class="orderlist__header__regular ">790</td>
+              <td class="orderlist__header__regular "><a class="orderlist_a" href="/detail/1/">Просмотр</a></td>
+              <td class="orderlist__header__regular "><a class="orderlist_a"
+                  href="/site-admin/product_update/1/">Изменить</a>
+              </td>
+              <td class="orderlist__header__regular "><a class="orderlist_a"
+                  href="/site-admin/product_remove/1/">Удалить</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container footer__admin">
+      <div class="footer__admin__menu">
+        <nav class="footer__admin__list">
+          <div class="footer__admin__item"><a href="/index.html"><img class="footer__admin__logo"
+                src="/img/footer-logonew.png" alt=""></a></div>
+          <ul class="footer__admin__info">
+            <li class="footer__admin__item"><a href="/pages/about__max.html" class="footer__admin__link">О нас</a>
+            </li>
+            <li class="footer__admin__item"><a href="/pages/exclusive.html" class="footer__admin__link">Эксклюзив</a>
+            </li>
+            <li class="footer__admin__item"><a href="/pages/partners.html" class="footer__admin__link">Партнёры</a>
+            </li>
+            <li class="footer__admin__item display__three"><a href="#" class="footer__admin__link">Мои рецепты</a></li>
+            <li class="footer__admin__item display__three"><a href="#" class="footer__admin__link">Бизнес план</a></li>
+            <li class="footer__admin__item display__three"><a href="#" class="footer__admin__link">Реализация</a></li>
+          </ul>
+          <div class="flex">
+            <div><a href="https://web.telegram.org/k/#@svetlana_cakes_sayansk" class="ok smail"><svg class="smail__zero"
+                  fill="#919191" width="60px" height="60px" viewBox="0 0 24 24">
+                  <path
+                    d="m12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12c0-6.627-5.373-12-12-12zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z" />
+                </svg></a>
+            </div>
+            <div><a href="#" class="vk smail"><svg class="smail__zero" width="60" height="60" viewBox="0 0 60 60"
+                  fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M30 0C13.432 0 0 13.4314 0 30C0 46.5686 13.432 60 30 60C46.568 60 60 46.5686 60 30C60 13.4314 46.568 0 30 0ZM45.2176 33.2446C46.6159 34.6103 48.0951 35.8957 49.3504 37.4026C49.9065 38.0692 50.4307 38.7585 50.8297 39.5337C51.3993 40.6392 50.8849 41.8515 49.8954 41.9171L43.7494 41.9159C42.162 42.0473 40.8988 41.4071 39.8339 40.3218C38.9837 39.457 38.195 38.5332 37.3762 37.6389C37.0416 37.2718 36.6893 36.9262 36.2695 36.6543C35.4316 36.1093 34.7036 36.2762 34.2236 37.1515C33.7344 38.0421 33.6227 39.0292 33.5761 40.0205C33.5092 41.4697 33.0721 41.8484 31.618 41.9165C28.5109 42.062 25.5628 41.5906 22.8227 40.0241C20.4055 38.6425 18.5346 36.6924 16.9043 34.4845C13.7297 30.1805 11.2984 25.4566 9.11386 20.597C8.6222 19.5026 8.98189 18.917 10.1893 18.8943C12.1952 18.8557 14.2011 18.8606 16.2071 18.8925C17.0234 18.9054 17.5636 19.3725 17.8772 20.1428C18.9612 22.8098 20.2901 25.3473 21.9554 27.7007C22.3992 28.3274 22.8522 28.9522 23.4973 29.3948C24.2093 29.8834 24.7519 29.7219 25.0877 28.9271C25.3025 28.4219 25.3952 27.8817 25.4418 27.3404C25.6014 25.486 25.6205 23.6323 25.3442 21.7854C25.1724 20.6296 24.5224 19.8832 23.3702 19.6647C22.7834 19.5536 22.8694 19.3363 23.1548 19.0011C23.6501 18.4217 24.1142 18.0632 25.0416 18.0632L31.9857 18.062C33.0801 18.2768 33.3256 18.7679 33.4742 19.8703L33.4803 27.5871C33.4674 28.0137 33.6945 29.2782 34.4606 29.5574C35.0744 29.76 35.4795 29.2677 35.8465 28.8792C37.5118 27.112 38.6983 25.0263 39.7608 22.8675C40.2298 21.9155 40.6343 20.9303 41.0271 19.9433C41.3193 19.2135 41.7735 18.8544 42.5972 18.8667L49.2841 18.8747C49.4811 18.8747 49.6812 18.8765 49.8764 18.9103C51.0034 19.103 51.3121 19.5879 50.9635 20.6873C50.4147 22.4145 49.3485 23.8533 48.3063 25.2958C47.1892 26.8401 45.9977 28.3304 44.8917 29.8815C43.8752 31.2994 43.9556 32.0133 45.2176 33.2446Z"
+                    fill="#666666" />
+                </svg></a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </footer>
+  <script src="/script/file__add.js"></script>
+  <script src="/script/popup.js"></script>
+  <script src="/script/burger.js"></script>
+
 </body>
 
 </html>
