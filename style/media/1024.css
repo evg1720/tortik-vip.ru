@@ -112,6 +112,7 @@
   }
   footer .container{
     justify-content: center;
+    gap: 20px;
   }
   .footer__smail {
     margin-top: calc((100vw - 320px)/(1024 - 320) * (20 - 0) + 0px);
