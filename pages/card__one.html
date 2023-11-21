@@ -16,7 +16,7 @@
 </head>
 
 <body>
- <div class="popupwrapper none" id="zoompopup">
+  <div class="popupwrapper none" id="zoompopup">
     <div class="popupwrapper__popup zoom">
       <div class="popupwrapper__clouse"><svg viewBox="0 0 24 24" fill="none">
           <g id="close">
@@ -26,18 +26,22 @@
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M17.7853 6.21479C18.0782 6.50769 18.0782 6.98256 17.7853 7.27545L7.28038 17.7802C6.98749 18.0731 6.51261 18.0731 6.21972 17.7802C5.92683 17.4873 5.92683 17.0124 6.21973 16.7195L16.7247 6.21478C17.0176 5.92189 17.4924 5.9219 17.7853 6.21479Z"
               fill="#000000" />
-        </g>
-      </svg></div>
+          </g>
+        </svg></div>
       <!-- <img class="zoom__img" src="" alt="" srcset=""> -->
-      <div class="content_swiper swiper">
+      <div class="swiper">
         <div class="left_event left"><img src="/img/left.png" alt=""></div>
-        <img src="/img/cake/cake1.jpg" alt="">
-        <img src="/img/cake/cake2.jpg" alt="">
-        <img src="/img/cake/cake3.jpg" alt="">
         <div class="right_event right"><img src="/img/right.png" alt=""></div>
+        <div class="content_swiper">
+
+          <img src="/img/cake/cake1.jpg" alt="">
+          <img src="/img/cake/cake2.jpg" alt="">
+          <img src="/img/cake/cake3.jpg" alt="">
+    
+        </div>
       </div>
+    </div>
   </div>
-</div>
   <header class="header">
     <div class="container">
       <div class="header__container">
@@ -95,10 +99,8 @@
           </svg></a>
         <div class="contact__one">
           <div class="header__bottoms display__two">
-            <a class="button__indent__a button button__indent" id="login" href="#"
-              >Вход</a>
-            <a class="button__indent__a button button__indent" id="registration" href="#"
-              >Регистрация</a>
+            <a class="button__indent__a button button__indent" id="login" href="#">Вход</a>
+            <a class="button__indent__a button button__indent" id="registration" href="#">Регистрация</a>
           </div>
         </div>
         <!-- <div class="header__other">
@@ -117,9 +119,12 @@
     <div class="main__left section_swiper">
       <div class="swiper-container gallery-top">
         <div class="swiper-wrapper">
-          <div class="swiper-slide" data-zoom="zoom" data-popup-link="zoompopup" style="background-image:url(/img/cake/cake1.jpg)"></div>
-          <div class="swiper-slide" data-zoom="zoom" data-popup-link="zoompopup" style="background-image:url(/img/cake/cake2.jpg)"></div>
-          <div class="swiper-slide" data-zoom="zoom" data-popup-link="zoompopup" style="background-image:url(/img/cake/cake3.jpg)"></div>
+          <div class="swiper-slide" data-zoom="zoom" data-popup-link="zoompopup"
+            style="background-image:url(/img/cake/cake1.jpg)"></div>
+          <div class="swiper-slide" data-zoom="zoom" data-popup-link="zoompopup"
+            style="background-image:url(/img/cake/cake2.jpg)"></div>
+          <div class="swiper-slide" data-zoom="zoom" data-popup-link="zoompopup"
+            style="background-image:url(/img/cake/cake3.jpg)"></div>
         </div>
         <!-- Add Arrows -->
         <div class="swiper-button-next swiper-button-white"></div>
@@ -224,35 +229,39 @@
         </div>
         <div class="reviews__swiper__line"></div>
         <div class="reviews__info">
-        <div class="reviews__avatar__gap flex">
-          <div ><img class="reviews__avatar" src="/img/avatar.svg" alt=""></div>
-          <div class="reviews__users__name">Евгений </div>
+          <div class="reviews__avatar__gap flex">
+            <div><img class="reviews__avatar" src="/img/avatar.svg" alt=""></div>
+            <div class="reviews__users__name">Евгений </div>
+          </div>
+          <div class="reviews__rating" data-total-value="0">
+            <div class="reviews__rating__item" data-item-value="5">★</div>
+            <div class="reviews__rating__item" data-item-value="4">★</div>
+            <div class="reviews__rating__item" data-item-value="3">★</div>
+            <div class="reviews__rating__item" data-item-value="2">★</div>
+            <div class="reviews__rating__item" data-item-value="1">★</div>
+          </div>
+          <p class="reviews__avatar__text">Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные
+            тексты. Подпоясал домах семантика свой лучше там всемогущая, напоивший однажды одна моей о дал своего,
+            заголовок что грустный прямо. Буквенных, они?</p>
+          <p class="reviews__data">20.11.2023</p>
         </div>
-        <div class="reviews__rating" data-total-value="0">
-          <div class="reviews__rating__item" data-item-value="5">★</div>
-          <div class="reviews__rating__item" data-item-value="4">★</div>
-          <div class="reviews__rating__item" data-item-value="3">★</div>
-          <div class="reviews__rating__item" data-item-value="2">★</div>
-          <div class="reviews__rating__item" data-item-value="1">★</div>
+        <div class="reviews__info">
+          <div class="reviews__avatar__gap flex">
+            <div><img class="reviews__avatar" src="/img/avatar.svg" alt=""></div>
+            <div class="reviews__users__name">Николай777</div>
+          </div>
+          <div class="reviews__rating" data-total-value="0">
+            <div class="reviews__rating__item" data-item-value="5">★</div>
+            <div class="reviews__rating__item" data-item-value="4">★</div>
+            <div class="reviews__rating__item" data-item-value="3">★</div>
+            <div class="reviews__rating__item" data-item-value="2">★</div>
+            <div class="reviews__rating__item" data-item-value="1">★</div>
+          </div>
+          <p class="reviews__avatar__text">Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные
+            тексты. Подпоясал домах семантика свой лучше там всемогущая, напоивший однажды одна моей о дал своего,
+            заголовок что грустный прямо. Буквенных, они?</p>
+          <p class="reviews__data">20.11.2023</p>
         </div>
-        <p class="reviews__avatar__text">Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты. Подпоясал домах семантика свой лучше там всемогущая, напоивший однажды одна моей о дал своего, заголовок что грустный прямо. Буквенных, они?</p>
-        <p class="reviews__data">20.11.2023</p>
-      </div>
-      <div class="reviews__info">
-        <div class="reviews__avatar__gap flex">
-          <div ><img class="reviews__avatar" src="/img/avatar.svg" alt=""></div>
-          <div class="reviews__users__name">Николай777</div>
-        </div>
-        <div class="reviews__rating" data-total-value="0">
-          <div class="reviews__rating__item" data-item-value="5">★</div>
-          <div class="reviews__rating__item" data-item-value="4">★</div>
-          <div class="reviews__rating__item" data-item-value="3">★</div>
-          <div class="reviews__rating__item" data-item-value="2">★</div>
-          <div class="reviews__rating__item" data-item-value="1">★</div>
-        </div>
-        <p class="reviews__avatar__text">Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты. Подпоясал домах семантика свой лучше там всемогущая, напоивший однажды одна моей о дал своего, заголовок что грустный прямо. Буквенных, они?</p>
-        <p class="reviews__data">20.11.2023</p>
-      </div>
       </form>
     </div>
   </section>
@@ -277,7 +286,11 @@
             </ul>
           </nav>
           <ul class="footer__smail">
-            <li><a href="https://web.telegram.org/k/#@svetlana_cakes_sayansk" class="ok smail"><svg class="smail__zero" fill="#919191" width="60px" height="60px" viewBox="0 0 24 24"><path d="m12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12c0-6.627-5.373-12-12-12zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z"/></svg></a>
+            <li><a href="https://web.telegram.org/k/#@svetlana_cakes_sayansk" class="ok smail"><svg class="smail__zero"
+                  fill="#919191" width="60px" height="60px" viewBox="0 0 24 24">
+                  <path
+                    d="m12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12c0-6.627-5.373-12-12-12zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z" />
+                </svg></a>
             </li>
             <li><a href="#" class="vk smail"><svg class="smail__zero" width="60" height="60" viewBox="0 0 60 60"
                   fill="none">
@@ -343,7 +356,7 @@
   <!-- <script src="/script/mySwiper.js"></script> -->
   <script type="module" src="/script/zoom.js"></script>
   <script>
-    
+
   </script>
 
   <!-- <script src="/script/zoom.js"></script> -->

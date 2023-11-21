@@ -96,7 +96,9 @@
   .display__two {
     display: none;
   }
-
+.header__other{
+  display: none;
+}
   /* --- hero --- */
   /* --- about ---*/
   .about-description {

@@ -34,7 +34,9 @@
 .mb-100 {
   margin-bottom: 100px;
 }
-
+.width-200{
+  width: 200px !important;
+}
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 

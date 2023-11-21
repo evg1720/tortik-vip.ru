@@ -1,4 +1,7 @@
 @media (max-width: 576px) {
+    .width-200 {
+        width: 100% !important;
+    }
 
     .header__menu__list {
         width: 320px;
@@ -63,9 +66,12 @@
     .list__weight__link {
         font-size: 16px;
     }
-.list__more{
-    height: 526px;
-}
+
+    .list__more,
+    .list__close{
+        height: 526px;
+    }
+
     .contact {
         min-width: 100%;
     }

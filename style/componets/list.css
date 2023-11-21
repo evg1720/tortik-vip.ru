@@ -182,7 +182,11 @@
   content: "Посмотреть все варианты";
   position: absolute;
   bottom: 15px;
-  left: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
   color: var(--brown-cold);
   font-family: 'MullerRegular';
   font-weight: 500;
@@ -193,7 +197,7 @@
 
 .list__close {
   position: relative;
-  background: url("//img/logo__three.svg") no-repeat;
+  background: url("/img/logo__three.svg") no-repeat;
   /* background-size: contain; */
   background-size: cover;
   background-position: center;
