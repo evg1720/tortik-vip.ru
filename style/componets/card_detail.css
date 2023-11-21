@@ -295,9 +295,14 @@ align-items: center;
     max-width: 70%;
     font-family: 'MullerRegular';
     font-size: 16px;
+    margin-bottom: 10px;
 }
 .reviews__info{
     margin-bottom: 30px;
+}
+.reviews__data{
+    font-family: 'MullerBold';
+    font-size: 16px;
 }
 .reviews__textarea {
     margin-bottom: 20px;
