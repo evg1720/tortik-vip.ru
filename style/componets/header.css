@@ -63,7 +63,8 @@
   margin-right: auto;
 }
 
-.header__item__link {
+.header__item__link,
+.header__item__linktwo{
   color: var(--black);
   font-family: 'MullerRegular';
   font-size: 18px;

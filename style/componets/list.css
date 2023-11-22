@@ -194,6 +194,22 @@
   font-style: normal;
   font-weight: normal;
 }
+.list__close:not(.onclick)::after {
+  content: "Закрыть";
+  position: absolute;
+  bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: var(--brown-cold);
+  font-family: 'MullerRegular';
+  font-weight: 500;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: normal;
+}
 
 .list__close {
   position: relative;

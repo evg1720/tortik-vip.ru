@@ -7,7 +7,9 @@
   /*--Убрать сетку--*/
   margin-bottom: 10px;
 }
-
+#order{
+  z-index: 6;
+}
 .order__table td,
 .products__table tr {
   text-align: center;
@@ -238,5 +240,8 @@ tr:nth-child(odd):hover {
   }
   .order__right {
     margin-bottom: 20px;
+  }
+  .form__title{
+    font-size: 16px;
   }
 }

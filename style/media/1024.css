@@ -17,7 +17,7 @@
     height: 40px;
     border: none;
     background-color: transparent;
-    z-index: 3;
+    z-index: 5;
   }
 
   .header__burger__btn span {
@@ -74,6 +74,9 @@
     border-radius: 0px 0px 32px 32px;
     z-index: 2;
     transition: transform .5s;
+    z-index: 4;
+    overflow-y: scroll;
+    height: 444px;
   }
 
   .header__item:nth-child(1) {

@@ -73,7 +73,7 @@
 } */
 
 .main {
-    margin-top: 25px;
+    margin-top: 50px;
     display: flex;
     gap: 50px;
 }
@@ -252,7 +252,7 @@
 }
 
 .section_swiper {
-    height: 700px;
+    height: 750px;
 }
 
 .swiper-container.gallery-thumbs {
@@ -591,6 +591,11 @@ align-items: center;
     }
 
 }
+@media (max-width: 768px) {
+    .reviews__avatar__text{
+        min-width: 100%;
+    }
+}
 
 @media (max-width: 576px) {
     .header__logo__img {
@@ -671,3 +676,4 @@ align-items: center;
         padding: 95px 20px 20px 20px;
     }
 }
+

@@ -24,6 +24,9 @@
     .list__cakes {
         grid-template-columns: repeat(2, 1fr);
     }
+    .header__menu__list {
+        height: 400px;
+    }
 
     footer .container {
         justify-content: space-between;

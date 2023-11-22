@@ -8,25 +8,34 @@
     display: flex;
     background: rgba(0, 0, 0, .8);
 }
-.mypage__link{
+
+.mypage__link {
     align-items: center;
+    gap: 50px;
+    margin-bottom: 20px;
 }
 
 .mypage__form {
     margin: auto;
 }
-.mypage__photo__left{
+
+.mypage__photo__left {
     width: 40%;
 }
-.mypage__photo__img{
-max-height: 200px;
-object-fit: cover;
-cursor: pointer;
-border: 1px solid var(--gold-color);
+#mypage__popup{
+    z-index: 6;
 }
-#mypage__photoi{
+.mypage__photo__img {
+    object-fit: cover;
+    cursor: pointer;
+    padding: .4em;
+    border: 1px solid var(--gold-color);
+}
+
+#mypage__photoi {
     border: 0;
 }
+
 /*----gender----*/
 
 .form__gender {
@@ -45,8 +54,13 @@ border: 1px solid var(--gold-color);
 .form__gender input:nth-child(2) {
     margin-left: 40px;
 }
-.form__style__gender{
+
+.form__style__gender {
     gap: 15px;
+}
+
+.form__style__two {
+    width: 100%;
 }
 
 /*--------------Radio-------------------*/
@@ -107,4 +121,16 @@ border: 1px solid var(--gold-color);
 
 .radio__input:checked+.radio__label:after {
     opacity: 1;
+}
+@media (max-width: 576px) {
+    .mypage__link{
+        flex-direction: column;
+        gap: 25px;
+    }
+    .form__label {
+        font-size: 14px !important;
+    }
+    .mypage__photo__left {
+        width: 80%;
+    }
 }
