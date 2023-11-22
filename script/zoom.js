@@ -1,6 +1,6 @@
 import { newSwiper } from "./mySwiper.js"
 
-let zoom_swiper = newSwiper(document.querySelector(".content_swiper"))
+let zoom_swiper = newSwiper(document.querySelector(".swiper"))
 
 const slides = document.querySelectorAll(".gallery-top .swiper-slide")
 
