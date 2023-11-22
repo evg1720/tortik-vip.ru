@@ -302,11 +302,11 @@ body {
   margin-bottom: 3rem;
 }
 
-.support {
+.reviews {
   flex-grow: 1;
 }
 
-.support__table {
+.reviews__table {
   margin: auto;
   /*----Центрирование по центру---*/
   width: 100%;
@@ -316,23 +316,23 @@ body {
   /*--Убрать сетку--*/
 }
 
-.support__table td,
+.reviews__table td,
 .products__table tr {
   text-align: center;
   padding: 10px;
 }
 
-.support__table__header {
+.reviews__table__header {
   border-radius: 10px;
   box-shadow: 0 4px 16px var(--brown-cold);
 }
 
-.support__header__regular {
+.reviews__header__regular {
   font-family: 'MullerRegular';
   font-size: 14px;
 }
 
-.support__header__bold {
+.reviews__header__bold {
   font-size: 14px;
   font-weight: 700;
 }
@@ -359,35 +359,35 @@ tbody tr:nth-child(odd):hover {
   box-shadow: 0 4px 16px var(--dark-brown);
 }
 
-.support_a {
+.reviews_a {
   color: var(--gray-gray);
 }
 
-.support_a:hover {
+.reviews_a:hover {
   color: var(--dark-green);
 }
-.support_a:focus {
+.reviews_a:focus {
   transition: background 0.3s ease, color 0.2s linear;
 }
 
-.support_a:active {
+.reviews_a:active {
   color: var(--dark-brown);
 }
 
-.support__info {
+.reviews__info {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.support__link {
+.reviews__link {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 50px;
 }
 
-.support__link__item {
+.reviews__link__item {
   display: block;
   outline: 2px solid var(--green);
   border-radius: 5px;
@@ -401,22 +401,22 @@ tbody tr:nth-child(odd):hover {
   cursor: pointer;
 }
 
-.support__link__item:hover {
+.reviews__link__item:hover {
   background-color: var(--green);
   color: var(--white);
   transition-duration: 0.2s, 0.3s;
 }
 
-.support__link__item:focus {
+.reviews__link__item:focus {
   transition: background 0.3s ease, color 0.2s linear;
 }
 
-.support__link__item:active {
+.reviews__link__item:active {
   background-color: var(--dark-green);
   color: var(--white);
 }
 
-.support__link__itemone {
+.reviews__link__itemone {
   display: block;
   background-color: var(--white-green);
   border-radius: 5px;
@@ -428,17 +428,17 @@ tbody tr:nth-child(odd):hover {
   cursor: pointer;
 }
 
-.support__link__itemone:hover {
+.reviews__link__itemone:hover {
   background-color: var(--green);
   color: var(--white);
   transition-duration: 0.2s, 0.3s;
 }
 
-.support__link__itemone:focus {
+.reviews__link__itemone:focus {
   transition: background 0.3s ease, color 0.2s linear;
 }
 
-.support__link__itemone:active {
+.reviews__link__itemone:active {
   background-color: var(--dark-green);
   color: var(--white);
 }
@@ -450,7 +450,7 @@ tbody tr:nth-child(odd):hover {
   } */
 /* катигории-кнопки */
 
-.support__table__change {
+.reviews__table__change {
   outline: none;
   border: 1px;
   border-color: var(--white-green);
@@ -470,16 +470,16 @@ tbody tr:nth-child(odd):hover {
   padding: 3px 10px;
 }
 
-.support__table__change:hover {
+.reviews__table__change:hover {
   background-color: var(--green);
   color: var(--white);
 }
 
-.support__table__change:focus {
+.reviews__table__change:focus {
   transition: background 0.3s ease, color 0.2s linear;
 }
 
-.support__table__change:active {
+.reviews__table__change:active {
   background-color: var(--dark-green);
   color: var(--white);
 }

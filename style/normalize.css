@@ -34,8 +34,14 @@
 .mb-100 {
   margin-bottom: 100px;
 }
-.width-200{
+
+.width-200 {
   width: 200px !important;
+}
+
+.width-300 {
+  display: block;
+  min-width: 300px;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */

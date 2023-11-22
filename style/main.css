@@ -174,7 +174,7 @@ p {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 5;
+    z-index: 7;
     width: 100vw;
     height: 100vh;
     display: flex;
