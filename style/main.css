@@ -67,8 +67,7 @@ header {
 }
 
 .none {
-    max-height: 0;
-    overflow: hidden;
+    display: none !important;
 }
 
 .overflow_yscroll {
