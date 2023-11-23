@@ -185,23 +185,14 @@ p {
 .popupwrapper__popup {
     position: relative;
     margin: auto;
-    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 16px var(--brown-cold);
     letter-spacing: 1px;
     font-family: 'MullerBold';
     font-size: 16px;
     background: var(--white);
-
-
     max-height: 95vh;
-
-
-
-
-
-
-
+    border-radius: 32px;
     /* overflow-y: scroll; */
 
 }
@@ -240,7 +231,7 @@ p {
     right: 15px;
     top: 15px;
     cursor: pointer;
-    width: 30px;
+    width: 35px;
     z-index: 2;
 }
 

@@ -7,6 +7,7 @@
 .swiper {
     position: relative;
     height: 100%;
+    border-radius: 32px;
 }
 
 .swiper>.content_swiper {
@@ -350,7 +351,7 @@ align-items: center;
 
 .reviews__rating__item:hover,
 .reviews__rating__item:hover~.reviews__rating__item {
-    color: var(--light-gold);
+    color: var(--brown-cold);
 }
 
 .reviews__rating[data-total-value="1"] .reviews__rating__item:nth-child(n + 5),
@@ -358,7 +359,7 @@ align-items: center;
 .reviews__rating[data-total-value="3"] .reviews__rating__item:nth-child(n + 3),
 .reviews__rating[data-total-value="4"] .reviews__rating__item:nth-child(n + 2),
 .reviews__rating[data-total-value="5"] .reviews__rating__item:nth-child(n + 1) {
-    color: var(--brown-cold);
+    color: var(--light-gold);
 }
 
 /* --- file --- */

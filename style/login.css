@@ -4,6 +4,8 @@
 
 .login__form {
     width: 300px;
+    border-radius: 10px;
+    padding: 20px;
 }
 
 .login__form__title {

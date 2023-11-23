@@ -12,18 +12,19 @@
 .mypage__link {
     align-items: center;
     gap: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .mypage__form {
     margin: auto;
+    border-radius: 16px !important;
 }
 
 .mypage__photo__left {
-    width: 40%;
+    width: 80%;
 }
 #mypage__popup{
-    z-index: 6;
+    z-index: 7;
 }
 .mypage__photo__img {
     object-fit: cover;
@@ -131,6 +132,6 @@
         font-size: 14px !important;
     }
     .mypage__photo__left {
-        width: 80%;
+        width: 60%;
     }
 }
