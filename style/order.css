@@ -84,6 +84,9 @@ tr:nth-child(odd):hover {
 .order__promo {
   gap: 20px;
 }
+.order__form{
+  border-radius: 16px !important;
+}
 .order__form__delivery {
   gap: 15px;
 }
