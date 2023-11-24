@@ -1,3 +1,5 @@
+import { changeLabel } from "./forms.js";
+
 const popupLinks = document.querySelectorAll("[data-popup-link]");
 
 
@@ -7,7 +9,21 @@ class Popup {
         this.popupLink = popupLink;
         this.popup = document.querySelector(`#${this.popupLink.getAttribute("data-popup-link")}`)
         this.popupBody = this.popup.querySelector(".popupwrapper__popup")
+        this.popupInputs = this.popup.querySelectorAll("input")
         this.popupCloseEl = this.popup.querySelector(".popupwrapper__clouse")
+
+        if (this.popupBody.nodeName == "FORM") {
+            this.popupInputs.forEach(input => {
+                changeLabel(input)
+                input.addEventListener("focus", (e) =>  {
+                    changeLabel(e.target)
+                })
+                input.addEventListener("blur", (e) => {
+                    changeLabel(e.target)
+                })
+            })
+        }
+
 
         const self = this;
         this.popupLink.addEventListener("click", () => {
