@@ -8,6 +8,9 @@ class RegisterForm {
 
         this.userName = this.form.querySelector("#username_input")
 
+        this.genderInputs = this.form.querySelectorAll(".register__form__style__gender input[type='radio")
+        this.genderInputValue = this.form.querySelector(".gender_value")
+
         this.captchaInput = this.form.querySelector("#user-input input")
         this.updateCaptcha = this.form.querySelector(".update__icon")
         this.captcha = this.form.querySelector("#image")
@@ -16,6 +19,8 @@ class RegisterForm {
         this.consentProcessingOfPersonalData = this.form.querySelector(".checkbox__inp")
 
         this.submitBtn = this.form.querySelector(".register__form__button")
+
+        this.getGender()
 
         this.generateCaptcha()
         let self = this;
@@ -31,6 +36,12 @@ class RegisterForm {
         })
         this.captchaInput.addEventListener("input", () => {
             this.isValid()
+        })
+
+        this.genderInputs.forEach(input => {
+            input.addEventListener("input", () => {
+                self.getGender()
+            })
         })
 
     }
@@ -74,10 +85,18 @@ class RegisterForm {
         }
         return answer
     }
+
+    getGender() {
+        this.genderInputs.forEach(input => {
+            if (input.checked) {
+                let label = document.querySelector(`label[for='${input.id}']`)
+                this.genderInputValue.value = label.textContent
+            }
+        });
+    }
 }
 
 let form = document.querySelector(".register__form")
 
-console.log(form);
 
 let a = new RegisterForm(form); 
