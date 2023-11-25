@@ -306,6 +306,9 @@
         <input class="register__form__input" placeholder=" " type="text" id="username_input">
         <label class="register__form__label">Имя пользователя</label>
       </div>
+      <div class="register__form__group flex username_error none">
+        <p>мат использовать нельзя</p>
+      </div>
       <div class="register__form__group">
         <input class="register__form__input" type="date" name="trip-start">
         <label class="register__form__label">Дата рождения</label>
@@ -338,13 +341,16 @@
       </div>
       <div class="register__form__style flex">
         <div class="register__form__group flex">
-          <input class="register__form__input" placeholder=" " type="password">
+          <input class="register__form__input" placeholder=" " type="password" id="id_password1">
           <label class="register__form__label">Пароль:</label>
         </div>
         <div class="register__form__group flex">
-          <input class="register__form__input width-200" placeholder=" " type="password">
+          <input class="register__form__input width-200" placeholder=" " type="password" id="id_password2">
           <label class="register__form__label">Подтверждение пароля:</label>
         </div>
+      </div>
+      <div class="register__form__group flex password_error none">
+        <p>Пароли не совпадаюют</p>
       </div>
       <div class="register__form__style__captcha flex">
         <div class="register__form__group flex inline" id="user-input">

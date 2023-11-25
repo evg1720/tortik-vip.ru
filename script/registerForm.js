@@ -7,9 +7,13 @@ class RegisterForm {
         this.form = form;
 
         this.userName = this.form.querySelector("#username_input")
+        this.userNameError = this.form.querySelector(".username_error");
 
         this.genderInputs = this.form.querySelectorAll(".register__form__style__gender input[type='radio")
         this.genderInputValue = this.form.querySelector(".gender_value")
+
+        this.passwordInputs = [this.form.querySelector("#id_password1"), this.form.querySelector("#id_password2")]
+        this.passwordError = this.form.querySelector(".password_error")
 
         this.captchaInput = this.form.querySelector("#user-input input")
         this.updateCaptcha = this.form.querySelector(".update__icon")
@@ -44,6 +48,12 @@ class RegisterForm {
             })
         })
 
+        this.passwordInputs.forEach(input => {
+            input.addEventListener("input", () => {
+                self.passwordInputsIsValid()
+            })
+        })
+
     }
     generateCaptcha() {
         this.uniquechar = ""
@@ -59,13 +69,23 @@ class RegisterForm {
     isValid() {
         let inputValueList = this.split(this.userName.value, [" ", "-", "_", "/", "#"]);
         let forbiddenWordsList = this.forbiddenWords.filter(x => inputValueList.includes(x));
+        let flagDis = false
         if (!this.consentProcessingOfPersonalData.checked ||
-            forbiddenWordsList.length > 0 ||
             this.captchaInput.value != this.uniquechar) {
+            flagDis = true
             this.submitBtn.classList.add("form__button-disabled")
         } else {
-            console.log("dis");
+            flagDis = false
             this.submitBtn.classList.remove("form__button-disabled")
+        }
+        
+        if (forbiddenWordsList.length > 0) {
+            this.userNameError.classList.remove("none")
+            this.submitBtn.classList.add("form__button-disabled")
+        } else {
+            this.userNameError.classList.add("none")
+            
+            if (!flagDis) this.submitBtn.classList.remove("form__button-disabled")
         }
     }
 
@@ -90,9 +110,23 @@ class RegisterForm {
         this.genderInputs.forEach(input => {
             if (input.checked) {
                 let label = document.querySelector(`label[for='${input.id}']`)
-                this.genderInputValue.value = label.textContent
+                let labelText = label.textContent
+                if (labelText == "Мужской") this.genderInputValue.value = "M"
+                else this.genderInputValue.value = "W"
             }
         });
+    }
+
+    passwordInputsIsValid() {
+        let password1Value = this.passwordInputs[0].value
+        let password2Value = this.passwordInputs[1].value
+        if (password1Value != password2Value) {
+            this.passwordError.classList.remove("none")
+            this.submitBtn.classList.add("form__button-disabled")
+        } else {
+            this.passwordError.classList.add("none")
+            this.submitBtn.classList.remove("form__button-disabled")
+        }
     }
 }
 
