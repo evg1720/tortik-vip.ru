@@ -24,6 +24,12 @@ class RegisterForm {
 
         this.submitBtn = this.form.querySelector(".register__form__button")
 
+        this.errors = {
+            "username": true,
+            "password": true,
+            "captcha": true
+        }
+
         this.getGender()
 
         this.generateCaptcha()
@@ -31,6 +37,9 @@ class RegisterForm {
         this.updateCaptcha.addEventListener("click", () => {
             this.generateCaptcha()
         })
+
+        this.isValid()
+        this.passwordInputsIsValid()
 
         this.consentProcessingOfPersonalData.addEventListener("input", () => {
             this.isValid()
@@ -67,26 +76,22 @@ class RegisterForm {
     }
 
     isValid() {
+        this.errors.username = false
+        this.errors.captcha = false
         let inputValueList = this.split(this.userName.value, [" ", "-", "_", "/", "#"]);
         let forbiddenWordsList = this.forbiddenWords.filter(x => inputValueList.includes(x));
-        let flagDis = false
-        if (!this.consentProcessingOfPersonalData.checked ||
-            this.captchaInput.value != this.uniquechar) {
-            flagDis = true
-            this.submitBtn.classList.add("form__button-disabled")
-        } else {
-            flagDis = false
-            this.submitBtn.classList.remove("form__button-disabled")
+        if (this.consentProcessingOfPersonalData.checked &&
+            this.captchaInput.value == this.uniquechar) {
+            this.errors.captcha = true
         }
         
         if (forbiddenWordsList.length > 0) {
             this.userNameError.classList.remove("none")
-            this.submitBtn.classList.add("form__button-disabled")
         } else {
             this.userNameError.classList.add("none")
-            
-            if (!flagDis) this.submitBtn.classList.remove("form__button-disabled")
+            this.errors.username = true
         }
+        this.btnDisabled()
     }
 
     split(str, arr) {
@@ -118,14 +123,24 @@ class RegisterForm {
     }
 
     passwordInputsIsValid() {
+        this.errors.password = false
         let password1Value = this.passwordInputs[0].value
         let password2Value = this.passwordInputs[1].value
-        if (password1Value != password2Value) {
+        if (password1Value != password2Value || password1Value == "") {
             this.passwordError.classList.remove("none")
-            this.submitBtn.classList.add("form__button-disabled")
         } else {
             this.passwordError.classList.add("none")
+            this.errors.password = true
+        }
+        this.btnDisabled()
+    }
+
+    btnDisabled() {
+        console.log("dfgthyjk", this.errors, this.errors.username && this.errors.password && this.errors.captcha);
+        if (this.errors.username && this.errors.password && this.errors.captcha) {
             this.submitBtn.classList.remove("form__button-disabled")
+        } else {
+            this.submitBtn.classList.add("form__button-disabled")
         }
     }
 }
