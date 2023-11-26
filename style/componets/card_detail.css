@@ -266,6 +266,10 @@
 .swiper-wrapper {
     margin-top: 0;
 }
+.reviews__form{
+    display: flex;
+    flex-direction: column;
+}
 #reviews__test {
     display: block;
     margin-bottom: 20px;
@@ -284,6 +288,7 @@
   }
   
 .reviews__rating{
+    width: fit-content;
     margin-bottom: 20px;
 }
 .reviews__avatar__gap{
