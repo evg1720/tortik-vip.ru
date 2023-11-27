@@ -22,7 +22,15 @@
   display: flex;
   background: rgba(0, 0, 0, .8);
 }
-
+.register__swiper__line {
+  border-bottom: 1px solid var(--light-gold);
+  margin-bottom: 15px;
+}
+.register__errors__text{
+  font-family: 'MullerRegular';
+    font-size: 14px;
+    color: var(--cherry-light);
+}
 .register__form {
   position: relative;
   margin: auto;
@@ -43,7 +51,7 @@
 
 .register__form__group {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .register__form__label {
