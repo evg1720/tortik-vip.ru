@@ -346,12 +346,20 @@ align-items: center;
     display: inline-flex;
     flex-direction: row-reverse;
 }
+.reviews__rating_users {
+    display: flex;
+}
 
-.reviews__rating__item {
+.reviews__rating__item,
+.reviews__rating__item_users {
     font-size: 30px;
     color: var(--gray);
     cursor: pointer;
     transition: .3s;
+}
+
+.reviews__rating__item_users-active {
+    color: var(--light-gold);
 }
 
 .reviews__rating__item:hover,
