@@ -24,82 +24,83 @@
 
   <section class="popupwrapper none" id="order">
     <form class="order__form popupwrapper__popup form" action="/user/login/" method="post">
-        <a href="/index.html">
-            <!-- убрать ссылку -->
-            <div class="popupwrapper__clouse"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g id="close">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M6.21991 6.21479C6.51281 5.92189 6.98768 5.92189 7.28057 6.21479L17.7854 16.7196C18.0783 17.0125 18.0783 17.4874 17.7854 17.7803C17.4925 18.0732 17.0177 18.0732 16.7248 17.7803L6.21991 7.27545C5.92702 6.98255 5.92702 6.50768 6.21991 6.21479Z"
-                                fill="#000000" />
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M17.7853 6.21479C18.0782 6.50769 18.0782 6.98256 17.7853 7.27545L7.28038 17.7802C6.98749 18.0731 6.51261 18.0731 6.21972 17.7802C5.92683 17.4873 5.92683 17.0124 6.21973 16.7195L16.7247 6.21478C17.0176 5.92189 17.4924 5.9219 17.7853 6.21479Z"
-                                fill="#000000" />
-                        </g>
-            </svg></div></a> 
-        <h1 class="form__title">Оформление заказа #007</h1>
-        <div class="order__parent flex">
-            <div class="order__left">
-                <div class="form__style flex">
-                    <div class="form__group flex">
-                        <input class="form__input" placeholder=" " type="text">
-                        <label class="form__label">Ф.И.О.</label>
-                    </div>
-                </div>
+      <a href="/index.html">
+        <!-- убрать ссылку -->
+        <div class="popupwrapper__clouse"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="close">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M6.21991 6.21479C6.51281 5.92189 6.98768 5.92189 7.28057 6.21479L17.7854 16.7196C18.0783 17.0125 18.0783 17.4874 17.7854 17.7803C17.4925 18.0732 17.0177 18.0732 16.7248 17.7803L6.21991 7.27545C5.92702 6.98255 5.92702 6.50768 6.21991 6.21479Z"
+                fill="#000000" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M17.7853 6.21479C18.0782 6.50769 18.0782 6.98256 17.7853 7.27545L7.28038 17.7802C6.98749 18.0731 6.51261 18.0731 6.21972 17.7802C5.92683 17.4873 5.92683 17.0124 6.21973 16.7195L16.7247 6.21478C17.0176 5.92189 17.4924 5.9219 17.7853 6.21479Z"
+                fill="#000000" />
+            </g>
+          </svg></div>
+      </a>
+      <h1 class="form__title">Оформление заказа #007</h1>
+      <div class="order__parent flex">
+        <div class="order__left">
+          <div class="form__style flex">
+            <div class="form__group flex">
+              <input class="form__input" placeholder=" " type="text">
+              <label class="form__label">Ф.И.О.</label>
+            </div>
+          </div>
 
-                <div class="form__style flex">
-                    <div class="form__group flex">
-                        <input class="form__input" placeholder="" type="tel">
-                        <label class="form__label">Телефон</label>
-                    </div>
-                </div>
-                <div class="form__style flex">
-                    <div class="form__group flex">
-                        <input class="form__input" placeholder="" type="email">
-                        <label class="form__label">E-mail:</label>
-                    </div>
-                </div>
-                <div class="form__group flex orderdelivery">
-                    <input class="form__input" placeholder=" " type="text">
-                    <label class="form__label">Индекс</label>
-                </div>
-                <div class="form__group flex orderdelivery">
-                    <input class="form__input" placeholder=" " type="text">
-                    <label class="form__label">Регион</label>
-                </div>
-                <div class="form__group flex orderdelivery">
-                    <input class="form__input" placeholder=" " type="text">
-                    <label class="form__label">Город (нас.пункт)</label>
-                </div>
-                <div class="form__group flex orderdelivery">
-                    <input class="form__input" placeholder=" " type="text">
-                    <label class="form__label">Улица</label>
-                </div>
-                <div class="order__home flex orderdelivery">
-                    <div class="form__group flex">
-                        <input class="form__input" placeholder=" " type="text">
-                        <label class="form__label">Дом</label>
-                    </div>
-                    <div class="form__group flex">
-                        <input class="form__input" placeholder=" " type="text">
-                        <label class="form__label">Кв.</label>
-                    </div>
-                    <div class="form__group flex">
-                        <input class="form__input" placeholder=" " type="text">
-                        <label class="form__label">Корпус</label>
-                    </div>
-                </div>
-                <div class="emptyblock"></div>
-                <div class="form__style form__style__order flex ">
-                    <div class="radio">
-                        <input class="radio__input" name="order_delivery_input" type="radio" id="order_delivery_input1">
-                        <label class="radio__label" for="order_delivery_input1">Доставка</label>
-                    </div>
-                    <div class="radio">
-                        <input class="radio__input" name="order_delivery_input" type="radio" id="order_delivery_input2" checked>
-                        <label class="radio__label" for="order_delivery_input2">Самовывоз</label>
-                    </div>
-                </div>
-             <!-- <div class="order__form__delivery flex">
+          <div class="form__style flex">
+            <div class="form__group flex">
+              <input class="form__input" placeholder="" type="tel">
+              <label class="form__label">Телефон</label>
+            </div>
+          </div>
+          <div class="form__style flex">
+            <div class="form__group flex">
+              <input class="form__input" placeholder="" type="email">
+              <label class="form__label">E-mail:</label>
+            </div>
+          </div>
+          <div class="form__group flex orderdelivery">
+            <input class="form__input" placeholder=" " type="text">
+            <label class="form__label">Индекс</label>
+          </div>
+          <div class="form__group flex orderdelivery">
+            <input class="form__input" placeholder=" " type="text">
+            <label class="form__label">Регион</label>
+          </div>
+          <div class="form__group flex orderdelivery">
+            <input class="form__input" placeholder=" " type="text">
+            <label class="form__label">Город (нас.пункт)</label>
+          </div>
+          <div class="form__group flex orderdelivery">
+            <input class="form__input" placeholder=" " type="text">
+            <label class="form__label">Улица</label>
+          </div>
+          <div class="order__home flex orderdelivery">
+            <div class="form__group flex">
+              <input class="form__input" placeholder=" " type="text">
+              <label class="form__label">Дом</label>
+            </div>
+            <div class="form__group flex">
+              <input class="form__input" placeholder=" " type="text">
+              <label class="form__label">Кв.</label>
+            </div>
+            <div class="form__group flex">
+              <input class="form__input" placeholder=" " type="text">
+              <label class="form__label">Корпус</label>
+            </div>
+          </div>
+          <div class="emptyblock"></div>
+          <div class="form__style form__style__order flex ">
+            <div class="radio">
+              <input class="radio__input" name="order_delivery_input" type="radio" id="order_delivery_input1">
+              <label class="radio__label" for="order_delivery_input1">Доставка</label>
+            </div>
+            <div class="radio">
+              <input class="radio__input" name="order_delivery_input" type="radio" id="order_delivery_input2" checked>
+              <label class="radio__label" for="order_delivery_input2">Самовывоз</label>
+            </div>
+          </div>
+          <!-- <div class="order__form__delivery flex">
                 <div class="order__form__group">
                     <input name="order_delivery_input" type="radio" id="order_delivery_input1">
                     <label for="order_delivery_input1">Доставка</label>
@@ -109,135 +110,135 @@
                     <label for="order_delivery_input2">Самовывоз</label>
                 </div>
             </div> -->
-                <div class="order__promo flex">
-                    <div class="form__group flex">
-                        <input class="form__input" placeholder=" " type="text">
-                        <label class="form__label">ПРОМОКОД</label>
-                    </div>
-                </div>
+          <div class="order__promo flex">
+            <div class="form__group flex">
+              <input class="form__input" placeholder=" " type="text">
+              <label class="form__label">ПРОМОКОД</label>
             </div>
-            <div class="order__right">
-                <table class="order__table">
-                    <thead class="order__table__header">
-                        <tr>
-                            <td class="order__header__bold">Фото</td>
-                            <td class="order__header__bold">Позиция</td>
-                            <td class="order__header__bold">Кол-во (шт)</td>
-                            <td class="order__header__bold">Масса (кг)</td>
-                            <td class="order__header__bold">Скидка (%)</td>
-                            <td class="order__header__bold">Сумма (руб)</td>
-                            <td class="order__header__bold">-----</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="order__table__body">
-                            <td class=""><img class="order__img" src="/img/cake/cake12.jpg" alt=""></td>
-                            <td class="order__header__regular">Наполеон</td>
-                            <td class="order__header__regular">2</td>
-                            <td class="order__header__bold">0,6</td>
-                            <td class="order__header__bold">---</td>
-                            <td class="order__header__bold">1290</td>
-                            <td class="order__header__regular"><a class="order_a"
-                                    href="/site-admin/product_remove/1/">Отменить</a></td>
-                        </tr>
-                        <tr>
-                            <td class=""><img class="order__img" src="/img/cake/cake14.jpg" alt=""></td>
-                            <td class="order__header__regular">Картошка</td>
-                            <td class="order__header__regular">2</td>
-                            <td class="order__header__bold">0,6</td>
-                            <td class="order__header__bold">---</td>
-                            <td class="order__header__bold">1290</td>
-                            <td class="order__header__regular"><a class="order_a"
-                                    href="/site-admin/product_remove/1/">Отменить</a></td>
-                        </tr>
-                        <tr>
-                            <td class=""><img class="order__img" src="/img/cake/cake11.jpg" alt=""></td>
-                            <td class="order__header__regular">Чудо</td>
-                            <td class="order__header__regular">2</td>
-                            <td class="order__header__bold">0,6</td>
-                            <td class="order__header__bold">---</td>
-                            <td class="order__header__bold">1290</td>
-                            <td class="order__header__regular"><a class="order_a"
-                                    href="/site-admin/product_remove/1/">Отменить</a></td>
-                        </tr>
-                        <tr>
-                            <td class=""><img class="order__img" src="/img/cake/cake11.jpg" alt=""></td>
-                            <td class="order__header__regular">Чудо</td>
-                            <td class="order__header__regular">2</td>
-                            <td class="order__header__bold">0,6</td>
-                            <td class="order__header__bold">---</td>
-                            <td class="order__header__bold">1290</td>
-                            <td class="order__header__regular"><a class="order_a"
-                                    href="/site-admin/product_remove/1/">Отменить</a></td>
-                        </tr>
-                        <tr>
-                            <td class=""><img class="order__img" src="/img/cake/cake11.jpg" alt=""></td>
-                            <td class="order__header__regular">Чудо</td>
-                            <td class="order__header__regular">2</td>
-                            <td class="order__header__bold">0,6</td>
-                            <td class="order__header__bold">---</td>
-                            <td class="order__header__bold">1290</td>
-                            <td class="order__header__regular"><a class="order_a"
-                                    href="/site-admin/product_remove/1/">Отменить</a></td>
-                        </tr>
-                        <tr>
-                            <td class=""><img class="order__img" src="/img/cake/cake11.jpg" alt=""></td>
-                            <td class="order__header__regular">Чудо</td>
-                            <td class="order__header__regular">2</td>
-                            <td class="order__header__bold">0,6</td>
-                            <td class="order__header__bold">---</td>
-                            <td class="order__header__bold">1290</td>
-                            <td class="order__header__regular"><a class="order_a"
-                                    href="/site-admin/product_remove/1/">Отменить</a></td>
-                        </tr>
-                        <tr>
-                            <td class=""><img class="order__img" src="/img/cake/cake11.jpg" alt=""></td>
-                            <td class="order__header__regular">Чудо</td>
-                            <td class="order__header__regular">2</td>
-                            <td class="order__header__bold">0,6</td>
-                            <td class="order__header__bold">---</td>
-                            <td class="order__header__bold">1290</td>
-                            <td class="order__header__regular"><a class="order_a"
-                                    href="/site-admin/product_remove/1/">Отменить</a></td>
-                        </tr>
-                        <tr>
-                            <td class=""><img class="order__img" src="/img/cake/cake11.jpg" alt=""></td>
-                            <td class="order__header__regular">Чудо</td>
-                            <td class="order__header__regular">2</td>
-                            <td class="order__header__bold">0,6</td>
-                            <td class="order__header__bold">---</td>
-                            <td class="order__header__bold">1290</td>
-                            <td class="order__header__regular"><a class="order_a"
-                                    href="/site-admin/product_remove/1/">Отменить</a></td>
-                        </tr>
-                        <tr>
-                            <td class=""><img class="order__img" src="/img/cake/cake11.jpg" alt=""></td>
-                            <td class="order__header__regular">Чудо</td>
-                            <td class="order__header__regular">2</td>
-                            <td class="order__header__bold">0,6</td>
-                            <td class="order__header__bold">---</td>
-                            <td class="order__header__bold">1290</td>
-                            <td class="order__header__regular"><a class="order_a"
-                                    href="/site-admin/product_remove/1/">Отменить</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+          </div>
+        </div>
+        <div class="order__right">
+          <table class="order__table">
+            <thead class="order__table__header">
+              <tr>
+                <td class="order__header__bold">Фото</td>
+                <td class="order__header__bold">Позиция</td>
+                <td class="order__header__bold">Кол-во (шт)</td>
+                <td class="order__header__bold">Масса (кг)</td>
+                <td class="order__header__bold">Скидка (%)</td>
+                <td class="order__header__bold">Сумма (руб)</td>
+                <td class="order__header__bold">-----</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="order__table__body">
+                <td class=""><img class="order__img" src="/img/cake/cake12.jpg" alt=""></td>
+                <td class="order__header__regular">Наполеон</td>
+                <td class="order__header__regular">2</td>
+                <td class="order__header__bold">0,6</td>
+                <td class="order__header__bold">---</td>
+                <td class="order__header__bold">1290</td>
+                <td class="order__header__regular"><a class="order_a" href="/site-admin/product_remove/1/">Отменить</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=""><img class="order__img" src="/img/cake/cake14.jpg" alt=""></td>
+                <td class="order__header__regular">Картошка</td>
+                <td class="order__header__regular">2</td>
+                <td class="order__header__bold">0,6</td>
+                <td class="order__header__bold">---</td>
+                <td class="order__header__bold">1290</td>
+                <td class="order__header__regular"><a class="order_a" href="/site-admin/product_remove/1/">Отменить</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=""><img class="order__img" src="/img/cake/cake11.jpg" alt=""></td>
+                <td class="order__header__regular">Чудо</td>
+                <td class="order__header__regular">2</td>
+                <td class="order__header__bold">0,6</td>
+                <td class="order__header__bold">---</td>
+                <td class="order__header__bold">1290</td>
+                <td class="order__header__regular"><a class="order_a" href="/site-admin/product_remove/1/">Отменить</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=""><img class="order__img" src="/img/cake/cake11.jpg" alt=""></td>
+                <td class="order__header__regular">Чудо</td>
+                <td class="order__header__regular">2</td>
+                <td class="order__header__bold">0,6</td>
+                <td class="order__header__bold">---</td>
+                <td class="order__header__bold">1290</td>
+                <td class="order__header__regular"><a class="order_a" href="/site-admin/product_remove/1/">Отменить</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=""><img class="order__img" src="/img/cake/cake11.jpg" alt=""></td>
+                <td class="order__header__regular">Чудо</td>
+                <td class="order__header__regular">2</td>
+                <td class="order__header__bold">0,6</td>
+                <td class="order__header__bold">---</td>
+                <td class="order__header__bold">1290</td>
+                <td class="order__header__regular"><a class="order_a" href="/site-admin/product_remove/1/">Отменить</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=""><img class="order__img" src="/img/cake/cake11.jpg" alt=""></td>
+                <td class="order__header__regular">Чудо</td>
+                <td class="order__header__regular">2</td>
+                <td class="order__header__bold">0,6</td>
+                <td class="order__header__bold">---</td>
+                <td class="order__header__bold">1290</td>
+                <td class="order__header__regular"><a class="order_a" href="/site-admin/product_remove/1/">Отменить</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=""><img class="order__img" src="/img/cake/cake11.jpg" alt=""></td>
+                <td class="order__header__regular">Чудо</td>
+                <td class="order__header__regular">2</td>
+                <td class="order__header__bold">0,6</td>
+                <td class="order__header__bold">---</td>
+                <td class="order__header__bold">1290</td>
+                <td class="order__header__regular"><a class="order_a" href="/site-admin/product_remove/1/">Отменить</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=""><img class="order__img" src="/img/cake/cake11.jpg" alt=""></td>
+                <td class="order__header__regular">Чудо</td>
+                <td class="order__header__regular">2</td>
+                <td class="order__header__bold">0,6</td>
+                <td class="order__header__bold">---</td>
+                <td class="order__header__bold">1290</td>
+                <td class="order__header__regular"><a class="order_a" href="/site-admin/product_remove/1/">Отменить</a>
+                </td>
+              </tr>
+              <tr>
+                <td class=""><img class="order__img" src="/img/cake/cake11.jpg" alt=""></td>
+                <td class="order__header__regular">Чудо</td>
+                <td class="order__header__regular">2</td>
+                <td class="order__header__bold">0,6</td>
+                <td class="order__header__bold">---</td>
+                <td class="order__header__bold">1290</td>
+                <td class="order__header__regular"><a class="order_a" href="/site-admin/product_remove/1/">Отменить</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
-        </div>
-        <div class="order__form__checkbox">
-            <label class="checkbox" for="checkboxtwo">
-                <input class="checkbox__inp" type="checkbox" id="checkboxtwo" checked>
-                <span class="checkbox__inner">
-                    Я согласен на <a class="order__agreement" href="/pages/personalization.html">обработку
-                        персональных данных</a>
-                </span>
-            </label>
-        </div>
-        <a class="form__button button" id="btn" onclick="printmsg()" href="https://ya.ru/">Оформить
-            заказ</a>
+      </div>
+      <div class="order__form__checkbox">
+        <label class="checkbox" for="checkboxtwo">
+          <input class="checkbox__inp" type="checkbox" id="checkboxtwo" checked>
+          <span class="checkbox__inner">
+            Я согласен на <a class="order__agreement" href="/pages/personalization.html">обработку
+              персональных данных</a>
+          </span>
+        </label>
+      </div>
+      <a class="form__button button" id="btn" onclick="printmsg()" href="https://ya.ru/">Оформить
+        заказ</a>
     </form>
-</section>
+  </section>
 
   <!-- ***** login ***** -->
 
@@ -246,7 +247,7 @@
       <div class="popupwrapper__clouse"><svg viewBox="0 0 24 24" fill="none">
 
           <g id="style-stroke-2">
-            <g >
+            <g>
               <path id="vector-4" fill-rule="evenodd" clip-rule="evenodd"
                 d="M6.21991 6.21479C6.51281 5.92189 6.98768 5.92189 7.28057 6.21479L17.7854 16.7196C18.0783 17.0125 18.0783 17.4874 17.7854 17.7803C17.4925 18.0732 17.0177 18.0732 16.7248 17.7803L6.21991 7.27545C5.92702 6.98255 5.92702 6.50768 6.21991 6.21479Z"
                 fill="#000000" />
@@ -315,7 +316,7 @@
       </div>
       <h4 class="register__form__title__gender">Пол</h4>
       <div class="register__form__style register__form__style__gender flex ">
-          <input type="text"  class="gender_value none">
+        <input type="text" class="gender_value none">
         <div class="radio">
           <input class="radio__input" name="male" type="radio" id="radio_1">
           <label class="radio__label" for="radio_1">Мужской</label>
@@ -350,7 +351,7 @@
         </div>
       </div>
       <div class="register__form__group flex password_error none">
-        <p>Пароли не совпадаюют или не заполнены</p>
+        <!-- <p>Пароли не совпадаюют или не заполнены</p> -->
       </div>
       <div class="register__form__style__captcha flex">
         <div class="register__form__group flex inline" id="user-input">
@@ -377,8 +378,10 @@
         <ul>
           <li class="register__errors__text">Пользователь с таким ID уже сущетвует</li>
           <li class="register__errors__text">Пароль должен содержать от 5 до 10 символов</li>
-          <li class="register__errors__text">Пароль должен содержать толбко цифры буквы и общие символы пунктуации ( . , ! - =  : ; < > )</li>
+          <li class="register__errors__text">Пароль должен содержать толбко цифры буквы и общие символы пунктуации ( . ,
+            ! - = : ; <> )</li>
           <li class="register__errors__text">Введенные пароли не совпадают</li>
+          <li class="register__errors__text">Заполните все блоки</li>
         </ul>
       </div>
       <div class="register__swiper__line mt-10"></div>
@@ -387,82 +390,84 @@
     </form>
   </section>
 
-    <!-- ***** mypage ***** -->
+  <!-- ***** mypage ***** -->
 
   <section class="popupwrapper none mypage" id="mypage__popup">
     <form class="form mypage__form popupwrapper__popup" action="/user/login/" method="post">
-       <a href="/index.html"><div class="popupwrapper__clouse"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g >
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M6.21991 6.21479C6.51281 5.92189 6.98768 5.92189 7.28057 6.21479L17.7854 16.7196C18.0783 17.0125 18.0783 17.4874 17.7854 17.7803C17.4925 18.0732 17.0177 18.0732 16.7248 17.7803L6.21991 7.27545C5.92702 6.98255 5.92702 6.50768 6.21991 6.21479Z"
-                            fill="#000000" />
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M17.7853 6.21479C18.0782 6.50769 18.0782 6.98256 17.7853 7.27545L7.28038 17.7802C6.98749 18.0731 6.51261 18.0731 6.21972 17.7802C5.92683 17.4873 5.92683 17.0124 6.21973 16.7195L16.7247 6.21478C17.0176 5.92189 17.4924 5.9219 17.7853 6.21479Z"
-                            fill="#000000" />
-                    </g>
-            </svg></div></a>
-        <h1 class="form__title">Моя страница</h1>
-        <div class="flex mypage__link">
-            <div class="mypage__photo__left">
-                <div class="mypage__photo">
-                    <label for="mypage__photoi" class="mypage__photo__link"><img src="/img/user.svg"
-                            class="mypage__photo__img" alt=""></label>
-                </div>
-                <input type="file" class="none" id="mypage__photoi" accept=".jpg,.jpeg,.svg,.png">
-                <!-- <label for="mypage__photoi" class="button">Изменить фото</label> -->
+      <a href="/index.html">
+        <div class="popupwrapper__clouse"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g>
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M6.21991 6.21479C6.51281 5.92189 6.98768 5.92189 7.28057 6.21479L17.7854 16.7196C18.0783 17.0125 18.0783 17.4874 17.7854 17.7803C17.4925 18.0732 17.0177 18.0732 16.7248 17.7803L6.21991 7.27545C5.92702 6.98255 5.92702 6.50768 6.21991 6.21479Z"
+                fill="#000000" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M17.7853 6.21479C18.0782 6.50769 18.0782 6.98256 17.7853 7.27545L7.28038 17.7802C6.98749 18.0731 6.51261 18.0731 6.21972 17.7802C5.92683 17.4873 5.92683 17.0124 6.21973 16.7195L16.7247 6.21478C17.0176 5.92189 17.4924 5.9219 17.7853 6.21479Z"
+                fill="#000000" />
+            </g>
+          </svg></div>
+      </a>
+      <h1 class="form__title">Моя страница</h1>
+      <div class="flex mypage__link">
+        <div class="mypage__photo__left">
+          <div class="mypage__photo">
+            <label for="mypage__photoi" class="mypage__photo__link"><img src="/img/user.svg" class="mypage__photo__img"
+                alt=""></label>
+          </div>
+          <input type="file" class="none" id="mypage__photoi" accept=".jpg,.jpeg,.svg,.png">
+          <!-- <label for="mypage__photoi" class="button">Изменить фото</label> -->
 
-            </div>
-            <div class="form__style__two">
-                <div class="form__group">
-                    <input class="form__input" placeholder=" " type="text">
-                    <label class="form__label">Имя</label>
-                </div>
-                <div class="form__group">
-                    <input class="form__input" placeholder=" " type="text">
-                    <label class="form__label">Фамилия</label>
-                </div>
-                <div class="form__group">
-                    <input class="form__input" placeholder=" " type="text">
-                    <label class="form__label">Отчество</label>
-                </div>
+        </div>
+        <div class="form__style__two">
+          <div class="form__group">
+            <input class="form__input" placeholder=" " type="text">
+            <label class="form__label">Имя</label>
+          </div>
+          <div class="form__group">
+            <input class="form__input" placeholder=" " type="text">
+            <label class="form__label">Фамилия</label>
+          </div>
+          <div class="form__group">
+            <input class="form__input" placeholder=" " type="text">
+            <label class="form__label">Отчество</label>
+          </div>
 
-                <div class="form__group">
-                    <input class="form__input" placeholder=" " type="text">
-                    <label class="form__label">Имя пользователя</label>
-                </div>
-            </div>
+          <div class="form__group">
+            <input class="form__input" placeholder=" " type="text">
+            <label class="form__label">Имя пользователя</label>
+          </div>
         </div>
-        <div class="form__group">
-            <input class="form__input" type="date" name="trip-start">
-            <label class="form__label">Дата рождения</label>
+      </div>
+      <div class="form__group">
+        <input class="form__input" type="date" name="trip-start">
+        <label class="form__label">Дата рождения</label>
+      </div>
+      <h4 class="form__title__gender">Пол</h4>
+      <div class="form__style form__style__gender flex ">
+        <div class="radio">
+          <input class="radio__input" name="male" type="radio" id="radio_m">
+          <label class="radio__label" for="radio_m">Мужской</label>
         </div>
-        <h4 class="form__title__gender">Пол</h4>
-        <div class="form__style form__style__gender flex ">
-            <div class="radio">
-                <input class="radio__input" name="male" type="radio" id="radio_m">
-                <label class="radio__label" for="radio_m">Мужской</label>
-            </div>
-            <div class="radio">
-                <input class="radio__input" name="male" type="radio" id="radio_w" checked>
-                <label class="radio__label" for="radio_w">Женский</label>
+        <div class="radio">
+          <input class="radio__input" name="male" type="radio" id="radio_w" checked>
+          <label class="radio__label" for="radio_w">Женский</label>
 
-            </div>
         </div>
-        <div class="form__style flex">
-            <div class="form__group flex">
-                <input class="form__input" placeholder="" type="tel">
-                <label class="form__label">Телефон</label>
-            </div>
-            <div class="form__group flex">
-                <input class="form__input" placeholder=" " type="email">
-                <label class="form__label">E-mail:</label>
-            </div>
+      </div>
+      <div class="form__style flex">
+        <div class="form__group flex">
+          <input class="form__input" placeholder="" type="tel">
+          <label class="form__label">Телефон</label>
         </div>
         <div class="form__group flex">
-            <input class="form__input" placeholder=" " type="text">
-            <label class="form__label">Адрес</label>
+          <input class="form__input" placeholder=" " type="email">
+          <label class="form__label">E-mail:</label>
         </div>
-        <!-- <div class="form__style flex">
+      </div>
+      <div class="form__group flex">
+        <input class="form__input" placeholder=" " type="text">
+        <label class="form__label">Адрес</label>
+      </div>
+      <!-- <div class="form__style flex">
         <div class="form__group flex">
           <input class="form__input" placeholder=" " type="password">
           <label class="form__label">Старый пароль:</label>
@@ -476,10 +481,10 @@
           <label class="form__label">Подтверждение пароля:</label>
         </div>
       </div> -->
-        <a class="form__button button" onclick="printmsg()" href="https://ya.ru/">Сохранить</a>
+      <a class="form__button button" onclick="printmsg()" href="https://ya.ru/">Сохранить</a>
     </form>
     <!-- <script type="module" src="mypageForm.js"></script> -->
-</section>
+  </section>
 
   <!-- ***** header ***** -->
 
@@ -498,7 +503,7 @@
           <div class="whiteblock"></div>
           <ul class="header__menu__list">
             <li class="header__item">
-              <a href="/pages/about__max.html" class="header__item__link">О нас
+              <a href="/pages/about__max.html" class="header__item__link">Обо мне
               </a>
             </li>
             <li class="header__item"><a href="/pages/exclusive.html" class="header__item__link">
@@ -511,11 +516,15 @@
                 Контакты
               </a></li>
             <li class="header__item display"><a class="header__item__link" data-popup-link="login_popup">Вход</a></li>
-            <li class="header__item display"><a class="header__item__link" data-popup-link="registration_popup">Регистрация</a></li>
-            <li class="header__item display"><a class="header__item__link" data-popup-link="mypage__popup">Моя страница</a></li>
-            <li class="header__item display"><a class="header__item__link" href="/pages/historyorder.html">Мои заказы</a></li>
+            <li class="header__item display"><a class="header__item__link"
+                data-popup-link="registration_popup">Регистрация</a></li>
+            <li class="header__item display"><a class="header__item__link" data-popup-link="mypage__popup">Моя
+                страница</a></li>
+            <li class="header__item display"><a class="header__item__link" href="/pages/historyorder.html">Мои
+                заказы</a></li>
             <li class="header__item display"><a class="header__item__link" href="/pages/admin.html">ADMIN</a></li>
-            <li class="header__item display"><a class="header__item__link" href="/pages/password.html">Изменить пароль</a></li>
+            <li class="header__item display"><a class="header__item__link" href="/pages/password.html">Изменить
+                пароль</a></li>
             <li class="header__item display"><a class="header__item__link" href="#">Выход</a></li>
           </ul>
         </nav>
@@ -546,7 +555,7 @@
           </svg></a>
         <div class="contact__one">
           <div class="header__bottoms display__two">
-            <a class="button__indent__a button button__indent" id="login" href="#" 
+            <a class="button__indent__a button button__indent" id="login" href="#"
               data-popup-link="login_popup">Вход</a>
             <a class="button__indent__a button button__indent" id="registration" href="#"
               data-popup-link="registration_popup">Регистрация</a>
@@ -1150,7 +1159,7 @@
             </div>
             <div class="list__card__more flex aic card__item">
               <a class="list__more__details" href="/pages/card__one.html">Подробнее</a>
-              <svg width="11" class="svg-one" height="18"  fill="none">
+              <svg width="11" class="svg-one" height="18" fill="none">
                 <path d="M1.49998 1.00002L9.27815 8.7782L1.49998 16.5564" stroke="#028e15" stroke-width="2" />
               </svg>
             </div>
@@ -1512,41 +1521,81 @@
       <ul class="list accordion-container">
         <li class="list__item item ac">
           <button class="item__top botton">
-            <span class="item__question ac-header ac-trigger">Из чего формируется конечная стоимость проекта?</span>
+            <span class="item__question ac-header ac-trigger">Пять причин покупать торты именно у меня!</span>
             <span class="item__top__btn btn botton__plus-2"></span>
           </button>
           <div class="item__bottom">
-            <p class="list__item__text ac-panel">Являясь всего лишь частью общей картины, непосредственные участники
-              технического прогресса призывают нас 
-              к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы.
-              Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных
-              требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример
-              континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы
-              этики и морали.</p>
-          </div>
-        </li>
-        <li class="list__item item ac ">
-          <button class="item__top botton">
-            <span class="item__question ac-header ac-trigger">У меня есть свой проект. Сможем ли мы его доработать /
-              реализовать?</span>
-            <span class="item__top__btn btn botton__plus-2"></span>
-          </button>
-          <div class="item__bottom">
-            <p class="list__item__text ac-panel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ut
-              ipsa consectetur similique mollitia eius fugit aperiam magni, corrupti laboriosam, vel delectus laudantium
-              amet itaque reprehenderit et consequatur aspernatur pariatur?</p>
+            <p class="list__item__text ac-panel">1. Для приготовления десертов я пользуюсь только качественными, свежими
+              и проверенными продуктами:
+              бисквиты – свежие яйца, сливочное масло 82,5% жирности, мука в/с. Бисквиты хорошо пропитаны, сочные.
+              крем – настоящие сливки 33% жирности, молоко цельное пастеризованное 2,5% , сливочное масло 82,5% , только
+              экстракт ванили или ванильная эссенция для аромата.
+              украшения – свежие и сублимированные ягоды и фрукты, бельгийский шоколад, пряники пеку сама. Сделаю
+              индивидуальный декор для вашего десерта. <br>
+              2. Все торты представляют собой нереальную вкуснятину – пропитанные, сочные. В них идеально сочетаются все
+              составляющие! <br>
+              3. Каждый десерт надежно упакован для транспортировки. <br>
+              4. Вы сможете приобрести десерты для себя и своих близких на любой праздник или просто для домашнего
+              чаепития. <br>
+              5. Принимаем заказы на десерты за 3 дня!
+            </p>
           </div>
         </li>
         <li class="list__item item ac">
           <button class="item__top botton">
-            <span class="item__question ac-header ac-trigger">Я выбираю между разными компаниями. В чём ваше
-              отличие?</span>
+            <span class="item__question ac-header ac-trigger">Из чего формируется конечная стоимость проекта?</span>
             <span class="item__top__btn btn botton__plus-2"></span>
           </button>
           <div class="item__bottom">
-            <p class="list__item__text ac-panel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ut
-              ipsa consectetur similique mollitia eius fugit aperiam magni, corrupti laboriosam, vel delectus laudantium
-              amet itaque reprehenderit et consequatur aspernatur pariatur?</p>
+            <p class="list__item__text ac-panel">Конечная стоимость кулинарных изделий, таких как торты, пирожные,
+              печенье и другие выпечки, формируется из нескольких составляющих.
+              <br>
+              - Первым фактором, влияющим на конечную стоимость, являются ингредиенты, используемые в процессе
+              приготовления. Высококачественные и свежие продукты часто имеют более высокую стоимость. Например,
+              использование натурального масла, свежих фруктов, качественного шоколада может значительно повлиять на
+              цену изделия.
+              <br>
+              - Вторым фактором является сложность и трудоёмкость процесса приготовления. Если речь идет о сложных
+              десертах, требующих многочисленных шагов и длительного времени, их стоимость обычно выше. Например,
+              сложные многоуровневые торты, требующие декорирования и украшения, могут отражаться на цене изделия.
+              <br>
+              - Третьим фактором является дополнительное украшение и декорирование изделия. Если заказчик требует
+              особенного оформления, использования драгоценных декоративных элементов или уникальных дизайнов, это может
+              быть дополнительной статьей расходов и повлиять на конечную стоимость.
+              <br>
+              - Наконец, четвертый фактор - затраты на упаковку и транспортировку. Если заказчик требует специальной
+              упаковки для того, чтобы сохранить свежесть и форму изделия при транспортировке, это может повлиять на
+              конечную стоимость прямо или косвенно, в зависимости от того, будет ли эта услуга включена в итоговую цену
+              или она будет дополнительной статьей расходов.
+              <br>
+              Все эти факторы, взаимодействуя между собой, определяют конечную стоимость кулинарных изделий, таких как
+              торты, поражённые, пирожные и печенье. Важно помнить, что дешевая цена не всегда гарантирует высокое
+              качество, а высокая цена не всегда оправдана. Каждое изделие стоит так, как отражает его уникальные
+              характеристики и стоимость затрат на его производство.
+            </p>
+          </div>
+        </li>
+        <li class="list__item item ac ">
+          <button class="item__top botton">
+            <span class="item__question ac-header ac-trigger">У меня есть свой проект. Сможем ли мы его
+              реализовать?</span>
+            <span class="item__top__btn btn botton__plus-2"></span>
+          </button>
+          <div class="item__bottom">
+            <p class="list__item__text ac-panel">Да, мы сможем реализовать Ваш проект по кулинарному изделию. Вам нужно
+              будет определить концепцию и уникальные особенности вашего изделия, после чего мы сможем разработать
+              рецептуру и производственную технологию. Мы обладаем большим опытом в области производства кулинарных
+              изделий и готовы привлечь наших экспертов и ресурсы для его успешной реализации.
+              <br>
+              Наша команда может помочь вам с выбором и закупкой необходимых ингредиентов, разработкой дизайна упаковки
+              и маркетинговой стратегией для вашего продукта. Мы также в состоянии помочь с тестированием и анализом
+              вашего изделия на рынке, чтобы убедиться, что оно будет успешно продаваться.
+              наших экспертов и ресурсы для его успешной реализации.
+              <br>
+              Мы готовы взяться за ваш проект и уверены, что с нашими знаниями и опытом мы сможем успешно реализовать
+              вашу идею кулинарного изделия. Свяжитесь с нами, чтобы обсудить дальнейшие шаги и начать работу над вашим
+              проектом.
+            </p>
           </div>
         </li>
         <li class="list__item item ac">
@@ -1587,7 +1636,7 @@
         <div class="footer__indent">
           <nav class="footer__list">
             <ul class="footer__info">
-              <li class="footer__item"><a href="/pages/about__max.html" class="footer__link">О нас</a></li>
+              <li class="footer__item"><a href="/pages/about__max.html" class="footer__link">Обо мне</a></li>
               <li class="footer__item"><a href="/pages/exclusive.html" class="footer__link">Эксклюзив</a></li>
               <li class="footer__item"><a href="/pages/partners.html" class="footer__link">Партнёры</a></li>
             </ul>
@@ -1598,10 +1647,14 @@
             </ul>
           </nav>
           <ul class="footer__smail">
-            <li><a href="https://web.telegram.org/k/#@svetlana_cakes_sayansk" class="ok smail"><svg class="smail__zero" fill="#919191" width="60px" height="60px" viewBox="0 0 24 24"><path d="m12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12c0-6.627-5.373-12-12-12zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z"/></svg></a>
+            <li><a href="https://web.telegram.org/k/#@svetlana_cakes_sayansk" class="ok smail"><svg class="smail__zero"
+                  fill="#919191" width="60px" height="60px" viewBox="0 0 24 24">
+                  <path
+                    d="m12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12c0-6.627-5.373-12-12-12zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z" />
+                </svg></a>
             </li>
-            <li><a href="https://vk.com/club223545925" class="vk smail"><svg class="smail__zero" width="60" height="60" viewBox="0 0 60 60"
-                  fill="none">
+            <li><a href="https://vk.com/club223545925" class="vk smail"><svg class="smail__zero" width="60" height="60"
+                  viewBox="0 0 60 60" fill="none">
                   <path
                     d="M30 0C13.432 0 0 13.4314 0 30C0 46.5686 13.432 60 30 60C46.568 60 60 46.5686 60 30C60 13.4314 46.568 0 30 0ZM45.2176 33.2446C46.6159 34.6103 48.0951 35.8957 49.3504 37.4026C49.9065 38.0692 50.4307 38.7585 50.8297 39.5337C51.3993 40.6392 50.8849 41.8515 49.8954 41.9171L43.7494 41.9159C42.162 42.0473 40.8988 41.4071 39.8339 40.3218C38.9837 39.457 38.195 38.5332 37.3762 37.6389C37.0416 37.2718 36.6893 36.9262 36.2695 36.6543C35.4316 36.1093 34.7036 36.2762 34.2236 37.1515C33.7344 38.0421 33.6227 39.0292 33.5761 40.0205C33.5092 41.4697 33.0721 41.8484 31.618 41.9165C28.5109 42.062 25.5628 41.5906 22.8227 40.0241C20.4055 38.6425 18.5346 36.6924 16.9043 34.4845C13.7297 30.1805 11.2984 25.4566 9.11386 20.597C8.6222 19.5026 8.98189 18.917 10.1893 18.8943C12.1952 18.8557 14.2011 18.8606 16.2071 18.8925C17.0234 18.9054 17.5636 19.3725 17.8772 20.1428C18.9612 22.8098 20.2901 25.3473 21.9554 27.7007C22.3992 28.3274 22.8522 28.9522 23.4973 29.3948C24.2093 29.8834 24.7519 29.7219 25.0877 28.9271C25.3025 28.4219 25.3952 27.8817 25.4418 27.3404C25.6014 25.486 25.6205 23.6323 25.3442 21.7854C25.1724 20.6296 24.5224 19.8832 23.3702 19.6647C22.7834 19.5536 22.8694 19.3363 23.1548 19.0011C23.6501 18.4217 24.1142 18.0632 25.0416 18.0632L31.9857 18.062C33.0801 18.2768 33.3256 18.7679 33.4742 19.8703L33.4803 27.5871C33.4674 28.0137 33.6945 29.2782 34.4606 29.5574C35.0744 29.76 35.4795 29.2677 35.8465 28.8792C37.5118 27.112 38.6983 25.0263 39.7608 22.8675C40.2298 21.9155 40.6343 20.9303 41.0271 19.9433C41.3193 19.2135 41.7735 18.8544 42.5972 18.8667L49.2841 18.8747C49.4811 18.8747 49.6812 18.8765 49.8764 18.9103C51.0034 19.103 51.3121 19.5879 50.9635 20.6873C50.4147 22.4145 49.3485 23.8533 48.3063 25.2958C47.1892 26.8401 45.9977 28.3304 44.8917 29.8815C43.8752 31.2994 43.9556 32.0133 45.2176 33.2446Z"
                     fill="#919191" />
@@ -1629,11 +1682,11 @@
           <div class="footer__line"></div>
         </form>
       </div>
-      <p class="footer__text display__three">Каждый наш торт - это произведение искусства, созданное специально для вас.
+      <p class="footer__text display__three">Каждый мой торт - это произведение искусства, созданное специально для вас.
         Закажите
         уникальный десерт прямо сейчас на сайте tortik-vip.ru и удивите своих близких неповторимым вкусом и изысканным
-        оформлением торта. Вкусите настоящую натуральность в каждой крошке нашего торта и погрузитесь в мир сладостей
-        вместе с нами!</p>
+        оформлением торта. Вкусите настоящую натуральность в каждой крошке моего торта и погрузитесь в мир сладостей
+        вместе со мной!</p>
     </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
