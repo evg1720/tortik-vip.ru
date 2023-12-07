@@ -1,35 +1,35 @@
 /*------------Шрифты-------------*/
 @font-face {
   font-family: 'Montserrat';
-  src: url("/fonts/Montserrat-ExtraBold.woff");
+  src: local('Montserrat-ExtraBold'), local('MontserratExtraBold') url("/fonts/Montserrat-ExtraBold.woff");
   font-display: swap;
   font-weight: 800;
 }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url("/fonts/Montserrat-SemiBold.woff");
+  src: local('Montserrat-SemiBold'), local('MontserratSemiBold') url("/fonts/Montserrat-SemiBold.woff");
   font-display: swap;
   font-weight: 600;
 }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url("/fonts/Montserrat-Bold.woff");
+  src: local('Montserrat-Bold'), local('MontserratBold') url("/fonts/Montserrat-Bold.woff");
   font-display: swap;
   font-weight: 700;
 }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url("/fonts/Montserrat-Regular.woff");
+  src: local('Montserrat-Regular'), local('MontserratRegular') url("/fonts/Montserrat-Regular.woff");
   font-display: swap;
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url("/fonts/Montserrat-Medium.woff");
+  src: local('Montserrat-Medium'), local('MontserratMedium') url("/fonts/Montserrat-Medium.woff");
   font-display: swap;
   font-weight: 500;
 }
@@ -38,25 +38,27 @@
 
 @font-face {
   font-family: 'MullerBold';
-  src: url("/fonts/MullerBold.woff");
+  src: local('Muller-Bold'), local('MullerBold') url("/fonts/MullerBold.woff");
   font-weight: normal;
   font-weight: 700;
+  font-display: swap;
 
 }
 
 @font-face {
   font-family: 'MullerMedium';
-  src: url("/fonts/MullerMedium.woff");
+  src: local('Muller-Medium'), local('MullerMedium') url("/fonts/MullerMedium.woff");
   font-style: normal;
   font-weight: normal;
   font-weight: 400; /*толщина шрифта*/
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'MullerRegular';
-  src: url("/fonts/MullerRegular.woff");
+  src:  local('Muller-Regular'), local('MullerRegular') url("/fonts/MullerRegular.woff");
   font-style: normal;
   font-weight: normal;
   font-weight: 400; 
-
+  font-display: swap;
 }
